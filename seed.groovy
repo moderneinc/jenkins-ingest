@@ -56,7 +56,7 @@ repos.each { Map repoConfig ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
                     mavenName 'maven 3'
-                    goals 'io.moderne:moderne-maven-plugin:0.10.0:ast install'
+                    goals '-B io.moderne:moderne-maven-plugin:0.10.0:ast install'
                 }
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
