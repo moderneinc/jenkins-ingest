@@ -1,7 +1,8 @@
 import groovy.json.JsonSlurper
 
 def jsonSlurper = new JsonSlurper()
-def repos = jsonSlurper.parse(new File(__FILE__).getParentFile(), 'repos.json')
+def workspaceDir = new File(__FILE__).getParentFile()
+def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
 
 repos.each { Map repoConfig ->
 
