@@ -120,6 +120,7 @@ def checkGithubForFile(String repoOwnerAndName, String filename) {
 }
 
 def getDefaultBranch(String repoOwnerAndName) {
+    def jsonSlurper = new JsonSlurper()
     def repo = jsonSlurper.parse("http://api.github.com/repos/${repoOwnerAndName}")
     return repo.get('default_branch')
 }
