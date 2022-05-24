@@ -1,7 +1,7 @@
 import groovy.json.JsonSlurper
 
 def jsonSlurper = new JsonSlurper()
-def repos = jsonSlurper.parse(new File(__FILE__).getParentFile(), 'repos.json'))
+def repos = jsonSlurper.parse(new File(__FILE__).getParentFile(), 'repos.json')
 
 repos.each { Map repoConfig ->
 
