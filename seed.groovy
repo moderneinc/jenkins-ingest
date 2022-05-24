@@ -8,6 +8,15 @@ repos.each { Map repoConfig ->
 
     def buildTool = buildTool(repoConfig.ownerAndName)
     def jobName = repoConfig.ownerAndName.replaceAll('/', '_')
+
+    if (repoConfig.branch == null) {
+        repoConfig.branch = getDefaultBranch(repoConfig.ownerAndName)
+    }
+    if (repoConfig.label == null) {
+        repoConfig.label = 'java11'
+    }
+
+    // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("$jobName") {
 
         label("$repoConfig.label")
@@ -19,7 +28,7 @@ repos.each { Map repoConfig ->
                     branch(repoConfig.branch)
                 }
                 extensions {
-                    localBranch("master")
+                    localBranch(repoConfig.branch)
                 }
             }
         }
@@ -45,6 +54,7 @@ repos.each { Map repoConfig ->
             if (buildTool == BuildTool.GRADLE) {
                 gradle {
                     useWrapper()
+                    // TODO specify style
                     switches('--no-daemon -I moderne-init.gradle')
                     tasks('publishModernePublicationToMavenRepository')
                 }
@@ -56,7 +66,11 @@ repos.each { Map repoConfig ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
                     mavenName 'maven 3'
-                    goals '-B io.moderne:moderne-maven-plugin:0.10.0:ast install'
+                    if (repoConfig.style != null) {
+                        goals "-B -Drewrite.activeStyles=${repoConfig.style} io.moderne:moderne-maven-plugin:0.10.0:ast install"
+                    } else {
+                        goals '-B io.moderne:moderne-maven-plugin:0.10.0:ast install'
+                    }
                 }
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
@@ -103,4 +117,9 @@ def checkGithubForFile(String repoOwnerAndName, String filename) {
     def getFile = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}").openConnection()
     getFile.setRequestProperty('Accept', 'application/vnd.github.v3+json')
     return getFile.getResponseCode() == 200
+}
+
+def getDefaultBranch(String repoOwnerAndName) {
+    def repo = jsonSlurper.parse("http://api.github.com/repos/${repoOwnerAndName}")
+    return repo.get('default_branch')
 }
