@@ -6,7 +6,15 @@ def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
 
 repos.each { Map repoConfig ->
 
-    def buildTool = buildTool(repoConfig.ownerAndName)
+    def buildTool = null
+
+    try {
+        buildTool = buildTool(repoConfig.ownerAndName)
+    } catch (Exception e) {
+        println("Error getting build tool for ${ownerAndName}")
+        println(e)
+        return;
+    }
     def jobName = repoConfig.ownerAndName.replaceAll('/', '_')
 
     if (repoConfig.branch == null) {
