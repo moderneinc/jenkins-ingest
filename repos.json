@@ -1,0 +1,6 @@
+[
+  {"ownerAndName": "Netflix/eureka", "branch": "master", "label": "java8"},
+  {"ownerAndName": "FasterXML/jackson-databind", "branch": "2.14", "label": "java8"},
+  {"ownerAndName": "spring-projects/spring-framework", "branch": "main", "label": "java8"},
+  {"ownerAndName": "apache/curator", "branch": "master", "label": "java8"}
+]
