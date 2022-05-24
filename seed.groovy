@@ -11,7 +11,7 @@ repos.each { Map repoConfig ->
     try {
         buildTool = buildTool(repoConfig.ownerAndName)
     } catch (Exception e) {
-        println("Error getting build tool for ${ownerAndName}")
+        println("Error getting build tool for ${repoConfig.ownerAndName}")
         println(e)
         return;
     }
