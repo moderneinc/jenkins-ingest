@@ -24,7 +24,7 @@ repos.each { Map repoConfig ->
         repoConfig.label = 'java11'
     }
 
-    Thread.sleep(10000)
+    Thread.sleep(1000)
 
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("$jobName") {
