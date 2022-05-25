@@ -6,10 +6,10 @@ def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
 
 repos.each { Map repoConfig ->
 
-    def buildTool = null
+    def repoBuildTool = null
 
     try {
-        buildTool = buildTool(repoConfig.ownerAndName)
+        repoBuildTool = buildTool(repoConfig.ownerAndName)
     } catch (Exception e) {
         println("Error getting build tool for ${repoConfig.ownerAndName}")
         println(e)
@@ -49,7 +49,7 @@ repos.each { Map repoConfig ->
             credentialsBinding {
                 usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
             }
-            if (buildTool == BuildTool.GRADLE) {
+            if (repoBuildTool == BuildTool.GRADLE) {
                 configFiles {
                     file('moderne-gradle-init') {
                         targetLocation('moderne-init.gradle')
@@ -59,7 +59,7 @@ repos.each { Map repoConfig ->
         }
 
         steps {
-            if (buildTool == BuildTool.GRADLE) {
+            if (repoBuildTool == BuildTool.GRADLE) {
                 gradle {
                     useWrapper()
                     // TODO specify style
@@ -69,7 +69,7 @@ repos.each { Map repoConfig ->
             }
         }
 
-        if (buildTool == BuildTool.MAVEN) {
+        if (repoBuildTool == BuildTool.MAVEN) {
             configure { node ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
