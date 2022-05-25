@@ -1,5 +1,8 @@
 import groovy.json.JsonSlurper
 
+def githubPat = System.getenv('GITHUB_PAT')
+println("GITHUB_PAT: ${githubPat}")
+
 def jsonSlurper = new JsonSlurper()
 def workspaceDir = new File(__FILE__).getParentFile()
 def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
