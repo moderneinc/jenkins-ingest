@@ -122,13 +122,17 @@ def isGradle(String repoOwnerAndName) {
 }
 
 def checkGithubForFile(String repoOwnerAndName, String filename) {
-    def getFile = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}").openConnection()
-    getFile.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    return getFile.getResponseCode() == 200
+    def urlConnection = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}").openConnection()
+    urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
+    urlConnection.setRequestProperty('Authorization', credentialsId('github-pat'))
+    return urlConnection.getResponseCode() == 200
 }
 
 def getDefaultBranch(String repoOwnerAndName) {
+    def urlConnection = new URL("https://api.github.com/repos/${repoOwnerAndName}").openConnection()
+    urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
+    urlConnection.setRequestProperty('Authorization', credentialsId('github-pat'))
     def jsonSlurper = new JsonSlurper()
-    def repo = jsonSlurper.parse(new URL("https://api.github.com/repos/${repoOwnerAndName}"))
+    def repo = jsonSlurper.parse(urlConnection.getInputStream())
     return repo.get('default_branch')
 }
