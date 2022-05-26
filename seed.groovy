@@ -129,7 +129,6 @@ def isGradle(String repoOwnerAndName) {
 
 def getGithubPat() {
     def githubPat = getBinding().getVariables()['GITHUB_PAT']
-    println("github pat: ${githubPat}")
     return githubPat
 }
 
