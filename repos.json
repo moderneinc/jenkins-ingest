@@ -1,5 +1,13 @@
 [
   {
+    "ownerAndName": "0ffz/gpr-for-gradle",
+    "label": "java11"
+  },
+  {
+    "ownerAndName": "15189611/jumpAop",
+    "label": "java11"
+  },
+  {
     "ownerAndName": "Netflix/eureka",
     "label": "java8",
     "style": "com.netflix.eureka.Style"
