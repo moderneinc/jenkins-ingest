@@ -6,6 +6,10 @@ def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
 
 repos.each { Map repoConfig ->
 
+    if (Thread.interrupted()) {
+        System.exit(0)
+    }
+
     def repoBuildTool = null
 
     try {
