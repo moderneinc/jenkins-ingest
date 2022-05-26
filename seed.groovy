@@ -1,8 +1,5 @@
 import groovy.json.JsonSlurper
 
-def githubPat = System.getenv('GITHUB_PAT')
-println("GITHUB_PAT: ${githubPat}")
-
 def jsonSlurper = new JsonSlurper()
 def workspaceDir = new File(__FILE__).getParentFile()
 def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
@@ -13,6 +10,7 @@ repos.each { Map repoConfig ->
 
     try {
         repoBuildTool = buildTool(repoConfig.ownerAndName)
+        println("${repoConfig.ownerAndName} buildTool: ${repoBuildTool}")
     } catch (Exception e) {
         println("Error getting build tool for ${repoConfig.ownerAndName}")
         println(e)
@@ -22,12 +20,11 @@ repos.each { Map repoConfig ->
 
     if (repoConfig.branch == null) {
         repoConfig.branch = getDefaultBranch(repoConfig.ownerAndName)
+        println("${repoConfig.ownerAndName} defaultBranch: ${repoConfig.branch}")
     }
     if (repoConfig.label == null) {
         repoConfig.label = 'java11'
     }
-
-    Thread.sleep(1000)
 
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("$jobName") {
@@ -127,17 +124,44 @@ def isGradle(String repoOwnerAndName) {
 }
 
 def checkGithubForFile(String repoOwnerAndName, String filename) {
-    def urlConnection = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}").openConnection()
+    def url = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}")
+    def urlConnection = (HttpURLConnection) url.openConnection()
     urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    urlConnection.setRequestProperty('Authorization', System.getenv('GITHUB_PAT'))
-    return urlConnection.getResponseCode() == 200
+    def githubPat = System.getenv('GITHUB_PAT')
+    urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
+    def statusCode = urlConnection.getResponseCode()
+    Thread.sleep(1000)
+    if (statusCode == 200) {
+        return true
+    } else if (statusCode == 404) {
+        return false
+    } else {
+        def errorStream = urlConnection.getErrorStream()
+        Scanner s = new Scanner(errorStream).useDelimiter("\\A")
+        String body = s.hasNext() ? s.next() : ""
+        println("Error calling github: url: ${url}, status code: ${statusCode}, body: ${body}")
+        return false
+    }
 }
 
 def getDefaultBranch(String repoOwnerAndName) {
-    def urlConnection = new URL("https://api.github.com/repos/${repoOwnerAndName}").openConnection()
+    def url = new URL("https://api.github.com/repos/${repoOwnerAndName}")
+    def urlConnection = (HttpURLConnection) url.openConnection()
     urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    urlConnection.setRequestProperty('Authorization', System.getenv('GITHUB_PAT'))
+    def githubPat = System.getenv('GITHUB_PAT')
+    urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
     def jsonSlurper = new JsonSlurper()
-    def repo = jsonSlurper.parse(urlConnection.getInputStream())
-    return repo.get('default_branch')
+    def statusCode = urlConnection.getResponseCode()
+    if (statusCode == 200) {
+        def repo = jsonSlurper.parse(urlConnection.getInputStream())
+        Thread.sleep(1000)
+        return repo.get('default_branch')
+    } else {
+        def errorStream = urlConnection.getErrorStream()
+        Scanner s = new Scanner(errorStream).useDelimiter("\\A")
+        String body = s.hasNext() ? s.next() : ""
+        println("Error calling github: url: ${url}, status code: ${statusCode}, body: ${body}")
+        Thread.sleep(1000)
+        return false
+    }
 }
