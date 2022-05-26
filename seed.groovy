@@ -123,11 +123,17 @@ def isGradle(String repoOwnerAndName) {
             checkGithubForFile(repoOwnerAndName, "build.gradle.kts")
 }
 
+def getGithubPat() {
+    def githubPat = System.getenv('GITHUB_PAT')
+    println("github pat: ${githubPat}")
+    return githubPat
+}
+
 def checkGithubForFile(String repoOwnerAndName, String filename) {
     def url = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}")
     def urlConnection = (HttpURLConnection) url.openConnection()
     urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    def githubPat = System.getenv('GITHUB_PAT')
+    def githubPat = getGithubPat()
     urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
     def statusCode = urlConnection.getResponseCode()
     Thread.sleep(1000)
@@ -148,7 +154,7 @@ def getDefaultBranch(String repoOwnerAndName) {
     def url = new URL("https://api.github.com/repos/${repoOwnerAndName}")
     def urlConnection = (HttpURLConnection) url.openConnection()
     urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    def githubPat = System.getenv('GITHUB_PAT')
+    def githubPat = getGithubPat()
     urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
     def jsonSlurper = new JsonSlurper()
     def statusCode = urlConnection.getResponseCode()
