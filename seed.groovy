@@ -48,7 +48,7 @@ repos.each { Map repoConfig ->
         }
 
         triggers {
-            cron('H H * * *')
+            cron('H 8 * * *')
         }
 
         wrappers {
