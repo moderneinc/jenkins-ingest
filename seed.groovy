@@ -28,7 +28,7 @@ repos.each { Map repoConfig ->
 
     println("creating job $jobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
-    job("$jobName") {
+    freeStyleJob("$jobName") {
 
         label("$repoConfig.label")
 
