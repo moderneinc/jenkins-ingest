@@ -35,7 +35,7 @@ repos.each { Map repoConfig ->
         scm {
             git {
                 remote {
-                    url("http://github.com/${repoConfig.ownerAndName}")
+                    url("https://github.com/${repoConfig.ownerAndName}")
                     branch(repoConfig.branch)
                 }
                 extensions {
