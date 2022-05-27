@@ -163,7 +163,7 @@ def getDefaultBranch(String repoOwnerAndName) {
         Thread.sleep(1000)
         return repo.get('default_branch')
     } else {
-        def errorStream = urlConnection.getErrorStream()
+        InputStream errorStream = urlConnection.getErrorStream()
         Scanner s = new Scanner(errorStream).useDelimiter("\\A")
         String body = s.hasNext() ? s.next() : ""
         println("Error calling github: url: ${url}, status code: ${statusCode}, body: ${body}")
