@@ -120,7 +120,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "Akman/vscode-tasks#vscode-tasks-gradle-plugin",
+    "ownerAndName": "Akman/vscode-tasks",
     "label": "java11"
   },
   {
@@ -168,7 +168,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "Apisium/PaperShelledGradlePlugin#readme",
+    "ownerAndName": "Apisium/PaperShelledGradlePlugin",
     "label": "java11"
   },
   {
@@ -3817,7 +3817,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "anatawa12/mod-patching#readme",
+    "ownerAndName": "anatawa12/mod-patching",
     "label": "java11"
   },
   {
@@ -4881,7 +4881,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "breskeby/jdk-gradle-plugins#jdks-gradle-plugins",
+    "ownerAndName": "breskeby/jdk-gradle-plugins",
     "label": "java11"
   },
   {
@@ -5409,7 +5409,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "copiepie/buildx-gradle#readme",
+    "ownerAndName": "copiepie/buildx-gradle",
     "label": "java11"
   },
   {
@@ -6369,7 +6369,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "energizedwork/idea-gradle-plugins#idea-base-convention-plugin",
+    "ownerAndName": "energizedwork/idea-gradle-plugins",
     "label": "java11"
   },
   {
@@ -6393,7 +6393,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "erdi/idea-gradle-plugins#idea-gradle-plugins",
+    "ownerAndName": "erdi/idea-gradle-plugins",
     "label": "java11"
   },
   {
@@ -7499,7 +7499,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "groovyzk/grailszk-gradle-plugin#readme",
+    "ownerAndName": "groovyzk/grailszk-gradle-plugin",
     "label": "java11"
   },
   {
@@ -11191,7 +11191,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "necauqua/srgmacro#readme",
+    "ownerAndName": "necauqua/srgmacro",
     "label": "java11"
   },
   {
@@ -14515,7 +14515,7 @@
     "label": "java11"
   },
   {
-    "ownerAndName": "theproductiveprogrammer/classlist-gradle-plugin#README",
+    "ownerAndName": "theproductiveprogrammer/classlist-gradle-plugin",
     "label": "java11"
   },
   {
