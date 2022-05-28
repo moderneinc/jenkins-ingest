@@ -50,7 +50,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 gradle {
                     useWrapper(repoBuildTool == 'gradlew')
-                    if (repoBuildTool == 'grade') {
+                    if (repoBuildTool == 'gradle') {
                         gradleName('gradle 7.4.2')
                     }
                     // TODO specify style
