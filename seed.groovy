@@ -1,7 +1,6 @@
-//def workspaceDir = new File(__FILE__).getParentFile()
+def workspaceDir = new File(__FILE__).getParentFile()
 
-//new File(workspaceDir, 'repos.csv').splitEachLine(',') { repoConfig ->
-new File('repos.csv').splitEachLine(',') { tokens ->
+new File(workspaceDir, 'repos.csv').splitEachLine(',') { repoConfig ->
     if (tokens.get(0).startsWith('repoName')) {
         return
     }
