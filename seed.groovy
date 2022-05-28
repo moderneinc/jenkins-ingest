@@ -92,7 +92,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         publishers {
-            cleanWs
+            cleanWs()
         }
     }
     return
