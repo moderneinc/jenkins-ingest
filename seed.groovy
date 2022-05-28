@@ -40,7 +40,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             buildTimeoutWrapper {
                 strategy {
                     absoluteTimeoutStrategy {
-                        timeoutMinutes(60)
+                        timeoutMinutes('60')
                     }
                 }
                 operationList {
