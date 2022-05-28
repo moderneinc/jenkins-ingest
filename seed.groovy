@@ -21,7 +21,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             git {
                 remote {
                     url("https://github.com/${repoName}")
-                    repoBranch(repoBranch)
+                    branch(repoBranch)
                 }
                 extensions {
                     localBranch(repoBranch)
