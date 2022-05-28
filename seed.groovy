@@ -30,7 +30,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         triggers {
-            cron('H 4 10 * *')
+            cron('H 16 10 * *')
         }
 
         wrappers {
