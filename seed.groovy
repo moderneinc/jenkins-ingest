@@ -30,12 +30,22 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         triggers {
-            cron('H 8 * * *')
+            cron('H 4 05 * *')
         }
 
         wrappers {
             credentialsBinding {
                 usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+            }
+            buildTimeoutWrapper {
+                strategy {
+                    absoluteTimeoutStrategy {
+                        timeoutMinutes(60)
+                    }
+                }
+                operationList {
+                    abortOperation
+                }
             }
             if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 configFiles {
@@ -85,6 +95,10 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
+        }
+
+        publishers {
+            cleanWs
         }
     }
     return
