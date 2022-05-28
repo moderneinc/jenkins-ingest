@@ -4,12 +4,11 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     if (tokens.get(0).startsWith('repoName')) {
         return
     }
-    // repoName, branch, label, style, buildTool
-    def repoName = tokens.get(0)
-    def branch = tokens.get(1)
-    def label = tokens.get(2)
-    def style = tokens.get(3)
-    def buildTool = tokens.get(4)
+    def repoName = tokens[0]
+    def branch = tokens[1]
+    def label = tokens[2]
+    def style = tokens[3]
+    def buildTool = tokens[4]
     def jobName = repoName.replaceAll('/', '_')
 
     println("creating job $jobName")
