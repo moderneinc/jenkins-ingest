@@ -49,9 +49,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         steps {
             if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 gradle {
-                    if (repoBuildTool == 'gradlew') {
-                        useWrapper()
-                    }
+                    useWrapper(repoBuildTool == 'gradlew')
                     // TODO specify style
                     switches('--no-daemon -I moderne-init.gradle')
                     tasks('publishModernePublicationToMavenRepository')
