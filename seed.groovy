@@ -1,30 +1,6 @@
-import groovy.json.JsonSlurper
-
-def jsonSlurper = new JsonSlurper()
 def workspaceDir = new File(__FILE__).getParentFile()
-def repos = jsonSlurper.parse(new File(workspaceDir, 'repos.json'))
-
-repos.each { Map repoConfig ->
-
-    def repoBuildTool = null
-
-    try {
-        repoBuildTool = buildTool(repoConfig.ownerAndName)
-        println("${repoConfig.ownerAndName} buildTool: ${repoBuildTool}")
-    } catch (Exception e) {
-        println("Error getting build tool for ${repoConfig.ownerAndName}")
-        println(e)
-        return;
-    }
-    def jobName = repoConfig.ownerAndName.replaceAll('/', '_')
-
-    if (repoConfig.branch == null) {
-        repoConfig.branch = getDefaultBranch(repoConfig.ownerAndName)
-        println("${repoConfig.ownerAndName} defaultBranch: ${repoConfig.branch}")
-    }
-    if (repoConfig.label == null) {
-        repoConfig.label = 'java11'
-    }
+new File(workspaceDir, 'repos.csv').splitEachLine(',') { repoConfig ->
+    def jobName = repoConfig.repoName.replaceAll('/', '_')
 
     println("creating job $jobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
@@ -35,7 +11,7 @@ repos.each { Map repoConfig ->
         scm {
             git {
                 remote {
-                    url("https://github.com/${repoConfig.ownerAndName}")
+                    url("https://github.com/${repoConfig.repoName}")
                     branch(repoConfig.branch)
                 }
                 extensions {
@@ -52,7 +28,7 @@ repos.each { Map repoConfig ->
             credentialsBinding {
                 usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
             }
-            if (repoBuildTool == BuildTool.GRADLE) {
+            if (repoConfig.buildTool == 'gradle' || repoConfig.buildTool == 'gradlew') {
                 configFiles {
                     file('moderne-gradle-init') {
                         targetLocation('moderne-init.gradle')
@@ -62,9 +38,11 @@ repos.each { Map repoConfig ->
         }
 
         steps {
-            if (repoBuildTool == BuildTool.GRADLE) {
+            if (repoConfig.buildTool == 'gradle' || repoConfig.buildTool == 'gradlew') {
                 gradle {
-                    useWrapper()
+                    if (repoConfig.buildTool == 'gradlew') {
+                        useWrapper()
+                    }
                     // TODO specify style
                     switches('--no-daemon -I moderne-init.gradle')
                     tasks('publishModernePublicationToMavenRepository')
@@ -72,7 +50,7 @@ repos.each { Map repoConfig ->
             }
         }
 
-        if (repoBuildTool == BuildTool.MAVEN) {
+        if (repoConfig.buildTool == 'maven') {
             configure { node ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
@@ -98,76 +76,5 @@ repos.each { Map repoConfig ->
                 }
             }
         }
-    }
-}
-
-enum BuildTool {
-    MAVEN, GRADLE
-}
-
-def buildTool(String repoOwnerAndName) {
-    if (isGradle(repoOwnerAndName)) {
-        return BuildTool.GRADLE
-    } else if (isMaven(repoOwnerAndName)) {
-        return BuildTool.MAVEN
-    } else {
-        throw new IllegalStateException('Repositories must contain build.gradle, build.gradle.kts, or pom.xml at the root.')
-    }
-}
-
-def isMaven(String repoOwnerAndName) {
-    return checkGithubForFile(repoOwnerAndName, "pom.xml")
-}
-
-def isGradle(String repoOwnerAndName) {
-    return checkGithubForFile(repoOwnerAndName, "build.gradle") ||
-            checkGithubForFile(repoOwnerAndName, "build.gradle.kts")
-}
-
-def getGithubPat() {
-    def githubPat = getBinding().getVariables()['GITHUB_PAT']
-    return githubPat
-}
-
-def checkGithubForFile(String repoOwnerAndName, String filename) {
-    def url = new URL("https://api.github.com/repos/${repoOwnerAndName}/contents/${filename}")
-    def urlConnection = (HttpURLConnection) url.openConnection()
-    urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    def githubPat = getGithubPat()
-    urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
-    def statusCode = urlConnection.getResponseCode()
-    Thread.sleep(1000)
-    if (statusCode == 200) {
-        return true
-    } else if (statusCode == 404) {
-        return false
-    } else {
-        def errorStream = urlConnection.getErrorStream()
-        Scanner s = new Scanner(errorStream).useDelimiter("\\A")
-        String body = s.hasNext() ? s.next() : ""
-        println("Error calling github: url: ${url}, status code: ${statusCode}, body: ${body}")
-        return false
-    }
-}
-
-def getDefaultBranch(String repoOwnerAndName) {
-    def url = new URL("https://api.github.com/repos/${repoOwnerAndName}")
-    def urlConnection = (HttpURLConnection) url.openConnection()
-    urlConnection.setRequestProperty('Accept', 'application/vnd.github.v3+json')
-    def githubPat = getGithubPat()
-    urlConnection.setRequestProperty('Authorization', "Bearer ${githubPat}")
-    def jsonSlurper = new JsonSlurper()
-    def statusCode = urlConnection.getResponseCode()
-    if (statusCode == 200) {
-        def repo = jsonSlurper.parse(urlConnection.getInputStream())
-        Thread.sleep(1000)
-        return repo.get('default_branch')
-    } else {
-        InputStream errorStream = urlConnection.getErrorStream()
-        Scanner s = new Scanner(errorStream).useDelimiter("\\A")
-        String body = s.hasNext() ? s.next() : ""
-        println("Error calling github: url: ${url}, status code: ${statusCode}, body: ${body}")
-        Thread.sleep(1000)
-        return false
     }
 }

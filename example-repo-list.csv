@@ -1,0 +1,6 @@
+repoName, branch, label, style, buildTool
+spinnaker/echo
+spinnaker/kork,master
+spinnaker/deck,master,java8
+spinnaker/clouddriver,master,,spinnaker-style
+spinnaker/orca,master,,,gradlew
