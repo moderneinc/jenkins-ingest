@@ -39,7 +39,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
             timeout {
                 absolute(60)
-                abortBuild
+                abortBuild()
             }
             if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 configFiles {
