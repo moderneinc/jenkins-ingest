@@ -5,26 +5,26 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         return
     }
     def repoName = tokens[0]
-    def branch = tokens[1]
-    def label = tokens[2]
-    def style = tokens[3]
-    def buildTool = tokens[4]
-    def jobName = repoName.replaceAll('/', '_')
+    def repoBranch = tokens[1]
+    def repoLabel = tokens[2]
+    def repoStyle = tokens[3]
+    def repoBuildTool = tokens[4]
+    def repoJobName = repoName.replaceAll('/', '_')
 
-    println("creating job $jobName")
+    println("creating job $repoJobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
-    job("$jobName") {
+    job("$repoJobName") {
 
-        label("$label")
+        label("$repoLabel")
 
         scm {
             git {
                 remote {
                     url("https://github.com/${repoName}")
-                    branch(branch)
+                    repoBranch(repoBranch)
                 }
                 extensions {
-                    localBranch(branch)
+                    localBranch(repoBranch)
                 }
             }
         }
@@ -37,7 +37,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             credentialsBinding {
                 usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
             }
-            if (buildTool == 'gradle' || buildTool == 'gradlew') {
+            if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 configFiles {
                     file('moderne-gradle-init') {
                         targetLocation('moderne-init.gradle')
@@ -47,9 +47,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         steps {
-            if (buildTool == 'gradle' || buildTool == 'gradlew') {
+            if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
                 gradle {
-                    if (buildTool == 'gradlew') {
+                    if (repoBuildTool == 'gradlew') {
                         useWrapper()
                     }
                     // TODO specify style
@@ -59,13 +59,13 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
         }
 
-        if (buildTool == 'maven') {
+        if (repoBuildTool == 'maven') {
             configure { node ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
                     mavenName 'maven 3'
-                    if (style != null) {
-                        goals "-B -Drewrite.activeStyles=${style} io.moderne:moderne-maven-plugin:0.10.0:ast install"
+                    if (repoStyle != null) {
+                        goals "-B -Drewrite.activeStyles=${repoStyle} io.moderne:moderne-maven-plugin:0.10.0:ast install"
                     } else {
                         goals '-B io.moderne:moderne-maven-plugin:0.10.0:ast install'
                     }
