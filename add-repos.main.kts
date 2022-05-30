@@ -46,7 +46,7 @@ repoWriter.use {
             val cloneDirPath = gitPath.resolve(repoName.substring(repoName.indexOf('/') + 1))
             val cloneDir = cloneDirPath.toFile()
             if (buildTool.isBlank()) {
-                "git sparse-checkout set --no-cone /build.gradle.kts /build.gradle /pom.xml /gradlew".runCommand(
+                "git sparse-checkout set --no-cone /build.gradle.kts /build.gradle /pom.xml /gradlew /mvnw".runCommand(
                     cloneDir
                 )
                 "git checkout".runCommand(cloneDir)
@@ -60,7 +60,11 @@ repoWriter.use {
                         "gradle"
                     }
                 } else if (Files.exists(cloneDirPath.resolve("pom.xml"))) {
-                    buildTool = "maven"
+                    buildTool = if (Files.exists(cloneDirPath.resolve("mvnw"))) {
+                        "mvnw"
+                    } else {
+                        "maven"
+                    }
                 }
             }
 

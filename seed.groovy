@@ -1,7 +1,11 @@
 def workspaceDir = new File(__FILE__).getParentFile()
 
+folder('ingest') {
+    displayName('Ingest Jobs')
+}
+
 new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
-    if (tokens.get(0).startsWith('repoName')) {
+    if (tokens[0].startsWith('repoName')) {
         return
     }
     def repoName = tokens[0]
@@ -13,7 +17,11 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
     println("creating job $repoJobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
-    job("$repoJobName") {
+    job("ingest/$repoJobName") {
+
+        if (!['java8', 'java11'].contains(repoLabel)) {
+            disabled()
+        }
 
         label("$repoLabel")
 
@@ -41,7 +49,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 absolute(60)
                 abortBuild()
             }
-            if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
+            if (['gradle', 'gradlew'].contains(repoBuildTool)) {
                 configFiles {
                     file('moderne-gradle-init') {
                         targetLocation('moderne-init.gradle')
@@ -51,24 +59,28 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         steps {
-            if (repoBuildTool == 'gradle' || repoBuildTool == 'gradlew') {
+            if (['gradle', 'gradlew'].contains(repoBuildTool)) {
                 gradle {
                     useWrapper(repoBuildTool == 'gradlew')
                     if (repoBuildTool == 'gradle') {
                         gradleName('gradle 7.4.2')
                     }
-                    // TODO specify style
-                    switches('--no-daemon -I moderne-init.gradle')
+                    if (repoStyle != null) {
+                        switches("--no-daemon -DactiveStyle=${repoStyle} -I moderne-init.gradle")
+                    } else {
+                        switches('--no-daemon -I moderne-init.gradle')
+                    }
                     tasks('publishModernePublicationToMavenRepository')
                 }
             }
         }
 
-        if (repoBuildTool == 'maven') {
+        if (['maven', 'mvnw'].contains(repoBuildTool)) {
             configure { node ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
                     mavenName 'maven 3'
+                    useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
                         goals "-B -Drewrite.activeStyles=${repoStyle} io.moderne:moderne-maven-plugin:0.10.0:ast install"
                     } else {
