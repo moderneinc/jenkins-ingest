@@ -61,9 +61,12 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         steps {
             if (['gradle', 'gradlew'].contains(repoBuildTool)) {
                 gradle {
-                    useWrapper(repoBuildTool == 'gradlew')
                     if (repoBuildTool == 'gradle') {
+                        useWrapper(false)
                         gradleName('gradle 7.4.2')
+                    } else {
+                        useWrapper(true)
+                        makeExecutable(true)
                     }
                     if (repoStyle != null) {
                         switches("--no-daemon -DactiveStyle=${repoStyle} -I moderne-init.gradle")
