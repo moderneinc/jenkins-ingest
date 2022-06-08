@@ -1,0 +1,39 @@
+initscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("io.moderne:moderne-gradle-plugin:latest.release")
+    }
+}
+
+// Add the rewrite plugin to any projects which apply the Java plugin
+allprojects {
+    project.afterEvaluate {
+        if (project.plugins.hasPlugin(JavaPlugin) && !project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
+            project.plugins.apply(io.moderne.gradle.ModernePlugin)
+            project.plugins.apply('maven-publish')
+
+            project.publishing {
+                publishing {
+                    publications {
+                        create("moderne", MavenPublication.class) {
+                            artifact(tasks.named("moderneJar"))
+                        }
+                    }
+                }
+                repositories {
+                    maven {
+                        url = 'https://artifactory.moderne.ninja/artifactory/moderne-public-ast/'
+                        allowInsecureProtocol(true)
+                        credentials {
+                            username = System.getenv("ARTIFACTORY_USER")
+                            password = System.getenv("ARTIFACTORY_PASSWORD")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
