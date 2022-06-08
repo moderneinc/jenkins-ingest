@@ -7,13 +7,16 @@ initscript {
     }
 }
 
-// Add the rewrite plugin to any projects which apply the Java plugin
 allprojects {
     project.afterEvaluate {
-        if (project.plugins.hasPlugin(JavaPlugin) && !project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
+        if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
             project.plugins.apply(io.moderne.gradle.ModernePlugin)
-            project.plugins.apply('maven-publish')
 
+         	if (!project.plugins.hasPlugin('maven-publish')) {
+          		project.plugins.apply('maven-publish')
+         	}
+
+          
             project.publishing {
                 publishing {
                     publications {
@@ -36,4 +39,3 @@ allprojects {
         }
     }
 }
-
