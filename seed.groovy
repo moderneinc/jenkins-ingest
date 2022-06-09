@@ -52,6 +52,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         wrappers {
             credentialsBinding {
                 usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+                string('GRADLE_ENTERPRISE_ACCESS_KEY', 'gradle-enterprise-access-key')
             }
             timeout {
                 absolute(60)
