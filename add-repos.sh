@@ -7,6 +7,7 @@ fi
 
 cleanupTmpGitDir() {
     if [ -d "moderne-git" ]; then
+        printf "Removing temporary git directory...\n"
         rm -rf "moderne-git"
     fi
 }
@@ -32,12 +33,13 @@ do
         LABEL="java8"
     fi
     
+    cleanupTmpGitDir
     mkdir -p moderne-git
     cd moderne-git || exit
 
     if ! git clone --depth 1 --no-checkout "https://github.com/$REPO.git"; then
         echo "Failed to clone $REPO"
-        exit 1
+        continue
     fi
 
     if [ -z "$BUILD_TOOL" ]; then
@@ -79,6 +81,7 @@ do
 
 done < "$1" 3>> "$outFile"
 
+touch "$outFile"
 cat "$outFile" | awk 'NR<2{print $0;next}{print $0| "sort -u"}' > "$outFile.tmp" && mv "$outFile.tmp" "$outFile"
 cleanupTmpGitDir
 
