@@ -1,6 +1,23 @@
 initscript {
-    repositories {
-        gradlePluginPortal()
+
+    def isTopLevelBuild = gradle.getParent() == null
+    if (isTopLevelBuild) {
+        def majorGradleVersion
+        try {
+            majorGradleVersion = Integer.parseInt(gradleVersion.split("\\.")[0])
+        } catch (any) {
+            majorGradleVersion = 0
+        }
+
+        if (majorGradleVersion >= 5) {
+            repositories {
+                gradlePluginPortal()
+            }
+        } else if (majorGradleVersion >= 2) {
+            repositories {
+                maven { url "https://plugins.gradle.org/m2" }
+            }
+        }
     }
     dependencies {
         classpath("io.moderne:moderne-gradle-plugin:latest.release")
@@ -8,9 +25,22 @@ initscript {
 }
 
 /**
-    Please update this file in source control with changes made here.
+    Any changes to this file must also be copied into Jenkins here:
+
     https://github.com/moderneinc/jenkins-ingest/blob/main/init.gradle
  */ 
+
+// Enable build cache
+// Only available for Gradle 3.5+, so invoked defensively
+startParameter.metaClass.getMetaProperty("buildCacheEnabled")?.setProperty(startParameter, true)
+
+def majorGradleVersion
+try {
+    majorGradleVersion = Integer.parseInt(gradleVersion.split("\\.")[0])
+} catch (any) {
+    majorGradleVersion = 0
+}
+
 allprojects {
     project.afterEvaluate {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
