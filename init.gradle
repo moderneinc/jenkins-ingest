@@ -9,6 +9,13 @@ initscript {
             majorGradleVersion = 0
         }
 
+        repositories {
+            mavenLocal()
+            maven {
+                url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+            }
+            mavenCentral()
+        }
         if (majorGradleVersion >= 5) {
             repositories {
                 gradlePluginPortal()
@@ -20,7 +27,7 @@ initscript {
         }
     }
     dependencies {
-        classpath("io.moderne:moderne-gradle-plugin:latest.release")
+        classpath("io.moderne:moderne-gradle-plugin:latest.integration")
     }
 }
 
@@ -39,17 +46,41 @@ try {
 } catch (any) {
     majorGradleVersion = 0
 }
-
+settingsEvaluated { settings ->
+    settings.pluginManagement {
+        repositories {
+            mavenLocal()
+            maven {
+                url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+            }
+            mavenCentral()
+            repositories {
+                maven { url "https://plugins.gradle.org/m2" }
+            }
+        }
+    }
+}
 allprojects {
     project.afterEvaluate {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
             project.plugins.apply(io.moderne.gradle.ModernePlugin)
 
-         	if (!project.plugins.hasPlugin('maven-publish')) {
-          		project.plugins.apply('maven-publish')
-         	}
-
-          
+            if (!project.plugins.hasPlugin('maven-publish')) {
+                project.plugins.apply('maven-publish')
+            }
+            
+            if(project.group == null || project.group.isBlank()) {
+                // For publishing to succeed a groupId must be set
+                project.group = "io.moderne.unknown"
+            }
+            // Plugin must be able to resolve its dependencies
+            project.repositories {
+                mavenLocal()
+                maven {
+                    url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+                }
+                mavenCentral()
+            }
             project.publishing {
                 publishing {
                     publications {
@@ -72,3 +103,4 @@ allprojects {
         }
     }
 }
+
