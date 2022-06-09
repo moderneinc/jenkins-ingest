@@ -4,6 +4,14 @@ folder('ingest') {
     displayName('Ingest Jobs')
 }
 
+configFiles {
+    groovyScript {
+        id("gradle-inject")
+        name("init.gradle")
+        comment("A Gradle init script used to inject universal plugins into a gradle build.")
+        content readFileFromWorkspace('init.gradle')
+    }
+}
 new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     if (tokens[0].startsWith('repoName')) {
         return
