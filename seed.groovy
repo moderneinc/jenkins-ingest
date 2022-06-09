@@ -6,7 +6,7 @@ folder('ingest') {
 
 configFiles {
     groovyScript {
-        id("gradle-inject")
+        id("moderne-gradle-init")
         name("init.gradle")
         comment("A Gradle init script used to inject universal plugins into a gradle build.")
         content readFileFromWorkspace('init.gradle')
