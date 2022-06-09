@@ -371,7 +371,7 @@ Kotlin/kotlin-libs-publisher,master,java8,,gradlew
 Kotlin/kotlinx-benchmark,master,java8,,gradlew
 Kotlin/kotlinx-knit,main,java8,,gradlew
 KotlinDream/devtools,main,java8,,gradlew
-KualiCo/rice,java8,,maven
+KualiCo/rice,java11,java8,,maven
 KyoriPowered/blossom,master,java8,,gradlew
 KyoriPowered/indra,main/2.x,java8,,gradlew
 KyoriPowered/pulsar,master,java8,,gradlew
