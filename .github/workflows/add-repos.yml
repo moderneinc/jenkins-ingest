@@ -1,0 +1,51 @@
+name: Add org to ingest
+
+on:
+  workflow_dispatch:
+    inputs:
+      org:
+        type: string
+        required: true
+        description: The organization to add to the ingest
+
+jobs:
+  fetch-repositories:
+    runs-on: ubuntu-latest
+    env:
+      ORG: ${{ github.event.inputs.org }}
+      PAGINATE: true
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fetch organizations
+
+        run: |
+          gh api graphql --paginate="${{ env.PAGINATE }}" -F org="${{ env.ORG }}" -f query='query($org: String!, $endCursor: String) { organization(login: $org) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.organization.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: "${{ env.ORG }}-repositories.csv"
+          path: "${{ env.ORG }}-repositories.csv"
+  add-repositories:
+    needs: [fetch-repositories]
+    runs-on: ubuntu-latest
+    env:
+      ORG: ${{ github.event.inputs.org }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: "${{ env.ORG }}-repositories.csv"
+      - run: |
+          ./add-repos.sh "${{ env.ORG }}-repositories.csv" "${{ github.workspace }}/repos.csv"
+      - run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -u repos.csv 
+          git commit -m "Added ${{ env.ORG }} repositories to ingest"
+          git push
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: repos.csv
+          path: repos.csv
