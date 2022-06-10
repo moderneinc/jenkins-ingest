@@ -1,3 +1,8 @@
+/**
+    Do not make changes to this file directly in Jenkins, just push changes to
+    github. The Seed job will always update the file on Jenkins based on the current
+    version of this file in the rep.
+ */
 initscript {
 
     def isTopLevelBuild = gradle.getParent() == null
@@ -30,12 +35,6 @@ initscript {
         classpath("io.moderne:moderne-gradle-plugin:latest.integration")
     }
 }
-
-/**
-    Any changes to this file must also be copied into Jenkins here:
-
-    https://github.com/moderneinc/jenkins-ingest/blob/main/init.gradle
- */ 
 
 // Enable build cache, only available for Gradle 3.5+, so invoked defensively
 startParameter.metaClass.getMetaProperty("buildCacheEnabled")?.setProperty(startParameter, true)

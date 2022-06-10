@@ -15,4 +15,5 @@ The csv-file argument is expected to be a valid `csv` file, with optional header
 |buildTool | Optional | Auto-detected if omitted. Current supported value: {`gradle`, `gradlew`, `maven`}. |
 
 ## `init.gradle` changes
-The `init.gradle` file in Jenkins is now under source control. Be careful making changes and be sure to update the `init.gradle` after making changes.
+The `init.gradle` file in this repository is imported into Jenkins. Any changes made to the file directly in Jenkins
+will be stomped on each run of the seed job.
