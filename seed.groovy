@@ -94,9 +94,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     mavenName 'maven 3'
                     useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
-                        goals "-B -Drewrite.activeStyles=${repoStyle} io.moderne:moderne-maven-plugin:0.11.0:ast install"
+                        goals '-B -Drewrite.activeStyles=${repoStyle} process-test-classes io.moderne:moderne-maven-plugin:0.11.0:ast'
                     } else {
-                        goals '-B io.moderne:moderne-maven-plugin:0.11.0:ast install'
+                        goals '-B process-test-classes io.moderne:moderne-maven-plugin:0.11.0:ast'
                     }
                 }
 
