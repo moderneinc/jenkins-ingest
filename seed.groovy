@@ -102,6 +102,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
                     deployArtifacts true
+                    artifactDeploymentPatterns {
+                        includePatterns '*-ast.jar'
+                    }
                     deployerDetails {
                         artifactoryName 'moderne-artifactory'
                         deployReleaseRepository {
