@@ -1,23 +1,50 @@
 #!/usr/bin/env bash
 
-if [ -z "$1" ] || [ -z "$2" ]; then
-    echo "Usage: $1 <path-to-input-file>.csv $2 <path-to-output-file>.csv"
-    exit 1
+# getopts for input, output, tmpdir
+while getopts ":i:o:t:" opt; do
+  case $opt in
+    i)
+      input_csv=$OPTARG
+      ;;
+    o)
+      output_csv=${OPTARG}
+      ;;
+    t)
+      tmp_dir=${OPTARG}
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
+
+if [ -z "$input_csv" ]; then
+  echo "No input CSV specified."
+  exit 1
 fi
 
+output_csv=${output_csv:-"repos.csv"}
+tmp_dir=${tmp_dir:-"."}
+clone_dir=${tmp_dir}/moderne-git
+base_dir=$(pwd)
+
 cleanupTmpGitDir() {
-    if [ -d "moderne-git" ]; then
+    if [ -d "$clone_dir" ]; then
         printf "Removing temporary git directory...\n"
-        rm -rf "moderne-git"
+        rm -rf "$clone_dir"
     fi
 }
 
 cleanupTmpGitDir
-outFile=$2
 
-while read -r line
+while read -r input_csv
 do
-    IFS=',' read -r -a array <<< "$line"
+    IFS=',' read -r -a array <<< "$input_csv"
 
     if [[ "${array[0]}" =~ "repoName" ]]; then
         continue
@@ -34,8 +61,8 @@ do
     fi
     
     cleanupTmpGitDir
-    mkdir -p moderne-git
-    cd moderne-git || exit
+    mkdir -p "$clone_dir"
+    cd "$clone_dir" || exit
 
     if ! git clone --depth 1 --no-checkout "https://github.com/$REPO.git"; then
         echo "Failed to clone $REPO"
@@ -72,17 +99,17 @@ do
     # Clean whitespace
     BRANCH=$(echo "$BRANCH" | sed 's/^[[:blank:]]*//;s/[[:blank:]]*$//')
 
-    cd ../..
+    cd "$base_dir" || exit
 
-    if [ ! -f "$outFile" ]; then
+    if [ ! -f "$output_csv" ]; then
         printf "repoName,branchName,label,style,buildTool\n" >&3
     fi
     printf "%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$LABEL" "$STYLE" "$BUILD_TOOL" >&3
 
-done < "$1" 3>> "$outFile"
+done < "$input_csv" 3>> "$output_csv"
 
-touch "$outFile"
-cat "$outFile" | awk 'NR<2{print $0;next}{print $0| "sort -u"}' > "$outFile.tmp" && mv "$outFile.tmp" "$outFile"
+cd "$base_dir" || exit
 cleanupTmpGitDir
-
+touch "$output_csv"
+cat "$output_csv" | awk 'NR<2{print $0;next}{print $0| "sort -u"}' > "$output_csv.tmp" && mv "$output_csv.tmp" "$output_csv"
 exit 0
