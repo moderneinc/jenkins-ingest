@@ -1,3 +1,4 @@
+import org.gradle.util.GradleVersion
 /**
     Do not make changes to this file directly in Jenkins, just push changes to
     github. The Seed job will always update the file on Jenkins based on the current
@@ -5,60 +6,69 @@
  */
 initscript {
 
-    def isTopLevelBuild = gradle.getParent() == null
-    if (isTopLevelBuild) {
-        def majorGradleVersion
-        try {
-            majorGradleVersion = Integer.parseInt(gradleVersion.split("\\.")[0])
-        } catch (any) {
-            majorGradleVersion = 0
-        }
-
-        repositories {
-            mavenLocal()
-            maven {
-                url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-            }
-            mavenCentral()
-        }
-        if (majorGradleVersion >= 5) {
-            repositories {
-                gradlePluginPortal()
-            }
-        } else if (majorGradleVersion >= 2) {
-            repositories {
-                maven { url "https://plugins.gradle.org/m2" }
-            }
-        }
+    repositories {
+        mavenLocal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2" }
     }
+
+    //Add moderne plugin to classpath of this init script.
     dependencies {
         classpath("io.moderne:moderne-gradle-plugin:latest.integration")
     }
+
+    //If this is the top level project, add the gradle enterprise plugin to the classpath of this init script.
+    def isTopLevelBuild = gradle.getParent() == null
+    if (isTopLevelBuild) {
+        def gradleVersion = GradleVersion.current().baseVersion
+
+        //The plugin coordinates change based on which version of gradle we are using.
+        if (gradleVersion >= GradleVersion.version("5.0")) {
+            dependencies {
+                classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
+            }
+        } else {
+            dependencies {
+                classpath("com.gradle:build-scan-plugin:1.16")
+            }
+        }
+    }
+
 }
 
 // Enable build cache, only available for Gradle 3.5+, so invoked defensively
 startParameter.metaClass.getMetaProperty("buildCacheEnabled")?.setProperty(startParameter, true)
 
-def majorGradleVersion
-try {
-    majorGradleVersion = Integer.parseInt(gradleVersion.split("\\.")[0])
-} catch (any) {
-    majorGradleVersion = 0
+def gradleVersion = org.gradle.util.GradleVersion.current().baseVersion
+def isTopLevelBuild = gradle.getParent() == null
+
+//This is know to work on gradle 6.x and up. Need to figure out what to do with older versions of gradle.
+if (isTopLevelBuild) {
+    beforeSettings { settings ->
+        settings.buildscript.repositories { gradlePluginPortal() }
+        settings.buildscript.dependencies.classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
+    }
 }
+//Configure the set of repositories to search for plugins.
 settingsEvaluated { settings ->
     settings.pluginManagement {
         repositories {
             mavenLocal()
-            maven {
-                url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-            }
+            maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
             mavenCentral()
-            repositories {
-                maven { url "https://plugins.gradle.org/m2" }
-            }
+            maven { url "https://plugins.gradle.org/m2" }
         }
     }
+    if (isTopLevelBuild) {
+        //Add gradle enterprise plugin if this is the top level project and it is not already defined on the plugin.
+        if (!settings.pluginManager.hasPlugin("com.gradle.enterprise")) {
+            settings.pluginManager.apply("com.gradle.enterprise")
+        }
+        configureExtension(settings.extensions["gradleEnterprise"])
+    }
 }
+
 allprojects {
     project.afterEvaluate {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
@@ -103,3 +113,13 @@ allprojects {
     }
 }
 
+void configureExtension(extension) {
+    extension.with {
+        server = "https://ge.openrewrite.org/"
+        buildScan {
+            termsOfServiceUrl "https://gradle.com/terms-of-service"
+            termsOfServiceAgree "yes"
+            publishAlways()
+        }
+    }
+}
