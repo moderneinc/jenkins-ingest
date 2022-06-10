@@ -5370,6 +5370,13 @@ spasam/spring-boot-build-info,master,java8,,gradlew
 spengreb/gradle-openshift-plugin,master,java8,,gradlew
 spigradle/spigradle,master,java8,,gradlew
 spindriftgroup/gradle-startsql-repository,master,java8,,gradlew
+spinnaker/echo,master,java8,,gradlew
+spinnaker/fiat,master,java8,,gradlew
+spinnaker/front50,master,java8,,gradlew
+spinnaker/halyard,master,java8,,gradlew
+spinnaker/kayenta,master,java8,,gradlew
+spinnaker/kork,master,java8,,gradlew
+spinnaker/scheduled-actions,master,java8,,gradlew
 spockframework/spock,master,java8,,gradlew
 spotbugs/spotbugs-gradle-plugin,master,java8,,gradlew
 spotify/apollo,1.x,java8,,maven
