@@ -1,4 +1,5 @@
 import org.gradle.util.GradleVersion
+
 /**
     Do not make changes to this file directly in Jenkins, just push changes to
     github. The Seed job will always update the file on Jenkins based on the current
@@ -13,44 +14,34 @@ initscript {
         maven { url "https://plugins.gradle.org/m2" }
     }
 
-    //Add moderne plugin to classpath of this init script.
+    // Add moderne plugin to classpath of this init script.
     dependencies {
         classpath("io.moderne:moderne-gradle-plugin:latest.integration")
     }
 
-    //If this is the top level project, add the gradle enterprise plugin to the classpath of this init script.
+    // If this is the top level project and the gradle version is less than 6, the gradle enterprise
+    // plugin must be added to the initscript's classpath. After version 6, the dependencies can be added
+    // to the settings buildscript instead.
     def isTopLevelBuild = gradle.getParent() == null
     if (isTopLevelBuild) {
         def gradleVersion = GradleVersion.current().baseVersion
-
-        //The plugin coordinates change based on which version of gradle we are using.
-        if (gradleVersion >= GradleVersion.version("5.0")) {
-            dependencies {
-                classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
-            }
-        } else {
+        if (gradleVersion < GradleVersion.version("5.0")) {
+            // Versions less than 5 use the older build-scan-plugin
             dependencies {
                 classpath("com.gradle:build-scan-plugin:1.16")
             }
+        } else if(gradleVersion >= GradleVersion.version("5.0") && gradleVersion < GradleVersion.version("6.0")) {
+            // Version 5 uses the newer gradle-enterprise-gradle-plugin. 
+            dependencies {
+                classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
+            }
         }
     }
-
 }
 
 // Enable build cache, only available for Gradle 3.5+, so invoked defensively
 startParameter.metaClass.getMetaProperty("buildCacheEnabled")?.setProperty(startParameter, true)
 
-def gradleVersion = org.gradle.util.GradleVersion.current().baseVersion
-def isTopLevelBuild = gradle.getParent() == null
-
-//This is know to work on gradle 6.x and up. Need to figure out what to do with older versions of gradle.
-if (isTopLevelBuild) {
-    beforeSettings { settings ->
-        settings.buildscript.repositories { gradlePluginPortal() }
-        settings.buildscript.dependencies.classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
-    }
-}
-//Configure the set of repositories to search for plugins.
 settingsEvaluated { settings ->
     settings.pluginManagement {
         repositories {
@@ -60,12 +51,42 @@ settingsEvaluated { settings ->
             maven { url "https://plugins.gradle.org/m2" }
         }
     }
-    if (isTopLevelBuild) {
-        //Add gradle enterprise plugin if this is the top level project and it is not already defined on the plugin.
-        if (!settings.pluginManager.hasPlugin("com.gradle.enterprise")) {
-            settings.pluginManager.apply("com.gradle.enterprise")
+}
+
+def isTopLevelBuild = gradle.getParent() == null
+
+//Setup Gradle Enterprise plugin if this is the top level project
+if (isTopLevelBuild) {
+
+    def gradleVersion = org.gradle.util.GradleVersion.current().baseVersion
+
+    if (gradleVersion >= GradleVersion.version("6.0")) {
+        //Versions 6 and greater, the plugins is added via settings, set the classpath and add the plugin
+        beforeSettings { settings ->
+            settings.buildscript.repositories { gradlePluginPortal() }
+            settings.buildscript.dependencies.classpath("com.gradle:gradle-enterprise-gradle-plugin:3.10.2")
         }
-        configureExtension(settings.extensions["gradleEnterprise"])
+        settingsEvaluated { settings ->
+            if (isTopLevelBuild) {
+                //Add gradle enterprise plugin if this is the top level project and it is not already defined on the plugin.
+                if (!settings.pluginManager.hasPlugin("com.gradle.enterprise")) {
+                    settings.pluginManager.apply("com.gradle.enterprise")
+                }
+                configureExtension(settings.extensions["gradleEnterprise"])
+            }
+        }
+    } else if (gradleVersion >= GradleVersion.version("5.0")) {
+        //Version 5 uses the newer plugin but is added but through the rootProject.
+        rootProject {
+            pluginManager.apply(com.gradle.scan.plugin.BuildScanPlugin)
+            configureExtension(extensions["gradleEnterprise"])
+        }
+    } else {
+        //Versions less than 5 use the build scan plugin.
+        rootProject {
+            pluginManager.apply(com.gradle.scan.plugin.BuildScanPlugin)
+            configureExtension(extensions["com.gradle.build-scan"])
+        }
     }
 }
 
