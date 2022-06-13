@@ -92,10 +92,10 @@ if (isTopLevelBuild) {
 
 allprojects {
 
-    def unwantedPlugins = ['javadoc', 'findbugs', 'checkstyle', 'sonarqube']
+    def unwantedTasks = ['javadoc', 'findbugs', 'checkstyleMain', 'checkStyleTest', 'sonarqube']
 
     project.tasks.all { task ->
-        if (unwantedPlugins.contains(task.name)) {
+        if (unwanted.contains(task.name)) {
             task.enabled = false
         }
     }
