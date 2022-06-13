@@ -4700,7 +4700,7 @@ microbun/jooq-gradle-plugin,master,java8,,gradlew
 micrometer-metrics/micrometer,main,java8,,gradlew
 micronaut-projects/micronaut-core,3.5.x,java8,,gradlew
 micronaut-projects/micronaut-starter,3.5.x,java8,,gradlew
-microsoft/azure-tools-for-java,develop,java8,,gradlew
+microsoft/azure-tools-for-java,develop,java11,,gradlew
 microsoft/mssql-jdbc,main,java8,,gradle
 microsoft/playwright-java,main,java8,,maven
 microsoft/thrifty,master,java8,,gradlew
