@@ -95,7 +95,7 @@ allprojects {
     def unwantedTasks = ['javadoc', 'findbugs', 'checkstyleMain', 'checkstyleTest', 'sonarqube']
 
     project.tasks.all { task ->
-        if (unwanted.contains(task.name)) {
+        if (unwantedTasks.contains(task.name)) {
             task.enabled = false
         }
     }
