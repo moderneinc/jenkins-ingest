@@ -92,7 +92,7 @@ if (isTopLevelBuild) {
 
 allprojects {
 
-    def unwantedTasks = ['javadoc', 'findbugs', 'checkstyleMain', 'checkStyleTest', 'sonarqube']
+    def unwantedTasks = ['javadoc', 'findbugs', 'checkstyleMain', 'checkstyleTest', 'sonarqube']
 
     project.tasks.all { task ->
         if (unwanted.contains(task.name)) {
