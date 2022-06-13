@@ -92,10 +92,10 @@ if (isTopLevelBuild) {
 
 allprojects {
 
-    def unwantedTasks = ['javadoc', 'findbugs', 'checkstyleMain', 'checkstyleTest', 'sonarqube']
+    def unwantedTasks = ['javadoc', 'findbugs', 'sonarqube']
 
     project.tasks.all { task ->
-        if (unwantedTasks.contains(task.name)) {
+        if (unwantedTasks.contains(task.name) || task.name.startsWith('checkstyle')) {
             task.enabled = false
         }
     }
