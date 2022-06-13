@@ -78,9 +78,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         makeExecutable(true)
                     }
                     if (repoStyle != null) {
-                        switches("--no-daemon -x test -x javadoc -DactiveStyle=${repoStyle} -I moderne-init.gradle")
+                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I moderne-init.gradle")
                     } else {
-                        switches('--no-daemon -x test -x javadoc -I moderne-init.gradle')
+                        switches('--no-daemon -Dskip.tests=true -I moderne-init.gradle')
                     }
                     tasks('publishModernePublicationToMavenRepository')
                 }

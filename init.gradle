@@ -91,6 +91,15 @@ if (isTopLevelBuild) {
 }
 
 allprojects {
+
+    def unwantedPlugins = ['javadoc', 'findbugs', 'checkstyle', 'sonarqube']
+
+    project.tasks.all { task ->
+        if (unwantedPlugins.contains(task.name)) {
+            task.enabled = false
+        }
+    }
+
     project.afterEvaluate {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
             project.plugins.apply(io.moderne.gradle.ModernePlugin)
