@@ -11,6 +11,18 @@ configFiles {
         comment("A Gradle init script used to inject universal plugins into a gradle build.")
         content readFileFromWorkspace('init.gradle')
     }
+    xmlConfig {
+        id("ge-extensions.xml")
+        name("Gradle Enterprise Maven Extension")
+        comment("An extensions.xml file that adds gradle enterprise to a maven build.")
+        content readFileFromWorkspace('extensions.xml')
+    }
+    xmlConfig {
+        id("gradle-enterprise.xml")
+        name("Gradle Enterprise Maven Configuration")
+        comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
+        content readFileFromWorkspace('gradle-enterprise.xml')
+    }
 }
 new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     if (tokens[0].startsWith('repoName')) {
