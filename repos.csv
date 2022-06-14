@@ -7105,9 +7105,13 @@ vondacho/serenity-gradle-plugin,main,java8,,gradlew
 vondear/RxTool,master,java8,,gradlew
 vondear/RxTools,master,java8,,gradlew
 wakingrufus/swagger-gradle-plugin,master,java8,,gradlew
+walmartlabs/concord,master,java8,,maven
 walmartlabs/concord,master,java8,,mvnw
+walmartlabs/concord-plugins,master,java8,,maven
 walmartlabs/concord-plugins,master,java8,,mvnw
 walmartlabs/gozer,master,java8,,maven
+walmartlabs/hadoop-openstack-swifta,master,java8,,maven
+walmartlabs/strati-functional,master,java8,,maven
 wangchao0837/ArouterComponent,master,java8,,gradlew
 wangdan/AisenWeiBo,master,java8,,gradlew
 wangzhizy/PublishAppPlugin,master,java8,,gradlew
