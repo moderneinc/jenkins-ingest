@@ -190,6 +190,16 @@ DanySK/javadoc.io-linker,master,java8,,gradlew
 DanySK/maven-central-gradle-plugin,master,java8,,gradlew
 DanySK/multi-jvm-test-plugin,master,java8,,gradlew
 DanySK/publish-on-central,master,java8,,gradlew
+DataDog/datadog-api-client-java,master,java8,,maven
+DataDog/datadog-kafka-connect-logs,master,java8,,maven
+DataDog/datadog-lambda-java,main,java8,,gradlew
+DataDog/dd-continuous-profiler-dash2021,main,java8,,gradlew
+DataDog/dd-trace-java-kinesis-example,master,java8,,maven
+DataDog/java-dogstatsd-client,master,java8,,maven
+DataDog/jmeter-datadog-backend-listener,main,java8,,maven
+DataDog/jmxfetch,master,java8,,maven
+DataDog/openapi-generator,master,java8,,maven
+DataDog/sketches-java,master,java8,,gradlew
 DeepBlueRobotics/DeepBlueSim,master,java8,,gradlew
 DeflatedPickle/gradle-concurnas,master,java8,,gradlew
 Desperado24/apkreduce,master,java8,,gradlew
