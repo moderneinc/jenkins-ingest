@@ -11,11 +11,11 @@ configFiles {
         comment("A Gradle init script used to inject universal plugins into a gradle build.")
         content readFileFromWorkspace('init.gradle')
     }
-    xmlConfig {
-        id("ge-extensions.xml")
+    customConfig {
+        id("add-gradle-enterprise-extension")
         name("Gradle Enterprise Maven Extension")
-        comment("An extensions.xml file that adds gradle enterprise to a maven build.")
-        content readFileFromWorkspace('extensions.xml')
+        comment("Creates the `.mvn` directory if it is missing, creates the `extensions.xml` file if it is missing, and adds the gradle enterprise xml.")
+        content readFileFromWorkspace('add-gradle-enterprise-extension.sh')
     }
     xmlConfig {
         id("gradle-enterprise.xml")
