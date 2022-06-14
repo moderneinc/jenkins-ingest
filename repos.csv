@@ -4990,8 +4990,11 @@ json-path/JsonPath,master,java8,,gradlew
 jsonschema2dataclass/js2d-gradle,main,java8,,gradlew
 julioz/FloorPlan,master,java8,,gradlew
 junit-team/junit,main,java8,,mvnw
+junit-team/junit4,main,java8,,maven
 junit-team/junit4,main,java8,,mvnw
 junit-team/junit5,main,java8,,gradlew
+junit-team/junit5-workshop,main,java8,,gradlew
+junit-team/testng-engine,main,java8,,gradlew
 justinPihony/gradle-aws-plugin-reboot,master,java8,,gradlew
 juulhobert/liquibase-validate,main,java8,,gradlew
 jvadev/gradle-kotlin-common-plugin,master,java8,,gradlew
