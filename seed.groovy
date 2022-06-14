@@ -96,37 +96,33 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         if (['maven', 'mvnw'].contains(repoBuildTool)) {
             // A step that runs before the maven build to setup the gradle enterprise extension.
             steps {
-                dsl {
-                    // Adds a shell script into the Jobs workspace in /tmp.
-                    // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
-                    shell('''
-                        MVN_DIR=".mvn"
-                        EXT_FILE="extensions.xml"
-                        MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.2</version></extension>"
+                // Adds a shell script into the Jobs workspace in /tmp.
+                // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
+                shell(
+'''
+MVN_DIR=".mvn"
+EXT_FILE="extensions.xml"
+MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.2</version></extension>"
 
-                        # Create the .mvn directory if it does not exist.
-                        if [ ! -d "$MVN_DIR" ]; then
-                          echo "Creating $MVN_DIR directory."
-                          mkdir "$MVN_DIR"
-                        fi
+# Create the .mvn directory if it does not exist.
+if [ ! -d "$MVN_DIR" ]; then
+    mkdir "$MVN_DIR"
+fi
 
-                        # Create the extensions.xml file if it does not exist.
-                        if [ ! -f "$MVN_DIR/$EXT_FILE" ]; then
-                          echo "Creating $MVN_DIR/$EXT_FILE"
-                          touch "$MVN_DIR/$EXT_FILE"
-                          # Add the `<extensions>` tag.
-                          echo "<extensions>" >> "$MVN_DIR/$EXT_FILE"
-                          echo "</extensions>" >> "$MVN_DIR/$EXT_FILE"
-                          ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
-                          sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
-                        else
-                          echo "File exists, creating copy and adding extension."
-                          # Assumes the <extensions> already exists and the <extension> tag does exist.
-                          ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
-                          sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
-                        fi
-                    ''')
-                }
+# Create the extensions.xml file if it does not exist.
+if [ ! -f "$MVN_DIR/$EXT_FILE" ]; then
+    touch "$MVN_DIR/$EXT_FILE"
+    # Add the `<extensions>` tag.
+    echo "<extensions>" >> "$MVN_DIR/$EXT_FILE"
+    echo "</extensions>" >> "$MVN_DIR/$EXT_FILE"
+    ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
+    sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
+else
+    # Assumes the <extensions> already exists and the <extension> tag does exist.
+    ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
+    sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
+fi
+''')
             }
             configure { node ->
 
