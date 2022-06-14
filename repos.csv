@@ -5519,6 +5519,17 @@ langrp/gradle-node-plugin,master,java8,,gradlew
 languagetool-org/languagetool,master,java8,,maven
 lanxiaoha/SwitchAdbWiFiConnectIp,master,java8,,gradlew
 laobie/StatusBarUtil,master,java8,,gradlew
+launchdarkly/android-client-sdk,main,java8,,gradlew
+launchdarkly/api-client-java,main,java8,,gradlew
+launchdarkly/hello-android,main,java8,,gradlew
+launchdarkly/hello-java,main,java8,,gradlew
+launchdarkly/java-sdk-common,main,java8,,gradlew
+launchdarkly/java-server-sdk,main,java8,,gradlew
+launchdarkly/java-server-sdk-consul,main,java8,,gradlew
+launchdarkly/java-server-sdk-dynamodb,main,java8,,gradlew
+launchdarkly/java-server-sdk-redis,main,java8,,gradlew
+launchdarkly/java-test-helpers,main,java8,,gradlew
+launchdarkly/okhttp-eventsource,main,java8,,gradlew
 lawhiteley/tdl,master,java8,,gradlew
 lburgazzoli/gradle-camel-plugin,master,java8,,gradlew
 lburgazzoli/gradle-karaf-features-plugin,master,java8,,gradlew
