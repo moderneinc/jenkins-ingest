@@ -7087,6 +7087,8 @@ vlsergey/generate-spring-data-rest-typescripts-defs,master,java8,,gradle
 vlsergey/spring-data-rest-utils,master,java8,,gradlew
 vlsi/vlsi-release-plugins,master,java8,,gradlew
 vmj/gradle-download-worker,master,java8,,gradlew
+vmware-tanzu/application-toolkit-sample-app,main,java8,,maven
+vmware-tanzu/tanzu-observability-slug-generator,main,java8,,maven
 vmware/burp-rest-api,master,java8,,gradlew
 vmware/commit-validator-for-gerrit,master,java8,,maven
 vmware/declarative-cluster-management,master,java8,,gradlew
