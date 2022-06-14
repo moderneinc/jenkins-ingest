@@ -715,6 +715,12 @@ NyCodeGHG/gradle-spigot-dependency-loader,main,java8,,gradlew
 OZG-Hub/ozghub-prozess-gradle-plugin,master,java8,,gradlew
 Open-RIO/GradleRIO,main,java8,,gradlew
 Open-RIO/GradleRIO-C,master,java8,,gradlew
+OpenAPITools/empoa,master,java8,,gradlew
+OpenAPITools/jackson-databind-nullable,master,java8,,maven
+OpenAPITools/openapi-diff,master,java8,,maven
+OpenAPITools/openapi-generator,master,java8,,maven
+OpenAPITools/openapi-petstore,master,java8,,maven
+OpenAPITools/openapi-style-validator,master,java8,,gradlew
 OpenFTC/external-resources-gradle-plugin,master,java8,,gradlew
 OpenG/swift-gradle-plugin,master,java8,,gradlew
 OpenHelios/de.buehmann.gradle.jubula,master,java8,,gradle
