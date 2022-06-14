@@ -6793,6 +6793,17 @@ tunguski/interfacer,master,java8,,maven
 turansky/kfc-plugins,master,java8,,gradlew
 turansky/seskar,master,java8,,gradlew
 turansky/yfiles-kotlin,master,java8,,gradlew
+twilio/calcite-kudu,main,java8,,maven
+twilio/mobile-sdk-sample-android,master,java8,,gradlew
+twilio/superclass-voice,master,java8,,maven
+twilio/sync-quickstart-android,master,java8,,gradlew
+twilio/twilio-java,main,java8,,maven
+twilio/twilio-oai-generator,main,java8,,maven
+twilio/twilio-recordings-decrypter,master,java8,,maven
+twilio/video-quickstart-android,master,java8,,gradlew
+twilio/voice-quickstart-android,master,java8,,gradlew
+twilio/voice-quickstart-server-java,master,java8,,maven
+twilio/wiztowar,master,java8,,maven
 twitter/GraphJet,master,java8,,maven
 twitter/Serial,master,java8,,gradlew
 twitter/cloudhopper-commons,master,java8,,maven
