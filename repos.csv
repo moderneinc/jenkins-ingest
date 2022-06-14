@@ -5930,7 +5930,15 @@ rcw3bb/simple-dotnet-core,master,java8,,gradlew
 rcw3bb/simple-git,master,java8,,gradlew
 reactive-streams/reactive-streams-jvm,master,java8,,gradlew
 reactivecircus/Firestorm,main,java8,,gradlew
+reactor/BlockHound,master,java8,,gradlew
+reactor/lite-rx-api-hands-on,master,java8,,maven
+reactor/projectreactor.io,main,java8,,gradlew
+reactor/reactor-addons,main,java8,,gradlew
 reactor/reactor-core,main,java8,,gradlew
+reactor/reactor-kafka,main,java8,,gradlew
+reactor/reactor-monitoring-demo,master,java8,,gradlew
+reactor/reactor-netty,main,java8,,gradlew
+reactor/reactor-pool,main,java8,,gradlew
 real-logic/Aeron,master,java8,,gradlew
 realm/realm-java,master,java8,,gradlew
 realm/realm-kotlin,master,java8,,gradlew
