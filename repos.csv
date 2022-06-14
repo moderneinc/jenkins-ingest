@@ -5833,7 +5833,14 @@ neow3j/neow3j,main,java8,,gradlew
 netfalo/gradle-raml-plugin,master,java8,,gradlew
 netflix/spectator,main,java8,,gradlew
 netifi/gradle-flatbuffers-plugin,master,java8,,gradlew
+netty/netty,4.1,java8,,maven
 netty/netty,4.1,java8,,mvnw
+netty/netty-build,master,java8,,maven
+netty/netty-incubator-buffer-api,main,java8,,maven
+netty/netty-incubator-codec-http3,main,java8,,maven
+netty/netty-incubator-codec-quic,main,java8,,maven
+netty/netty-incubator-h3spec-maven-plugin,main,java8,,maven
+netty/netty-incubator-transport-io_uring,main,java8,,maven
 netzwerg/gradle-release-plugin,master,java8,,gradlew
 netzwerg/gradle-release-pub-plugin,master,java8,,gradlew
 neva-dev/gradle-fork-plugin,master,java8,,gradlew
