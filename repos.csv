@@ -6478,6 +6478,13 @@ spinnaker/halyard,master,java8,,gradlew
 spinnaker/kayenta,master,java8,,gradlew
 spinnaker/kork,master,java8,,gradlew
 spinnaker/scheduled-actions,master,java8,,gradlew
+splunk/dsp-plugins-sdk,master,java8,,gradlew
+splunk/flink,master,java8,,maven
+splunk/kafka-connect-splunk,develop,java8,,maven
+splunk/lightproto,master,java8,,maven
+splunk/splunk-library-javalogging,main,java8,,maven
+splunk/splunk-plugin-eclipse,master,java8,,maven
+splunk/splunk-sdk-java,master,java8,,maven
 spockframework/spock,master,java8,,gradlew
 spotbugs/spotbugs-gradle-plugin,master,java8,,gradlew
 spotify/apollo,1.x,java8,,maven
