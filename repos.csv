@@ -6315,7 +6315,17 @@ tunguski/interfacer,master,java8,,maven
 turansky/kfc-plugins,master,java8,,gradlew
 turansky/seskar,master,java8,,gradlew
 turansky/yfiles-kotlin,master,java8,,gradlew
+twitter/GraphJet,master,java8,,maven
+twitter/Serial,master,java8,,gradlew
+twitter/cloudhopper-commons,master,java8,,maven
 twitter/distributedlog,master,java8,,maven
+twitter/elephant-bird,master,java8,,maven
+twitter/hpack,master,java8,,maven
+twitter/joauth,master,java8,,maven
+twitter/netty-http2,master,java8,,maven
+twitter/nodes,master,java8,,maven
+twitter/sbf,master,java8,,maven
+twitter/whiskey,master,java8,,maven
 tylerbwong/metalava-gradle,main,java8,,gradlew
 typecraft-io/gradle-specialsource,main,java8,,gradlew
 typelead/gradle-eta,master,java8,,gradlew
