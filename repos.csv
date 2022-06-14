@@ -3674,8 +3674,8 @@ int128/gradle-slash,master,java8,,gradlew
 int128/gradle-swagger-codegen-plugin,master,java8,,gradlew
 int128/gradle-swagger-generator-plugin,master,java8,,gradlew
 intel/android-apps,master,java8,,gradlew
-intel/jndn-management,master,java8,,gradlew
-intel/jndn-mock,master,java8,,gradlew
+intel/jndn-management,master,java8,,maven
+intel/jndn-mock,master,java8,,maven
 intel/jndn-utils,master,java8,,maven
 intel/rsp-sw-toolkit-nfc,master,java8,,gradlew
 intermedia-net/printcoverage,main,java8,,gradlew
