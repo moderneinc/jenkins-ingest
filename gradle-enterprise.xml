@@ -6,7 +6,7 @@
     <publish>ALWAYS</publish>
     <termsOfService>
       <url>https://gradle.com/terms-of-service</url>
-      <accept>false</accept>
+      <accept>yes</accept>
     </termsOfService>
     <backgroundBuildScanUpload>false</backgroundBuildScanUpload>
   </buildScan>
