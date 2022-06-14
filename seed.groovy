@@ -12,7 +12,7 @@ configFiles {
         content readFileFromWorkspace('init.gradle')
     }
     xmlConfig {
-        id("gradle-enterprise.xml")
+        id("gradle-enterprise-xml")
         name("Gradle Enterprise Maven Configuration")
         comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
         content readFileFromWorkspace('gradle-enterprise.xml')
@@ -68,6 +68,13 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 configFiles {
                     file('moderne-gradle-init') {
                         targetLocation('moderne-init.gradle')
+                    }
+                }
+            }
+            if (['maven', 'mvnw'].contains(repoBuildTool)) {
+                configFiles {
+                    file('gradle-enterprise-xml') {
+                        targetLocation('.mvn/gradle-enterprise.xml')
                     }
                 }
             }
