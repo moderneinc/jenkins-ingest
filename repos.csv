@@ -6216,6 +6216,8 @@ reaster/schema-gen,master,java8,,gradlew
 reconquest/gradle-android-eclipse,master,java8,,gradle
 redis-developer/redis-parent,master,java8,,gradlew
 redis-developer/redislabs-parent,master,java8,,gradlew
+redis/jedis,master,java8,,maven
+redis/redis-om-spring,main,java8,,maven
 redisson/redisson,master,java8,,maven
 redocksoft/classpath-to-file-gradle-plugin,master,java8,,gradlew
 redpillanalytics/gradle-build-cache,master,java8,,gradlew
