@@ -95,7 +95,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
         if (['maven', 'mvnw'].contains(repoBuildTool)) {
             // A step that runs before the maven build to setup the gradle enterprise extension.
-            step {
+            steps {
                 dsl {
                     // Adds a shell script into the Jobs workspace in /tmp.
                     // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
