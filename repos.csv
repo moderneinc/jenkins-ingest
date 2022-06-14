@@ -5982,6 +5982,12 @@ tedyoung/kid-bank,master,java8,,mvnw
 tehlers/gradle-duplicate-classes-check,master,java8,,gradlew
 tehlers/gradle-gcs-build-cache,master,java8,,gradlew
 tehlers/gradle-redis-build-cache,master,java8,,gradlew
+tencent/Firestorm,master,java8,,maven
+tencent/QMUI_Android,master,java8,,gradlew
+tencent/Shadow,master,java8,,gradlew
+tencent/VasDolly,master,java8,,gradlew
+tencent/spring-cloud-tencent,main,java8,,maven
+tencent/tinker,dev,java8,,gradlew
 termux/termux-app,master,java8,,gradlew
 test-editor/test-editor-gradle-plugin,master,java8,,gradlew
 testaxis/coverage-per-test-gradle-plugin,master,java8,,gradlew
