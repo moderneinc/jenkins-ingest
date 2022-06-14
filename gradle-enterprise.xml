@@ -1,0 +1,13 @@
+<gradleEnterprise>
+  <server>
+    <url>https://ge.openrewrite.org</url>
+  </server>
+  <buildScan>
+    <publish>ALWAYS</publish>
+    <termsOfService>
+      <url>https://gradle.com/terms-of-service</url>
+      <accept>false</accept>
+    </termsOfService>
+    <backgroundBuildScanUpload>false</backgroundBuildScanUpload>
+  </buildScan>
+</gradleEnterprise>
