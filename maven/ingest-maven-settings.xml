@@ -1,0 +1,9 @@
+<settings>
+    <mirrors>
+        <mirror>
+            <id>secure-repo.jenkins-ci.org</id>
+            <mirrorOf>repo.jenkins-ci.org</mirrorOf>
+            <url>https://repo.jenkins-ci.org/public</url>
+        </mirror>
+    </mirrors>
+</settings>

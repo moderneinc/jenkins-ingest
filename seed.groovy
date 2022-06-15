@@ -9,13 +9,19 @@ configFiles {
         id("moderne-gradle-init")
         name("init.gradle")
         comment("A Gradle init script used to inject universal plugins into a gradle build.")
-        content readFileFromWorkspace('init.gradle')
+        content readFileFromWorkspace('gradle/init.gradle')
     }
     xmlConfig {
         id("gradle-enterprise-xml")
         name("Gradle Enterprise Maven Configuration")
         comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
-        content readFileFromWorkspace('gradle-enterprise.xml')
+        content readFileFromWorkspace('maven/gradle-enterprise.xml')
+    }
+    xmlConfig {
+        id("ingest-maven-settings-xml")
+        name("Ingest Maven Settings")
+        comment("A maven settings file that sets mirror on repos that at know to use http")
+        content readFileFromWorkspace('maven/ingest-maven-settings.xml')
     }
 }
 new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
@@ -75,6 +81,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 configFiles {
                     file('gradle-enterprise-xml') {
                         targetLocation('.mvn/gradle-enterprise.xml')
+                    }
+                    file('ingest-maven-settings-xml') {
+                        targetLocation('.mvn/ingest-maven-settings.xml')
                     }
                 }
             }
@@ -137,9 +146,9 @@ fi
                     mavenName 'maven 3'
                     useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
-                        goals '-B -Drat.skip=true -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
+                        goals '-B -Drat.skip=true -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -s .mvn/ingest-maven-settings.xml -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
                     } else {
-                        goals '-B -Drat.skip=true -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
+                        goals '-B -Drat.skip=true -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -s .mvn/ingest-maven-settings.xml -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
                     }
                 }
 

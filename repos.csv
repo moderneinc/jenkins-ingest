@@ -3948,7 +3948,6 @@ jenkinsci/blueocean-maven-plugin,master,java8,,maven
 jenkinsci/blueocean-plugin,master,java8,,maven
 jenkinsci/bmc-cfa-plugin,main,java8,,maven
 jenkinsci/bmc-rpd-plugin,master,java8,,maven
-jenkinsci/bom,master,java8,,maven
 jenkinsci/boot-clj-plugin,master,java8,,maven
 jenkinsci/bootstrap4-api-plugin,master,java8,,maven
 jenkinsci/bootstrap5-api-plugin,master,java8,,maven
@@ -4335,7 +4334,6 @@ jenkinsci/fogbugz-plugin,master,java8,,maven
 jenkinsci/folder-auth-plugin,master,java8,,maven
 jenkinsci/font-awesome-api-plugin,master,java8,,maven
 jenkinsci/font-awesome-icons-plugin,master,java8,,maven
-jenkinsci/foofoo,master,java8,,maven
 jenkinsci/forensics-api-plugin,master,java8,,maven
 jenkinsci/form-element-path-plugin,master,java8,,maven
 jenkinsci/forticwp-cicd-plugin,main,java8,,maven
@@ -4398,7 +4396,6 @@ jenkinsci/gitlab-plugin,master,java8,,maven
 jenkinsci/gitorious-plugin,master,java8,,maven
 jenkinsci/global-build-stats-plugin,master,java8,,maven
 jenkinsci/global-post-script-plugin,master,java8,,maven
-jenkinsci/gmaven,master,java8,,maven
 jenkinsci/gnat-plugin,master,java8,,maven
 jenkinsci/gogs-webhook-plugin,master,java8,,maven
 jenkinsci/golang-plugin,master,java8,,maven
@@ -4522,7 +4519,6 @@ jenkinsci/jenkins-test-harness-tools,master,java8,,maven
 jenkinsci/jenkinsfile-runner,master,java8,,maven
 jenkinsci/jenkow-plugin,master,java8,,maven
 jenkinsci/jersey2-api-plugin,master,java8,,maven
-jenkinsci/jexl,master,java8,,maven
 jenkinsci/jgiven-plugin,master,java8,,maven
 jenkinsci/jira-ext-plugin,master,java8,,maven
 jenkinsci/jira-issues-versioning-plugin,master,java8,,maven
