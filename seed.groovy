@@ -137,9 +137,9 @@ fi
                     mavenName 'maven 3'
                     useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
-                        goals '-B -Drat.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.1:ast'
+                        goals '-B -Drat.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
                     } else {
-                        goals '-B -Drat.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.1:ast'
+                        goals '-B -Drat.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
                     }
                 }
 
