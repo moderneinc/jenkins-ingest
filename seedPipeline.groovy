@@ -1,7 +1,7 @@
 def workspaceDir = new File(__FILE__).getParentFile()
 String Adhoc = 'adhoc'
 
-pipelineJob {
+pipelineJob('Seed the ingest jobs') {
     // TODO: add pipeline configurations.
     // The 'jobFolder' should be defaulted to ingest after a timeout and optionally chosen as 'adhoc'
     String seedTaskType = Adhoc
