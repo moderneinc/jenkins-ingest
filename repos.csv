@@ -235,7 +235,7 @@ Enaium/transform,master,java8,,gradle
 EndlessCodeGroup/BukkitGradle,develop,java8,,gradlew
 EnterpriseQualityCoding/FizzBuzzEnterpriseEdition,uinverse,java8,,gradlew
 Erdenian/shrinkometer,master,java8,,gradlew
-Ereza/CustomActivityOnCrash,master,java8,,gradlew
+Ereza/CustomActivityOnCrash,master,java11,,gradlew
 EspoirX/Knight,main,java8,,gradlew
 EtienneMiret/sass-gradle-plugin,master,java8,,gradlew
 EvidentSolutions/apina,main,java8,,gradlew
@@ -297,7 +297,7 @@ Flipboard/bottomsheet,master,java8,,gradlew
 Forsety/android-drawable-resizer,master,java8,,gradle
 Foso/Cabret-Log,master,java8,,gradlew
 Fotoapparat/Fotoapparat,master,java8,,gradlew
-Freeyourgadget/Gadgetbridge,master,java8,,gradlew
+Freeyourgadget/Gadgetbridge,master,java11,,gradlew
 Frege/frege-gradle-plugin,master,java8,,gradlew
 GabrielTK/MCRunGradle,master,java8,,gradlew
 GaetanoPiazzolla/springboot-3layer-generator,master,java8,,gradle
@@ -474,7 +474,7 @@ JakeWharton/Telecine,master,java8,,gradlew
 JakeWharton/ViewPagerIndicator,master,java8,,maven
 JakeWharton/butterknife,master,java8,,gradlew
 JakeWharton/hugo,master,java8,,gradlew
-JakeWharton/timber,trunk,java8,,gradlew
+JakeWharton/timber,trunk,java11,,gradlew
 JakeWharton/u2020,master,java8,,gradlew
 JanusGraph/janusgraph,master,java8,,maven
 Jasonchenlijian/FastBle,master,java8,,gradlew
@@ -638,7 +638,7 @@ LiewJunTung/SymbolicLinkGradlePlugin,master,java8,,gradlew
 Liftric/octopus-deploy-plugin,master,java8,,gradlew
 Liftric/vault-client-plugin,master,java8,,gradlew
 LiquidShack/rubber-elephant-mahout,master,java8,,gradlew
-LitePalFramework/LitePal,master,java8,,gradlew
+LitePalFramework/LitePal,master,java11,,gradlew
 LittleMikeDev/gradle-build-version,master,java8,,gradlew
 LittleMikeDev/gradle-git-tag-plugin,master,java8,,gradlew
 LittleMikeDev/gradle-publishing-smorgasbord-plugin,master,java8,,gradlew
@@ -651,7 +651,7 @@ Lucas3oo/sonarlint-gradle-plugin,main,java8,,gradlew
 LuckyJayce/ViewPagerIndicator,master,java8,,gradlew
 LukaszLyskawa/LicenseToolsPlugin,master,java8,,gradlew
 LyndonChin/MasteringAndroidDataBinding,master,java8,,gradlew
-M66B/NetGuard,master,java8,,gradlew
+M66B/NetGuard,master,java11,,gradlew
 MJLblabla/HapiDepend,master,java8,,gradlew
 MagicMashRoom/SuperCalendar,master,java8,,gradlew
 MagusDevOps/avro4k-build-plugins,main,java8,,gradlew
@@ -780,7 +780,7 @@ REPLicated/classpath-collision-detector,master,java8,,gradlew
 ROMVoid95/ReadOnlyGradle,master,java8,,gradlew
 Radioafricagroup/flyway,master,java8,,mvnw
 Raizlabs/DBFlow,master,java8,,gradlew
-Rajawali/Rajawali,develop,java8,,gradlew
+Rajawali/Rajawali,develop,java11,,gradlew
 Raxa/raxacore,master,java8,,maven
 Raysmond/SpringBlog,master,java8,,gradlew
 ReactiveCircus/app-versioning,main,java8,,gradlew
@@ -828,7 +828,7 @@ ShikaSD/kotlin-object-serialization-fix,master,java8,,gradlew
 SilverJan/gradle-showGraph,master,java8,,gradlew
 SimonScholz/github-release-notes,master,java8,,gradlew
 SimpleFinance/gradle-test-lab-plugin,main,java8,,gradlew
-SimpleMobileTools/Simple-Calendar,master,java8,,gradlew
+SimpleMobileTools/Simple-Calendar,master,java11,,gradlew
 SirLYC/AppInject,master,java8,,gradlew
 Skatteetaten/aurora-docker-gradle-plugin,master,java8,,gradlew
 Skatteetaten/aurora-gradle-plugin,master,java8,,gradlew
@@ -1040,7 +1040,7 @@ agorapulse/gradle-asset-pipeline-cdn,master,java8,,gradlew
 ahasbini/AndroidOpenCVGradlePlugin,master,java8,,gradlew
 aim42/htmlSanityCheck,master,java8,,gradlew
 airbnb/AirMapView,master,java8,,gradlew
-airbnb/DeepLinkDispatch,master,java8,,gradlew
+airbnb/DeepLinkDispatch,master,java11,,gradlew
 airbnb/RxGroups,master,java8,,gradlew
 airbnb/SpinalTap,master,java8,,gradlew
 airbnb/aerosolve,master,java8,,gradlew
@@ -1048,7 +1048,7 @@ airbnb/airpal,master,java8,,gradlew
 airbnb/billow,master,java8,,maven
 airbnb/chancery,master,java8,,maven
 airbnb/epoxy,master,android30,,gradlew
-airbnb/epoxy,master,java8,,gradlew
+airbnb/epoxy,master,java11,,gradlew
 airbnb/kafka-statsd-metrics2,master,java8,,gradlew
 airbnb/lottie-android,master,android30,,gradlew
 airbnb/lottie-android,master,java8,,gradlew
@@ -1208,7 +1208,7 @@ amzn/amazon-instant-access-sdk-java,master,java8,,maven
 amzn/amazon-pay-api-sdk-java,master,java8,,maven
 amzn/amazon-pay-sdk-java,master,java8,,maven
 amzn/drs-sample-android-app,master,java8,,gradlew
-amzn/exoplayer-amazon-port,amazon/r2.17.1,java8,,gradlew
+amzn/exoplayer-amazon-port,amazon/r2.17.1,java11,,gradlew
 amzn/firetv-sample-touch-app,main,java8,,gradlew
 amzn/ion-docs,gh-pages,java8,,maven
 amzn/ion-eclipse-plugin,master,java8,,maven
@@ -2219,7 +2219,7 @@ apache/zeppelin,master,java8,,maven
 apache/zeppelin,master,java8,,mvnw
 apache/zookeeper,master,java8,,maven
 apereo/cas,master,java8,,gradlew
-apl-devs/AppIntro,main,java8,,gradlew
+apl-devs/AppIntro,main,java11,,gradlew
 apollographql/apollo-android,main,java8,,gradlew
 appdynamics/ACE_DynamicServiceTest,master,java8,,gradlew
 appdynamics/AD-Capital,master,java8,,gradlew
@@ -3064,7 +3064,7 @@ evant/holdr,main,java8,,gradlew
 evant/pom,main,java8,,gradlew
 evant/silent-support,main,java8,,gradlew
 eventuate-tram/eventuate-tram-core,master,java8,,gradlew
-evernote/android-job,master,java8,,gradlew
+evernote/android-job,master,java11,,gradlew
 evestera/gradle-depsize-plugin,main,java8,,gradlew
 ewerk/gradle-plugins,master,java8,,gradlew
 expatiat/micronaut-graphql-tools,master,java8,,gradlew
@@ -3086,7 +3086,7 @@ facebook/presto,master,java8,,mvnw
 facebook/react-native,main,java8,,gradlew
 facebook/rebound,master,java8,,gradlew
 facebook/robolectric,master,java8,,maven
-facebook/screenshot-tests-for-android,main,java8,,gradlew
+facebook/screenshot-tests-for-android,main,java11,,gradlew
 facebook/shimmer-android,main,java8,,gradlew
 facebook/stetho,main,java8,,gradlew
 fanmingyi/modulearchive,main,java8,,gradlew
@@ -3095,7 +3095,7 @@ fanrunqi/MaterialLogin,master,java8,,gradlew
 fastnsilver/grivet,master,java8,,mvnw
 fbarthelery/gradle-avdl,master,java8,,gradlew
 fbix/gradle-swagger-codegen-plugin,master,java8,,gradlew
-federicoiosue/Omni-Notes,develop,java8,,gradlew
+federicoiosue/Omni-Notes,develop,java11,,gradlew
 felipefzdz/gradle-heroku-plugin,master,java8,,gradlew
 fengjundev/Android-Skin-Loader,master,java8,,gradlew
 festin666/Yii2Build,master,java8,,gradlew
@@ -3196,9 +3196,9 @@ golo-lang/gradle-golo-plugin,master,java8,,gradlew
 goncalossilva/kotlinjs-useanybrowser,main,java8,,gradlew
 goncalossilva/kotlinx-resources,main,java8,,gradlew
 google/Accessibility-Test-Framework-for-Android,master,java8,,gradlew
-google/AndroidForegroundCompat,master,java8,,gradlew
+google/AndroidForegroundCompat,master,java11,,gradlew
 google/AppUpdateTrackerLib,master,java8,,gradlew
-google/ExoPlayer,release-v2,java8,,gradlew
+google/ExoPlayer,release-v2,java11,,gradlew
 google/MOE,master,java8,,maven
 google/TestParameterInjector,main,java8,,maven
 google/TouchTime,master,java8,,gradlew
@@ -3251,7 +3251,7 @@ google/google-java-format,master,java8,,maven
 google/google-visualization-java,master,java8,,maven
 google/grafika,master,java8,,gradlew
 google/graphicsfuzz,master,java8,,maven
-google/ground-android,master,java8,,gradlew
+google/ground-android,master,java11,,gradlew
 google/gson,master,java8,,maven
 google/guava,master,java8,,maven
 google/guava,master,java8,org.openrewrite.java.GoogleJavaFormat,maven
@@ -3327,7 +3327,7 @@ google/wear-sensors,master,java8,,gradlew
 google/zero-touch-reseller-tool,main,java8,,gradlew
 google/zetasketch,master,java8,,gradlew
 googleads/googleads-java-lib,master,java8,,maven
-googlemaps/android-maps-utils,main,java8,,gradlew
+googlemaps/android-maps-utils,main,java11,,gradlew
 googlemaps/android-v3-migration,main,java8,,gradlew
 googlemaps/google-maps-services-java,main,java8,,gradlew
 googlesamples/easypermissions,master,java8,,gradlew
@@ -3463,7 +3463,7 @@ hibernate/gradle-maven-publish-auth,main,java8,,gradlew
 hibernate/gradle-xjc-plugin,main,java8,,gradlew
 hibernate/hibernate-matrix-testing,main,java8,,gradlew
 hibernate/hibernate-orm,main,java8,,gradlew
-hidroh/materialistic,master,java8,,gradlew
+hidroh/materialistic,master,java11,,gradlew
 hierynomus/jython-gradle-plugin,master,java8,,gradlew
 hierynomus/license-gradle-plugin,master,java8,,gradlew
 hierynomus/scalariform-gradle-plugin,master,java8,,gradlew
@@ -5419,7 +5419,7 @@ johncarl81/parceler,master,java8,,maven
 johnmartel/git-hook-gradle-plugin,master,java8,,gradlew
 johnmartel/javaccPlugin,master,java8,,gradlew
 johnrengelman/gradle-processes,master,java8,,gradlew
-johnrengelman/shadow,master,java8,,gradlew
+johnrengelman/shadow,master,java11,,gradlew
 joinfaces/joinfaces,4.7.x,java8,,gradlew
 jonatbergn/jacoco-config,main,java8,,gradlew
 jonathan-robertson/auto-spotless-plugin,master,java8,,gradlew
@@ -5433,7 +5433,7 @@ josephglanville/gradle-gcs-build-cache,master,java8,,gradlew
 joshua-jandyco/gradle-test-results,master,java8,,gradlew
 joshua2ua/lonelyTwitter,master,java8,,gradlew
 joskar201/kotlin-neo4j,master,java8,,gradlew
-journeyapps/zxing-android-embedded,master,java8,,gradlew
+journeyapps/zxing-android-embedded,master,java11,,gradlew
 joyoyao/superCleanMaster,master,java8,,gradlew
 jpenilla/run-paper,master,java8,,gradlew
 jponge/vertx-gradle-plugin,master,java8,,gradlew
@@ -5467,7 +5467,7 @@ jwtk/jjwt,master,java8,,mvnw
 jzillmann/gradle-jmh-report,master,java8,,gradlew
 k0shk0sh/FastHub,development,java8,,gradlew
 k4zy/TimeTraceReporter,master,java8,,gradlew
-k9mail/k-9,main,java8,,gradlew
+k9mail/k-9,main,java11,,gradlew
 kabouzeid/Phonograph,master,java8,,gradlew
 kad-leeuwg1/xjc-gradle-plugin,master,java8,,gradlew
 kageiit/gradle-robojava-plugin,master,java8,,gradlew
@@ -5514,7 +5514,7 @@ kevinsawicki/http-request,master,java8,,maven
 keyboardsurfer/Crouton,master,java8,,gradlew
 keycloak/keycloak,main,java8,,mvnw
 keykey7/gradle-spawn-plugin,master,java8,,gradlew
-kickstarter/android-oss,master,java8,,gradlew
+kickstarter/android-oss,master,java11,,gradlew
 kiddouk/gradle-vault,master,java8,,gradlew
 kiegroup/appformer,main,java8,,maven
 kiegroup/drools,main,java8,,maven
@@ -5551,7 +5551,7 @@ konifar/gradle-unused-resources-remover-plugin,master,java8,,gradlew
 konrad-garus/classycle-gradle-plugin,master,java8,,gradlew
 kontext-e/jqassistant-gradle-plugin,master,java8,,gradlew
 koral--/android-animation-disabler,master,java8,,gradlew
-koral--/android-gif-drawable,dev,java8,,gradlew
+koral--/android-gif-drawable,dev,java11,,gradlew
 koral--/android-gradle-localization-plugin,master,java8,,gradlew
 koral--/gradle-pitest-plugin,master,java8,,gradlew
 koral--/jacoco-gradle-testkit-plugin,master,java8,,gradlew
@@ -5750,7 +5750,7 @@ marytts/gradle-marytts-component-plugin,master,java8,,gradlew
 marytts/gradle-marytts-crossvalidation-plugin,master,java8,,gradlew
 marytts/gradle-marytts-kaldi-mfa-plugin,master,java8,,gradlew
 marytts/gradle-marytts-lexicon-compiler-plugin,master,java8,,gradlew
-material-components/material-components-android,master,java8,,gradlew
+material-components/material-components-android,master,java11,,gradlew
 matsuyoido/gradle-ER-plugin,master,java8,,gradlew
 matsuyoido/gradle-md-plugin,master,java8,,gradlew
 matthewfrank/gop-gmo-plugin,master,java8,,gradlew
@@ -5943,10 +5943,10 @@ mike-neck/junit-starter,master,java8,,gradlew
 mike-neck/rule-base-model-generation-plugin,master,java8,,gradlew
 mike-neck/savanna-gradle-plugin,master,java8,,gradlew
 mikepenz/AboutLibraries,develop,android30,,gradlew
-mikepenz/Android-Iconics,develop,java8,,gradlew
-mikepenz/FastAdapter,develop,java8,,gradlew
+mikepenz/Android-Iconics,develop,java11,,gradlew
+mikepenz/FastAdapter,develop,java11,,gradlew
 mikepenz/LollipopShowcase,master,java8,,gradlew
-mikepenz/MaterialDrawer,develop,java8,,gradlew
+mikepenz/MaterialDrawer,develop,java11,,gradlew
 mikhailstepanov88/grpc_kotlin,master,java8,,gradlew
 mikhailstepanov88/protobuf_kotlin,master,java8,,gradlew
 milis92/Krang,main,java8,,gradlew
@@ -6287,14 +6287,14 @@ orhanobut/dialogplus,master,java8,,gradlew
 orhanobut/hawk,master,java8,,gradlew
 orhanobut/logger,master,java8,,gradlew
 osmandapp/Osmand,master,java8,,gradlew
-osmdroid/osmdroid,master,java8,,gradlew
+osmdroid/osmdroid,master,java11,,gradlew
 oss-ethinking/gradle-escenic-plugin,master,java8,,gradlew
 oss-ethinking/gradle-gaffer-plugin,master,java8,,gradlew
 otkmnb2783/gradle-dotenv-plugin,master,java8,,gradlew
 otto-de/gradle-plugin-classycle,master,java8,,gradlew
 otto-de/gradle-projectversion,main,java8,,gradlew
 oun/monjam,master,java8,,gradlew
-owncloud/android,master,java8,,gradlew
+owncloud/android,master,java11,,gradlew
 ozodrukh/CircularReveal,master,java8,,gradlew
 pagehelper/Mybatis-PageHelper,master,java8,,maven
 pahimar/Equivalent-Exchange-3,master,java8,,gradlew
@@ -6519,7 +6519,7 @@ raniejade/godot-kotlin,master,java8,,gradlew
 raphw/byte-buddy,master,java8,,mvnw
 raxden/android-plugins,master,java8,,gradlew
 raydac/java-binary-block-parser,master,java8,,maven
-razerdp/BasePopup,master,java8,,gradlew
+razerdp/BasePopup,master,java11,,gradlew
 rcw3bb/gs-codenarc,master,java8,,gradlew
 rcw3bb/simple-choco,master,java8,,gradlew
 rcw3bb/simple-dotnet-core,master,java8,,gradlew
@@ -6594,7 +6594,7 @@ rohanprabhu/kotlin-dsl-gradle-jooq-plugin,master,java8,,gradlew
 rollbar/rollbar-java,master,java8,,gradlew
 romainguy/ViewServer,master,java8,,gradlew
 romandanylyk/PageIndicatorView,master,java8,,gradlew
-romannurik/muzei,main,java8,,gradlew
+romannurik/muzei,main,java11,,gradlew
 romanshvets/postgresql-migrations,main,java8,,gradlew
 ronmamo/reflections,master,java8,,maven
 rosberry/RAWF,develop,java8,,gradlew
@@ -6694,7 +6694,7 @@ shuzheng/zheng,master,java8,,maven
 shwenzhang/AndResGuard,master,java8,,gradlew
 shysteph/application-agent-gradle-plugin,master,java8,,gradlew
 shysteph/intellij-stabilizer,master,java8,,gradlew
-siacs/Conversations,master,java8,,gradlew
+siacs/Conversations,master,java11,,gradlew
 sidney-simmons/gradle-plugin-docker,master,java8,,gradlew
 sidney-simmons/gradle-plugin-external-properties,master,java8,,gradlew
 siggijons/dex-methods,master,java8,,gradlew
@@ -6944,7 +6944,7 @@ spring-projects/spring-ws-samples,main,java8,,maven
 springdoc/springdoc-openapi-gradle-plugin,master,java8,,gradlew
 springside/springside4,master,java8,,maven
 square/RxIdler,master,java8,,gradlew
-square/android-times-square,master,java8,,gradlew
+square/android-times-square,master,java11,,gradlew
 square/anvil,main,java8,,gradlew
 square/assertj-android,master,java8,,gradlew
 square/auto-value-redacted,master,java8,,gradlew
@@ -6969,8 +6969,8 @@ square/okio,master,java8,,gradlew
 square/osstrich,master,java8,,maven
 square/otto,master,java8,,maven
 square/pagerduty-incidents,master,java8,,maven
-square/phrase,master,java8,,gradlew
-square/picasso,master,java8,,gradlew
+square/phrase,master,java11,,gradlew
+square/picasso,master,java11,,gradlew
 square/point-of-sale-android-sdk,master,java8,,gradlew
 square/pollexor,trunk,java8,,gradlew
 square/rack-servlet,master,java8,,maven
@@ -7052,7 +7052,7 @@ tehlers/gradle-redis-build-cache,master,java8,,gradlew
 tencent/Firestorm,master,java8,,maven
 tencent/QMUI_Android,master,java8,,gradlew
 tencent/Shadow,master,java8,,gradlew
-tencent/VasDolly,master,java8,,gradlew
+tencent/VasDolly,master,java11,,gradlew
 tencent/spring-cloud-tencent,main,java8,,maven
 tencent/tinker,dev,java8,,gradlew
 termux/termux-app,master,java8,,gradlew
@@ -7131,8 +7131,7 @@ twilio/sync-quickstart-android,master,java8,,gradlew
 twilio/twilio-java,main,java8,,maven
 twilio/twilio-oai-generator,main,java8,,maven
 twilio/twilio-recordings-decrypter,master,java8,,maven
-twilio/video-quickstart-android,master,java8,,gradlew
-twilio/voice-quickstart-android,master,java8,,gradlew
+twilio/video-quickstart-android,master,java11,,gradlew
 twilio/voice-quickstart-server-java,master,java8,,maven
 twilio/wiztowar,master,java8,,maven
 twitter/GraphJet,master,java8,,maven
@@ -7156,7 +7155,7 @@ uakihir0/j2objc-gradle,master,java8,,gradlew
 uber/NullAway,master,java8,,gradlew
 udacity/Android_Me,master,java8,,gradlew
 udacity/Sunshine-Version-2,sunshine_master,java8,,gradlew
-udacity/ud839_Miwok,Starter-code,java8,,gradlew
+udacity/ud839_Miwok,Starter-code,java11,,gradlew
 udacity/ud843-QuakeReport,starting-point,java8,,gradlew
 udaychandra/susel-gradle-plugin,master,java8,,gradlew
 ufo22940268/UmengAutoPackage,master,java8,,gradlew
@@ -7303,7 +7302,7 @@ walmartlabs/strati-functional,master,java8,,maven
 wangchao0837/ArouterComponent,master,java8,,gradlew
 wangdan/AisenWeiBo,master,java8,,gradlew
 wangzhizy/PublishAppPlugin,master,java8,,gradlew
-wasabeef/Blurry,main,java8,,gradlew
+wasabeef/Blurry,main,java11,,gradlew
 wasabeef/glide-transformations,main,java8,,gradlew
 wasabeef/recyclerview-animators,master,java8,,gradlew
 wasabeef/richeditor-android,master,java8,,gradlew
