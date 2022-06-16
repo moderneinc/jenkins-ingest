@@ -50,6 +50,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 remote {
                     url("https://github.com/${repoName}")
                     branch(repoBranch)
+                    credentials('jkschneider-pat')
                 }
                 extensions {
                     localBranch(repoBranch)
