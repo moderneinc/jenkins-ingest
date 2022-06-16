@@ -33,7 +33,7 @@ configFiles {
         id(mavenIngestSettingsXmlFileId)
         name("Maven: ingest-maven-settings.xml")
         comment("A maven settings file that sets mirror on repos that at know to use http")
-        content readFileFromWorkspace('maven/ingest-maven-settings.xml')
+        content readFileFromWorkspace('maven/ingest-settings.xml')
     }
     customConfig {
         id(mavenAddExtensionShellFileId)
