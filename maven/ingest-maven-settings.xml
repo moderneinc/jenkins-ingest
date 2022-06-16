@@ -5,5 +5,10 @@
             <mirrorOf>repo.jenkins-ci.org</mirrorOf>
             <url>https://repo.jenkins-ci.org/public</url>
         </mirror>
+        <mirror>
+            <id>secure-central</id>
+            <mirrorOf>central</mirrorOf>
+            <url>https://repo1.maven.org/maven2</url>
+        </mirror>
     </mirrors>
 </settings>
