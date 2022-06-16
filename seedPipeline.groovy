@@ -1,41 +1,68 @@
-def workspaceDir = new File(__FILE__).getParentFile()
-String Adhoc = 'adhoc'
+configFiles {
+    groovyScript {
+        id("moderne-gradle-init")
+        name("init.gradle")
+        comment("A Gradle init script used to inject universal plugins into a gradle build.")
+        content readFileFromWorkspace('gradle/init.gradle')
+    }
+    xmlConfig {
+        id("gradle-enterprise-xml")
+        name("Gradle Enterprise Maven Configuration")
+        comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
+        content readFileFromWorkspace('maven/gradle-enterprise.xml')
+    }
+    xmlConfig {
+        id("ingest-maven-settings-xml")
+        name("Ingest Maven Settings")
+        comment("A maven settings file that sets mirror on repos that at know to use http")
+        content readFileFromWorkspace('maven/ingest-maven-settings.xml')
+    }
+}
 
-pipelineJob('Seed the ingest jobs') {
-    // TODO: add pipeline configurations.
-    // The 'jobFolder' should be defaulted to ingest after a timeout and optionally chosen as 'adhoc'
-    String seedTaskType = Adhoc
-    // Update to use user input.
+job('Seed Task') {
+    String allJobs = 'Ingest Jobs' // Default
+    String adhocJobs = 'Adhoc Jobs'
+
+    // This may be set as a dynamic configuration later on ...
     Set organizationNames = ["jenkinsci"] as Set // names of organizations to ingest.
 
-    stages {
-        stage('Generate jobs') {
-            seedJobs(seedTaskType, organizationNames)
-        }
+    parameters {
+        booleanParam('SEED_ALL_JOBS', true, 'Uncheck to run an adhoc task.')
+    }
 
-        stage('Run jobs') {
-            when {
-                expression {
-                    seedTaskType = Adhoc
-                }
+    String taskType
+    if (params.SEED_ALL_JOBS) {
+        taskType = allJobs
+    } else {
+        taskType = adhocJobs
+    }
+
+    steps {
+        seedJobs(taskType, organizationNames)
+        conditionalSteps {
+            condition {
+                stringsMatch(params.SEED_ALL_JOBS, adhocJobs, true)
             }
-
-            echo 'run adhoc jobs'
+            shell("echo is adhoc")
+            // run all jobs in folder.
         }
     }
 }
 
 def seedJobs(String seedTaskType, Set organizationNames) {
-    folder(seedTaskType) {
-        displayName('$jobFolder Ingest Jobs')
+    def workspaceDir = new File(__FILE__).getParentFile()
+
+    folder("$seedTaskType") {
+        displayName("$seedTaskType")
     }
+
     new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         if (tokens[0].startsWith('repoName')) {
             return
         }
         def repoName = tokens[0]
         // Filter out organizations. An empty set will seed all jobs.
-        if (!organizationNames.equals(repoName.substring(0, repoName.indexOf('/')))) {
+        if (!organizationNames.contains(repoName.substring(0, repoName.indexOf('/')))) {
             return
         }
 
