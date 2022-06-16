@@ -156,7 +156,7 @@ fi
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
                     deployArtifacts true
                     artifactDeploymentPatterns {
-                        includePatterns '*-ast.jar'
+                        includePatterns '*-ast.*'
                     }
                     deployerDetails {
                         artifactoryName 'moderne-artifactory'
