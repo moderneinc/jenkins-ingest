@@ -112,7 +112,7 @@ new File(workspaceDir, 'repos-multi-jdk.csv').splitEachLine(',') { tokens ->
 """
 export ANDROID_HOME=/usr/lib/android-sdk
 export ANDROID_SDK_ROOT=/usr/lib/android-sdk
-jenv global ${repoJavaVersion}
+export JAVA_HOME=/usr/lib/jvm/temurin-${repoJavaVersion}-jdk-amd64
 """)
         }
 
