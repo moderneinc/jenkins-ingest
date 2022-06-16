@@ -54,11 +54,11 @@ settingsEvaluated { settings ->
 }
 
 def isTopLevelBuild = gradle.getParent() == null
+def gradleVersion = org.gradle.util.GradleVersion.current().baseVersion
 
 //Setup Gradle Enterprise plugin if this is the top level project
 if (isTopLevelBuild) {
 
-    def gradleVersion = org.gradle.util.GradleVersion.current().baseVersion
 
     if (gradleVersion >= GradleVersion.version("6.0")) {
         //Versions 6 and greater, the plugins is added via settings, set the classpath and add the plugin
@@ -131,7 +131,6 @@ allprojects {
                 repositories {
                     maven {
                         url = 'https://artifactory.moderne.ninja/artifactory/moderne-public-ast/'
-                        allowInsecureProtocol(true)
                         credentials {
                             username = System.getenv("ARTIFACTORY_USER")
                             password = System.getenv("ARTIFACTORY_PASSWORD")
