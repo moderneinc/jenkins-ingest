@@ -1,27 +1,45 @@
 def workspaceDir = new File(__FILE__).getParentFile()
 
+def gradleInitFileId = "gradle-init-gradle"
+def gradleInitRepoFile = "moderne-init.gradle"
+
+def mavenGradleEnterpriseXmlFileId = "maven-gradle-enterprise-xml"
+def mavenGradleEnterpriseXmlRepoFile = ".mvn/gradle-enterprise.xml"
+
+def mavenIngestSettingsXmlFileId = "maven-ingest-settings-xml"
+def mavenIngestSettingsXmlRepoFile = ".mvn/ingest-settings.xml"
+
+def mavenAddExtensionShellFileId = "maven-add-extension.sh"
+def mavenAddExtensionShellRepoLocation = ".mvn/add-extension.sh"
+
 folder('ingest-multi-jdk') {
     displayName('Multi-JDK Ingest Jobs')
 }
 
 configFiles {
     groovyScript {
-        id("moderne-gradle-init")
-        name("init.gradle")
+        id(gradleInitFileId)
+        name("Gradle: init.gradle")
         comment("A Gradle init script used to inject universal plugins into a gradle build.")
         content readFileFromWorkspace('gradle/init.gradle')
     }
     xmlConfig {
-        id("gradle-enterprise-xml")
-        name("Gradle Enterprise Maven Configuration")
+        id(mavenGradleEnterpriseXmlFileId)
+        name("Maven: gradle-enterprise.xml")
         comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
         content readFileFromWorkspace('maven/gradle-enterprise.xml')
     }
     xmlConfig {
-        id("ingest-maven-settings-xml")
-        name("Ingest Maven Settings")
+        id(mavenIngestSettingsXmlFileId)
+        name("Maven: ingest-maven-settings.xml")
         comment("A maven settings file that sets mirror on repos that at know to use http")
-        content readFileFromWorkspace('maven/ingest-maven-settings.xml')
+        content readFileFromWorkspace('maven/ingest-settings.xml')
+    }
+    customConfig {
+        id(mavenAddExtensionShellFileId)
+        name("Maven: add-extension.sh")
+        comment("A shell script that will add the gradle enterprise extension to a Maven Build")
+        content readFileFromWorkspace('maven/add-extension.sh')
     }
 }
 new File(workspaceDir, 'repos-multi-jdk.csv').splitEachLine(',') { tokens ->
@@ -69,18 +87,21 @@ new File(workspaceDir, 'repos-multi-jdk.csv').splitEachLine(',') { tokens ->
             }
             if (['gradle', 'gradlew'].contains(repoBuildTool)) {
                 configFiles {
-                    file('moderne-gradle-init') {
-                        targetLocation('moderne-init.gradle')
+                    file(gradleInitFileId) {
+                        targetLocation(gradleInitRepoFile)
                     }
                 }
             }
             if (['maven', 'mvnw'].contains(repoBuildTool)) {
                 configFiles {
-                    file('gradle-enterprise-xml') {
-                        targetLocation('.mvn/gradle-enterprise.xml')
+                    file(mavenGradleEnterpriseXmlFileId) {
+                        targetLocation(mavenGradleEnterpriseXmlRepoFile)
                     }
-                    file('ingest-maven-settings-xml') {
-                        targetLocation('.mvn/ingest-maven-settings.xml')
+                    file(mavenIngestSettingsXmlFileId) {
+                        targetLocation(mavenIngestSettingsXmlRepoFile)
+                    }
+                    file(mavenAddExtensionShellFileId) {
+                        targetLocation(mavenAddExtensionShellRepoLocation)
                     }
                 }
             }
@@ -106,9 +127,9 @@ jenv global ${repoJavaVersion}
                         makeExecutable(true)
                     }
                     if (repoStyle != null) {
-                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I moderne-init.gradle")
+                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile}")
                     } else {
-                        switches('--no-daemon -Dskip.tests=true -I moderne-init.gradle')
+                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile}")
                     }
                     tasks('publishModernePublicationToMavenRepository')
                 }
@@ -120,31 +141,7 @@ jenv global ${repoJavaVersion}
             steps {
                 // Adds a shell script into the Jobs workspace in /tmp.
                 // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
-                shell(
-'''
-MVN_DIR=".mvn"
-EXT_FILE="extensions.xml"
-MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.2</version></extension>"
-
-# Create the .mvn directory if it does not exist.
-if [ ! -d "$MVN_DIR" ]; then
-    mkdir "$MVN_DIR"
-fi
-
-# Create the extensions.xml file if it does not exist.
-if [ ! -f "$MVN_DIR/$EXT_FILE" ]; then
-    touch "$MVN_DIR/$EXT_FILE"
-    # Add the `<extensions>` tag.
-    echo "<extensions>" >> "$MVN_DIR/$EXT_FILE"
-    echo "</extensions>" >> "$MVN_DIR/$EXT_FILE"
-    ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
-    sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
-else
-    # Assumes the <extensions> already exists and the <extension> tag does exist.
-    ADD=$(echo $MVN_EXT_XML | sed 's/\\//\\\\\\//g')
-    sed -i "/<\\/extensions>/ s/.*/${ADD}\\n&/" "$MVN_DIR/$EXT_FILE"
-fi
-''')
+                shell("bash ${mavenAddExtensionShellRepoLocation}")
             }
             configure { node ->
 
@@ -152,9 +149,9 @@ fi
                     mavenName 'maven 3'
                     useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
-                        goals '-B -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s .mvn/ingest-maven-settings.xml -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
+                        goals "-B -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
                     } else {
-                        goals '-B -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s .mvn/ingest-maven-settings.xml -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast'
+                        goals "-B -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
                     }
                 }
 
