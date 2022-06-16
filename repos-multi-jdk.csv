@@ -1,4 +1,4 @@
 repoName, branch, javaVersion, style, buildTool
 elastic/elasticsearch,master,17,,gradlew
 google/framecount-colorbars-v1,master,8,,gradlew
-square/sqlbrite,trunk,11,,gradlew
+square/sqlbrite,trunk,8,,gradlew
