@@ -131,7 +131,6 @@ allprojects {
                 repositories {
                     maven {
                         url = 'https://artifactory.moderne.ninja/artifactory/moderne-public-ast/'
-                        allowInsecureProtocol(true)
                         credentials {
                             username = System.getenv("ARTIFACTORY_USER")
                             password = System.getenv("ARTIFACTORY_PASSWORD")
