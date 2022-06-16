@@ -1,3 +1,3 @@
 repoName, branch, javaVersion, style, buildTool
 elastic/elasticsearch,master,17,,gradlew
-google/framecount-colorbars-v1,master,11,,gradlew
+google/framecount-colorbars-v1,master,8,,gradlew
