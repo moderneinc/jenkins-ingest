@@ -57,6 +57,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("ingest/$repoJobName") {
 
+        label('multi-jdk')
+
         jdk("java${repoJavaVersion}")
 
         environmentVariables {
