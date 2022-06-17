@@ -48,7 +48,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     }
     def repoName = tokens[0]
     def repoBranch = tokens[1]
-    def repoLabel = tokens[2]
+    def repoJavaVersion = tokens[2]
     def repoStyle = tokens[3]
     def repoBuildTool = tokens[4]
     def repoJobName = repoName.replaceAll('/', '_')
@@ -57,11 +57,12 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("ingest/$repoJobName") {
 
-        if (!['java8', 'java11'].contains(repoLabel)) {
-            disabled()
-        }
+        jdk("java${repoJavaVersion}")
 
-        label("$repoLabel")
+        environmentVariables {
+            env('ANDROID_HOME', '/usr/lib/android-sdk')
+            env('ANDROID_SDK_ROOT', '/usr/lib/android-sdk')
+        }
 
         scm {
             git {
