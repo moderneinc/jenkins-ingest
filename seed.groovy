@@ -173,6 +173,12 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
         publishers {
             cleanWs()
+            disableFailedJob {
+                whenDisable('Only Failure')
+                optionalBrock {
+                    failureTimes('3')
+                }
+            }
         }
     }
     return
