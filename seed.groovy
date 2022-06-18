@@ -53,6 +53,13 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoBuildTool = tokens[4]
     def repoJobName = repoName.replaceAll('/', '_')
 
+    boolean isGradleBuild = ['gradle', 'gradlew'].contains(repoBuildTool);
+    boolean isMavenBuild = repoBuildTool != null && (repoBuildTool.startsWith("maven") || repoBuildTools.equals("mvnw"));
+    //The latest version of maven is used if the repoBuildTool is just "maven", otherwise the name repoBuildTool is treated as the jenkins name.
+    def jenkinsMavenName = repoBuildTool != null && repoBuildTool == "maven" ? "maven3.x" : repoBuildTool
+
+
+
     println("creating job $repoJobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
     job("ingest/$repoJobName") {
@@ -92,14 +99,14 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 absolute(60)
                 abortBuild()
             }
-            if (['gradle', 'gradlew'].contains(repoBuildTool)) {
+            if (isGradleBuild) {
                 configFiles {
                     file(gradleInitFileId) {
                         targetLocation(gradleInitRepoFile)
                     }
                 }
             }
-            if (['maven', 'mvnw'].contains(repoBuildTool)) {
+            if (isMavenBuild) {
                 configFiles {
                     file(mavenGradleEnterpriseXmlFileId) {
                         targetLocation(mavenGradleEnterpriseXmlRepoFile)
@@ -115,7 +122,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         steps {
-            if (['gradle', 'gradlew'].contains(repoBuildTool)) {
+            if (isGradleBuild) {
                 gradle {
                     if (repoBuildTool == 'gradle') {
                         useWrapper(false)
@@ -134,7 +141,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
         }
 
-        if (['maven', 'mvnw'].contains(repoBuildTool)) {
+        if (isMavenBuild) {
             // A step that runs before the maven build to setup the gradle enterprise extension.
             steps {
                 // Adds a shell script into the Jobs workspace in /tmp.
@@ -144,7 +151,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             configure { node ->
 
                 node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
-                    mavenName 'maven 3'
+                    mavenName jenkinsMavenName
                     useWrapper(repoBuildTool == 'mvnw')
                     if (repoStyle != null) {
                         goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
