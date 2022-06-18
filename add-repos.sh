@@ -52,12 +52,12 @@ do
 
     REPO="${array[0]}"
     BRANCH="${array[1]}"
-    LABEL="${array[2]}"
+    JAVA_VERSION="${array[2]}"
     STYLE="${array[3]}"
     BUILD_TOOL="${array[4]}"
 
-    if [ -z "$LABEL" ];then
-        LABEL="java8"
+    if [ -z "$JAVA_VERSION" ];then
+        JAVA_VERSION="8"
     fi
     
     cleanupTmpGitDir
@@ -102,9 +102,9 @@ do
     cd "$base_dir" || exit
 
     if [ ! -f "$output_csv" ]; then
-        printf "repoName,branchName,label,style,buildTool\n" >&3
+        printf "repoName,branchName,javaVersion,style,buildTool\n" >&3
     fi
-    printf "%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$LABEL" "$STYLE" "$BUILD_TOOL" >&3
+    printf "%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$JAVA_VERSION" "$STYLE" "$BUILD_TOOL" >&3
 
 done < "$input_csv" 3>> "$output_csv"
 
