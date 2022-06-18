@@ -54,7 +54,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoJobName = repoName.replaceAll('/', '_')
 
     boolean isGradleBuild = ['gradle', 'gradlew'].contains(repoBuildTool);
-    boolean isMavenBuild = repoBuildTool != null && (repoBuildTool.startsWith("maven") || repoBuildTools.equals("mvnw"));
+    boolean isMavenBuild = repoBuildTool != null && (repoBuildTool.startsWith("maven") || repoBuildTool.equals("mvnw"));
     //The latest version of maven is used if the repoBuildTool is just "maven", otherwise the name repoBuildTool is treated as the jenkins name.
     def jenkinsMavenName = repoBuildTool != null && repoBuildTool == "maven" ? "maven3.x" : repoBuildTool
 
