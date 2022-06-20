@@ -447,7 +447,6 @@ FasterXML/jackson-annotations,2.14,8,,maven
 FasterXML/jackson-annotations,2.14,8,,mvnw
 FasterXML/jackson-benchmarks,2.13,8,,gradlew
 FasterXML/jackson-core,2.14,8,,maven
-FasterXML/jackson-databind,2.14,8,,maven
 FasterXML/jackson-databind,2.14,8,,mvnw
 FasterXML/jackson-dataformat-ini,master,8,,maven
 FasterXML/jackson-dataformat-thrift,master,8,,maven
