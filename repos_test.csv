@@ -1,2 +1,5 @@
 repoName, branch, javaVersion, style, buildTool
 apache/commons-math,master,8,,maven
+spring-projects/spring-data-jpa,main,8,,mvnw
+15189611/jumpAop,master,8,,gradlew
+0ffz/gpr-for-gradle,master,8,,gradle
