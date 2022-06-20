@@ -1704,7 +1704,6 @@ alibaba/SmartEngine,master,8,,maven
 alibaba/StateManager,master,8,,gradlew
 alibaba/TProfiler,master,8,,maven
 alibaba/alibaba-flink-connectors,master,8,,maven
-alibaba/alibaba-rsocket-broker,master,8,,maven
 alibaba/alibaba-rsocket-broker,master,8,,mvnw
 alibaba/alibabacloud-tairjedis-sdk,master,8,,maven
 alibaba/aliyun-spring-boot,master,8,,maven
