@@ -109,6 +109,7 @@ new File(workspaceDir, 'repos_test.csv').splitEachLine(',') { tokens ->
                 deployArtifacts {
                     repositoryId('moderne-public')
                     repositoryUrl('https://artifactory.moderne.ninja/artifactory/moderne-public-ast')
+                    evenIfUnstable(true)
                 }
                 cleanWs()
             }
