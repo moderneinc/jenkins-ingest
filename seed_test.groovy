@@ -59,127 +59,180 @@ new File(workspaceDir, 'repos_test.csv').splitEachLine(',') { tokens ->
     def jenkinsMavenName = repoBuildTool != null && repoBuildTool == "maven" ? "maven3.x" : repoBuildTool
 
 
-
     println("creating job $repoJobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
-    job("test/$repoJobName") {
+    if (repoBuildTool == 'maven') {
+        mavenJob("test/$repoJobName") {
+            label('multi-jdk')
 
-        label('multi-jdk')
+            jdk("java${repoJavaVersion}")
 
-        jdk("java${repoJavaVersion}")
+            mavenInstallation(jenkinsMavenName)
 
-        environmentVariables {
-            env('ANDROID_HOME', '/usr/lib/android-sdk')
-            env('ANDROID_SDK_ROOT', '/usr/lib/android-sdk')
-        }
+            goals("-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn io.moderne:moderne-maven-plugin:0.11.3:ast")
 
-        scm {
-            git {
-                remote {
-                    url("https://github.com/${repoName}")
-                    branch(repoBranch)
-                    credentials('jkschneider-pat')
-                }
-                extensions {
-                    localBranch(repoBranch)
-                }
-            }
-        }
+            providedSettings('test-maven-settings.xml')
 
-        triggers {
-            cron('H 4 * * *')
-        }
-
-        wrappers {
-            credentialsBinding {
-                usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
-                string('GRADLE_ENTERPRISE_ACCESS_KEY', 'gradle-enterprise-access-key')
-            }
-            timeout {
-                absolute(60)
-                abortBuild()
-            }
-            if (isGradleBuild) {
-                configFiles {
-                    file(gradleInitFileId) {
-                        targetLocation(gradleInitRepoFile)
+            scm {
+                git {
+                    remote {
+                        url("https://github.com/${repoName}")
+                        branch(repoBranch)
+                        credentials('jkschneider-pat')
+                    }
+                    extensions {
+                        localBranch(repoBranch)
                     }
                 }
             }
-            if (isMavenBuild) {
+
+            triggers {
+                cron('H 4 * * *')
+            }
+
+            wrappers {
+                timeout {
+                    absolute(60)
+                    abortBuild()
+                }
                 configFiles {
                     file(mavenGradleEnterpriseXmlFileId) {
                         targetLocation(mavenGradleEnterpriseXmlRepoFile)
-                    }
-                    file(mavenIngestSettingsXmlFileId) {
-                        targetLocation(mavenIngestSettingsXmlRepoFile)
                     }
                     file(mavenAddExtensionShellFileId) {
                         targetLocation(mavenAddExtensionShellRepoLocation)
                     }
                 }
             }
-        }
 
-        steps {
-            if (isGradleBuild) {
-                gradle {
-                    if (repoBuildTool == 'gradle') {
-                        useWrapper(false)
-                        gradleName('gradle 7.4.2')
-                    } else {
-                        useWrapper(true)
-                        makeExecutable(true)
-                    }
-                    if (repoStyle != null) {
-                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile}")
-                    } else {
-                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile}")
-                    }
-                    tasks('publishModernePublicationToMavenRepository')
+            publishers {
+                deployArtifacts {
+                    repositoryId('moderne-public')
+                    repositoryUrl('https://artifactory.moderne.ninja/artifactory/moderne-public-ast')
                 }
+                cleanWs()
             }
         }
+    } else {
+        job("test/$repoJobName") {
 
-        if (isMavenBuild) {
-            // A step that runs before the maven build to setup the gradle enterprise extension.
+            label('multi-jdk')
+
+            jdk("java${repoJavaVersion}")
+
+            environmentVariables {
+                env('ANDROID_HOME', '/usr/lib/android-sdk')
+                env('ANDROID_SDK_ROOT', '/usr/lib/android-sdk')
+            }
+
+            scm {
+                git {
+                    remote {
+                        url("https://github.com/${repoName}")
+                        branch(repoBranch)
+                        credentials('jkschneider-pat')
+                    }
+                    extensions {
+                        localBranch(repoBranch)
+                    }
+                }
+            }
+
+            triggers {
+                cron('H 4 * * *')
+            }
+
+            wrappers {
+                credentialsBinding {
+                    usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+                    string('GRADLE_ENTERPRISE_ACCESS_KEY', 'gradle-enterprise-access-key')
+                }
+                timeout {
+                    absolute(60)
+                    abortBuild()
+                }
+                if (isGradleBuild) {
+                    configFiles {
+                        file(gradleInitFileId) {
+                            targetLocation(gradleInitRepoFile)
+                        }
+                    }
+                }
+                if (isMavenBuild) {
+                    configFiles {
+                        file(mavenGradleEnterpriseXmlFileId) {
+                            targetLocation(mavenGradleEnterpriseXmlRepoFile)
+                        }
+                        file(mavenIngestSettingsXmlFileId) {
+                            targetLocation(mavenIngestSettingsXmlRepoFile)
+                        }
+                        file(mavenAddExtensionShellFileId) {
+                            targetLocation(mavenAddExtensionShellRepoLocation)
+                        }
+                    }
+                }
+            }
+
             steps {
-                // Adds a shell script into the Jobs workspace in /tmp.
-                // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
-                shell("bash ${mavenAddExtensionShellRepoLocation}")
-            }
-            configure { node ->
-
-                node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
-                    mavenName jenkinsMavenName
-                    useWrapper(repoBuildTool == 'mvnw')
-                    if (repoStyle != null) {
-                        goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
-                    } else {
-                        goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
-                    }
-                }
-
-                node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
-                    deployArtifacts true
-                    artifactDeploymentPatterns {
-                        includePatterns '*-ast.*'
-                    }
-                    deployerDetails {
-                        artifactoryName 'moderne-artifactory'
-                        deployReleaseRepository {
-                            keyFromText 'moderne-public-ast'
+                if (isGradleBuild) {
+                    gradle {
+                        if (repoBuildTool == 'gradle') {
+                            useWrapper(false)
+                            gradleName('gradle 7.4.2')
+                        } else {
+                            useWrapper(true)
+                            makeExecutable(true)
                         }
-                        deploySnapshotRepository {
-                            keyFromText 'moderne-public-ast'
+                        if (repoStyle != null) {
+                            switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile}")
+                        } else {
+                            switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile}")
                         }
+                        tasks('publishModernePublicationToMavenRepository')
                     }
                 }
             }
-        }
 
-        publishers {
-            cleanWs()
+            if (isMavenBuild) {
+                // A step that runs before the maven build to setup the gradle enterprise extension.
+                steps {
+                    // Adds a shell script into the Jobs workspace in /tmp.
+                    // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
+                    shell("bash ${mavenAddExtensionShellRepoLocation}")
+                }
+                configure { node ->
+
+                    node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
+                        mavenName jenkinsMavenName
+                        useWrapper(repoBuildTool == 'mvnw')
+                        if (repoStyle != null) {
+                            goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Drewrite.activeStyles=${repoStyle} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
+                        } else {
+                            goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.11.2:ast"
+                        }
+                    }
+
+                    node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
+                        deployArtifacts true
+                        artifactDeploymentPatterns {
+                            includePatterns '*-ast.*'
+                        }
+                        deployerDetails {
+                            artifactoryName 'moderne-artifactory'
+                            deployReleaseRepository {
+                                keyFromText 'moderne-public-ast'
+                            }
+                            deploySnapshotRepository {
+                                keyFromText 'moderne-public-ast'
+                            }
+                        }
+                    }
+                }
+            }
+
+            publishers {
+                cleanWs()
+            }
         }
     }
     return
