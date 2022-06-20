@@ -443,7 +443,6 @@ FastBootWeixin/FastBootWeixin,master,8,,maven
 FasterXML/StaxMate,master,8,,maven
 FasterXML/TransiStore,master,8,,maven
 FasterXML/aalto-xml,master,8,,maven
-FasterXML/jackson-annotations,2.14,8,,maven
 FasterXML/jackson-annotations,2.14,8,,mvnw
 FasterXML/jackson-benchmarks,2.13,8,,gradlew
 FasterXML/jackson-core,2.14,8,,maven
