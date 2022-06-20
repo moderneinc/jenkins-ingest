@@ -1067,12 +1067,9 @@ Netflix/conductor,main,8,com.netflix.eureka.Style,gradlew
 Netflix/curator,master,8,,maven
 Netflix/dgs-codegen,master,8,,gradlew
 Netflix/dgs-framework,master,8,,gradlew
-Netflix/eureka,master,8,,gradlew
 Netflix/eureka,master,8,com.netflix.eureka.Style,gradlew
-Netflix/genie,master,8,,gradlew
 Netflix/genie,master,8,com.netflix.genie.Style,gradlew
 Netflix/governator,master,8,,gradlew
-Netflix/hollow,master,8,,gradlew
 Netflix/hollow,master,8,com.netflix.eureka.Style,gradlew
 Netflix/hollow-reference-implementation,master,8,,gradlew
 Netflix/mantis,master,8,,gradlew
@@ -8954,10 +8951,8 @@ spring-cloud/spring-cloud-cloudfoundry,main,8,,mvnw
 spring-cloud/spring-cloud-common-security-config,main,8,,mvnw
 spring-cloud/spring-cloud-commons,main,8,,maven
 spring-cloud/spring-cloud-commons,main,8,org.openrewrite.java.SpringFormat,mvnw
-spring-cloud/spring-cloud-config,main,8,,maven
 spring-cloud/spring-cloud-config,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-consul,main,8,org.openrewrite.java.SpringFormat,mvnw
-spring-cloud/spring-cloud-contract,main,8,,maven
 spring-cloud/spring-cloud-contract,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-dataflow,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-deployer,main,8,,mvnw
@@ -8969,7 +8964,6 @@ spring-cloud/spring-cloud-gateway,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-gcp,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-jenkins-jobs,main,8,,mvnw
 spring-cloud/spring-cloud-kubernetes,main,8,org.openrewrite.java.SpringFormat,mvnw
-spring-cloud/spring-cloud-netflix,main,8,,maven
 spring-cloud/spring-cloud-netflix,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-open-service-broker,main,8,,gradlew
 spring-cloud/spring-cloud-openfeign,main,8,org.openrewrite.java.SpringFormat,mvnw
@@ -8981,7 +8975,6 @@ spring-cloud/spring-cloud-sleuth,3.1.x,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-stream,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-stream-binder-kafka,main,8,,mvnw
 spring-cloud/spring-cloud-stream-binder-rabbit,main,8,,mvnw
-spring-cloud/spring-cloud-task,main,8,,maven
 spring-cloud/spring-cloud-task,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-vault,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-zookeeper,main,8,org.openrewrite.java.SpringFormat,mvnw
@@ -9003,7 +8996,6 @@ spring-projects/eclipse-integration-tcserver,main,8,,maven
 spring-projects/spring-amqp,main,8,,gradlew
 spring-projects/spring-amqp-samples,main,8,,maven
 spring-projects/spring-authorization-server,main,8,,gradlew
-spring-projects/spring-batch,main,8,,maven
 spring-projects/spring-batch,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-projects/spring-boot,main,8,,gradlew
 spring-projects/spring-boot-data-geode,main,8,,gradlew
@@ -9036,7 +9028,6 @@ spring-projects/spring-data-relational,main,8,,maven
 spring-projects/spring-data-rest,main,8,,maven
 spring-projects/spring-data-services,master,8,,gradlew
 spring-projects/spring-data-solr,main,8,,maven
-spring-projects/spring-framework,main,8,,gradlew
 spring-projects/spring-framework,main,8,org.openrewrite.java.SpringFormat,gradlew
 spring-projects/spring-gemfire-examples,main,8,,gradlew
 spring-projects/spring-graphql,main,8,,gradlew
@@ -9060,7 +9051,6 @@ spring-projects/spring-mvc-showcase,master,8,,maven
 spring-projects/spring-petclinic,main,8,,gradlew
 spring-projects/spring-plugin,main,8,,maven
 spring-projects/spring-restdocs,main,8,,gradlew
-spring-projects/spring-retry,main,8,,maven
 spring-projects/spring-retry,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-projects/spring-security,main,8,,gradlew
 spring-projects/spring-security-kerberos,main,8,,gradlew
@@ -9072,7 +9062,6 @@ spring-projects/spring-session-bom,main,8,,gradlew
 spring-projects/spring-session-data-geode,main,8,,gradlew
 spring-projects/spring-session-data-mongodb,main,8,,maven
 spring-projects/spring-session-data-mongodb-examples,main,8,,maven
-spring-projects/spring-shell,main,8,,maven
 spring-projects/spring-shell,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-projects/spring-statemachine,main,8,,gradlew
 spring-projects/spring-tenancy,master,8,,maven
