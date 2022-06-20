@@ -499,7 +499,6 @@ FoundationDB/fdb-record-layer,main,8,,gradlew
 FrankBian/tomcat8.0-source-research,master,8,,maven
 FrankerSun/netty-study-4.x,4.1,8,,maven
 FreedomZZQ/YouJoin-Android,master,8,,gradlew
-Freeyourgadget/Gadgetbridge,master,11,,gradlew
 Freeyourgadget/Gadgetbridge,master,8,,gradlew
 Frege/frege-gradle-plugin,master,8,,gradlew
 GReD-Clermont/simple-omero-client,main,8,,maven
@@ -1641,7 +1640,6 @@ airbnb/billow,master,8,,maven
 airbnb/chancery,master,8,,maven
 airbnb/epoxy,master,11,,gradlew
 airbnb/kafka-statsd-metrics2,master,8,,gradlew
-airbnb/lottie-android,master,11,,gradlew
 airbnb/lottie-android,master,8,,gradlew
 airbnb/lottie-react-native,master,8,,gradlew
 airbnb/native-navigation,master,8,,gradlew
@@ -1714,7 +1712,6 @@ alibaba/asyncload,master,8,,maven
 alibaba/auto-doc,main,8,,maven
 alibaba/bulbasaur,master,8,,maven
 alibaba/bytekit,master,8,,maven
-alibaba/canal,master,8,,maven
 alibaba/canal,master,8,,mvnw
 alibaba/cli,master,8,,maven
 alibaba/cobarclient,master,8,,maven
@@ -1728,7 +1725,6 @@ alibaba/druid-extension,master,8,,maven
 alibaba/druid-ha,master,8,,maven
 alibaba/dubbo,3.0,8,,mvnw
 alibaba/easy-retry,main,8,,maven
-alibaba/easyexcel,master,8,,maven
 alibaba/easyexcel,master,8,,mvnw
 alibaba/fast-modeling-language,main,8,,maven
 alibaba/fastFFI,main,8,,maven
@@ -1949,14 +1945,12 @@ apache/axis-axis2-java-transports,master,8,,maven
 apache/bahir-flink,master,8,,maven
 apache/beam,master,8,,gradlew
 apache/beam-starter-java,main,8,,gradle
-apache/bookkeeper,master,8,,gradlew
 apache/bookkeeper,master,8,,maven
 apache/brooklyn-library,master,8,,maven
 apache/brooklyn-server,master,8,,maven
 apache/bval,master,8,,maven
 apache/calcite,main,8,,gradlew
 apache/calcite-avatica,main,8,,gradlew
-apache/camel,main,8,,maven
 apache/camel,main,8,,mvnw
 apache/camel-k-runtime,main,8,,maven
 apache/camel-kafka-connector,main,8,,maven
@@ -1964,7 +1958,6 @@ apache/camel-kameleon,main,8,,maven
 apache/camel-kamelets,main,8,,maven
 apache/camel-karaf,main,8,,maven
 apache/camel-performance-tests,main,8,,maven
-apache/camel-quarkus,main,8,,maven
 apache/camel-quarkus,main,8,,mvnw
 apache/camel-spring-boot,main,8,,maven
 apache/camel-spring-boot-examples,main,8,,maven
@@ -2069,7 +2062,6 @@ apache/dolphinscheduler,dev,8,,maven
 apache/dolphinscheduler-maven-plugin,master,8,,maven
 apache/drill,master,8,,maven
 apache/druid,master,8,,maven
-apache/dubbo,3.0,8,,maven
 apache/dubbo,3.0,8,,mvnw
 apache/dubbo-admin,develop,8,,maven
 apache/dubbo-async-processor,master,8,,maven
@@ -2122,7 +2114,6 @@ apache/fineract-cn-template,develop,8,,gradlew
 apache/fineract-cn-test,develop,8,,gradlew
 apache/fineract-credit-scorecard,develop,8,,gradlew
 apache/flex-blazeds,master,8,,maven
-apache/flink,master,8,,maven
 apache/flink,master,8,,mvnw
 apache/flink-benchmarks,master,8,,maven
 apache/flink-connector-elasticsearch,main,8,,maven
@@ -2131,7 +2122,6 @@ apache/flink-ml,master,8,,maven
 apache/flink-statefun,master,8,,maven
 apache/flink-table-store,master,8,,maven
 apache/flink-training,master,8,,gradlew
-apache/flume,trunk,8,,maven
 apache/flume,trunk,8,,mvnw
 apache/flume-search,master,8,,maven
 apache/fluo,main,8,,maven
@@ -2184,7 +2174,6 @@ apache/httpcomponents-client,master,8,,maven
 apache/httpcomponents-core,master,8,,maven
 apache/hudi,master,8,,maven
 apache/iceberg,master,8,,gradlew
-apache/ignite,master,8,,maven
 apache/ignite,master,8,,mvnw
 apache/ignite-3,main,8,,maven
 apache/ignite-extensions,master,8,,maven
@@ -2465,7 +2454,6 @@ apache/pluto,trunk,8,,maven
 apache/poi,trunk,8,,gradlew
 apache/polygene-java,master,8,,gradlew
 apache/portals-pluto,master,8,,maven
-apache/pulsar,master,8,,maven
 apache/pulsar,master,8,,mvnw
 apache/pulsar-adapters,master,8,,maven
 apache/pulsar-connectors,master,8,,maven
@@ -2528,7 +2516,6 @@ apache/shardingsphere-ui,master,8,,maven
 apache/shindig,trunk,8,,maven
 apache/shiro,main,8,,maven
 apache/sis,master,8,,maven
-apache/skywalking,master,8,,maven
 apache/skywalking,master,8,,mvnw
 apache/skywalking-agent-test-tool,master,8,,maven
 apache/skywalking-banyandb-java-client,main,8,,maven
@@ -2888,7 +2875,6 @@ apache/xmlgraphics-batik,trunk,8,,maven
 apache/xmlgraphics-commons,trunk,8,,maven
 apache/xmlgraphics-fop,trunk,8,,maven
 apache/xmlgraphics-fop-pdf-images,trunk,8,,maven
-apache/zeppelin,master,8,,maven
 apache/zeppelin,master,8,,mvnw
 apache/zookeeper,master,8,,maven
 apereo/cas,master,8,,gradlew
@@ -3106,7 +3092,6 @@ aws/aws-kinesisanalytics-runtime,master,8,,maven
 aws/aws-msk-iam-auth,main,8,,gradlew
 aws/aws-sdk-java,master,8,,maven
 aws/aws-sdk-java-archetype,master,8,,maven
-aws/aws-sdk-java-v2,master,8,,maven
 aws/aws-sdk-java-v2,master,8,,mvnw
 aws/aws-secretsmanager-caching-java,master,8,,maven
 aws/aws-secretsmanager-jdbc,master,8,,maven
@@ -3438,13 +3423,11 @@ ciriti/CDelivery,develop,8,,gradlew
 ciscoo/cxf-codegen-gradle,master,8,,gradlew
 cisocrgroup/ocrd-postcorrection,master,8,,maven
 citerus/dddsample-core,master,8,,maven
-citrusframework/citrus,main,8,,maven
 citrusframework/citrus,main,8,,mvnw
 cjbi/wetech-cms,master,8,,maven
 ckm007/lab-platform,master,8,,maven
 clarinsi/reldi-depparse,master,8,,maven
 clarityai-eng/codeartifact-gradle-plugin,main,8,,gradlew
-classgraph/classgraph,latest,8,,maven
 classgraph/classgraph,latest,8,,mvnw
 classmethod-aws/gradle-aws-plugin,master,8,,gradlew
 clojure/clojure,master,8,,maven
@@ -3512,7 +3495,6 @@ confluentinc/kafka-connect-storage-common,master,8,,maven
 confluentinc/kafka-rest,master,8,,maven
 confluentinc/kafka-streams-examples,7.1.1-post,8,,maven
 confluentinc/kafka-tutorials,master,8,,gradlew
-confluentinc/ksql,master,8,,maven
 confluentinc/ksql,master,8,,mvnw
 confluentinc/online-inferencing-blog-application,master,8,,gradle
 confluentinc/openmessaging-benchmark,master,8,,maven
@@ -3771,7 +3753,6 @@ droidefense/engine,develop,8,,maven
 dromara/Jinx,master,8,,maven
 dromara/MaxKey,main,8,,gradlew
 droolsjbpm/drools,main,8,,maven
-dropwizard/dropwizard,release/2.1.x,8,,maven
 dropwizard/dropwizard,release/2.1.x,8,,mvnw
 dropwizard/dropwizard-cassandra,master,8,,maven
 dropwizard/dropwizard-elasticsearch,master,8,,maven
@@ -3788,7 +3769,6 @@ dropwizard/dropwizard-testing-junit4,main,8,,maven
 dropwizard/dropwizard-vavr,master,8,,maven
 dropwizard/dropwizard-web,master,8,,maven
 dropwizard/logback-throttling-appender,master,8,,maven
-dropwizard/metrics,release/4.2.x,8,,maven
 dropwizard/metrics,release/4.2.x,8,,mvnw
 druid-io/druid,master,8,,maven
 dryrum/CDelivery,develop,8,,gradlew
@@ -4025,7 +4005,6 @@ elastic/attached-artifact-enforcer,master,8,,maven
 elastic/die-with-dignity-plugin,master,8,,maven
 elastic/ecs-logging-java,main,8,,maven
 elastic/elasticsearch,master,17,,gradlew
-elastic/elasticsearch,master,8,,gradlew
 elastic/elasticsearch-hadoop,main,8,,gradlew
 elastic/elasticsearch-hdfs,master,8,,maven
 elastic/elasticsearch-java,main,8,,gradlew
@@ -4144,7 +4123,6 @@ fabric8-launcher/launchpad-missioncontrol,master,8,,maven
 fabric8io/agent-bond,master,8,,maven
 fabric8io/docker-maven-plugin,master,8,,maven
 fabric8io/fabric8-maven-plugin,master,8,,maven
-fabric8io/kubernetes-client,master,8,,maven
 fabric8io/kubernetes-client,master,8,,mvnw
 fabric8io/vertx-maven-plugin,master,8,,maven
 fabriciocolombo/sonar-delphi,master,8,,maven
@@ -4356,7 +4334,6 @@ go-lang-plugin-org/go-lang-idea-plugin,master,8,,gradlew
 goblinr/git-changelog-gradle-plugin,master,8,,gradlew
 gocd/functional-tests,master,8,,maven
 gocd/gocd,master,11,,gradlew
-gocd/gocd,master,8,,gradlew
 gocd/gocd-database-migrator,master,8,,gradlew
 goldmansachs/jdmn,master,8,,maven
 goldmansachs/obevo,master,8,,maven
@@ -4425,10 +4402,8 @@ google/grafika,master,8,,gradlew
 google/graphicsfuzz,master,8,,maven
 google/ground-android,master,11,,gradlew
 google/gson,master,8,,maven
-google/guava,master,8,,maven
 google/guava,master,8,org.openrewrite.java.GoogleJavaFormat,maven
 google/guava-beta-checker,master,8,,maven
-google/guice,master,8,,maven
 google/guice,master,8,org.openrewrite.java.GoogleJavaFormat,maven
 google/guice-aqueduct,master,8,,maven
 google/gwteventbinder,master,8,,maven
@@ -4654,7 +4629,6 @@ hanshou101/codeql________SonatypeNexusRepository________9fb1dabc,9fb1dabc,8,,mav
 hanshou101/codeql________log4j2________be881e50,be881e50,8,,maven
 hanshou101/codeql________ofcms________bf2e982a,master,8,,maven
 hanshou101/codeql________struts________1fec0845,2_5_16,8,,maven
-hapifhir/hapi-fhir,master,8,,maven
 hapifhir/hapi-fhir,master,8,,mvnw
 hapifhir/hapi-fhir-jpaserver-starter,master,8,,maven
 hapifhir/hapi-hl7v2,master,8,,maven
@@ -4673,7 +4647,6 @@ hauner/openapi-generatr-gradle,master,8,,gradlew
 hauner/openapi-processor-gradle,master,8,,gradlew
 haveno-dex/haveno,master,8,,gradlew
 hawtio/hawtio,main,8,,maven
-hazelcast/hazelcast,master,8,,maven
 hazelcast/hazelcast,master,8,,mvnw
 hazelcast/hazelcast-aws,master,8,,maven
 hazelcast/hazelcast-code-samples,master,8,,maven
@@ -4970,7 +4943,6 @@ icesmith/android-text-resolver,master,8,,gradlew
 icza/scelight,master,8,,gradlew
 idpass/idpass-lite-java,develop,8,,gradlew
 ifreefly/AutoScore,master,8,,maven
-igniterealtime/Openfire,main,8,,maven
 igniterealtime/Openfire,main,8,,mvnw
 igniterealtime/Smack,master,8,,gradle
 igniterealtime/Spark,master,8,,maven
@@ -4998,7 +4970,6 @@ ileasile/kotlin-libs-publisher,master,8,,gradlew
 ilgun/Google-Speech-Recognition-Service,master,8,,maven
 ilmila/J2EEScan,master,8,,maven
 ilovemilk/semver-git-plugin,master,8,,gradlew
-iluwatar/java-design-patterns,master,8,,maven
 iluwatar/java-design-patterns,master,8,,mvnw
 imagej/ij1-patcher,master,8,,maven
 imagej/imagej-common,master,8,,maven
@@ -5139,7 +5110,6 @@ javaee/jersey,master,8,,maven
 javaee171110/develop,master,8,,maven
 javamelody/javamelody,master,8,,maven
 javamuc/gradle-semantic-build-versioning,master,8,,gradlew
-javaparser/javaparser,master,8,,maven
 javaparser/javaparser,master,8,,mvnw
 javaparser/javasymbolsolver,master,8,,gradlew
 javidgon/jenkins-appconnect,master,8,,maven
@@ -6777,7 +6747,6 @@ jhipster/jhipster-neo4j-app,master,8,,maven
 jhipster/jhipster-online,main,8,,maven
 jhipster/jhipster-operator,master,8,,maven
 jhipster/jhipster-registry,main,8,,maven
-jhipster/jhipster-sample-app,main,8,,maven
 jhipster/jhipster-sample-app,main,8,,mvnw
 jhipster/jhipster-sample-app-cassandra,main,8,,maven
 jhipster/jhipster-sample-app-couchbase,main,8,,maven
@@ -6785,9 +6754,7 @@ jhipster/jhipster-sample-app-dto,main,8,,maven
 jhipster/jhipster-sample-app-elasticsearch,main,8,,maven
 jhipster/jhipster-sample-app-gateway,main,8,,maven
 jhipster/jhipster-sample-app-java7,master,8,,maven
-jhipster/jhipster-sample-app-micronaut,main,8,,maven
 jhipster/jhipster-sample-app-micronaut,main,8,,mvnw
-jhipster/jhipster-sample-app-microservice,main,8,,maven
 jhipster/jhipster-sample-app-microservice,main,8,,mvnw
 jhipster/jhipster-sample-app-mongodb,main,8,,maven
 jhipster/jhipster-sample-app-ng1,master,8,,maven
@@ -6916,7 +6883,6 @@ julianhyde/eigenbase-properties,master,8,,maven
 juliapim/DiSSCo-Prepare,main,8,,maven
 julioz/FloorPlan,master,8,,gradlew
 junit-team/junit,main,8,,mvnw
-junit-team/junit4,main,8,,maven
 junit-team/junit4,main,8,,mvnw
 junit-team/junit5,main,8,,gradlew
 junit-team/junit5-workshop,main,8,,gradlew
@@ -7097,7 +7063,6 @@ ksoichiro/gradle-web-resource-plugin,master,8,,gradlew
 kstyrc/embedded-redis,master,8,,maven
 kt3k/ebean-enhance-plugin,master,8,,gradlew
 kuali/kfs,master,8,,maven
-kubernetes-client/java,master,8,,maven
 kubernetes-client/java,master,8,,mvnw
 kumuluz/kumuluzee,master,8,,maven
 kungfoo/ergon-gradle-goodies-versioning,master,8,,gradlew
@@ -7537,7 +7502,6 @@ microsoft/azure-maven-plugins,develop,8,,maven
 microsoft/azure-shortcuts-for-java,master,8,,maven
 microsoft/azure-spark-java-sdk,master,8,,maven
 microsoft/azure-tools-for-java,develop,11,,gradlew
-microsoft/azure-tools-for-java,develop,8,,gradlew
 microsoft/bing-commerce-sdk-for-java,master,8,,maven
 microsoft/bing-search-sdk-for-java,main,8,,maven
 microsoft/botbuilder-java,main,8,,maven
@@ -7719,7 +7683,6 @@ mwwojcik/4Fotos,master,8,,maven
 mxn21/FlowingDrawer,master,8,,gradlew
 myamoto/HeavyFeather,master,8,,maven
 mybatis/migrations,master,8,,maven
-mybatis/mybatis-3,master,8,,maven
 mybatis/mybatis-3,master,8,,mvnw
 mybatis/spring,master,8,,mvnw
 mybatis/spring-boot-starter,master,8,,mvnw
@@ -7823,9 +7786,7 @@ neo4j/neo4j-browser,master,8,,maven
 neo4j/neo4j-documentation,dev,8,,maven
 neo4j/neo4j-example-auth-plugins,4.3,8,,maven
 neo4j/neo4j-java-driver,5.0,8,,maven
-neo4j/neo4j-java-driver-spring-boot-starter,master,8,,maven
 neo4j/neo4j-java-driver-spring-boot-starter,master,8,,mvnw
-neo4j/neo4j-ogm,master,8,,maven
 neo4j/neo4j-ogm,master,8,,mvnw
 neo4j/neo4j-ogm-quarkus,main,8,,maven
 neo4j/parents,master,8,,maven
@@ -7838,7 +7799,6 @@ netarchivesuite/solrwayback,master,8,,maven
 netfalo/gradle-raml-plugin,master,8,,gradlew
 netflix/spectator,main,8,,gradlew
 netifi/gradle-flatbuffers-plugin,master,8,,gradlew
-netty/netty,4.1,8,,maven
 netty/netty,4.1,8,,mvnw
 netty/netty-build,master,8,,maven
 netty/netty-incubator-buffer-api,main,8,,maven
@@ -8163,7 +8123,6 @@ palantir/curator-test-rule,master,8,,gradlew
 palantir/dialogue,develop,8,,gradlew
 palantir/docker-compose-rule,master,11,,gradlew
 palantir/docker-proxy-rule,develop,11,,gradlew
-palantir/docker-proxy-rule,develop,8,,gradlew
 palantir/encrypted-config-value,develop,8,,gradlew
 palantir/foundry-athena-query-federation-connector,develop,11,,gradlew
 palantir/gerrit-ci,master,8,,gradlew
@@ -8312,7 +8271,6 @@ praveenkumar5766/Sonarqube-java,master,8,,maven
 prazmok/aws-sam-gradle,master,8,,gradlew
 premex-ab/ownership-gradle-plugin,main,8,,gradlew
 premium-minds/billy,master,8,,maven
-prestodb/presto,master,8,,maven
 prestodb/presto,master,8,,mvnw
 prestodb/presto-hadoop-apache2,master,8,,maven
 prestodb/tempto,master,8,,gradlew
@@ -8400,19 +8358,15 @@ quarkusio/build-reporting-maven-extension,main,8,,maven
 quarkusio/gizmo,main,8,,maven
 quarkusio/qlue,master,8,,maven
 quarkusio/qson,master,8,,maven
-quarkusio/quarkus,main,8,,maven
 quarkusio/quarkus,main,8,,mvnw
-quarkusio/quarkus-backports,main,8,,maven
 quarkusio/quarkus-backports,main,8,,mvnw
 quarkusio/quarkus-devtools-compat,main,8,,maven
 quarkusio/quarkus-fs-util,main,8,,maven
-quarkusio/quarkus-github-bot,main,8,,maven
 quarkusio/quarkus-github-bot,main,8,,mvnw
 quarkusio/quarkus-http,main,8,,maven
 quarkusio/quarkus-keycloak-adapter,master,8,,maven
 quarkusio/quarkus-platform,main,8,,maven
 quarkusio/quarkus-platform-bom-generator,main,8,,maven
-quarkusio/quarkus-quickstarts,main,8,,maven
 quarkusio/quarkus-quickstarts,main,8,,mvnw
 quarkusio/quarkus-router,master,8,,maven
 quarkusio/quarkus-security,main,8,,maven
@@ -8460,7 +8414,6 @@ rahulsom/waena,master,8,,gradlew
 rainbowQQsugar/ontap,master,8,,gradlew
 ramonwirsch/fopRenderer,master,8,,gradlew
 raniejade/godot-kotlin,master,8,,gradlew
-raphw/byte-buddy,master,8,,maven
 raphw/byte-buddy,master,8,,mvnw
 rapid7/metasploit-javapayload,master,8,,maven
 rapidminer/rapidminer-studio,master,8,,gradlew
@@ -8472,7 +8425,6 @@ raydac/mvn-golang,master,8,,maven
 raydac/zxpoly,master,8,,maven
 rayokota/kareldb,master,8,,maven
 razerdp/BasePopup,master,11,,gradlew
-razerdp/BasePopup,master,8,,gradlew
 rbkmoney/rotatable_appender,master,8,,maven
 rchodava/datamill,master,8,,maven
 rcw3bb/gs-codenarc,master,8,,gradlew
@@ -8609,7 +8561,6 @@ rrd4j/rrd4j,master,8,,maven
 rsavin/microwave-gradle-plugin,master,8,,gradlew
 rsksmart/rskj,master,8,,gradlew
 rstoyanchev/spring-websocket-portfolio,master,8,,maven
-rubenlagus/TelegramBots,master,8,,maven
 rubenlagus/TelegramBots,master,8,,mvnw
 rubensousa/PreviewSeekBar,master,8,,gradlew
 rubensousa/RecyclerViewSnap,master,8,,gradlew
@@ -8761,7 +8712,6 @@ shipkit/org.shipkit.shipkit-auto-version,master,8,,gradlew
 shipkit/shipkit-changelog,master,8,,gradlew
 shlxs/docker-boot,master,8,,gradlew
 shoebox/gradle-haxe,master,8,,gradlew
-shopizer-ecommerce/shopizer,master,8,,maven
 shopizer-ecommerce/shopizer,master,8,,mvnw
 shrinkwrap/shrinkwrap,main,8,,maven
 shuizuyizu/springsource,master,8,,gradlew
@@ -8945,7 +8895,6 @@ spring-cloud/spring-cloud-bus,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-circuitbreaker,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-cloudfoundry,main,8,,mvnw
 spring-cloud/spring-cloud-common-security-config,main,8,,mvnw
-spring-cloud/spring-cloud-commons,main,8,,maven
 spring-cloud/spring-cloud-commons,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-config,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-consul,main,8,org.openrewrite.java.SpringFormat,mvnw
@@ -8965,7 +8914,6 @@ spring-cloud/spring-cloud-open-service-broker,main,8,,gradlew
 spring-cloud/spring-cloud-openfeign,main,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-schema-registry,main,8,,mvnw
 spring-cloud/spring-cloud-security,main,8,org.openrewrite.java.SpringFormat,mvnw
-spring-cloud/spring-cloud-skipper,main,8,,maven
 spring-cloud/spring-cloud-skipper,main,8,,mvnw
 spring-cloud/spring-cloud-sleuth,3.1.x,8,org.openrewrite.java.SpringFormat,mvnw
 spring-cloud/spring-cloud-stream,main,8,org.openrewrite.java.SpringFormat,mvnw
@@ -8997,27 +8945,19 @@ spring-projects/spring-boot,main,8,,gradlew
 spring-projects/spring-boot-data-geode,main,8,,gradlew
 spring-projects/spring-credhub,main,8,,gradlew
 spring-projects/spring-data-book,master,8,,maven
-spring-projects/spring-data-cassandra,main,8,,maven
 spring-projects/spring-data-cassandra,main,8,,mvnw
-spring-projects/spring-data-commons,main,8,,maven
 spring-projects/spring-data-commons,main,8,,mvnw
-spring-projects/spring-data-couchbase,main,8,,maven
 spring-projects/spring-data-couchbase,main,8,,mvnw
-spring-projects/spring-data-elasticsearch,main,8,,maven
 spring-projects/spring-data-elasticsearch,main,8,,mvnw
-spring-projects/spring-data-examples,main,8,,maven
 spring-projects/spring-data-examples,main,8,,mvnw
 spring-projects/spring-data-gemfire,main,8,,maven
 spring-projects/spring-data-gemfire-sts-templates,master,8,,maven
 spring-projects/spring-data-geode,main,8,,maven
 spring-projects/spring-data-jdbc,main,8,,mvnw
-spring-projects/spring-data-jpa,main,8,,maven
 spring-projects/spring-data-jpa,main,8,,mvnw
 spring-projects/spring-data-keyvalue,main,8,,maven
 spring-projects/spring-data-ldap,main,8,,maven
-spring-projects/spring-data-mongodb,main,8,,maven
 spring-projects/spring-data-mongodb,main,8,,mvnw
-spring-projects/spring-data-neo4j,main,8,,maven
 spring-projects/spring-data-neo4j,main,8,,mvnw
 spring-projects/spring-data-redis,main,8,,maven
 spring-projects/spring-data-relational,main,8,,maven
@@ -9028,7 +8968,6 @@ spring-projects/spring-framework,main,8,org.openrewrite.java.SpringFormat,gradle
 spring-projects/spring-gemfire-examples,main,8,,gradlew
 spring-projects/spring-graphql,main,8,,gradlew
 spring-projects/spring-guice,master,8,,maven
-spring-projects/spring-hateoas,main,8,,maven
 spring-projects/spring-hateoas,main,8,,mvnw
 spring-projects/spring-hateoas-examples,main,8,,maven
 spring-projects/spring-ide,main,8,,maven
@@ -9063,10 +9002,8 @@ spring-projects/spring-statemachine,main,8,,gradlew
 spring-projects/spring-tenancy,master,8,,maven
 spring-projects/spring-test-data-geode,main,8,,gradlew
 spring-projects/spring-tuple,master,8,,maven
-spring-projects/spring-vault,main,8,,maven
 spring-projects/spring-vault,main,8,,mvnw
 spring-projects/spring-webflow,main,8,,gradlew
-spring-projects/spring-ws,main,8,,maven
 spring-projects/spring-ws,main,8,,mvnw
 spring-projects/spring-ws-samples,main,8,,maven
 spring2go/s2g-zuul,master,8,,maven
@@ -9601,9 +9538,7 @@ wForget/flink-atlas-agent,master,8,,maven
 wakingrufus/swagger-gradle-plugin,master,8,,gradlew
 wala/WALA,master,8,,gradlew
 walkmod/walkmod-core,master,8,,maven
-walmartlabs/concord,master,8,,maven
 walmartlabs/concord,master,8,,mvnw
-walmartlabs/concord-plugins,master,8,,maven
 walmartlabs/concord-plugins,master,8,,mvnw
 walmartlabs/gozer,master,8,,maven
 walmartlabs/hadoop-openstack-swifta,master,8,,maven
@@ -9651,7 +9586,6 @@ wihoho/FaceRecognition,master,8,,maven
 wild46cat/logbacksourcestudy,master,8,,maven
 wildfly/galleon,main,8,,maven
 wildfly/jandex,master,8,,maven
-wildfly/wildfly,main,8,,maven
 wildfly/wildfly,main,8,,mvnw
 wildfly/wildfly-core,main,8,,maven
 wildfly/wildfly-gradle-tools,master,8,,gradlew
