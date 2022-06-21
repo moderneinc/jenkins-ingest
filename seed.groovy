@@ -6,7 +6,7 @@ def gradleInitRepoFile = "moderne-init.gradle"
 def mavenGradleEnterpriseXmlFileId = "maven-gradle-enterprise-xml"
 def mavenGradleEnterpriseXmlRepoFile = ".mvn/gradle-enterprise.xml"
 
-def mavenIngestSettingsXmlFileId = "maven-ingest-settings-xml"
+def mavenIngestSettingsFileId = "maven-ingest-settings-credentials"
 def mavenIngestSettingsXmlRepoFile = ".mvn/ingest-settings.xml"
 
 def mavenAddExtensionShellFileId = "maven-add-extension.sh"
@@ -29,17 +29,24 @@ configFiles {
         comment("A gradle-enterprise.xml file that defines how to connect to ge.openrewrite.org")
         content readFileFromWorkspace('maven/gradle-enterprise.xml')
     }
-    xmlConfig {
-        id(mavenIngestSettingsXmlFileId)
-        name("Maven: ingest-maven-settings.xml")
-        comment("A maven settings file that sets mirror on repos that at know to use http")
-        content readFileFromWorkspace('maven/ingest-settings.xml')
-    }
     customConfig {
         id(mavenAddExtensionShellFileId)
         name("Maven: add-extension.sh")
         comment("A shell script that will add the gradle enterprise extension to a Maven Build")
         content readFileFromWorkspace('maven/add-extension.sh')
+    }
+    mavenSettingsConfig {
+        id(mavenIngestSettingsFileId)
+        name("Maven Settings: ingest-maven-settings.xml")
+        comment("Maven settings that sets mirror on repos that are known to use http, and injects artifactory credentials")
+        content readFileFromWorkspace('maven/ingest-settings.xml')
+        isReplaceAll(true)
+        serverCredentialMappings {
+            serverCredentialMapping {
+                serverId('moderne-public')
+                credentialsId('artifactory')
+            }
+        }
     }
 }
 new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
@@ -71,7 +78,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
             goals("-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn process-test-classes io.moderne:moderne-maven-plugin:0.11.3:ast")
 
-            providedSettings('ingest-maven-settings.xml')
+            providedSettings(mavenIngestSettingsFileId)
 
             scm {
                 git {
@@ -164,7 +171,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         file(mavenGradleEnterpriseXmlFileId) {
                             targetLocation(mavenGradleEnterpriseXmlRepoFile)
                         }
-                        file(mavenIngestSettingsXmlFileId) {
+                        file(mavenIngestSettingsFileId) {
                             targetLocation(mavenIngestSettingsXmlRepoFile)
                         }
                         file(mavenAddExtensionShellFileId) {
