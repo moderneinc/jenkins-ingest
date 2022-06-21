@@ -1895,7 +1895,7 @@ apache/accumulo-instamo-archetype,main,8,,maven
 apache/accumulo-maven-plugin,main,8,,maven
 apache/accumulo-pig,main,8,,maven
 apache/accumulo-proxy,main,8,,maven
-apache/accumulo-testing,main,8,,mvnw
+apache/accumulo-testing,main,8,,maven
 apache/accumulo-wikisearch,main,8,,maven
 apache/ace,trunk,8,,gradlew
 apache/activemq,main,8,,maven
