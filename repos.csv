@@ -1890,7 +1890,7 @@ aosp-caf-upstream/platform_external_javaparser,pie,8,,maven
 apache/accumulo,main,8,,maven
 apache/accumulo-bsp,main,8,,maven
 apache/accumulo-classloaders,main,8,,maven
-apache/accumulo-examples,main,8,,maven
+apache/accumulo-examples,main,11,,maven
 apache/accumulo-instamo-archetype,main,8,,maven
 apache/accumulo-maven-plugin,main,8,,maven
 apache/accumulo-pig,main,8,,maven
