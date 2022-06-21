@@ -61,7 +61,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
     println("creating job $repoJobName")
     // TODO figure out how to store rewrite version, look it up on next run, and if rewrite hasn't changed and commit hasn't changed, don't run.
-    if (repoBuildTool == 'maven') {
+    if (repoBuildTool.startsWith("maven")) {
         mavenJob("ingest/$repoJobName") {
             label('multi-jdk')
 
@@ -69,7 +69,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
             mavenInstallation(jenkinsMavenName)
 
-            goals("-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn io.moderne:moderne-maven-plugin:0.11.3:ast")
+            goals("-B -DpomCacheDirectory=. -Drat.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn process-test-classes io.moderne:moderne-maven-plugin:0.11.3:ast")
 
             providedSettings('ingest-maven-settings.xml')
 
