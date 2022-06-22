@@ -1,34 +1,9 @@
 <settings>
     <mirrors>
         <mirror>
-            <id>secure-repo.jenkins-ci.org</id>
-            <mirrorOf>repo.jenkins-ci.org</mirrorOf>
-            <url>https://repo.jenkins-ci.org/public</url>
-        </mirror>
-        <mirror>
-            <id>secure-central</id>
-            <mirrorOf>central</mirrorOf>
-            <url>https://repo1.maven.org/maven2</url>
+            <id>moderne-remote-cache</id>
+            <mirrorOf>external:*</mirrorOf>
+            <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
         </mirror>
     </mirrors>
-
-    <profiles>
-        <profile>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <repositories>
-                <repository>
-                    <releases>
-                    <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                    <enabled>true</enabled>
-                    </snapshots>
-                    <id>apache-snapshots-injected</id>
-                    <url>https://repository.apache.org/snapshots</url>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
 </settings>
