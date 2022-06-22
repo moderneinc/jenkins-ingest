@@ -46,6 +46,10 @@ configFiles {
                 serverId('moderne-public')
                 credentialsId('artifactory')
             }
+            serverCredentialMapping {
+                serverId('moderne-remote-cache')
+                credentialsId('artifactory')
+            }
         }
     }
 }
