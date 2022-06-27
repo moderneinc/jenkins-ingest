@@ -171,6 +171,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                             keyFromText 'moderne-public-ast'
                         }
                     }
+                    resolverDetails {
+                        artifactoryName 'moderne-artifactory'
+                    }
                     envVarsPatterns {
                         includePatterns {}
                         excludePatterns '*password*,*psw*,*secret*,*key*,*token*'
