@@ -173,6 +173,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                     resolverDetails {
                         artifactoryName 'moderne-artifactory'
+                        resolveReleaseRepository {
+                            keyFromText ''
+                        }
                     }
                     envVarsPatterns {
                         includePatterns {}
