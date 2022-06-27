@@ -152,6 +152,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
             configure { node ->
                 node / 'buildWrappers' << 'org.jfrog.hudson.gradle.ArtifactoryGradleConfigurator' {
+                    deployArtifacts true
                     deployMaven true
                     useMavenPatterns true
                     deploymentProperties 'moderne_parsed=true'
