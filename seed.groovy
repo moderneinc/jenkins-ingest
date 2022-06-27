@@ -154,6 +154,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 node / 'buildWrappers' << 'org.jfrog.hudson.gradle.ArtifactoryGradleConfigurator' {
                     deployArtifacts true
                     deployMaven true
+                    deployIvy false
+                    deployBuildInfo false
+                    includeEnvVars false
                     useMavenPatterns true
                     deploymentProperties 'moderne_parsed=true'
                     artifactDeploymentPatterns {
@@ -167,6 +170,10 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         deploySnapshotRepository {
                             keyFromText 'moderne-public-ast'
                         }
+                    }
+                    envVarsPatterns {
+                        includePatterns {}
+                        excludePatterns '*password*,*psw*,*secret*,*key*,*token*'
                     }
                 }
             }
