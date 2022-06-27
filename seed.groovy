@@ -64,8 +64,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoBuildTool = tokens[4]
     def repoJobName = repoName.replaceAll('/', '_')
 
-    boolean isGradleBuild = ['gradle', 'gradlew'].contains(repoBuildTool);
-    boolean isMavenBuild = repoBuildTool != null && (repoBuildTool.startsWith("maven") || repoBuildTool.equals("mvnw"));
+    boolean isGradleBuild = ['gradle', 'gradlew'].contains(repoBuildTool)
+    boolean isMavenBuild = repoBuildTool != null && (repoBuildTool.startsWith("maven") || repoBuildTool.equals("mvnw"))
     //The latest version of maven is used if the repoBuildTool is just "maven", otherwise the name repoBuildTool is treated as the jenkins name.
     def jenkinsMavenName = repoBuildTool != null && repoBuildTool == "maven" ? "maven3.x" : repoBuildTool
 
@@ -132,8 +132,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
         }
 
-        steps {
-            if (isGradleBuild) {
+        if (isGradleBuild) {
+            steps {
                 gradle {
                     if (repoBuildTool == 'gradle') {
                         useWrapper(false)
@@ -147,7 +147,26 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     } else {
                         switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile}")
                     }
-                    tasks('publishModernePublicationToMavenRepository')
+                    tasks('clean moderneJar artifactoryPublish')
+                }
+            }
+            configure { node ->
+                node / 'buildWrappers' << 'org.jfrog.hudson.gradle.ArtifactoryGradleConfigurator' {
+                    deployMaven true
+                    useMavenPatterns true
+                    deploymentProperties 'moderne_parsed=true'
+                    artifactDeploymentPatterns {
+                        includePatterns '*-ast.jar'
+                    }
+                    deployerDetails {
+                        artifactoryName 'moderne-artifactory'
+                        deployReleaseRepository {
+                            keyFromText 'moderne-public-ast'
+                        }
+                        deploySnapshotRepository {
+                            keyFromText 'moderne-public-ast'
+                        }
+                    }
                 }
             }
         }
@@ -170,8 +189,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
                     deployArtifacts true
+                    deploymentProperties 'moderne_parsed=true'
                     artifactDeploymentPatterns {
-                        includePatterns '*-ast.*'
+                        includePatterns '*-ast.jar'
                     }
                     deployerDetails {
                         artifactoryName 'moderne-artifactory'

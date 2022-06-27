@@ -1,9 +1,9 @@
 import org.gradle.util.GradleVersion
 
 /**
-    Do not make changes to this file directly in Jenkins, just push changes to
-    github. The Seed job will always update the file on Jenkins based on the current
-    version of this file in the rep.
+ Do not make changes to this file directly in Jenkins, just push changes to
+ github. The Seed job will always update the file on Jenkins based on the current
+ version of this file in the rep.
  */
 initscript {
 
@@ -107,7 +107,7 @@ allprojects {
             if (!project.plugins.hasPlugin('maven-publish')) {
                 project.plugins.apply('maven-publish')
             }
-            
+
             if(project.group == null || project.group.isBlank()) {
                 // For publishing to succeed a groupId must be set
                 project.group = "io.moderne.unknown"
@@ -128,13 +128,11 @@ allprojects {
                         }
                     }
                 }
-                repositories {
-                    maven {
-                        url = 'https://artifactory.moderne.ninja/artifactory/moderne-public-ast/'
-                        credentials {
-                            username = System.getenv("ARTIFACTORY_USER")
-                            password = System.getenv("ARTIFACTORY_PASSWORD")
-                        }
+            }
+            project.artifactory {
+                publish {
+                    defaults {
+                        publications('moderne')
                     }
                 }
             }
