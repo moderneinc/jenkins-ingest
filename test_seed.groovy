@@ -50,7 +50,7 @@ configFiles {
     customConfig {
         id(gradleScmPropsToEnvShellFileId)
         name('Gradle: gradle-scmprops-to-env.sh')
-        command('A shell script that loads scm.properties produced by a gradle job into env vars prefixed with moderne_.')
+        comment('A shell script that loads scm.properties produced by a gradle job into env vars prefixed with moderne_.')
         content readFileFromWorkspace('util/gradle-scmprops-to-env.sh')
     }
     mavenSettingsConfig {
