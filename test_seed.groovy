@@ -133,6 +133,9 @@ new File(workspaceDir, 'test_repos.csv').splitEachLine(',') { tokens ->
                     file(gradleInitFileId) {
                         targetLocation(gradleInitRepoFile)
                     }
+                    file(gradleScmPropsToEnvShellFileId) {
+                        targetLocation(gradleScmPropsToEnvShellRepoLocation)
+                    }
                 }
             }
             if (isMavenBuild) {
@@ -148,9 +151,6 @@ new File(workspaceDir, 'test_repos.csv').splitEachLine(',') { tokens ->
                     }
                     file(mavenScmPropsToEnvShellFileId) {
                         targetLocation(mavenScmPropsToEnvShellRepoLocation)
-                    }
-                    file(gradleScmPropsToEnvShellFileId) {
-                        targetLocation(gradleScmPropsToEnvShellRepoLocation)
                     }
                 }
             }
