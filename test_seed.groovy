@@ -183,7 +183,7 @@ new File(workspaceDir, 'test_repos.csv').splitEachLine(',') { tokens ->
                     deployBuildInfo false
                     includeEnvVars false
                     useMavenPatterns true
-                    deploymentProperties 'moderne_parsed=true,moderne_origin=${moderne_origin},moderne_path=${moderne_path},moderne_branch=${moderne_branch},moderne_change=${moderne_change},moderne_buildId=${moderne_buildId}'
+                    deploymentProperties 'moderne_parsed=true;moderne_origin=${moderne_origin};moderne_path=${moderne_path};moderne_branch=${moderne_branch};moderne_change=${moderne_change};moderne_buildId=${moderne_buildId}'
                     artifactDeploymentPatterns {
                         includePatterns '*-ast.jar'
                     }
@@ -228,7 +228,7 @@ new File(workspaceDir, 'test_repos.csv').splitEachLine(',') { tokens ->
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
                     deployArtifacts true
-                    deploymentProperties 'moderne_parsed=true,moderne_origin=${moderne_origin},moderne_path=${moderne_path},moderne_branch=${moderne_branch},moderne_change=${moderne_change},moderne_buildId=${moderne_buildId}'
+                    deploymentProperties 'moderne_parsed=true;moderne_origin=${moderne_origin};moderne_path=${moderne_path};moderne_branch=${moderne_branch};moderne_change=${moderne_change};moderne_buildId=${moderne_buildId}'
                     artifactDeploymentPatterns {
                         includePatterns '*-ast.jar'
                     }
