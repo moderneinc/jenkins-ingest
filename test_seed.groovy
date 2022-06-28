@@ -173,7 +173,7 @@ new File(workspaceDir, 'test_repos.csv').splitEachLine(',') { tokens ->
                     }
                     tasks('clean moderneJar artifactoryPublish')
                 }
-                shell("bash ${mavenScmPropsToEnvShellRepoLocation}")
+                shell("bash ${gradleScmPropsToEnvShellRepoLocation}")
             }
             configure { node ->
                 node / 'buildWrappers' << 'org.jfrog.hudson.gradle.ArtifactoryGradleConfigurator' {
