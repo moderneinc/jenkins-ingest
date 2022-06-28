@@ -8,4 +8,4 @@ do
   then
     export "moderne_$line"
   fi
-done < target/scm.properties
+done < scm.properties
