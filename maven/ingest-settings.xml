@@ -8,4 +8,19 @@
             <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
         </mirror>
     </mirrors>
+
+    <profiles>
+        <profile>
+            <id>moderne-cache-setup</id>
+            <activation><activeByDefault>true</activeByDefault></activation>
+            <repositories>
+                <repository>
+                    <id>moderne-remote-cache</id>
+                    <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 </settings>
