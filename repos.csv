@@ -1952,6 +1952,7 @@ apache/bval,master,8,,maven
 apache/calcite,main,8,,gradlew
 apache/calcite-avatica,main,8,,gradlew
 apache/camel,main,11,,mvnw
+apache/camel,main,8,,maven
 apache/camel-k-runtime,main,11,,maven
 apache/camel-kafka-connector,main,8,,maven
 apache/camel-kameleon,main,11,,maven
