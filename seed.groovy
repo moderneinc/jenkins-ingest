@@ -9,8 +9,8 @@ def mavenGradleEnterpriseXmlRepoFile = ".mvn/gradle-enterprise.xml"
 def mavenIngestSettingsXmlFileId = "maven-ingest-settings-credentials"
 def mavenIngestSettingsXmlRepoFile = ".mvn/ingest-settings.xml"
 
-def mavenAddExtensionShellFileId = "maven-add-extension.sh"
-def mavenAddExtensionShellRepoLocation = ".mvn/add-extension.sh"
+def mavenAddMvnConfigShellFileId = "maven-add-mvn-configuration.sh"
+def mavenAddMvnConfigShellRepoLocation = ".mvn/add-mvn-configuration.sh"
 
 folder('ingest') {
     displayName('Ingest Jobs')
@@ -30,10 +30,10 @@ configFiles {
         content readFileFromWorkspace('maven/gradle-enterprise.xml')
     }
     customConfig {
-        id(mavenAddExtensionShellFileId)
-        name("Maven: add-extension.sh")
-        comment("A shell script that will add the gradle enterprise extension to a Maven Build")
-        content readFileFromWorkspace('maven/add-extension.sh')
+        id(mavenAddMvnConfigShellFileId)
+        name("Maven: add-mvn-configuration.sh")
+        comment("A shell script that will adds custom mvn configurations to a Maven Build")
+        content readFileFromWorkspace('maven/add-mvn-configuration.sh')
     }
     mavenSettingsConfig {
         id(mavenIngestSettingsXmlFileId)
@@ -125,8 +125,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     file(mavenIngestSettingsXmlFileId) {
                         targetLocation(mavenIngestSettingsXmlRepoFile)
                     }
-                    file(mavenAddExtensionShellFileId) {
-                        targetLocation(mavenAddExtensionShellRepoLocation)
+                    file(mavenAddMvnConfigShellFileId) {
+                        targetLocation(mavenAddMvnConfigShellRepoLocation)
                     }
                 }
             }
@@ -189,8 +189,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             // A step that runs before the maven build to setup the gradle enterprise extension.
             steps {
                 // Adds a shell script into the Jobs workspace in /tmp.
-                // We should add the 'add-gradle-enterprise-extension.sh' and reference that in the shell method.
-                shell("bash ${mavenAddExtensionShellRepoLocation}")
+                shell("bash ${mavenAddMvnConfigShellRepoLocation}")
             }
             configure { node ->
 
