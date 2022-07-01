@@ -1133,6 +1133,7 @@ OpenHFT/Java-Lang,master,8,,maven
 OpenHelios/de.buehmann.gradle.jubula,master,8,,gradle
 OpenLiberty/ci.common,main,8,,maven
 OpenLiberty/ci.gradle,main,8,,gradlew
+OpenLiberty/ci.maven,main,8,,maven
 OpenLimark/GitFlowSemVerPlugin,develop,8,,gradlew
 OpenNMS/newts,master,8,,maven
 OpenNTF/SocialSDK,master,8,,maven
@@ -3026,6 +3027,7 @@ asascience-open/ncSOS,master,8,,maven
 ascendtech/gwt-gradle,master,8,,gradlew
 asciidoctor/asciidoclet,master,8,,maven
 asciidoctor/asciidoctor-gradle-plugin,master,8,,gradlew
+asciidoctor/asciidoctor-maven-plugin,main,8,,maven
 aseldawy/spatialhadoop2,master,8,,maven
 asholokh/utg-live-info,master,8,,maven
 asiL-tcefreP/blog,master,8,,maven
@@ -5054,6 +5056,7 @@ iwarapter/gradle-plugin-plugin,master,8,,gradlew
 iwarapter/gradle-sonar-packaging-plugin,master,8,,gradlew
 iwgang/CountdownView,master,8,,gradlew
 iwillfailyou/java-plugin-gradle,master,8,,gradlew
+izpack/izpack,master,8,,maven
 j-crawford/uPortal,master,8,,gradlew
 jGleitz/gradle-kubernetes,master,8,,gradlew
 jMonkeyEngine/jmonkeyengine,master,8,,gradlew
@@ -6956,6 +6959,7 @@ kevinYin/ideploy,dev,8,,maven
 kevinpotgieter/gradle-metrics-plugin,master,8,,gradlew
 kevinsawicki/http-request,master,8,,maven
 keyboardsurfer/Crouton,master,8,,gradlew
+keycloak/keycloak,main,8,,maven
 keycloak/keycloak,main,8,,mvnw
 keykey7/gradle-spawn-plugin,master,8,,gradlew
 khuxtable/wagon-gitsite,master,8,,maven
@@ -7648,6 +7652,7 @@ mozilla/megazord-gradle,master,8,,gradlew
 mozilla/offline-kws-stt-intent-parsing-android,master,8,,gradlew
 mozilla/rust-android-gradle,master,8,,gradlew
 mparlee/build-info-gradle-plugin,master,8,,gradlew
+mpetazzoni/ttorrent,master,8,,maven
 mpetuska/klip,master,8,,gradlew
 mpetuska/npm-publish,master,8,,gradlew
 mpztilera/modpackbuilder,master,8,,gradlew
@@ -8274,6 +8279,7 @@ prestodb/presto,master,8,,mvnw
 prestodb/presto-hadoop-apache2,master,8,,maven
 prestodb/tempto,master,8,,gradlew
 prezi/pride,master,8,,gradlew
+primefaces/primefaces,master,8,,maven
 pro-grade/pro-grade,master,8,,maven
 profyu/stock-tx,master,8,,maven
 progilone/numahop,master,8,,maven
@@ -8413,6 +8419,7 @@ rahulsom/waena,master,8,,gradlew
 rainbowQQsugar/ontap,master,8,,gradlew
 ramonwirsch/fopRenderer,master,8,,gradlew
 raniejade/godot-kotlin,master,8,,gradlew
+raphw/byte-buddy,master,8,,maven
 raphw/byte-buddy,master,8,,mvnw
 rapid7/metasploit-javapayload,master,8,,maven
 rapidminer/rapidminer-studio,master,8,,gradlew
@@ -9052,6 +9059,7 @@ square/squickpic,master,8,,gradlew
 square/tape,master,8,,gradlew
 square/wire,master,8,,gradlew
 squedgy/faris-test-plugin,master,8,,gradlew
+srikanth-lingala/zip4j,master,8,,maven
 sriram95rb/job,master,8,,maven
 srs/gradle-node-plugin,master,8,,gradlew
 sshoogr/sshoogr-parent,main,8,,gradlew
