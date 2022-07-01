@@ -28,6 +28,12 @@ if [ -z "$input_csv" ]; then
   exit 1
 fi
 
+c=`tail -c 1 $input_csv`
+if [ "$c" != "" ]; then
+    echo "Input CSV must have a trailing newline"
+    exit 1
+fi
+
 output_csv=${output_csv:-"repos.csv"}
 tmp_dir=${tmp_dir:-"."}
 clone_dir=${tmp_dir}/moderne-git
