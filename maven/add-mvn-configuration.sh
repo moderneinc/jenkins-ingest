@@ -4,7 +4,7 @@ MVN_DIR=".mvn"
 EXT_FILE="extensions.xml"
 MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.2</version></extension>"
 JVM_CONFIG="jvm.config"
-MVN_MEM ="Xmx2048m"
+MVN_MEM="Xmx2048m"
 # Create the .mvn directory if it does not exist.
 if [ ! -d "$MVN_DIR" ]; then
     mkdir "$MVN_DIR"
@@ -31,7 +31,7 @@ else
   RESULT="$(grep -E Xmx[0-9]+.* $MVN_DIR/$JVM_CONFIG)"
   if [ -z "$RESULT" ]; then
     echo " -$MVN_MEM" >> "$MVN_DIR/$JVM_CONFIG"
-  else$
+  else
     sed -i "s/Xmx[0-9]*[MmGg]/$MVN_MEM/" "$MVN_DIR/$JVM_CONFIG"
-  fi$
-fi$
+  fi
+fi
