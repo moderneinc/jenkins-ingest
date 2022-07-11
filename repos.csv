@@ -9326,6 +9326,14 @@ twilio/twilio-recordings-decrypter,master,8,,maven
 twilio/video-quickstart-android,master,11,,gradlew
 twilio/voice-quickstart-server-java,master,8,,maven
 twilio/wiztowar,master,8,,maven
+twitch4j/nitro-codegen,master,8,,gradlew
+twitch4j/sdcf4j-twitch,master,8,,gradlew
+twitch4j/streamlabs4j,master,8,,gradlew
+twitch4j/twitch4j,master,8,,gradlew
+twitch4j/twitch4j-chatbot,master,8,,gradlew
+twitch4j/twitch4j-chatbot-kotlin,master,8,,gradlew
+twitch4j/twitch4j-fabric,master,8,,gradlew
+twitch4j/twitch4j-minecraft-plugin,main,8,,gradlew
 twitter-archive/bookkeeper,master,8,,maven
 twitter-archive/distributedlog,master,8,,maven
 twitter/GraphJet,master,8,,maven
