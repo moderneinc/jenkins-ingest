@@ -2,7 +2,7 @@
 
 MVN_DIR=".mvn"
 EXT_FILE="extensions.xml"
-MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.2</version></extension>"
+MVN_EXT_XML="<extension><groupId>com.gradle</groupId><artifactId>gradle-enterprise-maven-extension</artifactId><version>1.14.4</version></extension>"
 JVM_CONFIG="jvm.config"
 MVN_MEM="Xmx2048m"
 # Create the .mvn directory if it does not exist.
