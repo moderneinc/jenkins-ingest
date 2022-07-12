@@ -129,10 +129,12 @@ allprojects {
                     }
                 }
             }
-            project.artifactory {
-                publish {
-                    defaults {
-                        publications('moderne')
+            if(project.extensions.findByName('artifactory')) {
+                project.artifactory {
+                    publish {
+                        defaults {
+                            publications('moderne')
+                        }
                     }
                 }
             }
