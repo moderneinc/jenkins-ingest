@@ -143,44 +143,11 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         makeExecutable(true)
                     }
                     if (repoStyle != null) {
-                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile}")
+                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M")
                     } else {
-                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile}")
+                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M")
                     }
                     tasks('clean moderneJar artifactoryPublish')
-                }
-            }
-            configure { node ->
-                node / 'buildWrappers' << 'org.jfrog.hudson.gradle.ArtifactoryGradleConfigurator' {
-                    deployArtifacts true
-                    deployMaven true
-                    deployIvy false
-                    deployBuildInfo false
-                    includeEnvVars false
-                    useMavenPatterns true
-                    deploymentProperties 'moderne_parsed=true'
-                    artifactDeploymentPatterns {
-                        includePatterns '*-ast.jar'
-                    }
-                    deployerDetails {
-                        artifactoryName 'moderne-artifactory'
-                        deployReleaseRepository {
-                            keyFromText 'moderne-public-ast'
-                        }
-                        deploySnapshotRepository {
-                            keyFromText 'moderne-public-ast'
-                        }
-                    }
-                    resolverDetails {
-                        artifactoryName 'moderne-artifactory'
-                        resolveReleaseRepository {
-                            keyFromText ''
-                        }
-                    }
-                    envVarsPatterns {
-                        includePatterns {}
-                        excludePatterns '*password*,*psw*,*secret*,*key*,*token*'
-                    }
                 }
             }
         }

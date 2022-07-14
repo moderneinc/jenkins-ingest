@@ -17,6 +17,7 @@ initscript {
     // Add moderne plugin to classpath of this init script.
     dependencies {
         classpath("io.moderne:moderne-gradle-plugin:latest.integration")
+        classpath("org.jfrog.buildinfo:build-info-extractor-gradle:latest.release")
     }
 
     // If this is the top level project and the gradle version is less than 6, the gradle enterprise
@@ -38,6 +39,8 @@ initscript {
         }
     }
 }
+
+addListener(new BuildInfoPluginListener())
 
 // Enable build cache, only available for Gradle 3.5+, so invoked defensively
 startParameter.metaClass.getMetaProperty("buildCacheEnabled")?.setProperty(startParameter, true)
@@ -99,44 +102,78 @@ allprojects {
             task.enabled = false
         }
     }
+    if (!"buildSrc".equals(project.name)) {
+
+        project.publishing {
+                publications {
+                    removeAll()
+                    create("moderne", MavenPublication.class) {
+                        artifacts = [tasks.getByName("moderneJar")]
+                    }
+                }
+        }
+        project.artifactory {
+            publish {
+                contextUrl = "https://artifactory.moderne.ninja/artifactory"
+                repository {
+                    repoKey = 'moderne-public-ast'
+                    username = System.getenv("ARTIFACTORY_USER")
+                    password = System.getenv("ARTIFACTORY_PASSWORD")
+                }
+                defaults {
+                    publications('moderne')
+                    properties = ['moderne_parsed': 'true']
+                    publishArtifacts = false
+                    publishBuildInfo = false
+                    publishPom = false
+                }
+                setIncludePatterns("*-ast.jar")
+                setFilterExcludedArtifactsFromBuild(true)
+            }
+            clientConfig.publisher.setIncludePatterns("*-ast.jar")
+            clientConfig.publisher.setFilterExcludedArtifactsFromBuild(true)
+        }
+    }
 
     project.afterEvaluate {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
             project.plugins.apply(io.moderne.gradle.ModernePlugin)
+        }
+        if(project.group == null || project.group.isBlank()) {
+            // For publishing to succeed a groupId must be set
+            project.group = "io.moderne.unknown"
+        }
+        // Plugin must be able to resolve its dependencies
+        project.repositories {
+            mavenLocal()
+            maven {
+                url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+            }
+            mavenCentral()
+        }
+    }
+}
 
-            if (!project.plugins.hasPlugin('maven-publish')) {
-                project.plugins.apply('maven-publish')
-            }
+class BuildInfoPluginListener extends BuildAdapter {
 
-            if(project.group == null || project.group.isBlank()) {
-                // For publishing to succeed a groupId must be set
-                project.group = "io.moderne.unknown"
-            }
-            // Plugin must be able to resolve its dependencies
-            project.repositories {
-                mavenLocal()
-                maven {
-                    url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-                }
-                mavenCentral()
-            }
-            project.publishing {
-                publishing {
-                    publications {
-                        create("moderne", MavenPublication.class) {
-                            artifacts = [tasks.getByName("moderneJar")]
-                        }
-                    }
+    def void projectsLoaded(Gradle gradle) {
+        Project root = gradle.getRootProject()
+        if (!"buildSrc".equals(root.name)) {
+            root.allprojects {
+                apply {
+                    apply plugin: org.jfrog.gradle.plugin.artifactory.ArtifactoryPlugin
+                    apply plugin: 'maven-publish'
+                    apply plugin: io.moderne.gradle.ModernePlugin
+
                 }
             }
-            if(project.extensions.findByName('artifactory')) {
-                project.artifactory {
-                    publish {
-                        defaults {
-                            publications('moderne')
-                        }
-                    }
-                }
+        }
+        //This enables the artifactory task to pickup publications.
+        for (Project p : root.getAllprojects()) {
+            Task t = p.getTasks().findByName(org.jfrog.gradle.plugin.artifactory.task.ArtifactoryTask.ARTIFACTORY_PUBLISH_TASK_NAME)
+            if (t != null) {
+                org.jfrog.gradle.plugin.artifactory.task.ArtifactoryTask task = (org.jfrog.gradle.plugin.artifactory.task.ArtifactoryTask) t
+                task.setCiServerBuild()
             }
         }
     }
