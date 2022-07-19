@@ -115,7 +115,7 @@ AsyncHttpClient/async-http-client,master,8,,maven
 Athou/commafeed,master,8,,mvnw
 Atmosphere/atmosphere,atmosphere-2.7.x,8,,maven
 Atmosphere/nettosphere,master,8,,maven
-Audiveris/audiveris,master,8,,gradlew
+Audiveris/audiveris,master,11,,gradlew
 AurityLab/graphql-kotlin-toolkit,master,8,,gradlew
 AuthMe/AuthMeReloaded,master,8,,maven
 AutoScout24/gradle-monkey-plugin,master,8,,gradlew
@@ -541,7 +541,7 @@ GoogleCloudPlatform/appengine-sharded-counters-java-maven,master,8,,maven
 GoogleCloudPlatform/appengine-tck,master,8,,maven
 GoogleCloudPlatform/appengine-websocketchat-java,master,8,,maven
 GoogleCloudPlatform/artifact-registry-maven-tools,master,8,,gradlew
-GoogleCloudPlatform/auto-data-tokenize,main,8,,gradlew
+GoogleCloudPlatform/auto-data-tokenize,main,11,,gradlew
 GoogleCloudPlatform/bank-of-anthos,main,8,,maven
 GoogleCloudPlatform/bigquery-data-importer,master,8,,gradlew
 GoogleCloudPlatform/bigquery-data-lineage,master,8,,maven
@@ -610,7 +610,7 @@ GraxCode/threadtear,master,8,,gradlew
 Graylog2/JadConfig,master,8,,maven
 Graylog2/graylog2-server,master,8,,maven
 Grover-c13/PokeGOAPI-Java,Development,8,,gradlew
-GumTreeDiff/gumtree,main,8,,gradlew
+GumTreeDiff/gumtree,main,11,,gradlew
 GuntherRademacher/rr,master,8,,gradlew
 H07000223/FlycoDialog_Master,master,8,,gradlew
 H07000223/FlycoTabLayout,master,8,,gradlew
@@ -707,7 +707,7 @@ IntrepidPursuits/static-analysis-gradle-plugin,master,8,,gradlew
 IridisMC/FebbGradle,master,8,,gradlew
 Ischca/InScope,master,8,,gradlew
 Islandora-Devops/isle-gradle-docker-plugin,main,8,,gradlew
-Isotropy-Studio/gradle-shaderc,master,8,,gradlew
+Isotropy-Studio/gradle-shaderc,master,11,,gradlew
 Itiviti/gradle-docker-build-plugin,master,8,,gradlew
 Itiviti/gradle-ikvm-plugin,master,8,,gradlew
 Itiviti/gradle-jibx-plugin,master,8,,gradlew
@@ -773,7 +773,7 @@ JetBrains-Research/extract-method-experiments,master,8,,gradlew
 JetBrains-Research/kinference-primitives,master,8,,gradlew
 JetBrains-Research/kotlinRMiner,master,8,,gradlew
 JetBrains-Research/topias,master,8,,gradlew
-JetBrains/Arend,master,8,,gradlew
+JetBrains/Arend,master,11,,gradlew
 JetBrains/Grammar-Kit,master,8,,gradlew
 JetBrains/TeamCity.SonarQubePlugin,master,8,,maven
 JetBrains/adt-tools-base,master,8,,gradle
@@ -800,7 +800,7 @@ JetBrains/intellij-deps-asm,master,8,,gradle
 JetBrains/intellij-deps-fastutil,master,8,,maven
 JetBrains/intellij-deps-ini4j,master,8,,maven
 JetBrains/intellij-deps-java-compatibility,master,8,,gradlew
-JetBrains/intellij-deps-jdi,master,8,,gradlew
+JetBrains/intellij-deps-jdi,master,11,,gradlew
 JetBrains/intellij-deps-jdom,master,8,,gradlew
 JetBrains/intellij-deps-log4j,main,8,,maven
 JetBrains/intellij-deps-proxy-vole,master,8,,maven
@@ -870,7 +870,7 @@ JodaOrg/joda-time,master,8,,maven
 JoeHughes-IBM/Kafka,trunk,8,,gradle
 JohnPersano/SuperToasts,master,8,,gradlew
 JohnWyeth/swagger,master,8,,maven
-JohnnyJayJay/codetester-gradle,main,8,,gradlew
+JohnnyJayJay/codetester-gradle,main,11,,gradlew
 JonathanImperato/loco-strings-sync,master,8,,gradlew
 JonathanxD/dokka-doc-io,master,8,,gradlew
 JoseLion/pretty-jupiter,master,8,,gradlew
@@ -1241,7 +1241,7 @@ SAP-archive/cloud-odata-java,master,8,,maven
 SAP-archive/xliff-1-2,master,8,,maven
 SAP/cloud-language-servers-container,master,8,,maven
 SAP/commerce-gradle-plugin,main,8,,gradlew
-SCADA-LTS/Scada-LTS,develop,8,,gradle
+SCADA-LTS/Scada-LTS,develop,11,,gradle
 SHsuperCM/FletchingTable,main,8,,gradlew
 STAMP-project/EvoCrash,master,8,,maven
 STAMP-project/test-runner,master,8,,maven
@@ -1358,7 +1358,7 @@ Sztigar/bytecode-editor,master,8,,maven
 T-Systems-MMS/gradle-git-semver,master,8,,gradlew
 TAKETODAY/today-framework-old,master,8,,maven
 TAKETODAY/today-infrastructure,master,8,,maven
-TAPAAL/tapaal-gui,master,8,,gradlew
+TAPAAL/tapaal-gui,master,11,,gradlew
 TELL-SRL/gradle-sass,master,8,,gradlew
 TKXB/ez-sonar,master,8,,maven
 TNG/JGiven,master,8,,gradlew
@@ -1786,7 +1786,7 @@ aliyun/aliyun-oss-java-sdk,master,8,,maven
 alkimiapps/gradle-dplink-plugin,master,8,,gradle
 allegro/axion-release-plugin,main,8,,gradlew
 allegro/grunt-maven-plugin,master,8,,maven
-allegro/hermes,master,8,,gradlew
+allegro/hermes,master,11,,gradlew
 allegro/newrelic-gradle-plugin,master,8,,gradlew
 allure-framework/allure-gradle,master,8,,gradlew
 alphagov/dropwizard-logstash,master,8,,gradlew
@@ -1840,7 +1840,7 @@ analog-garage/pygrad,master,8,,gradlew
 ananas-analytics/ananas-desktop,master,8,,gradlew
 anaplan-engineering/azuki,main,8,,gradlew
 anaplan-engineering/vdm-gradle-plugin,main,8,,gradlew
-anasoid/jmeter-as-code,master,8,,gradlew
+anasoid/jmeter-as-code,master,11,,gradlew
 anatawa12/DecompileCrasher,master,8,,gradlew
 anatawa12/auto-tostring,master,8,,gradlew
 anatawa12/auto-visitor,master,8,,gradlew
@@ -2436,7 +2436,7 @@ apache/openwebbeans,master,8,,maven
 apache/openwebbeans-meecrowave,master,8,,maven
 apache/openwebbeans-meecrowave-examples,master,11,,maven
 apache/openwebbeans-peeco,master,8,,maven
-apache/openwhisk-intellij-plugin,master,8,,gradlew
+apache/openwhisk-intellij-plugin,master,11,,gradlew
 apache/ozone,master,8,,maven
 apache/parquet-format,master,8,,maven
 apache/parquet-mr,master,8,,maven
@@ -3056,7 +3056,7 @@ augi/gradle-docker-java,main,8,,gradlew
 augi/gradle-scalafmt,master,8,,gradlew
 augi/gradle-wartremover,main,8,,gradlew
 auth0/android-gradle-credentials,master,8,,gradlew
-auth0/java-jwt,master,8,,gradlew
+auth0/java-jwt,master,11,,gradlew
 auth0/oss-library-gradle-plugin,master,8,,gradlew
 automatictester/saucelabs-reporting-gradle-plugin,master,8,,gradlew
 autonomousapps/Cappuccino,master,8,,gradlew
@@ -3224,7 +3224,7 @@ bmuschko/gradle-docker-plugin,master,8,,gradlew
 bmuschko/gradle-izpack-plugin,master,8,,gradlew
 bmuschko/gradle-tomcat-plugin,master,8,,gradlew
 bmwcarit/joynr,master,8,,maven
-bnc-projects/travis-ci-versioner,master,8,,gradlew
+bnc-projects/travis-ci-versioner,master,11,,gradlew
 bndtools/bnd,master,8,,gradlew
 bnorm/kotlin-power-assert,master,8,,gradlew
 bnorm/kotlin-react-function,main,8,,gradlew
@@ -3241,7 +3241,7 @@ bonitasoft/bonita-connector-shell-script,master,8,,maven
 bonitasoft/bonita-engine,dev,8,,gradlew
 bonitasoft/bonita-theme-builder,master,8,,maven
 boothen/gradle-kubectl,master,8,,gradlew
-boothen/gradle-wsimport,master,8,,gradlew
+boothen/gradle-wsimport,master,11,,gradlew
 bootstage/testkit-gradle-plugin,main,8,,gradlew
 boozallen/cognition,master,8,,maven
 borball/weixin-sdk,master,8,,maven
@@ -3634,7 +3634,7 @@ dbsystel/microservice-integrationtest-gradle-plugin,develop,8,,gradlew
 dcendents/android-maven-gradle-plugin,develop,8,,gradlew
 dcm4che/dcm4che,master,8,,maven
 dcow/dockter-sublime,master,8,,gradlew
-dddjava/jig,main,8,,gradlew
+dddjava/jig,main,11,,gradlew
 ddimtirov/codacy-gradle-plugin,master,8,,gradlew
 deanhiller/webpieces,master,8,,gradlew
 deano2390/MaterialShowcaseView,master,8,,gradlew
@@ -4223,7 +4223,7 @@ forcedotcom/dataloader,master,8,,maven
 forcedotcom/phoenix,master,8,,maven
 forge/furnace,master,8,,maven
 forgo/keystore-gradle-plugin,master,8,,gradlew
-formkiq/graalvm-native-plugin,master,8,,gradlew
+formkiq/graalvm-native-plugin,master,11,,gradlew
 fornwall/apksigner,master,8,,gradlew
 forzamilan0607/sinopec-bpm,master,8,,maven
 fossasia/susi_server,development,8,,gradlew
@@ -4280,7 +4280,7 @@ gciatto/kt-mpp-pp,master,8,,gradlew
 gciatto/kt-npm-publish,master,8,,gradlew
 gclayburg/dockerPreparePlugin,master,8,,gradlew
 gdmatrix/gdmatrix,master,8,,maven
-gdulai/gitpublish,master,8,,gradlew
+gdulai/gitpublish,master,11,,gradlew
 gdutxiaoxu/CoordinatorLayoutExample,master,8,,gradlew
 ge0ffrey/optaconf,master,8,,maven
 geeeeeeeeek/WeChatLuckyMoney,stable,8,,gradlew
@@ -4316,8 +4316,8 @@ glazedlists/glazedlists,master,8,,gradlew
 gliptak/JAllele,master,8,,gradlew
 globalbioticinteractions/globalbioticinteractions,main,8,,maven
 glomadrian/Grav,master,8,,gradlew
-gluonhq/client-gradle-plugin,master,8,,gradlew
-gluonhq/gluonfx-gradle-plugin,master,8,,gradlew
+gluonhq/client-gradle-plugin,master,11,,gradlew
+gluonhq/gluonfx-gradle-plugin,master,11,,gradlew
 gluonhq/scenebuilder,master,8,,maven
 gluonhq/substrate,master,11,,gradlew
 gmarrot/dotnet-wording-plugin,master,8,,gradlew
@@ -4448,7 +4448,7 @@ google/ringdroid,master,8,,gradlew
 google/robotstxt-java,master,11,,maven
 google/robotstxt-spec-test,master,8,,maven
 google/s2-geometry-library-java,master,8,,maven
-google/sa360-webquery-bigquery,master,8,,gradlew
+google/sa360-webquery-bigquery,master,11,,gradlew
 google/safe-html-types,master,8,,maven
 google/sagetv,master,8,,gradlew
 google/samba-documents-provider,master,8,,gradlew
@@ -4465,8 +4465,8 @@ google/talkback,master,8,,gradle
 google/tinkCryptoHelper,master,8,,maven
 google/translation-cards,master,8,,gradlew
 google/truth,master,8,,maven
-google/tsunami-security-scanner,master,8,,gradlew
-google/tsunami-security-scanner-callback-server,master,8,,gradlew
+google/tsunami-security-scanner,master,11,,gradlew
+google/tsunami-security-scanner-callback-server,master,11,,gradlew
 google/turbine,main,11,,maven
 google/ukey2,master,8,,gradle
 google/volley,master,8,,gradlew
@@ -4924,7 +4924,7 @@ ibm/spring-cloud-kubernetes-with-istio,master,8,,maven
 ibm/spring-starter,master,8,,maven
 ibm/supply-chain-workflow-toolkit,main,8,,maven
 ibm/teamcity-ibm-cloud,master,8,,gradlew
-ibm/template-java-spring,main,8,,gradlew
+ibm/template-java-spring,main,11,,gradlew
 ibm/transformation-advisor-sdk,main,8,,maven
 ibm/trino-db2,main,11,,maven
 ibm/trino-event-stream,main,11,,maven
@@ -4952,7 +4952,7 @@ igniterealtime/Whack,master,8,,maven
 igniterealtime/openfire-ofmeet-plugin,master,8,,maven
 igvteam/igv,master,8,,gradlew
 iherasymenko/gradle-allure-plugin,master,8,,gradlew
-iherasymenko/jlink-gradle-plugin,master,8,,gradlew
+iherasymenko/jlink-gradle-plugin,master,11,,gradlew
 ihmcrobotics/ihmc-build,develop,8,,gradle
 ihmcrobotics/ihmc-cd,develop,8,,gradle
 ihmcrobotics/ihmc-ci,develop,8,,gradle
@@ -6961,7 +6961,6 @@ kevinpotgieter/gradle-metrics-plugin,master,8,,gradlew
 kevinsawicki/http-request,master,8,,maven
 keyboardsurfer/Crouton,master,8,,gradlew
 keycloak/keycloak,main,8,,maven
-keycloak/keycloak,main,8,,mvnw
 keykey7/gradle-spawn-plugin,master,8,,gradlew
 khuxtable/wagon-gitsite,master,8,,maven
 kickstarter/android-oss,master,11,,gradlew
@@ -7072,7 +7071,7 @@ kumuluz/kumuluzee,master,8,,maven
 kungfoo/ergon-gradle-goodies-versioning,master,8,,gradlew
 kungfoo/http-glassfish-deployer,master,8,,gradlew
 kuoruan/Chromium-Android,73.0.3683.93,8,,gradlew
-kusumotolab/JTDog,master,8,,gradlew
+kusumotolab/JTDog,master,11,,gradlew
 kxalex/gradle-docker,master,8,,gradlew
 kyay10/kotlin-lambda-return-inliner,master,8,,gradlew
 kyay10/kotlin-null-defaults,master,8,,gradlew
@@ -7580,7 +7579,7 @@ mkante/Goose,develop,8,,gradlew
 mkarneim/pojobuilder,master,8,,gradlew
 mkep-dev/dependency-track-bom-publish-gradle,master,8,,gradlew
 mkobit/jenkins-pipeline-shared-libraries-gradle-plugin,master,8,,gradlew
-mkotsur/restito,master,8,,gradlew
+mkotsur/restito,master,11,,gradlew
 mkristiansen/gradle-plantuml-mk-plugin,master,8,,gradlew
 mlegy/linkester,main,8,,gradlew
 mmalohlava/gradle-visteg,master,8,,gradlew
@@ -7672,7 +7671,7 @@ mufeng521/ToolProject,master,8,,gradlew
 mukendik/chutney,master,8,,maven
 mukesh154/test,main,8,,gradlew
 mukhanov/gradle-docker-plugin,master,8,,gradlew
-mulecode/artifact-versioning,master,8,,gradlew
+mulecode/artifact-versioning,master,11,,gradlew
 mulesoft-labs/mule-gradle-plugin,master,8,,gradlew
 mulesoft-labs/raml-java-client-generator,master,8,,maven
 mulesoft-labs/rhinodo,master,8,,maven
@@ -7773,7 +7772,7 @@ nefilim/gradle-github-actions-generator-plugin,main,8,,gradlew
 nefilim/gradle-semver-plugin,main,8,,gradlew
 neherim/gradle-quality-check-plugin,master,8,,gradlew
 nekohasekai/gradle-proguard-jar-plugin,main,8,,gradlew
-neo4j-contrib/neo4j-apoc-procedures,4.4,8,,gradlew
+neo4j-contrib/neo4j-apoc-procedures,4.4,11,,gradlew
 neo4j-contrib/neo4j-graph-algorithms,3.5,8,,maven
 neo4j/clirr-maven-plugin,master,8,,maven
 neo4j/cypher-shell,4.3,8,,gradlew
@@ -7913,7 +7912,7 @@ nrl-gradle/pub-plugin,release,8,,gradlew
 nrl-gradle/util-plugin,release,8,,gradlew
 nroduit/Weasis,master,8,,maven
 nsoft/solr-gradle,master,8,,gradlew
-nsoft/uno-jar,master,8,,gradlew
+nsoft/uno-jar,master,11,,gradlew
 nuls-io/nuls-v1,master,8,,maven
 nuttycom/commons-pipeline,master,8,,maven
 nutzam/nutz,master,8,,maven
@@ -7991,7 +7990,7 @@ openhab/openhab,main,8,,maven
 openhab/openhab2-addons,2.5.x,8,,maven
 openimaj/openimaj,master,8,,maven
 openjdk/jmh,master,8,,maven
-openjfx/javafx-gradle-plugin,master,8,,gradlew
+openjfx/javafx-gradle-plugin,master,11,,gradlew
 openjfx/javafx-maven-plugin,master,8,,maven
 openkm/document-management-system,master,8,,maven
 openl-tablets/openl-tablets,master,8,,maven
@@ -8088,8 +8087,8 @@ oskariorg/oskari-server,master,8,,maven
 osmandapp/Osmand,master,8,,gradlew
 osmarleandro/RefactoringMiner,master,8,,gradlew
 osmdroid/osmdroid,master,11,,gradlew
-osmlab/atlas,dev,8,,gradlew
-osmlab/atlas-checks,dev,8,,gradlew
+osmlab/atlas,dev,11,,gradlew
+osmlab/atlas-checks,dev,11,,gradlew
 oss-ethinking/gradle-escenic-plugin,master,8,,gradlew
 oss-ethinking/gradle-gaffer-plugin,master,8,,gradlew
 otkmnb2783/gradle-dotenv-plugin,master,8,,gradlew
@@ -8421,7 +8420,6 @@ rainbowQQsugar/ontap,master,8,,gradlew
 ramonwirsch/fopRenderer,master,8,,gradlew
 raniejade/godot-kotlin,master,8,,gradlew
 raphw/byte-buddy,master,8,,maven
-raphw/byte-buddy,master,8,,mvnw
 rapid7/metasploit-javapayload,master,8,,maven
 rapidminer/rapidminer-studio,master,8,,gradlew
 rapidoid/rapidoid,master,8,,maven
@@ -8491,7 +8489,7 @@ renyuneyun/Easer,master,8,,gradlew
 repoName,branch,javaVersion,style,buildTool
 requery/requery,master,8,,gradlew
 researchgate/gradle-release,master,8,,gradlew
-resilience4j/resilience4j,master,8,,gradlew
+resilience4j/resilience4j,master,11,,gradlew
 resource-jason-org/jspxcms,master,8,,maven
 rest-assured/rest-assured,master,8,,maven
 resteasy/Resteasy,main,8,,maven
@@ -8823,7 +8821,7 @@ soleo/gradle-azure-assets-publisher,master,8,,gradlew
 solugo/gradle-gitversion-plugin,main,8,,gradlew
 solugo/gradle-nodejs-plugin,master,8,,gradlew
 sonalake/shotgun-gradle-plugin,main,8,,gradlew
-sonalake/swagger-changelog-gradle-plugin,master,8,,gradlew
+sonalake/swagger-changelog-gradle-plugin,master,11,,gradlew
 sonalake/utah-parser,master,8,,gradlew
 sonatype-nexus-community/scan-gradle-plugin,main,8,,gradlew
 sonatype/chef-nexus-repository-manager,main,8,,maven
@@ -9130,9 +9128,9 @@ symphonyoss/symphony-admin-bot,master,8,,maven
 symphonyoss/vote-bot,develop,8,,maven
 synapticloop/copyrightr,master,8,,gradlew
 synapticloop/documentr,master,8,,gradlew
-synapticloop/h2zero,master,8,,gradlew
+synapticloop/h2zero,master,11,,gradlew
 synapticloop/project-filestatistics,master,8,,gradlew
-synapticloop/templar-gen,master,8,,gradlew
+synapticloop/templar-gen,master,11,,gradlew
 syncany/syncany,develop,8,,gradlew
 synchronoss/nio-stream-storage,master,8,,maven
 synchrony/smsn,develop,8,,gradlew
@@ -9155,11 +9153,11 @@ talentbeyondboundaries/tbbtalentv2,master,8,,gradlew
 talk2duck/gradle-s3-build-cache,main,8,,gradlew
 talsma-ict/umldoclet,develop,8,,maven
 tamingtext/book,master,8,,maven
-tananaev/traccar,master,8,,gradlew
+tananaev/traccar,master,11,,gradlew
 tang-jie/NettyRPC,master,8,,maven
 tangxiaozhuang/spark-parent_2.12,master,8,,maven
 tarun3kumar/seleniumtestsframework,master,8,,maven
-taskadapter/redmine-java-api,master,8,,gradlew
+taskadapter/redmine-java-api,master,11,,gradlew
 taylorzhangyx/AWS,master,8,,maven
 tbroyer/gradle-apt-plugin,master,8,,gradlew
 tbroyer/gradle-errorprone-plugin,main,8,,gradlew
@@ -9628,11 +9626,11 @@ worker8/AndroidLintReporter,master,8,,gradlew
 worker8/TourGuide,master,8,,gradlew
 wpilibsuite/GradleRIO,main,11,,gradlew
 wpilibsuite/deploy-utils,main,11,,gradlew
-wpilibsuite/gradle-cpp-vscode,main,8,,gradlew
+wpilibsuite/gradle-cpp-vscode,main,11,,gradlew
 wpilibsuite/gradle-jni,main,8,,gradlew
 wpilibsuite/native-utils,main,11,,gradlew
 wpilibsuite/wpilib-repositories-plugin,master,8,,gradlew
-wpilibsuite/wpilib-tool-plugin,main,8,,gradlew
+wpilibsuite/wpilib-tool-plugin,main,11,,gradlew
 wpilibsuite/wpilib-version-plugin,master,11,,gradlew
 wplatform/jdbc-shards,master,8,,maven
 wrlyonsjr/gradle-aggregate-jacoco,master,8,,gradlew
@@ -9696,7 +9694,7 @@ xebialabs-community/xl-docker-gradle-plugin,master,8,,gradlew
 xebialabs-community/xld-docker-gradle-plugin,master,8,,gradlew
 xebialabs-community/xldp-gradle-plugin,master,8,,gradlew
 xebialabs-community/xlr-docker-gradle-plugin,master,8,,gradlew
-xebialabs/overthere,master,8,,gradlew
+xebialabs/overthere,master,11,,gradlew
 xenit-eu/alfresco-docker-gradle-plugin,master,8,,gradlew
 xenit-eu/alfresco-gradle-sdk,master,8,,gradlew
 xenit-eu/alfresco-remote-testrunner,master,11,,gradlew
@@ -9741,7 +9739,7 @@ xwiki/xwiki-commons,master,8,,maven
 xxnjdg/netty-4.1.51.Final,4.1,8,,maven
 xxxlxy2008/mybatis,master,8,,maven
 xy900/jeecmsv9_3,master,8,,maven
-xzel23/javafx-gradle-plugin,master,8,,gradlew
+xzel23/javafx-gradle-plugin,master,11,,gradlew
 y17920/gradle-plugin,master,8,,gradlew
 y6692/qimalock_app,master,8,,gradlew
 yWorks/yGuard,master,8,,gradlew
