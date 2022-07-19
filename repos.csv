@@ -106,7 +106,7 @@ Argelbargel/gradle-build-modules,master,8,,gradlew
 Argelbargel/sonarqube-multiproject-gradle-plugin,master,8,,gradlew
 AriaLyy/Aria,master,8,,gradlew
 ArielCabib/rust-gradle-plugin,master,8,,gradlew
-AsamK/signal-cli,master,8,,gradlew
+AsamK/signal-cli,master,17,,gradlew
 AskNowQA/AutoSPARQL,master,8,,maven
 Aspsine/SwipeToLoadLayout,master,8,,gradlew
 AstinCHOI/Akamai-AuthToken-Java,master,8,,gradlew
@@ -198,7 +198,7 @@ Boozilla/houston-gradle,master,8,,gradle
 BorderTech/java-config,master,8,,maven
 BorderTech/sample-app,master,8,,maven
 BorderTech/wcomponents,georgie,8,,maven
-Borewit/listFix,main,11,,gradlew
+Borewit/listFix,main,17,,gradlew
 Borisvl/bigbash,master,8,,maven
 BorzdeG/ru.itbasis.gradle.plugins.docker-spring-boot-plugin,master,8,,gradlew
 BorzdeG/ru.itbasis.gradle.plugins.java-module,master,8,,gradlew
@@ -242,7 +242,7 @@ CaptainJack/lib-kt-reflect,master,8,,gradlew
 CaptainJack/tool-depin,master,8,,gradlew
 CaptainJack/tool-logging,master,8,,gradlew
 CaptainJack/tool-reflect,master,8,,gradlew
-CategoricalData/CQL,master,8,,gradlew
+CategoricalData/CQL,master,17,,gradlew
 Catrobat/Catroid,develop,8,,gradlew
 CellularPrivacy/Android-IMSI-Catcher-Detector,development,8,,gradlew
 Centril/gradle-plugin-lgio,master,8,,gradlew
@@ -7623,7 +7623,7 @@ mojohaus/versions-maven-plugin,master,8,,maven
 mojohaus/webstart,master,8,,maven
 mojohaus/xml-maven-plugin,master,8,,maven
 moleksyuk/vcs-semantic-version,master,8,,gradlew
-mongodb/mlab-data-api,master,8,,gradlew
+mongodb/mlab-data-api,master,11,,gradlew
 mongodb/mongo-java-driver,master,8,,gradlew
 mongodb/mongo-java-examples,master,8,,maven
 mongodb/mongo-jdbc-driver,master,8,,gradlew
@@ -8859,7 +8859,7 @@ sothmann/typescript-gradle-plugin,master,8,,gradlew
 sourcegraph/srclib-java,master,8,,gradlew
 sourcemuse/GradleMongoPlugin,master,8,,gradlew
 spark-teams/jootainer,master,8,,gradle
-spasam/spring-boot-build-info,master,8,,gradlew
+spasam/spring-boot-build-info,master,17,,gradlew
 spengreb/gradle-openshift-plugin,master,8,,gradlew
 spgangwar7/UniTrack_UniQ,master,8,,maven
 spigradle/spigradle,master,8,,gradlew
@@ -8972,7 +8972,7 @@ spring-projects/spring-data-services,master,8,,gradlew
 spring-projects/spring-data-solr,main,8,,maven
 spring-projects/spring-framework,main,8,org.openrewrite.java.SpringFormat,gradlew
 spring-projects/spring-gemfire-examples,main,8,,gradlew
-spring-projects/spring-graphql,main,8,,gradlew
+spring-projects/spring-graphql,main,17,,gradlew
 spring-projects/spring-guice,master,8,,maven
 spring-projects/spring-hateoas,main,8,,mvnw
 spring-projects/spring-hateoas-examples,main,8,,maven
@@ -9751,7 +9751,7 @@ yadav-rahul/TastyToast,lib,8,,gradlew
 yahoo/FEL,master,8,,maven
 yahoo/maha,master,8,,maven
 yahoo/parsec,master,8,,gradlew
-yakworks/gradle-plugins,master,8,,gradlew
+yakworks/gradle-plugins,master,17,,gradlew
 yamcs/yamcs,master,8,,maven
 yamilmedina/appgallery-publisher,master,8,,gradlew
 yaming116/uiautomatorview,master,8,,gradlew
@@ -9782,7 +9782,7 @@ yello-labs/gradle-keyring,master,8,,gradlew
 yello-labs/keyring,main,8,,gradlew
 yelloohe/jspxcms,master,8,,maven
 yellowcath/VideoProcessor,master,8,,gradlew
-yfiton/yfiton,master,11,,gradlew
+yfiton/yfiton,master,17,,gradlew
 yhaolpz/FloatWindow,master,8,,gradlew
 yinmb1/spring-framework,master,8,,gradlew
 yinwang0/pysonar2,master,8,,maven
