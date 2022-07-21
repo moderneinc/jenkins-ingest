@@ -1248,6 +1248,9 @@ STAMP-project/test-runner,master,8,,maven
 STAR-ZERO/NavProguardGenerator,master,8,,gradlew
 STAR-ZERO/gradle-githook,master,8,,gradlew
 SUPERCILEX/version-orchestrator,master,8,,gradlew
+SabreOSS/conf4j,master,8,,maven
+SabreOSS/nimbus,main,8,,maven
+SabreOSS/yare,master,8,,maven
 Sage-Bionetworks/file-proxy,develop,8,,maven
 SalomonBrys/gradle-sass,master,8,,gradlew
 SalomonBrys/kotlin-js-npm-bundle,master,8,,gradlew
