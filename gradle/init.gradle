@@ -85,11 +85,9 @@ if (isTopLevelBuild) {
             configureExtension(extensions["gradleEnterprise"])
         }
     } else {
-        //Versions less than 5 use the build scan plugin.
-        rootProject {
-            pluginManager.apply(com.gradle.scan.plugin.BuildScanPlugin)
-            configureExtension(extensions["com.gradle.build-scan"])
-        }
+        // Versions less than 5 can't publish scans to ge.openrewrite.org
+        // Error msg: This server requires authentication, which is not supported for your version of Gradle.
+        // Please upgrade to Gradle 5.0 or later and the latest version of the Gradle Enterprise plugin.
     }
 }
 
