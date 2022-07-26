@@ -62,6 +62,12 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoJavaVersion = tokens[2]
     def repoStyle = tokens[3]
     def repoBuildTool = tokens[4]
+    def repoSkip = tokens[5]
+
+    if ("true" == repoSkip) {
+        return
+    }
+
     def repoJobName = repoName.replaceAll('/', '_')
 
     boolean isGradleBuild = ['gradle', 'gradlew'].contains(repoBuildTool)

@@ -61,6 +61,8 @@ do
     JAVA_VERSION="${array[2]}"
     STYLE="${array[3]}"
     BUILD_TOOL="${array[4]}"
+    SKIP=""
+    SKIP_REASON=""
 
     if [ -z "$JAVA_VERSION" ];then
         JAVA_VERSION="8"
@@ -95,7 +97,8 @@ do
 
     if [ -z "$BUILD_TOOL" ]; then
         echo "Skipping $REPO, because none of the supported build tool files (build.gradle.kts, build.gradle, or pom.xml) is present at the root."
-        continue
+        SKIP_REASON="Top-level build tool file is missing"
+        SKIP="true"
     fi
 
     if [ -z "$BRANCH" ]; then
@@ -108,9 +111,9 @@ do
     cd "$base_dir" || exit
 
     if [ ! -f "$output_csv" ]; then
-        printf "repoName,branchName,javaVersion,style,buildTool\n" >&3
+        printf "repoName,branchName,javaVersion,style,buildTool,skip,skipReason\n" >&3
     fi
-    printf "%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$JAVA_VERSION" "$STYLE" "$BUILD_TOOL" >&3
+    printf "%s,%s,%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$JAVA_VERSION" "$STYLE" "$BUILD_TOOL" "$SKIP" "$SKIP_REASON" >&3
 
 done < "$input_csv" 3>> "$output_csv"
 
