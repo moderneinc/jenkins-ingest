@@ -6891,7 +6891,7 @@ juliapim/DiSSCo-Prepare,main,8,,maven,,
 julioz/FloorPlan,master,8,,gradlew,,
 junit-team/junit,main,8,,mvnw,,
 junit-team/junit4,main,8,,mvnw,,
-junit-team/junit5,main,8,,gradlew,,
+junit-team/junit5,main,17,,gradlew,,
 junit-team/junit5-workshop,main,8,,gradlew,true,Build uses Gradle 3.x
 junit-team/testng-engine,main,8,,gradlew,,
 junoyoon/simpleupdatesiterepo,master,8,,maven,,
