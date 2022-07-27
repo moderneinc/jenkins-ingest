@@ -1229,9 +1229,6 @@
             <url>https://acoveo.com/maven2/snapshots/</url>
         </mirror>
 
-
-        Process finished with exit code 0
-
     </mirrors>
 
     <profiles>
