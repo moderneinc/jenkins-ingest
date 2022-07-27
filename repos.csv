@@ -10,7 +10,7 @@ repoName,branch,javaVersion,style,buildTool,skip,skipReason
 275593469/study,master,8,,maven,,
 2dxgujun/AndroidTagGroup,master,8,,gradlew,true,Build uses Gradle 2.x
 2pure/CodeDesign-HomeWork1,master,8,,maven,,
-38leinaD/tdd-gradle-plugin,master,8,,gradlew,,
+38leinaD/tdd-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 3esi/dotnet-plugin,master,8,,gradle,,
 3esi/gitversion-plugin,master,8,,gradle,,
 3redronin/mu-server,master,8,,maven,,
@@ -94,7 +94,7 @@ AntoineCheron/padins-backend,master,8,,maven,,
 Anuken/Arc,master,8,,gradlew,,
 Apicurio/apicurio-registry,master,8,,maven,,
 ApolloFoundation/Apollo,master,11,,maven,,
-AppSci/Eventsdroid,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+AppSci/Eventsdroid,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Appverse/appverse-builder-api,master,8,,maven,,
 Apress/pro-spring-5,master,8,,gradle,,
 Arakaii1083/AWS-SDK,master,8,,maven,,
@@ -104,13 +104,13 @@ ArchangelX360/gradle-icon-generator-plugin,main,8,,gradlew,,
 ArcticLampyrid/gradle-git-version,main,8,,gradlew,,
 Ardesco/Ebselen,master,8,,maven,,
 Argelbargel/gradle-build-modules,master,8,,gradlew,,
-Argelbargel/sonarqube-multiproject-gradle-plugin,master,8,,gradlew,,
+Argelbargel/sonarqube-multiproject-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 AriaLyy/Aria,master,8,,gradlew,,
 ArielCabib/rust-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 AsamK/signal-cli,master,17,,gradlew,,
 AskNowQA/AutoSPARQL,master,8,,maven,,
 Aspsine/SwipeToLoadLayout,master,8,,gradlew,true,Build uses Gradle 2.x
-AstinCHOI/Akamai-AuthToken-Java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+AstinCHOI/Akamai-AuthToken-Java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 AstraZeneca-NGS/VarDictJava,master,8,,gradlew,,
 AsyncHttpClient/async-http-client,master,8,,maven,,
 Athou/commafeed,master,8,,mvnw,,
@@ -146,7 +146,7 @@ Azure/azure-libraries-for-java,master,8,,maven,,
 Azure/azure-microprofile,master,8,,maven,,
 Azure/azure-mobile-engagement-app-android,master,8,,gradlew,true,Build uses Gradle 2.x
 Azure/azure-notificationhubs-android,main,8,,gradlew,,
-Azure/azure-pixel-tracker-java,master,8,,gradlew,,
+Azure/azure-pixel-tracker-java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Azure/azure-relay-java,master,8,,maven,,
 Azure/azure-sdk-for-android,main,8,,gradlew,,
 Azure/azure-sdk-for-java,main,8,,maven,,
@@ -182,7 +182,7 @@ BetiKogut/myGadgetbridgeMQTT,master,8,,gradlew,,
 BiBiServ/bibiserv,master,8,,maven,,
 Bigkoo/Android-PickerView,master,8,,gradlew,,
 BiglySoftware/BiglyBT,master,8,,maven,,
-Bilibili/DanmakuFlameMaster,master,8,,gradlew,,
+Bilibili/DanmakuFlameMaster,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Bilibili/MagicaSakura,master,8,,gradlew,,
 Bin-mario/xiaoyaoji,master,8,,maven,,
 BingAds/BingAds-Java-SDK,main,8,,maven,,
@@ -201,16 +201,16 @@ BorderTech/sample-app,master,8,,maven,,
 BorderTech/wcomponents,georgie,8,,maven,,
 Borewit/listFix,main,17,,gradlew,,
 Borisvl/bigbash,master,8,,maven,,
-BorzdeG/ru.itbasis.gradle.plugins.docker-spring-boot-plugin,master,8,,gradlew,,
-BorzdeG/ru.itbasis.gradle.plugins.java-module,master,8,,gradlew,,
-BorzdeG/ru.itbasis.gradle.plugins.java-plugin,master,8,,gradlew,,
-BorzdeG/ru.itbasis.gradle.plugins.postgresql-embedded-plugin,master,8,,gradlew,,
+BorzdeG/ru.itbasis.gradle.plugins.docker-spring-boot-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+BorzdeG/ru.itbasis.gradle.plugins.java-module,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+BorzdeG/ru.itbasis.gradle.plugins.java-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+BorzdeG/ru.itbasis.gradle.plugins.postgresql-embedded-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 BrantApps/gradle-amazon-app-store-publisher,master,8,,gradlew,,
 BreadMoirai/github-release-gradle-plugin,master,8,,gradlew,,
 BroadleafCommerce/BroadleafCommerce,develop-6.2.x,8,,maven,,
 Brownshome/game-modding,master,8,,gradle,,
-BrynCooke/babel-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-BuildCraft/BuildCraft,8.0.x-1.12.2,8,,gradlew,,
+BrynCooke/babel-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+BuildCraft/BuildCraft,8.0.x-1.12.2,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Bukkit/Bukkit,master,8,,maven,,
 ButterCam/sisyphus,master,8,,gradlew,,
 Buxiaohui/FastClick,main,8,,gradlew,,
@@ -248,14 +248,14 @@ Catrobat/Catroid,develop,8,,gradlew,,
 CellularPrivacy/Android-IMSI-Catcher-Detector,development,8,,gradlew,true,Build uses Gradle 3.x
 Centril/gradle-plugin-lgio,master,8,,gradlew,true,Build uses Gradle 2.x
 ChadCSong/ShineButton,master,8,,gradlew,,
-ChaitanyaPramod/findbugs-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ChaitanyaPramod/findbugs-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ChanTsune/LicenseToolsPlusPlugin,main,8,,gradlew,,
 CharlesAHunt/scalapb-gradle-plugin,master,8,,gradlew,,
 CharlesSkelton/studio,master,8,,gradle,,
 Chentingz/TrafficMonitor4Floodlight,master,8,,maven,,
 CherryPerry/GradleFileEncrypt,master,8,,gradlew,,
 ChestShop-authors/ChestShop-3,master,8,,maven,,
-ChestnutPlus/ModulesCommon,2.0,8,,gradlew,,
+ChestnutPlus/ModulesCommon,2.0,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ChinaYangc/hibernate,master,8,,gradlew,true,Build uses Gradle 3.x
 Chocorean/authmod,main,8,,gradlew,,
 Chocorean/authmod-core,main,8,,gradlew,,
@@ -322,7 +322,7 @@ DTStack/Taier,master,8,,maven,,
 DaemonicLabs/KNote,master,8,,gradlew,,
 DaemonicLabs/PersistentCounter,master,8,,gradlew,,
 DanielRBaird/NativeStringsPlugin,master,8,,gradlew,,
-Danielecantatore/AndroidUtilCode,master,8,,gradlew,,
+Danielecantatore/AndroidUtilCode,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 DanySK/SmarTrRR,master,8,,gradlew,true,Build uses Gradle 2.x
 DanySK/Template-for-Gradle-Plugins,master,8,,gradlew,,
 DanySK/build-commons,master,8,,gradlew,,
@@ -357,9 +357,9 @@ DengSinkiang/sk-admin,master,8,,maven,,
 Desperado24/apkreduce,master,8,,gradlew,true,Build uses Gradle 3.x
 DeveloperCielo/LIO-SDK-API-Integracao-Remota-v1-Java,master,8,,gradlew,true,Build uses Gradle 2.x
 Devlight/InfiniteCycleViewPager,master,8,,gradlew,true,Build uses Gradle 2.x
-Devlight/NavigationTabBar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-DharmPatel/my-application,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-DharmendraVinay/Hibernate-ORM,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Devlight/NavigationTabBar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+DharmPatel/my-application,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+DharmendraVinay/Hibernate-ORM,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 DharmendraVinay/gradle,master,8,,gradlew,,
 Dictanova/gora-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 Dictanova/gradle-jcasgen-plugin,master,8,,gradlew,,
@@ -380,13 +380,13 @@ Double-O-Seven/kamp-server-starter,master,8,,gradlew,,
 Double-O-Seven/kamp-textkey-generator,master,8,,gradlew,,
 Double-O-Seven/property-key-generator,master,8,,gradlew,,
 DoubleDoorDevelopment/CurseModpackDownloader,v1,8,,gradlew,true,Build uses Gradle 3.x
-Dovar66/RouterPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Dovar66/RouterPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 DozerMapper/dozer,master,8,,maven,,
 DraqueT/PolyGlot,master,8,,maven,,
 Dreampie/thrift-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
-DreamtChaos/mucommander,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+DreamtChaos/mucommander,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 DroidsOnRoids/android-gradle-aosp-aapt-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-DroidsOnRoids/android-gradle-ui-test-plugin,master,8,,gradlew,,
+DroidsOnRoids/android-gradle-ui-test-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Dropbox/AffectedModuleDetector,main,8,,gradlew,,
 Dylancyclone/VMF2OBJ,master,8,,maven,,
 Dyvil/Dyvil-Gradle-Plugin,master,8,,gradlew,,
@@ -396,7 +396,7 @@ EMCECS/ecs-sync,master,8,,gradlew,,
 ESAPI/esapi-java-legacy,develop,8,,maven,,
 Earnix/Web-K,master,8,,maven,,
 EasyinnovaSL/DPFManager,develop,8,,maven,,
-EightBitBoy/grafie,master,8,,gradlew,,
+EightBitBoy/grafie,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Ekryd/sortpom,master,8,,maven,,
 Elec332/GradleJavaCppPlugin,master,8,,gradlew,,
 Elec332/GradleOSSRHPlugin,master,8,,gradlew,,
@@ -506,7 +506,7 @@ GSLabDev/pepper-box,master,8,,maven,,
 GabrielTK/MCRunGradle,master,8,,gradlew,,
 GaetanoPiazzolla/springboot-3layer-generator,master,8,,gradle,,
 GalvinChen/IncrementalCoverage,master,8,,gradlew,,
-GaoYan8/GYFrame,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+GaoYan8/GYFrame,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 GateNLP/gate-core,master,8,,maven,,
 Gelangweilte-Studenten/gradle-docker-tests,master,8,,gradlew,,
 GeorgH93/PCGF_PluginLib,master,8,,maven,,
@@ -577,7 +577,7 @@ GoogleCloudPlatform/healthcare-api-dicom-fuse,develop,8,,maven,,
 GoogleCloudPlatform/healthcare-data-harmonization-dataflow,master,11,,gradle,,
 GoogleCloudPlatform/healthcare-dicom-dicomweb-adapter,master,8,,gradle,,
 GoogleCloudPlatform/healthcare-imaging-performance-test,develop,8,,maven,,
-GoogleCloudPlatform/ide-java-analytics-common,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+GoogleCloudPlatform/ide-java-analytics-common,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 GoogleCloudPlatform/ide-login,master,8,,maven,,
 GoogleCloudPlatform/java-docs-samples,main,8,,gradle,,
 GoogleCloudPlatform/java-recaptcha-password-check-helpers,main,8,,maven,,
@@ -644,7 +644,7 @@ Hive2Hive/Hive2Hive,master,8,,maven,,
 HiveRunner/HiveRunner,main,8,,maven,,
 HolgerHees/cloudsync,master,8,,maven,,
 HongZhaoHua/jstarcraft-core,master,8,,maven,,
-HoraApps/LeafPic,dev,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+HoraApps/LeafPic,dev,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 HtmlUnit/htmlunit,master,8,,maven,,
 HtmlUnit/htmlunit-cssparser,master,8,,maven,,
 Hugobros3/gradle-eclipse-compiler-plugin,master,8,,gradlew,,
@@ -678,14 +678,14 @@ Institute-Web-Science-and-Technologies/koral,release,8,,maven,,
 IntellectualSites/FastAsyncWorldEdit,main,8,,gradlew,,
 IntelliJ-Localization/intellij-l10-coverage,master,8,,gradlew,,
 IntelliJ-Localization/intellij-l10n,master,8,,gradlew,,
-IntelliSun-MC/modDependencies,master,8,,gradlew,,
+IntelliSun-MC/modDependencies,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 IntershopCommunicationsAG/architectural-report-gradle-plugin,master,8,,gradlew,,
 IntershopCommunicationsAG/artifactory-rest-plugin,master,8,,gradlew,,
 IntershopCommunicationsAG/buildinfo-gradle-plugin,master,8,,gradlew,,
-IntershopCommunicationsAG/cartridge-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+IntershopCommunicationsAG/cartridge-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 IntershopCommunicationsAG/component-build-plugin,master,8,,gradlew,,
 IntershopCommunicationsAG/component-installation-plugin,master,8,,gradlew,,
-IntershopCommunicationsAG/databasedumper,master,8,,gradlew,,
+IntershopCommunicationsAG/databasedumper,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 IntershopCommunicationsAG/dependencyanalysis-gradle-plugin,master,8,,gradlew,,
 IntershopCommunicationsAG/gitflow-version-gradle-plugin,master,8,,gradlew,,
 IntershopCommunicationsAG/gradle-release-plugins,master,8,,gradlew,,
@@ -731,7 +731,7 @@ JZ-Darkal/AndroidHttpCapture,master,8,,gradle,,
 JabRef/jabref,main,8,,gradlew,,
 JacisNonsense/EmbeddedTools,master,8,,gradlew,,
 JackOfMostTrades/gadgetinspector,master,8,,gradlew,,
-Jacksgong/JKeyboardPanelSwitch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Jacksgong/JKeyboardPanelSwitch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Jahia/jahia,master,8,,maven,,
 Jahia/module-manager,master,8,,maven,,
 JakeJMattson/DiscordKt,main,8,,gradlew,,
@@ -740,12 +740,12 @@ JakeWharton/Android-ViewPagerIndicator,master,8,,maven,,
 JakeWharton/DiskLruCache,master,8,,maven,,
 JakeWharton/NineOldAndroids,master,8,,maven,,
 JakeWharton/RxBinding,master,8,,gradlew,,
-JakeWharton/Telecine,master,8,,gradlew,,
+JakeWharton/Telecine,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JakeWharton/ViewPagerIndicator,master,8,,maven,,
 JakeWharton/butterknife,master,8,,gradlew,,
 JakeWharton/hugo,master,8,,gradlew,true,Build uses Gradle 2.x
 JakeWharton/timber,trunk,11,,gradlew,,
-JakeWharton/u2020,master,8,,gradlew,,
+JakeWharton/u2020,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JamesIry/jADT,master,8,,maven,,
 JaneliaSciComp/jacs-compute,master,8,,gradlew,,
 JanusGraph/janusgraph,master,8,,maven,,
@@ -792,7 +792,7 @@ JetBrains/gradle-jps-compiler-plugin,master,8,,gradlew,,
 JetBrains/gradle-node-envs,master,8,,gradlew,true,Build uses Gradle 3.x
 JetBrains/gradle-python-envs,master,8,,gradlew,true,Build uses Gradle 3.x
 JetBrains/gradle-qodana-plugin,master,8,,gradlew,,
-JetBrains/gradle-ruby-envs,master,8,,gradlew,,
+JetBrains/gradle-ruby-envs,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JetBrains/idea-gradle-jps-build-app,master,8,,gradlew,,
 JetBrains/ideavim,master,8,,gradlew,,
 JetBrains/ij_tutorial_gradle,master,8,,gradlew,,
@@ -802,11 +802,11 @@ JetBrains/intellij-deps-fastutil,master,8,,maven,,
 JetBrains/intellij-deps-ini4j,master,8,,maven,,
 JetBrains/intellij-deps-java-compatibility,master,8,,gradlew,,
 JetBrains/intellij-deps-jdi,master,11,,gradlew,,
-JetBrains/intellij-deps-jdom,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+JetBrains/intellij-deps-jdom,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JetBrains/intellij-deps-log4j,main,8,,maven,,
 JetBrains/intellij-deps-proxy-vole,master,8,,maven,,
 JetBrains/intellij-deps-trove4j,master,8,,gradlew,true,Build uses Gradle 3.x
-JetBrains/intellij-ipnb,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+JetBrains/intellij-ipnb,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JetBrains/intellij-obsolete-plugins,master,8,,gradlew,,
 JetBrains/intellij-uncrustify,main,8,,gradle,,
 JetBrains/java-annotations,master,8,,gradlew,,
@@ -850,7 +850,7 @@ JetBrains/teamcity-invitations-plugin,master,8,,maven,,
 JetBrains/teamcity-kubernetes-plugin,master,8,,maven,,
 JetBrains/teamcity-maven-archetypes,master,8,,maven,,
 JetBrains/teamcity-nuget-support,master,8,,gradlew,,
-JetBrains/teamcity-powershell,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+JetBrains/teamcity-powershell,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 JetBrains/teamcity-process-output-parsers,master,8,,gradlew,true,Build uses Gradle 3.x
 JetBrains/teamcity-rest-codegen,master,8,,maven,,
 JetBrains/teamcity-runas-plugin,master,8,,maven,,
@@ -877,7 +877,7 @@ JonathanxD/dokka-doc-io,master,8,,gradlew,,
 JoseLion/pretty-jupiter,master,8,,gradlew,,
 JoseLion/strict-null-check,main,8,,gradlew,,
 JoshuaPuello/HealthSecurity,master,8,,maven,,
-Jude95/EasyRecyclerView,master,8,,gradlew,,
+Jude95/EasyRecyclerView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Judge-Girl/Judge-Girl,master,8,,maven,,
 JustWayward/BookReader,master,8,,gradlew,true,Build uses Gradle 2.x
 KKrachmer/dpc-app,master,11,,maven,,
@@ -910,7 +910,7 @@ KylinOLAP/Kylin,master,8,,maven,,
 KyoriPowered/blossom,master,8,,gradlew,,
 KyoriPowered/indra,main/2.x,8,,gradlew,,
 KyoriPowered/pulsar,master,8,,gradlew,,
-L4Digital/android-test-helper-gradle-plugin,master,8,,gradlew,,
+L4Digital/android-test-helper-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 LEMS/jLEMS,master,8,,maven,,
 LJWLgl/CommonUtil,master,8,,maven,,
 LMAX-Exchange/disruptor,master,11,,gradlew,,
@@ -924,7 +924,7 @@ Leidenn2509/G2KtsAnalyser,master,8,,gradlew,,
 Letractively/jnuget,master,8,,maven,,
 Levy233/bangsun-neo4j,master,8,,maven,,
 LibrePDF/OpenPDF,master,8,,maven,,
-LiewJunTung/DjinniGradlePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+LiewJunTung/DjinniGradlePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 LiewJunTung/SymbolicLinkGradlePlugin,master,8,,gradlew,,
 Liftric/octopus-deploy-plugin,master,8,,gradlew,,
 Liftric/vault-client-plugin,master,8,,gradlew,,
@@ -932,7 +932,7 @@ Lihuanghe/SMSGate,netty4,8,,maven,,
 LinkedInAttic/camus,master,8,,maven,,
 LinkedInAttic/indextank-engine,master,8,,maven,,
 LinkleYping/struts-2-5,master,8,,maven,,
-LiquidShack/rubber-elephant-mahout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+LiquidShack/rubber-elephant-mahout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 LitePalFramework/LitePal,master,11,,gradlew,,
 LittleMikeDev/gradle-build-version,master,8,,gradlew,,
 LittleMikeDev/gradle-git-tag-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -944,7 +944,7 @@ LoCoRepo/loco-repo-gradle-plugin,master,8,,gradlew,,
 LouisCAD/Splitties,main,8,,gradlew,,
 Lucas3oo/ots-sw-info-gradle-plugin,main,11,,gradlew,,
 Lucas3oo/sonarlint-gradle-plugin,main,11,,gradlew,,
-LuckyJayce/ViewPagerIndicator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+LuckyJayce/ViewPagerIndicator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 LukaszLyskawa/LicenseToolsPlugin,master,8,,gradlew,,
 LyndonChin/MasteringAndroidDataBinding,master,8,,gradlew,,
 M66B/NetGuard,master,11,,gradlew,,
@@ -956,7 +956,7 @@ MSPaintIDE/MSPaintIDE,master,8,,gradle,,
 Mach5/supersonic,master,8,,maven,,
 MachinePublishers/jBrowserDriver,master,8,,maven,,
 Maescool/Catacomb-Snatch,develop,8,,gradlew,true,Build uses Gradle 2.x
-MagicMashRoom/SuperCalendar,master,8,,gradlew,,
+MagicMashRoom/SuperCalendar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Magnarokk/OpenIMAJ,master,8,,maven,,
 MagpieBridge/IRConverter,master,8,,maven,,
 MagpieBridge/MagpieBridge,develop,8,,maven,,
@@ -964,7 +964,7 @@ MagusDevOps/avro4k-build-plugins,main,8,,gradlew,,
 Malinskiy/SuperRecyclerView,master,8,,gradlew,true,Build uses Gradle 2.x
 MamedovArtur/confluence-publish-plugin,master,8,,gradle,,
 Manabu-GT/ExpandableTextView,master,8,,gradlew,true,Build uses Gradle 2.x
-ManbangGroup/Phantom,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ManbangGroup/Phantom,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 MangoAutomation/ma-core-public,main,8,,maven,,
 MangoIceCup/gradle-aliyunmirror-plugin,master,8,,gradlew,,
 Manopraba/Pre_Reg_Common_kernel,master,8,,maven,,
@@ -978,7 +978,7 @@ Marswin/MarsDaemon,master,8,,gradlew,true,Build uses Gradle 2.x
 MartijnDwars/markdown-gradle-plugin,master,8,,gradlew,,
 MartijnDwars/proxy-gradle-plugin,main,8,,gradlew,,
 MartijnDwars/spoofax-gradle-plugin,master,8,,gradlew,,
-MasonLiuChn/DecompileApk,master,8,,gradlew,,
+MasonLiuChn/DecompileApk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Mastercard/available-merchant-offers-reference-app,master,8,,maven,,
 Mastercard/direct-services-access-reference-app,master,8,,maven,,
 Mastercard/dw-sbde-client-app,master,8,,maven,,
@@ -995,7 +995,7 @@ Mastercard/spendingpulse-reference-app,master,8,,maven,,
 MateusNichols/Fenix-Academic,master,8,,maven,,
 MaximilianKorn/opencastST,openapi,8,,maven,,
 Maxsky5/InfiniteTorrent,master,8,,maven,,
-MeDeity/Poetry,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+MeDeity/Poetry,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Meituan-Dianping/Robust,master,8,,gradlew,true,Build uses Gradle 2.x
 Melati/Melati,master,8,,maven,,
 Merck/Halyard,master,8,,maven,,
@@ -1003,10 +1003,10 @@ Merseyside/mersey-gradle-plugins,master,8,,gradlew,,
 MewsSystems/gradle-azure-apk-publisher,master,8,,gradlew,,
 Mics21/localinfra,main,8,,gradlew,,
 MiguelCatalan/MaterialSearchView,develop,8,,gradle,,
-MikeMano1994/FileManager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+MikeMano1994/FileManager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 MikeOrtiz/TouchImageView,master,8,,gradlew,,
 Militch/quick-assemble,master,8,,gradlew,true,Build uses Gradle 3.x
-MindorksOpenSource/android-mvp-architecture,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+MindorksOpenSource/android-mvp-architecture,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 MinecraftForge/ForgeGradle,FG_5.0,8,,gradlew,,
 MinecraftForge/MinecraftForge,1.18.x,11,,gradlew,,
 Minecrell/VanillaGradle,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -1042,7 +1042,7 @@ NLPchina/ansj_seg,master,8,,maven,,
 NLPchina/elasticsearch-sql,master,8,,maven,,
 NTNU-IHB/FMI4j,master,8,,gradlew,,
 NTNU-IHB/sspgen,master,8,,gradlew,,
-NULLPointerGuy/pretty-print,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+NULLPointerGuy/pretty-print,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 NYTimes/Store,feature/rx2,8,,gradlew,,
 NanoHttpd/nanohttpd,master,8,,gradle,,
 NationalSecurityAgency/datawave,integration,8,,maven,,
@@ -1054,7 +1054,7 @@ NeoTech-Software/android-appcenter-gradle-plugin,master,8,,gradlew,,
 NeoTech-Software/android-root-coverage-plugin,master,8,,gradlew,,
 NeoTerrm/NeoTerm,master,8,,gradlew,,
 Netflix/EVCache,master,8,com.netflix.eureka.Style,gradlew,,
-Netflix/Hystrix,master,8,,gradlew,,
+Netflix/Hystrix,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Netflix/Nicobar,master,8,,gradlew,,
 Netflix/Priam,3.x,8,,gradlew,,
 Netflix/SimianArmy,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -1081,7 +1081,7 @@ NetrisTV/gradle-commitlint-plugin,master,8,,gradlew,,
 NeuronRobotics/nrjavaserial,master,8,,gradlew,,
 Nextdoor/bender,master,8,,maven,,
 NicMcPhee/Machine-shop-simulator,main,8,,gradlew,,
-NicoToast/fat-aar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+NicoToast/fat-aar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Nifiro/comicbooks,master,8,,maven,,
 Nightonke/CoCoin,master,8,,gradlew,true,Build uses Gradle 2.x
 Nimrodda/build-metrics-gradle-plugin,master,8,,gradlew,,
@@ -1124,7 +1124,7 @@ OpenAPITools/openapi-style-validator,master,8,,gradlew,,
 OpenCCG/openccg,master,8,,maven,,
 OpenClinica/OpenClinica,master,8,,maven,,
 OpenFTC/OpenRC-Turbo,master,8,,gradlew,,
-OpenFTC/external-resources-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+OpenFTC/external-resources-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 OpenG/swift-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 OpenGamma/Strata,main,8,,maven,,
 OpenHFT/Chronicle-Bytes,ea,8,,maven,,
@@ -1136,7 +1136,7 @@ OpenHelios/de.buehmann.gradle.jubula,master,8,,gradle,,
 OpenLiberty/ci.common,main,8,,maven,,
 OpenLiberty/ci.gradle,main,8,,gradlew,,
 OpenLiberty/ci.maven,main,8,,maven,,
-OpenLimark/GitFlowSemVerPlugin,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+OpenLimark/GitFlowSemVerPlugin,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 OpenNMS/newts,master,8,,maven,,
 OpenNTF/SocialSDK,master,8,,maven,,
 OpenOLAT/OpenOLAT,master,11,,maven,,
@@ -1152,7 +1152,7 @@ OrangE-3/UnitTestArchitect,main,8,,gradlew,,
 OrienteerBAP/Orienteer,master,8,,maven,,
 Owl-e/hometracker-application-plugin,main,8,,gradle,,
 OwnYourData/oyd-pia,master,8,,maven,,
-PC-Logix/LanteaBot,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+PC-Logix/LanteaBot,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 PaGr0m/kotlin-spm-plugin,master,8,,gradlew,,
 PaoloRotolo/AppIntro,master,8,,gradlew,,
 PaperMC/Velocity,dev/3.0.0,8,,gradlew,,
@@ -1191,7 +1191,7 @@ PrzemyslawSwiderski/yaml-secrets-gradle-plugin,master,8,,gradlew,,
 PseudoResonance/ResonantBot,master,8,,maven,,
 PurelyApplied/gradle-jar-checks-plugin,master,8,,gradle,,
 QASymphony/jenkin-qtest-plugin,master,8,,maven,,
-Qi4j/qi4j-sdk,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Qi4j/qi4j-sdk,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Quantones/JniSecret,main,8,,gradlew,,
 Querz/NBT,master,8,,gradlew,,
 QuiltMC/quilt-loader,develop,8,,gradlew,,
@@ -1247,7 +1247,7 @@ SHsuperCM/FletchingTable,main,8,,gradlew,,
 STAMP-project/EvoCrash,master,8,,maven,,
 STAMP-project/test-runner,master,8,,maven,,
 STAR-ZERO/NavProguardGenerator,master,8,,gradlew,,
-STAR-ZERO/gradle-githook,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+STAR-ZERO/gradle-githook,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 SUPERCILEX/version-orchestrator,master,8,,gradlew,,
 SabreOSS/conf4j,master,8,,maven,,
 SabreOSS/nimbus,main,8,,maven,,
@@ -1257,8 +1257,8 @@ SalomonBrys/gradle-sass,master,8,,gradlew,,
 SalomonBrys/kotlin-js-npm-bundle,master,8,,gradlew,,
 SamYStudiO/flair-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 Sammra-22/AndroidResLinter,master,8,,gradlew,,
-Samourai-Wallet/sentinel-android,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-Samsung/microbit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Samourai-Wallet/sentinel-android,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+Samsung/microbit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Samuel-Oliveira/Java_Certificado,master,8,,maven,,
 Sarquella/MavenCentral-Publisher,main,8,,gradlew,,
 ScottMacWatters/elements-gradle-plugin,master,8,,gradlew,,
@@ -1311,7 +1311,7 @@ SleepyTrousers/EnderCore,1.12,8,,gradlew,true,Build uses Gradle 2.x
 SlimJar/slimjar,master,8,,gradlew,,
 SlopeOak/gradle-init,master,8,,gradlew,,
 SlopeOak/gradle-project-writer,master,8,,gradlew,,
-Slowpoke101/FTBLaunch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Slowpoke101/FTBLaunch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 SmartBear/soapui,next,8,,maven,,
 SmartReceipts/SmartReceiptsLibrary,master,8,,gradlew,,
 SmartsquareGmbH/squit,master,8,,gradlew,,
@@ -1326,7 +1326,7 @@ SourceStudyNotes/Tomcat8,master,8,,maven,,
 Sovan25/master,master,8,,maven,,
 SpacialCircumstances/gradle-cucumber-reporting,master,8,,gradlew,,
 SpecialCyCi/AndroidResideMenu,master,8,,gradle,,
-SpencerPark/IJava,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+SpencerPark/IJava,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 SpencerPark/Jupyter-kernel-installer-gradle,master,8,,gradlew,,
 Spigot-MSPL/iron,master,8,,gradlew,,
 SpigotMC/BungeeCord,master,8,,maven,,
@@ -1357,7 +1357,7 @@ SudhirRana/Bharuwa2,master,8,,gradlew,,
 SudhirRana/PBRI-Ofbiz-Development,master,8,,gradlew,,
 SudhirRana/Test-Patanjali-Development,master,8,,gradlew,,
 Suff99/Regeneration,1.18.2,8,,gradlew,,
-SufficientlySecure/document-viewer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+SufficientlySecure/document-viewer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Sztigar/bytecode-editor,master,8,,maven,,
 T-Systems-MMS/gradle-git-semver,master,8,,gradlew,true,Build uses Gradle 3.x
 TAKETODAY/today-framework-old,master,8,,maven,,
@@ -1367,7 +1367,7 @@ TELL-SRL/gradle-sass,master,8,,gradlew,true,Build uses Gradle 2.x
 TKXB/ez-sonar,master,8,,maven,,
 TNG/JGiven,master,8,,gradlew,,
 TWCable/gradle-plugin-cq-bundle,master,8,,gradlew,true,Build uses Gradle 3.x
-TWCable/gradle-plugin-cq-package,master,8,,gradlew,,
+TWCable/gradle-plugin-cq-package,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 TabooLib/shrinking-kotlin,master,8,,gradlew,,
 TabooLib/taboolib-gradle-plugin,master,8,,gradlew,,
 Talend/components,master,8,,maven,,
@@ -1411,7 +1411,7 @@ TheurgistFin/F-IBase,master,8,,maven,,
 Tinder/GitQuery,main,8,,gradlew,,
 Todd-Davies/ProgressWheel,master,8,,gradlew,,
 TomDmitriev/gradle-bundle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
-TommyLemon/Android-ZBLibrary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+TommyLemon/Android-ZBLibrary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 TonicArtos/SuperSLiM,master,8,,gradlew,true,Build uses Gradle 3.x
 ToxicBakery/ViewPagerTransforms,master,8,,gradlew,,
 Transitime/core,master,8,,maven,,
@@ -1423,12 +1423,12 @@ TritonDataCenter/java-manta,master,8,,maven,,
 TrsstProject/trsst,master,8,,maven,,
 TsunagariYo/tomcat,master,8,,maven,,
 TuSDK/TuSDK-for-Android-demo,master,8,,gradlew,,
-TwoStone/gradle-eclipse-compiler-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+TwoStone/gradle-eclipse-compiler-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 UKPLab/argument-reasoning-comprehension-task,master,8,,maven,,
 UNIVALI-LITE/Portugol-Studio,master,8,,gradlew,,
 USPTO/PatentPublicData,master,8,,maven,,
-Ubhadiyap/Wavpay,master,8,,gradlew,,
-UnAfraid/gradle-git-repo-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Ubhadiyap/Wavpay,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+UnAfraid/gradle-git-repo-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 UnderwaterApps/overlap2d,master,8,,gradlew,true,Build uses Gradle 2.x
 Ungine-Tech/MassDep,master,8,,gradle,,
 Unidata/netcdf-java,maint-5.x,8,,gradlew,,
@@ -1453,12 +1453,12 @@ Vipter/demo,master,8,,maven,,
 Virelion/buildata,master,8,,gradlew,,
 Vraiment/gradle-jni-plugin,master,8,,gradle,,
 WASdev/ci.gradle,main,8,,gradlew,,
-WLIN534/UnCompress,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+WLIN534/UnCompress,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 WVector/AppUpdate,master,8,,gradlew,true,Build uses Gradle 3.x
 Waffle/waffle,master,11,,maven,,
 WalkerKnapp/gradle-use-cmake-library,main,8,,gradlew,,
-Walkud/JudyBridge,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-Waschndolos/gradle-license-guard,master,8,,gradlew,,
+Walkud/JudyBridge,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+Waschndolos/gradle-license-guard,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 WeBankBlockchain/WeCross-BCOS2-Stub,master,8,,gradlew,,
 WeBankBlockchain/WeCross-Fabric1-Stub,master,8,,gradlew,,
 WeBankFinTech/Dockin-RM,v0.2.0,8,,gradle,,
@@ -1474,12 +1474,12 @@ WhiteSourceE/VisitorManagement,master,8,,maven,,
 WhiteSourceE/VisitorManagement-updated,master,11,,maven,,
 WhiteSourceE/keycloak-unsafe,master,8,,maven,,
 Widen/buildkite-gradle-plugin,master,8,,gradlew,,
-Widen/gradle-versioning,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+Widen/gradle-versioning,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Wikia/selenium-tests,master,8,,gradlew,,
 Wikidata/Wikidata-Toolkit,master,8,,maven,,
 WildMeOrg/Wildbook,master,8,,maven,,
-William-Hill-Online/cassandra-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-William-Hill-Online/wiremock-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+William-Hill-Online/cassandra-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+William-Hill-Online/wiremock-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Wrdlbrnft/GlueMeister,master,8,,gradlew,true,Build uses Gradle 3.x
 Wrdlbrnft/ProguardAnnotations,master,8,,gradlew,true,Build uses Gradle 3.x
 Wynntils/Wynntils,development,8,,gradlew,,
@@ -1488,7 +1488,7 @@ XavierTalpe/gradle-release-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 Xilinx/RapidWright,master,8,,gradlew,,
 Xitikit/iqserver-gradle,master,8,,gradlew,,
 Xpdustry/Toxopid,master,8,,gradlew,,
-XunMengWinter/CircularAnim,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+XunMengWinter/CircularAnim,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 YANG-DB/yang-db,dev-opensearch,8,,maven,,
 YahooArchive/samoa,master,8,,maven,,
 YahyaAlfayad/gradle-build-profiles,master,8,,gradlew,,
@@ -1498,7 +1498,7 @@ Yalantis/GuillotineMenu-Android,master,8,,gradlew,true,Build uses Gradle 2.x
 Yalantis/Phoenix,master,8,,gradlew,true,Build uses Gradle 2.x
 Yalantis/Side-Menu.Android,master,8,,gradlew,,
 Yalantis/uCrop,develop,8,,gradlew,,
-YamLee/apk-releaser-plugin,master,8,,gradlew,,
+YamLee/apk-releaser-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Yelp/nrtsearch,master,8,,gradlew,,
 Yelp/swagger-gradle-codegen,master,8,,gradlew,,
 Yeregorix/AppCommonGradle,master,8,,gradle,,
@@ -1525,16 +1525,16 @@ aNNiMON/Own-Programming-Language-Tutorial,latest,8,,gradlew,,
 aPieceOfCookie/StudyRecord,master,8,,maven,,
 aSoft-Ltd/build-src,master,8,,gradlew,,
 aSoft-Ltd/konfig,master,8,,gradlew,,
-aadrian/gradle-smartsprites,master,8,,gradlew,,
+aadrian/gradle-smartsprites,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 aalmiray/jdeprscan-gradle-plugin,master,8,,gradlew,,
 aalmiray/jdeps-gradle-plugin,master,8,,gradlew,,
 aalmiray/kordamp-gradle-plugins,master,8,,gradlew,,
 aalmiray/markdown-gradle-plugin,master,8,,gradlew,,
-aalmiray/stats-gradle-plugin,master,8,,gradlew,,
+aalmiray/stats-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 aaronicsubstances/code-augmentor,master,8,,gradlew,,
 aaschmid/gradle-cpd-plugin,master,8,,gradlew,,
-abansod/gradle-docker-plugin,master,8,,gradlew,,
-abdullahwale/MyFileMangerFit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+abansod/gradle-docker-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+abdullahwale/MyFileMangerFit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 abel533/ECharts,master,8,,maven,,
 abel533/Mapper,master,8,,maven,,
 abel533/MyBatis-Spring-Boot,master,8,,maven,,
@@ -1542,7 +1542,7 @@ accenture/mercury,master,8,,maven,,
 acidbee/gradle-maven-settings-plugin,master,8,,gradlew,,
 acierto/gradle-private-npm-nexus,master,8,,gradlew,,
 act262/GradleTimeTracker,master,8,,gradlew,,
-act262/PinModePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+act262/PinModePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 act262/gradle-to-bazel,master,8,,gradlew,,
 acterics/apk-dependency-graph-gradle-plugin,master,8,,gradlew,,
 actframework/actframework,master,8,,maven,,
@@ -1556,7 +1556,7 @@ adaptris/interlok-jclouds,develop,11,,gradlew,,
 adaptris/interlok-service-tester,develop,11,,gradlew,,
 adaptris/interlok-vcs-git,develop,11,,gradlew,,
 adaptris/interlok-verify-report,develop,11,,gradlew,,
-adavis/quality-checks,develop,8,,gradlew,,
+adavis/quality-checks,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 addthis/hydra,master,8,,maven,,
 adhulipa/tika-pooled-time-series,pooled-time-series,8,,maven,,
 adlered/bolo-solo,master,8,,maven,,
@@ -1565,7 +1565,7 @@ adnovum/adn-bootstrap-gradle-plugin,main,8,,gradlew,,
 adobe/AEM-Smart-Tag-Converter,main,8,,maven,,
 adobe/S3-FileSystem,main,8,,gradlew,,
 adobe/S3Mock,main,11,,maven,,
-adobe/acs-android-example,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+adobe/acs-android-example,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 adobe/adobe-dx,master,8,,maven,,
 adobe/aem-cloud-engineering-video-series-exercises,wknd-legacy,8,,maven,,
 adobe/aem-cloud-migration,master,11,,maven,,
@@ -1618,7 +1618,7 @@ adrianbk/gradle-travisci-trigger-plugin,master,8,,gradlew,true,Build uses Gradle
 adrianrus/gradle-editbin,master,8,,gradlew,true,Build uses Gradle 2.x
 advantageous/boon,master,8,,gradlew,true,Build uses Gradle 2.x
 advantageous/docker-test-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-advantageous/marathon-deploy-plugin,master,8,,gradlew,,
+advantageous/marathon-deploy-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 advantageous/qbit,master,8,,gradlew,true,Build uses Gradle 2.x
 aefox/gradle-templates,master,8,,gradle,,
 aegis123/minio-buildcache,master,8,,gradlew,,
@@ -1639,7 +1639,7 @@ airbnb/AirMapView,master,8,,gradlew,,
 airbnb/DeepLinkDispatch,master,11,,gradlew,,
 airbnb/RxGroups,master,8,,gradlew,true,Build uses Gradle 3.x
 airbnb/SpinalTap,master,8,,gradlew,,
-airbnb/aerosolve,master,8,,gradlew,,
+airbnb/aerosolve,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 airbnb/airpal,master,8,,gradlew,true,Build uses Gradle 2.x
 airbnb/billow,master,8,,maven,,
 airbnb/chancery,master,8,,maven,,
@@ -1655,7 +1655,7 @@ airlift/discovery,master,8,,maven,,
 airsonic/airsonic,master,8,,maven,,
 aitusoftware/recall,master,8,,gradlew,,
 ajmath/gradle-s3crets,master,8,,gradlew,true,Build uses Gradle 3.x
-ajoberstar/gradle-bintray,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ajoberstar/gradle-bintray,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ajoberstar/gradle-defaults,main,8,,gradlew,,
 ajoberstar/gradle-git-publish,main,8,,gradlew,,
 ajoberstar/gradle-imports,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -1669,8 +1669,8 @@ akhikhl/wuff,master,8,,gradlew,true,Build uses Gradle 2.x
 akivamu/libgdx-asset-helper-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 aksain/gradle-archetype-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 alamkanak/Android-Week-View,develop,8,,gradlew,,
-albert-lii/SUtils,master,8,,gradlew,,
-albertonavarro/loggergenerator-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+albert-lii/SUtils,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+albertonavarro/loggergenerator-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alcideio/gradle-semantic-build-versioning,master,8,,gradlew,,
 alejoHomes/jasmine-gradle,master,8,,gradlew,true,Build uses Gradle 2.x
 aleksdikanski/gradle-kafka-test-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -1678,14 +1678,14 @@ alenkacz/gradle-json-validator,master,8,,gradlew,true,Build uses Gradle 3.x
 alenkacz/gradle-marathon-deployer,master,8,,gradlew,true,Build uses Gradle 3.x
 alenkacz/gradle-scalafmt,master,8,,gradlew,,
 aleven/webapp-common,master,8,,maven,,
-alex-shpak/dropwizard-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-alexbogovich/kt-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+alex-shpak/dropwizard-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+alexbogovich/kt-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alexcheng1982/happyride,master,11,,maven,,
 alexcojocaru/elasticsearch-maven-plugin,master,8,,maven,,
 alexec/docker-java-orchestration,master,8,,maven,,
 alexey-lapin/realworld-backend-micronaut,master,8,,gradlew,,
 alexeylisyutenko/windows-service-plugin,master,8,,gradle,,
-alexleventer/gradle-slack-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+alexleventer/gradle-slack-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alexm118/aws-gradle-plugin,master,8,,gradlew,,
 alexmazharouski/downloader-plugin,master,8,,gradlew,,
 alexo/wro4j,1.7.x,8,,maven,,
@@ -1698,13 +1698,13 @@ alibaba/Alink,master,8,,maven,,
 alibaba/Appactive,main,8,,maven,,
 alibaba/COLA,master,8,,maven,,
 alibaba/DataX,master,8,,maven,,
-alibaba/JsonLube,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+alibaba/JsonLube,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alibaba/ListItem,master,8,,gradlew,true,Build uses Gradle 2.x
 alibaba/QLExpress,master,8,,maven,,
 alibaba/RemoteShuffleService,main,8,,maven,,
 alibaba/Sentinel,master,8,,maven,,
 alibaba/SmartEngine,master,8,,maven,,
-alibaba/StateManager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+alibaba/StateManager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alibaba/TProfiler,master,8,,maven,,
 alibaba/alibaba-flink-connectors,master,8,,maven,,
 alibaba/alibaba-rsocket-broker,master,11,,mvnw,,
@@ -1736,7 +1736,7 @@ alibaba/fastFFI,main,8,,maven,,
 alibaba/fastjson,master,8,,maven,,
 alibaba/fastjson2,main,8,,maven,,
 alibaba/fluentable,master,8,,maven,,
-alibaba/freeline,master,8,,gradlew,,
+alibaba/freeline,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 alibaba/innodb-java-reader,master,8,,maven,,
 alibaba/jarslink,master,8,,maven,,
 alibaba/java-dns-cache-manipulator,main,8,,maven,,
@@ -1811,11 +1811,11 @@ amdonov/gradle-yumr-client,master,8,,gradlew,true,Build uses Gradle 3.x
 americanexpress/synapse,develop,8,,maven,,
 amirkibbar/bilberry,master,8,,gradlew,true,Build uses Gradle 3.x
 amirkibbar/cherry,master,8,,gradlew,true,Build uses Gradle 3.x
-amirkibbar/peach,master,8,,gradlew,,
+amirkibbar/peach,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 amirkibbar/red-apple,master,8,,gradlew,true,Build uses Gradle 3.x
 amistad012oss/gradle-git-repo-plugin,master,8,,gradle,,
-amitbansal26/kafka-registry-gradle-plugin,master,8,,gradlew,,
-amitshekhariitbhu/Fast-Android-Networking,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+amitbansal26/kafka-registry-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+amitshekhariitbhu/Fast-Android-Networking,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 amlcurran/ShowcaseView,master,8,,gradlew,true,Build uses Gradle 2.x
 amontJ/code_spring,master,8,,gradlew,,
 amplab/drizzle-spark,master,8,,maven,,
@@ -1853,7 +1853,7 @@ anatawa12/jar-in-jar-mod,master,8,,gradlew,,
 anbuck/gradle-compass,master,8,,gradlew,,
 andkulikov/transitions-everywhere,master,8,,gradle,,
 andnux/plugin,master,8,,gradlew,,
-andreas-schilling/joda-beans-gradle-plugin,master,8,,gradlew,,
+andreas-schilling/joda-beans-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 andreasbisiach/gradle-gitversion-plugin,master,8,,gradlew,,
 andreasrosdal/OpenPDF,master,8,,maven,,
 andrehertwig/admintool,develop,8,,maven,,
@@ -1861,8 +1861,8 @@ andretadeu/jdeps-gradle-plugin,master,8,,gradlew,,
 andrew-hoffman/halfnes,master,8,,maven,,
 andrewdotn/grubbyjar,master,8,,gradlew,,
 andrewparmet/buf-gradle-plugin,main,8,,gradlew,,
-android/size-analyzer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-android10/Android-CleanArchitecture,master,8,,gradlew,,
+android/size-analyzer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+android10/Android-CleanArchitecture,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 andxu/gradle-hello-plugin,master,8,,gradlew,,
 andycandy-de/UserInputGradle,master,8,,gradlew,,
 andyglick/apache-commons-io,IO_1_4_BRANCH,8,,maven,,
@@ -1879,7 +1879,7 @@ angryip/ipscan,master,8,,gradlew,,
 angrypandahu/readWord,master,8,,maven,,
 anivanovic/jarscript,master,8,,gradlew,,
 ankidroid/Anki-Android,main,8,,gradlew,,
-anolivetree/gradle-clojure,master,8,,gradlew,,
+anolivetree/gradle-clojure,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ansman/auto-plugin,main,8,,gradlew,,
 anstkras/terraform.kt,master,8,,gradlew,,
 ant-media/Ant-Media-Server,master,8,,maven,,
@@ -1887,7 +1887,7 @@ anthonycr/Lightning-Browser,dev,8,,gradlew,,
 anthonyikeda-cf/greeting-plugin,master,8,,gradle,,
 antlr/antlr4,master,8,,maven,,
 antlr/antlrworks,master,8,,maven,,
-antoniolg/androidmvp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+antoniolg/androidmvp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 anupk-adda/ak-nifi,main,8,,maven,,
 anverus/gradle-build-timer,master,8,,gradlew,,
 anylogic/alogic,master,8,,maven,,
@@ -2134,7 +2134,7 @@ apache/fluo-examples,main,11,,maven,,
 apache/fluo-recipes,main,11,,maven,,
 apache/freemarker-docgen,master,8,,maven,,
 apache/freemarker-generator,master,8,,maven,,
-apache/freemarker-online-tester,master,8,,gradlew,,
+apache/freemarker-online-tester,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 apache/ftpserver,trunk,8,,maven,,
 apache/geode,develop,8,,gradlew,,
 apache/geode-benchmarks,develop,8,,gradlew,,
@@ -2213,7 +2213,7 @@ apache/incubator-retired-slider,develop,8,,maven,,
 apache/incubator-retired-tamaya-extensions,master,8,,maven,,
 apache/incubator-samoa,master,8,,maven,,
 apache/incubator-sdap-mudrod,master,8,,maven,,
-apache/incubator-sdap-ningester,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+apache/incubator-sdap-ningester,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 apache/incubator-seatunnel,dev,8,,maven,,
 apache/incubator-sedona,master,8,,maven,,
 apache/incubator-sentry,master,8,,maven,,
@@ -2457,7 +2457,7 @@ apache/plc4x,develop,8,,maven,,
 apache/plc4x-build-tools,develop,11,,maven,,
 apache/pluto,trunk,8,,maven,,
 apache/poi,trunk,8,,gradlew,,
-apache/polygene-java,master,8,,gradlew,,
+apache/polygene-java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 apache/portals-pluto,master,8,,maven,,
 apache/pulsar,master,8,,mvnw,,
 apache/pulsar-adapters,master,8,,maven,,
@@ -2945,7 +2945,7 @@ appdynamics/gce-connector-extension,master,8,,maven,,
 appdynamics/hadoop-monitoring-extension,master,8,,maven,,
 appdynamics/hanadb-monitoring-extension,master,8,,maven,,
 appdynamics/haproxy-monitoring-extension,master,8,,maven,,
-appdynamics/iot-java-sdk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+appdynamics/iot-java-sdk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 appdynamics/jmx-monitoring-extension,master,8,,maven,,
 appdynamics/joyent-monitoring-extension,master,8,,maven,,
 appdynamics/kafka-monitoring-extension,master,8,,maven,,
@@ -3040,7 +3040,7 @@ asitang/tika_pdf_celgene,master,8,,maven,,
 aslakknutsen/arquillian-showcase,master,8,,maven,,
 aspose-pdf-cloud/aspose-pdf-cloud-java,master,8,,gradlew,true,Build uses Gradle 3.x
 assecoTomas/hibernate-orm-3.6,master,8,,gradlew,true,Build uses Gradle 2.x
-assertj/assertj-generator-gradle-plugin,main,8,,gradlew,,
+assertj/assertj-generator-gradle-plugin,main,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 astraube/taxiadv_android,master,8,,gradlew,,
 astuetz/PagerSlidingTabStrip,master,8,,gradlew,,
 asyncapi/jasyncapi,master,8,,maven,,
@@ -3051,8 +3051,8 @@ atl-tw/xddl,master,8,,gradlew,,
 atlasmap/atlasmap,main,8,,maven,,
 atlassian/org.eclipse.jgit-atlassian,heads/shallow,8,,maven,,
 atomashpolskiy/bt,master,8,,maven,,
-atomicbits/scraml-gradle-plugin,develop,8,,gradlew,,
-atribe/alluro,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+atomicbits/scraml-gradle-plugin,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+atribe/alluro,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 atsushi-ageet/gradle-apkname-plugin,master,8,,gradlew,,
 atsushi-ageet/gradle-swig,master,8,,gradlew,,
 atsushieno/gradle-jnaerator-plugin,main,8,,gradlew,,
@@ -3071,8 +3071,8 @@ avaje-x/boot-gradle-plugin,master,8,,gradle,,
 avast/gradle-docker-compose-plugin,main,8,,gradlew,,
 avbravo/jmoordb,master,11,,maven,,
 avengerpenguin/r2r,master,8,,maven,,
-avjinder/Minimal-Todo,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-awbdallas/gradle-cucumber-jvm-plugin,master,8,,gradlew,,
+avjinder/Minimal-Todo,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+awbdallas/gradle-cucumber-jvm-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 awrichar/gradle-external-build,master,8,,gradle,,
 awrichar/gradle-filesystem,master,8,,gradlew,,
 aws-amplify/aws-sdk-android,main,8,,gradlew,,
@@ -3145,7 +3145,7 @@ bancolombia/scaffold-clean-architecture,master,8,,gradlew,,
 bancolombia/serenity-parallel-execution-plugin,master,8,,gradlew,,
 banderous/ccd-sdk,master,8,,gradlew,,
 banica-org/dojo,master,8,,maven,,
-baoti/Pioneer,master,8,,gradlew,,
+baoti/Pioneer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 baoyongzhang/SwipeMenuListView,master,8,,gradlew,,
 bardsoftware/ganttproject,master,11,,gradlew,,
 barmako/fastjson_clone,master,8,,maven,,
@@ -3157,7 +3157,7 @@ bcgit/bc-java,master,8,,gradle,,
 bcombes/TinyPngPlugin,master,8,,gradle,,
 bdemers/generated-code-example,master,8,,maven,,
 bdemers/maven-wrapper,master,8,,maven,,
-bdeneuter/mindstorms-plugin,master,8,,gradlew,,
+bdeneuter/mindstorms-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 beders/Resty,master,8,,maven,,
 begeekmyfriend/yasea,master,8,,gradlew,,
 ben-manes/caffeine,master,8,,gradlew,,
@@ -3172,7 +3172,7 @@ berezovskyi/lyo_fork,b-sonarclloud,8,,maven,,
 bertrandmartel/speed-test-lib,master,8,,gradlew,true,Build uses Gradle 2.x
 betfair/cougar,master,8,,maven,,
 betterme-dev/BetterLibs,master,8,,gradlew,,
-betterme-dev/Localizer-Android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+betterme-dev/Localizer-Android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 bft-smart/library,master,8,,gradlew,,
 bgjug/jprime,master,8,,maven,,
 bgorven/JNIBuilder,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -3180,7 +3180,7 @@ bhuemer/gbt,master,8,,gradlew,,
 biezhi/blade,v2.1.3,8,,maven,,
 big-guy/gradle-cpplint-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 big-guy/gwt-gradle-plugin,master,8,,gradlew,,
-bigeyechou/Rxjava2Retrofit2NetFrame,master,8,,gradlew,,
+bigeyechou/Rxjava2Retrofit2NetFrame,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 bigmanLau/ASM_DedounceClick_Android,master,8,,gradle,,
 bilibili/BRouter,master,8,,gradlew,,
 bin456789/Unblock163MusicClient-Xposed,master,8,,gradlew,,
@@ -3299,7 +3299,7 @@ broadinstitute/picard,master,8,,gradlew,,
 brodziakm/maven-s3-plugin,master,8,,gradlew,,
 browserstack/browserstack-local-java,master,8,,maven,,
 browserup/browserup-proxy,master,8,,gradlew,,
-bruceLio/Git_My,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+bruceLio/Git_My,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 brunofarache/liferay-sdk-builder,master,8,,gradlew,true,Build uses Gradle 2.x
 brunoguerra/craftMagic,master,8,,gradle,,
 bsideup/gradle-maven-sync-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -3310,13 +3310,13 @@ btraceio/btrace,develop,8,,gradlew,,
 btrplace/scheduler,master,8,,maven,,
 bucharest-jug/dropwizard-todo,master,8,,maven,,
 bueli/unpuzzle,master,8,,gradlew,true,Build uses Gradle 3.x
-bueli/wuff,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+bueli/wuff,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 bugfender/gradle-mapping-upload,main,8,,gradlew,,
 bugsnag/bugsnag-android-gradle-plugin,next,8,,gradlew,,
 buildcontainers/buildcontainers-gradle-plugin,master,8,,gradlew,,
 bulivlad/vertx-codegen-plugin,master,8,,gradlew,,
 bullheadandplato/RootPGPExplorer,master,8,,gradle,,
-bulwinkel/gradle-git-version,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+bulwinkel/gradle-git-version,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 bumptech/glide,master,8,,gradlew,,
 bunnyblueair/ACDD,master,8,,gradlew,true,Build uses Gradle 2.x
 burberius/eve-esi,master,8,,maven,,
@@ -3327,7 +3327,7 @@ byte-shifter-ltd/soapui-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2
 bytedeco/javacpp,master,8,,maven,,
 bytedeco/javacv,master,8,,maven,,
 bytehala/gradle-svnbuildversion,master,8,,gradlew,,
-bytekast/local-apigateway-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+bytekast/local-apigateway-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 byzer-org/byzer-lang,master,8,,maven,,
 c64lib/gradle-retro-assembler-plugin,master,8,,gradlew,,
 cBioPortal/cbioportal,master,8,,maven,,
@@ -3335,7 +3335,7 @@ ca-api-gateway/gateway-developer-plugin,master,8,,gradlew,,
 ca-api-gateway/modular-assertion-builder,master,8,,gradlew,,
 caf3sua/pte-magic,master,8,,maven,,
 cai3178940/youran,master,8,,maven,,
-calvinaquino/LNReader-Android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+calvinaquino/LNReader-Android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 camsys/onebusaway-nyc,master,8,,maven,,
 camunda-community-hub/camunda-bpm-platform-osgi,master,8,,maven,,
 candlepin/candlepin,master,8,,gradlew,,
@@ -3355,7 +3355,7 @@ castlabs/dashencrypt,master,8,,maven,,
 castocolina/json2yaml,master,8,,gradlew,,
 castor-data-binding/castor,master,8,,maven,,
 castor-software/yajta,master,8,,maven,,
-castorflex/SmoothProgressBar,master,8,,gradlew,,
+castorflex/SmoothProgressBar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 castorini/anserini,master,11,,maven,,
 catacgc/gradle-kotlin-react,master,8,,gradlew,,
 cbeust/jcommander,master,8,,gradlew,,
@@ -3410,12 +3410,12 @@ chrisbanes/Android-PullToRefresh,master,8,,maven,,
 chrisbanes/PhotoView,master,8,,gradlew,,
 chrisbanes/cheesesquare,master,8,,gradlew,,
 chrisbanes/philm,master,8,,gradlew,true,Build uses Gradle 2.x
-chrisjenx/Calligraphy,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+chrisjenx/Calligraphy,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 christ66/cobertura,master,8,,maven,,
 christian-posta/jms-tester,master,8,,maven,,
 christopherney/Enigma,master,8,,gradlew,,
 chubaostream/joyqueue,master,8,,maven,,
-chuckmcclain/muCommander,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+chuckmcclain/muCommander,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 chudsaviet/gradle-avrohugger-plugin,master,8,,gradlew,,
 chung10/spring-boot-filemanager,master,8,,maven,,
 chungkwong/MathOCR,master,8,,maven,,
@@ -3435,7 +3435,7 @@ ckm007/lab-platform,master,8,,maven,,
 clarinsi/reldi-depparse,master,8,,maven,,
 clarityai-eng/codeartifact-gradle-plugin,main,8,,gradlew,,
 classgraph/classgraph,latest,8,,mvnw,,
-classmethod-aws/gradle-aws-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+classmethod-aws/gradle-aws-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 clojure/clojure,master,8,,maven,,
 cloud4986/apache-avr0,master,8,,maven,,
 cloud4986/struts,master,8,,maven,,
@@ -3484,7 +3484,7 @@ commercetools/rmf-codegen,main,8,,gradlew,,
 comsysto/crolabefra-cpp,master,8,,gradlew,true,Build uses Gradle 2.x
 comsysto/crolabefra-java,master,8,,gradlew,true,Build uses Gradle 2.x
 comsysto/crolabefra-mothership,master,8,,gradlew,true,Build uses Gradle 2.x
-conan-io/conan-clion-plugin,dev,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+conan-io/conan-clion-plugin,dev,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 confluentinc/camus,confluent-master,8,,maven,,
 confluentinc/castle,master,8,,maven,,
 confluentinc/common,master,8,,maven,,
@@ -3543,7 +3543,7 @@ crate/crate,master,8,,gradlew,,
 crate/crate-jdbc,master,8,,gradlew,,
 crawljax/crawljax,master,8,,maven,,
 crazyandcoder/citypicker,master,8,,gradlew,,
-crazycodeboy/TakePhoto,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+crazycodeboy/TakePhoto,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 crc83/gradle-jenkins-plugin,master,8,,gradlew,,
 creising/soapui-gradle-plugin,master,8,,gradlew,,
 criccomini/ezdb,master,8,,maven,,
@@ -3559,8 +3559,8 @@ cs304-spring2021/javaparser,master,8,,maven,,
 cschabl/activejdbc-gradle-plugin,master,8,,gradlew,,
 cschneider4711/Marathon,master,8,,maven,,
 cscpswang/java-practice,master,8,,maven,,
-cslee00/digitalascent-gradle-errorprone,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-cslee00/digitalascent-gradle-project,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+cslee00/digitalascent-gradle-errorprone,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+cslee00/digitalascent-gradle-project,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ctripcorp/apollo,master,8,,mvnw,,
 cuba-platform/cuba,master,8,,gradlew,,
 cuba-platform/reports,master,8,,gradlew,,
@@ -3570,10 +3570,10 @@ cuileikun/AppDemos,master,8,,gradle,,
 cuisongliu/mybatis_generator_gradle_plugin,master,8,,gradle,,
 culturecommunication/ginco,master,8,,maven,,
 curator/jnuget,master,8,,maven,,
-cuzfrog/gradle-lean,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+cuzfrog/gradle-lean,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 cwensel/cascading,4.0,8,,gradlew,,
 cybertaxonomy/cdmlib,develop,8,,maven,,
-d-fournier/Gradle-Mattermost-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+d-fournier/Gradle-Mattermost-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 d10xa/gradle-download-xml-plugin,master,8,,gradle,,
 d10xa/gradle-geb-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 d4rth-v4d3r/presto,master,8,,maven,,
@@ -3597,7 +3597,7 @@ danielpadua/micronaut-example-api,main,11,,mvnw,,
 danielwegener/logback-kafka-appender,master,8,,maven,,
 danikula/AndroidVideoCache,master,8,,gradlew,true,Build uses Gradle 3.x
 danskespil/gradle-plugin-release,master,8,,gradlew,true,Build uses Gradle 3.x
-dantesun/ele-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+dantesun/ele-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 danthegoodman/gradle-capsule-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 danylovolokh/VideoPlayerManager,master,8,,gradle,,
 dariober/ASCIIGenome,master,8,,gradlew,,
@@ -3635,7 +3635,7 @@ dawnwords/jacoco-badge-gradle-plugin,master,8,,gradlew,,
 dbeaver/dbeaver,devel,11,,maven,,
 dbs-leipzig/gradoop,develop,8,,maven,,
 dbsystel/microservice-integrationtest-gradle-plugin,develop,8,,gradlew,true,Build uses Gradle 3.x
-dcendents/android-maven-gradle-plugin,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+dcendents/android-maven-gradle-plugin,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 dcm4che/dcm4che,master,8,,maven,,
 dcow/dockter-sublime,master,8,,gradlew,true,Build uses Gradle 2.x
 dddjava/jig,main,11,,gradlew,,
@@ -3675,8 +3675,8 @@ dhfbk/tint,master,8,,maven,,
 dhingraaditya/Gradle-Sauce-Connect-Plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 dice-group/Squirrel,master,8,,maven,,
 dice-group/gerbil,master,8,,maven,,
-didi/DroidAssist,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-diefferson/SecureBuildConfig,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+didi/DroidAssist,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+diefferson/SecureBuildConfig,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 diegoceccarelli/json-wikipedia,master,11,,maven,,
 diffblue/eclipse-cbmc,master,8,,maven,,
 diffplug/atplug,main,8,,gradlew,,
@@ -3715,7 +3715,7 @@ dkpro/dkpro-lab,develop,8,,maven,,
 dkpro/dkpro-lsr,master,8,,maven,,
 dkpro/dkpro-toolbox,master,8,,maven,,
 dlpuzcl/ofcms,1.1,8,,maven,,
-dlukashanets/IconOverlayPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+dlukashanets/IconOverlayPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 dm77/barcodescanner,master,8,,gradlew,,
 dmart28/reveno,develop,8,,gradlew,,
 dmfs/gitversion,main,11,,gradlew,,
@@ -3788,7 +3788,7 @@ dubems/paystack-grails,master,8,,gradlew,,
 dubinsky/cloud-run,master,8,,gradlew,,
 duccuideptrai/gmaeni,master,8,,gradlew,,
 dunwu/javacore,master,8,,maven,,
-duty-os/white-demo-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+duty-os/white-demo-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 dvaske/git-build-info,master,8,,gradlew,true,Build uses Gradle 3.x
 dvoiss/global-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 dyc87112/SpringBoot-Learning,master,8,,maven,,
@@ -3809,7 +3809,7 @@ ebs-integrator/localize-with-spreadsheet-gradle,main,8,,gradlew,,
 ebullient/fc5-convert-cli,main,11,,mvnw,,
 ec4j/editorconfig-gradle-plugin,master,8,,gradlew,,
 echocat/gradle-golang-plugin,master,8,,gradlew,,
-eclipse-archived/bridgeiot.lib.java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+eclipse-archived/bridgeiot.lib.java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 eclipse-cdt/cdt,master,11,,maven,,
 eclipse-ee4j/eclipselink,master,11,,maven,,
 eclipse-ee4j/eclipselink-workbench,master,8,,maven,,
@@ -3984,7 +3984,7 @@ eclipse/xtext-extras,master,8,,gradlew,,
 eclipse/xtext-lib,master,8,,gradlew,,
 eclipse/xtext-web,master,8,,gradlew,,
 eclipse/xtext-xtend,master,8,,gradlew,,
-eclipsesource/dockerizor,master,8,,gradlew,,
+eclipsesource/dockerizor,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 edmodo/cropper,master,8,,gradlew,true,Build uses Gradle 2.x
 edvin/fxlauncher-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 edwardcapriolo/gossip,master,8,,maven,,
@@ -3993,9 +3993,9 @@ eerohele/dita-ot-gradle,master,8,,gradlew,,
 eerohele/saxon-gradle,master,8,,gradlew,,
 eficode/cool,master,8,,maven,,
 eganjs/gradle-plugin-yarn,master,8,,gradlew,,
-egor-n/gradle-s3-build-cache,master,8,,gradlew,,
+egor-n/gradle-s3-build-cache,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ehcache/sizeof,master,8,,maven,,
-ehirsch/gradle-react-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ehirsch/gradle-react-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 eirnym/js2p-gradle,main,8,,gradlew,,
 eirslett/frontend-maven-plugin,master,8,,maven,,
 eitansuez/course-plugin,master,8,,gradle,,
@@ -4035,17 +4035,17 @@ elastic/mocksocket,master,8,,maven,,
 elastic/newspotter,main,8,,maven,,
 elastic/openjdkMirror,master,8,,maven,,
 elastic/securemock,master,8,,maven,,
-elastic/shield-custom-realm-example,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-elastic/stack-docs,main,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+elastic/shield-custom-realm-example,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+elastic/stack-docs,main,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 elastic/support-diagnostics,main,8,,maven,,
-elastic/tealess,master,8,,gradlew,,
+elastic/tealess,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 elastic/thumbnails4j,main,8,,maven,,
 elastos/Elastos.DID.Java.SDK,master,8,,gradlew,,
 eldur/jwbf,master,8,,maven,,
 electronicarts/ea-agent-loader,master,8,,maven,,
-elehuitouze/ament_rcljava_gradle,master,8,,gradlew,,
+elehuitouze/ament_rcljava_gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 elek/apache-ozone-mirror,master,8,,maven,,
-eleme/Intimate,master,8,,gradlew,,
+eleme/Intimate,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 eleme/UETool,master,8,,gradlew,,
 elevennl/gradle-node-plugin,master,8,,gradlew,,
 elexis/elexis-3-core,master,11,,maven,,
@@ -4069,7 +4069,7 @@ epam/NGB,develop,8,,gradlew,true,Build uses Gradle 3.x
 epam/cloud-pipeline,develop,8,,gradlew,,
 ephemeral-laboratories/whitesource-gradle-plugin,main,8,,gradlew,,
 epickrram/perf-workshop,master,8,,gradlew,true,Build uses Gradle 2.x
-epickrram/transport,master,8,,gradlew,,
+epickrram/transport,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 epitschke/gradle-file-versioning,main,8,,gradlew,,
 erbrito/aws-java-sdk,master,8,,maven,,
 ermadmi78/kobby,main,8,,gradlew,,
@@ -4099,19 +4099,19 @@ etraveli/bom-verifier,master,8,,gradlew,true,Build uses Gradle 3.x
 etsy/AndroidStaggeredGrid,master,8,,gradlew,true,Build uses Gradle 1.x
 etulupov/training-apache-commons,master,8,,maven,,
 eugene-sy/gradle-scapegoat-plugin,master,8,,gradlew,,
-eugenekainara/gradle-docker,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+eugenekainara/gradle-docker,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 europace/artifact-version-gradle-plugin,master,8,,gradlew,,
 europace/docker-publish-gradle-plugin,main,8,,gradlew,,
 eutro/hierarchical-lang,master,8,,gradlew,,
 evant/gradle-retrolambda,main,8,,gradlew,,
 evant/holdr,main,8,,gradlew,,
 evant/pom,main,8,,gradlew,true,Build uses Gradle 3.x
-evant/silent-support,main,8,,gradlew,,
+evant/silent-support,main,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 eventis/jbossws-stack-native,master,8,,maven,,
 eventuate-tram/eventuate-tram-core,master,8,,gradlew,,
 evernote/android-job,master,11,,gradlew,,
 evestera/gradle-depsize-plugin,main,8,,gradlew,,
-ewerk/gradle-plugins,master,8,,gradlew,,
+ewerk/gradle-plugins,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 exactpro/sailfish-core,master,8,,gradlew,,
 expatiat/micronaut-graphql-tools,master,8,,gradlew,,
 exploids/plantuml-from-source,master,8,,gradlew,,
@@ -4154,8 +4154,8 @@ facebookarchive/swift,master,8,,maven,,
 fanhua1994/XBaseAndroid,master,8,,gradlew,,
 fanhualei/wukong-framework,master,8,,maven,,
 fanmingyi/modulearchive,main,8,,gradlew,,
-fanqieVip/processroute,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-fanrunqi/MaterialLogin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+fanqieVip/processroute,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+fanrunqi/MaterialLogin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 fantasticlw/mvvmbase,master,8,,gradlew,,
 farzad-sedaghatbin/bebarbiarCore,master,8,,maven,,
 fast-data-transfer/fdt,master,8,,maven,,
@@ -4212,9 +4212,9 @@ flink-ci/flink-mirror,master,8,,maven,,
 flink-tpc-ds/flink,master,8,,maven,,
 flipboard/psync,master,8,,gradlew,true,Build uses Gradle 2.x
 floodlight/floodlight,master,8,,maven,,
-florent37/DiagonalLayout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-florent37/MaterialViewPager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-florent37/ViewAnimator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+florent37/DiagonalLayout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+florent37/MaterialViewPager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+florent37/ViewAnimator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 fluidsonic/fluid-gradle,master,8,,gradlew,,
 fluidsonic/fluid-library,master,8,,gradlew,,
 flurinjuvalta/git-version-gradle-plugin,master,8,,gradlew,,
@@ -4228,7 +4228,7 @@ forcedotcom/phoenix,master,8,,maven,,
 forge/furnace,master,8,,maven,,
 forgo/keystore-gradle-plugin,master,8,,gradlew,,
 formkiq/graalvm-native-plugin,master,11,,gradlew,,
-fornwall/apksigner,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+fornwall/apksigner,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 forzamilan0607/sinopec-bpm,master,8,,maven,,
 fossasia/susi_server,development,8,,gradlew,,
 fowlie/gradle-jenkins-test,master,8,,gradle,,
@@ -4241,10 +4241,10 @@ fraenkelc/apiscanner,master,8,,gradlew,,
 francis36012/ktsyntastic,master,8,,gradlew,true,Build uses Gradle 3.x
 frankfarrell/blast-radius,master,8,,gradlew,,
 frapontillo/gradle-switch-dependencies-plugin,develop,8,,gradlew,true,Build uses Gradle 2.x
-fred84/swagger2markup-gradle-plugin,master,8,,gradlew,,
+fred84/swagger2markup-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 freedomotic/freedomotic,master,8,,maven,,
 freefair/gradle-plugins,master,8,,gradlew,,
-freefair/jsass-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+freefair/jsass-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 freenet/fred,next,8,,gradlew,,
 freudi74/gradle-cmake-plugin,master,8,,gradle,,
 frogermcs/InstaMaterial,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -4261,7 +4261,7 @@ funtl/MyShopPlus,master,8,,maven,,
 futuredapp/arkitekt,5.x,8,,gradlew,,
 futuresimple/android-floating-action-button,master,8,,gradlew,true,Build uses Gradle 2.x
 fuzz-productions/skeleton,master,8,,gradlew,,
-fwilhe/asciidoctor-pdf-theme-gradle-plugin,master,8,,gradlew,,
+fwilhe/asciidoctor-pdf-theme-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 fyhertz/libstreaming,master,8,,maven,,
 g3force/gradle-oc,master,8,,gradlew,,
 gabrielemariotti/RecyclerViewItemAnimators,master,8,,gradlew,,
@@ -4285,9 +4285,9 @@ gciatto/kt-npm-publish,master,8,,gradlew,,
 gclayburg/dockerPreparePlugin,master,8,,gradlew,,
 gdmatrix/gdmatrix,master,8,,maven,,
 gdulai/gitpublish,master,11,,gradlew,,
-gdutxiaoxu/CoordinatorLayoutExample,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+gdutxiaoxu/CoordinatorLayoutExample,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ge0ffrey/optaconf,master,8,,maven,,
-geeeeeeeeek/WeChatLuckyMoney,stable,8,,gradlew,,
+geeeeeeeeek/WeChatLuckyMoney,stable,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 geeker-lait/x-framework,master,8,,maven,,
 gemdat/gemdat-gradle-plugin,master,8,,gradlew,,
 gengjie/jnuget,master,8,,maven,,
@@ -4329,11 +4329,11 @@ gmarrot/xamarin-sonarqube-plugin,master,8,,gradlew,,
 gmaslowski/docker-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 gmaslowski/property-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 gmazelier/gradle-jasperreports,master,8,,gradlew,,
-gmazzo/gradle-apklib-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+gmazzo/gradle-apklib-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 gmazzo/gradle-buildconfig-plugin,master,8,,gradlew,,
-gmazzo/gradle-play-autoincrement-plugin,master,8,,gradlew,,
-gmazzo/gradle-sqlite-plugin,master,8,,gradlew,,
-gmazzo/gradle-wsdl-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+gmazzo/gradle-play-autoincrement-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+gmazzo/gradle-sqlite-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+gmazzo/gradle-wsdl-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 gmu-swe/phosphor,master,8,,maven,,
 gnomff/FlywayRename,master,8,,gradle,,
 go-lang-plugin-org/go-lang-idea-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -4367,8 +4367,8 @@ google/bamboo-soy,master,8,,gradlew,,
 google/binnavi,master,8,,gradlew,true,Build uses Gradle 2.x
 google/bundletool,master,8,,gradlew,,
 google/caliper,master,8,,maven,,
-google/cameraview,master,8,,gradlew,,
-google/capillary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+google/cameraview,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+google/capillary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/cbortree,master,8,,maven,,
 google/cdep,master,8,,gradlew,,
 google/closure-stylesheets,master,8,,maven,,
@@ -4415,8 +4415,8 @@ google/guice-aqueduct,master,8,,maven,,
 google/gwteventbinder,master,8,,maven,,
 google/gwtmockito,master,8,,maven,,
 google/heartbleed-burp-extension,master,8,,maven,,
-google/helloargdx,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-google/hover,master,8,,gradlew,,
+google/helloargdx,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+google/hover,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/i18n_sanitycheck,master,8,,maven,,
 google/identity-credential,master,8,,gradlew,,
 google/infra-structured-map,master,8,,maven,,
@@ -4440,11 +4440,11 @@ google/openrtb,master,8,,maven,,
 google/openrtb-doubleclick,master,8,,maven,,
 google/osdetector-gradle-plugin,master,8,,gradlew,,
 google/pinotify,master,8,,gradlew,,
-google/pixelvisualcorecamera,master,8,,gradlew,,
-google/play-licensing,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+google/pixelvisualcorecamera,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+google/play-licensing,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/polymorphicDSL,main,11,,maven,,
 google/protobuf-gradle-plugin,master,8,,gradlew,,
-google/rally,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+google/rally,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/re2j,master,8,,gradlew,,
 google/rejoiner,master,8,,maven,,
 google/rich-test-results,master,8,,maven,,
@@ -4460,7 +4460,7 @@ google/santa-tracker-android,master,8,,gradlew,,
 google/schemaorg-java,master,8,,gradlew,true,Build uses Gradle 2.x
 google/secrets-gradle-plugin,main,8,,gradlew,,
 google/simplecfg,master,8,,gradle,,
-google/spline,master,8,,gradlew,,
+google/spline,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/splot-java,master,8,,maven,,
 google/step197-2020,Setup,8,,maven,,
 google/step49-2020,master,8,,maven,,
@@ -4540,7 +4540,7 @@ gradle/jfr-polyfill,main,8,,gradlew,,
 gradle/kotlin-dsl,master,8,,gradlew,,
 gradle/kotlin-dsl-conventions,master,8,,gradlew,,
 gradle/kotlin-dsl-docs,master,8,,gradlew,,
-gradle/kotlin-relocation-test,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+gradle/kotlin-relocation-test,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 gradle/maven-build-cache-unstable-inputs-samples,master,8,,maven,,
 gradle/maven-build-scan-quickstart,main,8,,maven,,
 gradle/native-platform,master,8,,gradlew,,
@@ -4608,28 +4608,28 @@ guyboltonking/assertj-generator-gradle-plugin,master,8,,gradlew,,
 gwt-plugins/gwt-eclipse-plugin,master,8,,maven,,
 gzu-liyujiang/AndroidPicker,master,8,,gradlew,,
 h-ed/maven-repo-settings,master,8,,gradlew,true,Build uses Gradle 3.x
-h0tk3y/gradle-eval-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+h0tk3y/gradle-eval-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 h2oai/dai-deployment-templates,master,8,,gradlew,,
 h2oai/h2o-2,master,8,,maven,,
 h2oai/h2o-3,master,8,,gradlew,,
-h6ah4i/android-advancedrecyclerview,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+h6ah4i/android-advancedrecyclerview,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hWorblehat/gradlecumber,master,8,,gradlew,,
 hWorblehat/grmarkdown,master,8,,gradlew,true,Build uses Gradle 2.x
 ha-jdbc/ha-jdbc,master,8,,maven,,
-haifeng9414/spring-framework,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+haifeng9414/spring-framework,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hallatech/gradle-atg-runassembler,master,8,,gradlew,,
 halu5071/NavigationToolsPlugin,master,8,,gradlew,,
 hamcrest/JavaHamcrest,master,8,,gradlew,,
 han673755695/springrain,master,8,,maven,,
-hanchan112/Amaze-File-Manager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-hanchan112/AmazeFileManager_Copy,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+hanchan112/Amaze-File-Manager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+hanchan112/AmazeFileManager_Copy,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 handmadecode/munge,master,8,,gradlew,,
 handmadecode/quill,development,8,,gradlew,,
 hanhanzhang/netty,release-4.1.49,8,,maven,,
 hank/litecoinj,master,8,,maven,,
 hank927/TracePlugin,master,8,,gradlew,,
 hankinghu/hanno,master,11,,gradlew,,
-hanks-zyh/HTextView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+hanks-zyh/HTextView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hanlyjiang/AndroidTestSample,main,8,,gradlew,,
 hanshou101/codeql________SonatypeNexusRepository________9fb1dabc,9fb1dabc,8,,maven,,
 hanshou101/codeql________log4j2________be881e50,be881e50,8,,maven,,
@@ -4726,8 +4726,8 @@ hongyangAndroid/Highlight,master,8,,gradlew,true,Build uses Gradle 2.x
 hongyangAndroid/baseAdapter,master,8,,gradlew,true,Build uses Gradle 2.x
 hongyangAndroid/okhttp-utils,master,8,,gradlew,true,Build uses Gradle 2.x
 hongyangAndroid/okhttputils,master,8,,gradlew,true,Build uses Gradle 2.x
-honourednihilist/gradle-kafka-deserializers,master,8,,gradlew,,
-honourednihilist/gradle-postgresql-embedded,master,8,,gradlew,,
+honourednihilist/gradle-kafka-deserializers,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+honourednihilist/gradle-postgresql-embedded,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hori-ryota/gradle-node-packagejson-generator,master,8,,gradlew,,
 hortonworks/cloudbreak,master,8,,gradlew,,
 hortonworks/dstream,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -4735,7 +4735,7 @@ hotchemi/PermissionsDispatcher,master,8,,gradlew,,
 hovinen/kotlin-auto-formatter,master,8,,gradlew,,
 hpcloud/cloudfoundry-jenkins,master,8,,maven,,
 hrehfeld/QuakeInjector,master,8,,gradlew,,
-hrosenhorn/scalapb-gradle-plugin,master,8,,gradlew,,
+hrosenhorn/scalapb-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hrosenhorn/scrooge-gradle-plugin,master,8,,gradle,,
 hs-web/hsweb-expands,master,8,,maven,,
 hs-web/hsweb-framework,master,8,,mvnw,,
@@ -4776,25 +4776,25 @@ hubspot/maven-snapshot-accelerator,master,8,,maven,,
 hubspot/prettier-maven-plugin,master,8,,maven,,
 hubspot/singularity-test-service,master,8,,maven,,
 hubspot/slack-client,master,8,,maven,,
-hugeterry/CoordinatorTabLayout,master,8,,gradlew,,
-hulab/gettext-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+hugeterry/CoordinatorTabLayout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+hulab/gettext-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 humanejava/humane,master,8,,gradlew,,
 humbinal/i18n-message-plugin,main,8,,gradlew,,
 humblerookie/gradle-github-plugin,master,8,,gradlew,,
 hushenghao/android-SVN-Plugin,master,8,,gradlew,,
-hustpeng/meet,master,8,,gradlew,,
+hustpeng/meet,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hutm/JSSRC,master,8,,maven,,
 huxi/sulky,master,8,,gradlew,,
 huxq17/XRefreshView,master,8,,gradlew,,
 hyasinfosec/gitflow-gradle-plugin,develop,8,,gradlew,,
 hyb1996/Auto.js,master,8,,gradlew,,
-hydra1983/native-dependencies-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+hydra1983/native-dependencies-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 hypergraphdb/hypergraphdb,master,11,,maven,,
 hyperledger/besu,main,8,,gradlew,,
 hyperledger/fabric-chaincode-java,main,8,,gradlew,,
 hyperledger/fabric-gateway-java,main,8,,maven,,
 hyperledger/fabric-sdk-java,main,8,,maven,,
-hyysguyang/gradle-git-maven-repo-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+hyysguyang/gradle-git-maven-repo-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 i-net-software/JWebAssembly,master,8,,gradle,,
 i-net-software/JWebAssembly-Gradle,master,8,,gradle,,
 i-net-software/SetupBuilder,master,8,,gradle,,
@@ -4811,7 +4811,7 @@ ianpilipski/IPTech-GradleUnityPlugin,main,8,,gradlew,,
 ianpilipski/IPTech-GradleXcodePlugin,main,8,,gradlew,,
 iansrobinson/graph-databases-use-cases,master,8,,maven,,
 ibi-group/datatools-server,dev,8,,maven,,
-ibinti/bugvm,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ibinti/bugvm,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibissource/frank-flow,master,8,,maven,,
 ibissource/iaf,master,8,,maven,,
 ibm-research-ireland/sparkoscope,master,8,,maven,,
@@ -4820,7 +4820,7 @@ ibm/JSONata4Java,master,8,,maven,,
 ibm/Lagom-Liberty-Kubernetes,master,8,,maven,,
 ibm/TAT-Banking,main,8,,maven,,
 ibm/acmeair-quarkus,main,11,,maven,,
-ibm/airlock-sdk-common,master,8,,gradlew,,
+ibm/airlock-sdk-common,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibm/airlock-sdk-java,master,8,,gradlew,,
 ibm/airlock-sdk-rest,master,8,,gradle,,
 ibm/akamai-g2o-java,master,8,,maven,,
@@ -4853,7 +4853,7 @@ ibm/cusp,main,8,,gradlew,,
 ibm/data-virtualization-on-cloud-java-sdk,main,8,,maven,,
 ibm/datastage-java-sdk,main,8,,maven,,
 ibm/db2-event-store-taxi-trips,master,8,,maven,,
-ibm/distributed-lock-spring-boot-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ibm/distributed-lock-spring-boot-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibm/etcd-java,main,8,,maven,,
 ibm/event-notifications-destination-android-sdk,main,8,,gradlew,,
 ibm/event-notifications-java-admin-sdk,main,8,,maven,,
@@ -4892,7 +4892,7 @@ ibm/kv-utils,main,8,,maven,,
 ibm/landmark,develop,11,,maven,,
 ibm/liberty-outage-reporter,master,8,,maven,,
 ibm/litelinks-core,main,8,,maven,,
-ibm/logstash-filter-mongodb-guardium,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ibm/logstash-filter-mongodb-guardium,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibm/managing-cn-apps-on-k8s,main,11,,maven,,
 ibm/mdm-java-sdk,main,8,,maven,,
 ibm/mdmce-environment-deployment-toolkit,master,8,,maven,,
@@ -4911,7 +4911,7 @@ ibm/project-util,master,8,,maven,,
 ibm/qradar-monitor-device-events,master,8,,maven,,
 ibm/ram-guards,main,8,,gradlew,,
 ibm/reactive-code-workshop,master,8,,maven,,
-ibm/reactive-components,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ibm/reactive-components,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibm/restconf-driver,master,8,,maven,,
 ibm/scc-java-sdk,main,8,,maven,,
 ibm/schematics-java-sdk,main,8,,maven,,
@@ -4927,7 +4927,7 @@ ibm/spring-boot-continuous-delivery-admin,master,8,,maven,,
 ibm/spring-cloud-kubernetes-with-istio,master,8,,maven,,
 ibm/spring-starter,master,8,,maven,,
 ibm/supply-chain-workflow-toolkit,main,8,,maven,,
-ibm/teamcity-ibm-cloud,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ibm/teamcity-ibm-cloud,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibm/template-java-spring,main,11,,gradlew,,
 ibm/transformation-advisor-sdk,main,8,,maven,,
 ibm/trino-db2,main,11,,maven,,
@@ -4936,7 +4936,7 @@ ibm/uni-resolver-driver-did-hpass,main,8,,maven,,
 ibm/visitor,develop,11,,maven,,
 ibm/vpc-java-sdk,master,8,,maven,,
 ibm/whcs-java-sdk,master,8,,maven,,
-iboyko/gradle-plugins,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+iboyko/gradle-plugins,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ibsdeveloper/cloudstack,master,8,,maven,,
 icerockdev/icerock-talaiot-config-plugin,master,8,,gradlew,,
 icerockdev/mobile-multiplatform-gradle-plugin,master,8,,gradlew,,
@@ -4945,7 +4945,7 @@ icerockdev/moko-network,master,8,,gradlew,,
 icerockdev/moko-resources,master,8,,gradlew,,
 icerockdev/moko-units,master,8,,gradlew,,
 icerockdev/moko-widgets,master,8,,gradlew,,
-icesmith/android-text-resolver,master,8,,gradlew,,
+icesmith/android-text-resolver,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 icza/scelight,master,8,,gradlew,,
 idpass/idpass-lite-java,develop,8,,gradlew,,
 ifreefly/AutoScore,master,8,,maven,,
@@ -4969,7 +4969,7 @@ ihrthk/pgyer,master,8,,gradlew,true,Build uses Gradle 2.x
 ihub-pub/plugins,main,8,,gradlew,,
 iipc/openwayback,master,8,,maven,,
 ikakara-team/gradle-aws-util,master,8,,gradle,,
-ikew0ng/SwipeBackLayout,master,8,,gradlew,,
+ikew0ng/SwipeBackLayout,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ikorennoy/jasyncfio,master,8,,gradlew,,
 ikroal/Giraph,trunk,8,,maven,,
 ileasile/kotlin-libs-publisher,master,8,,gradlew,,
@@ -4995,7 +4995,7 @@ infowangxin/springmvc,master,8,,maven,,
 ingenieux/awseb-deployment-plugin,master,8,,maven,,
 innobead/gogradle,master,8,,gradlew,,
 innobead/pygradle,master,8,,gradlew,,
-innogames/hosts-editor,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+innogames/hosts-editor,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 innokenty/swing-file-browser,master,8,,maven,,
 inorichi/tachiyomi,master,8,,gradlew,,
 inspectIT/inspectIT,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -5003,20 +5003,20 @@ inspire-software/yes-cart,master,8,,maven,,
 instaclustr/esop,master,8,,maven,,
 instagram4j/instagram4j,master,8,,gradlew,,
 int02h/manifest-guard,main,8,,gradlew,,
-int128/appengine-spring-boot-plugin,master,8,,gradlew,,
-int128/gradle-plugin-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+int128/appengine-spring-boot-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+int128/gradle-plugin-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 int128/gradle-slash,master,8,,gradlew,true,Build uses Gradle 3.x
 int128/gradle-swagger-codegen-plugin,master,8,,gradlew,,
 int128/gradle-swagger-generator-plugin,master,8,,gradlew,,
-intel/android-apps,master,8,,gradlew,,
+intel/android-apps,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 intel/jndn-management,master,8,,maven,,
 intel/jndn-mock,master,8,,maven,,
 intel/jndn-utils,master,8,,maven,,
-intel/rsp-sw-toolkit-nfc,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+intel/rsp-sw-toolkit-nfc,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 intermedia-net/printcoverage,main,8,,gradlew,,
 intermedia-net/translations,main,8,,gradlew,,
 internetarchive/heritrix3,master,8,,maven,,
-intland/codebeamer-xunit-uploader,master,8,,gradlew,,
+intland/codebeamer-xunit-uploader,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 intoolswetrust/jd-cli,master,8,,maven,,
 intuit/Tank,master,8,,maven,,
 intuit/wasabi,develop,8,,maven,,
@@ -5042,16 +5042,16 @@ ismaeldivita/change-tracker,master,8,,gradlew,,
 ist-dsi/expenditures,master,8,,maven,,
 isthari/presto,master,8,,maven,,
 itavero/gradle-pylizard,master,8,,gradlew,true,Build uses Gradle 2.x
-itbasis/java-module-gradle-plugin,master,8,,gradlew,,
+itbasis/java-module-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 itbasis/kotlin-assistant-config-project-plugin,master,8,,gradlew,,
-itbasis/postgresql-embedded-gradle-plugin,master,8,,gradlew,,
+itbasis/postgresql-embedded-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 itdelatrisu/opsu,master,8,,gradlew,,
 itesla/ipst,master,8,,maven,,
 itext/itextpdf,develop,8,,maven,,
 itexussoft/CopyLocale,master,8,,gradlew,true,Build uses Gradle 3.x
 itsallcode/openfasttrace-gradle,develop,11,,gradlew,,
 ityouknow/spring-boot-examples,master,8,,maven,,
-ivable/ICM-Code-Generator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ivable/ICM-Code-Generator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ivacf/archi,master,8,,gradlew,true,Build uses Gradle 2.x
 ivancarras/graphfity,main,8,,gradle,,
 ivankohut/git-branch-checks,master,8,,gradlew,,
@@ -5062,7 +5062,7 @@ iwarapter/gradle-sonar-packaging-plugin,master,8,,gradlew,true,Build uses Gradle
 iwgang/CountdownView,master,8,,gradlew,true,Build uses Gradle 2.x
 iwillfailyou/java-plugin-gradle,master,8,,gradlew,,
 izpack/izpack,master,8,,maven,,
-j-crawford/uPortal,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+j-crawford/uPortal,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jGleitz/gradle-kubernetes,master,8,,gradlew,,
 jMonkeyEngine/jmonkeyengine,master,8,,gradlew,,
 jMotif/SAX,master,8,,maven,,
@@ -5082,7 +5082,7 @@ jakeouellette/inspector,master,8,,gradlew,true,Build uses Gradle 1.x
 jakewins/brew,master,8,,maven,,
 jakzal/gradle-structurizr-cli,main,8,,gradlew,,
 jaltekruse/OpenNotebook,master,8,,maven,,
-jamesanto/fat-aar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+jamesanto/fat-aar,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jamesdbloom/mockserver,master,8,,mvnw,,
 jamiecool/java_nofork,master,8,,maven,,
 jamiecool/kubernetesjavalib,master,8,,maven,,
@@ -5123,8 +5123,8 @@ javidgon/jenkins-appconnect,master,8,,maven,,
 jaydenxiao2016/AndroidFire,master,8,,gradlew,true,Build uses Gradle 2.x
 jayhorn/jayhorn,devel,8,,gradlew,true,Build uses Gradle 3.x
 jaypz/java-driver-dse,1.x,8,,maven,,
-jayronlou/AutoTrackTransformProject,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-jayware/entity-essentials,master,8,,gradlew,,
+jayronlou/AutoTrackTransformProject,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+jayware/entity-essentials,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jayware/gradle-osgi-ds,master,8,,gradlew,,
 jazzschmidt/gradle-docker-plugin,main,8,,gradlew,,
 jazzschmidt/gradle-properties-template-plugin,master,8,,gradlew,,
@@ -5157,7 +5157,7 @@ jcoleman/tomcat-redis-session-manager,master,8,,gradle,,
 jcraane/kmm-images,main,8,,gradlew,,
 jcraane/kmm-resources,main,8,,gradlew,,
 jcsdatera/datera-cloudstack,master,8,,maven,,
-jd-alexander/LikeButton,master,8,,gradlew,,
+jd-alexander/LikeButton,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jd3538/Marist-Sakai-21.x,21.x,8,,maven,,
 jdamcd/android-crop,master,8,,gradlew,true,Build uses Gradle 2.x
 jdarosTD/android-s3-plugin,master,8,,gradlew,,
@@ -5165,9 +5165,9 @@ jdarosTD/appcenter-publish-plugin,master,8,,gradlew,,
 jdarosTD/boxfuse-variants,master,8,,gradlew,,
 jdemetra/jdemetra-core,develop,8,,maven,,
 jdereg/java-util,master,8,,maven,,
-jdfind/gradle-spoon-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+jdfind/gradle-spoon-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jdolan/quetoo-installer-java,master,8,,maven,,
-jdsjlzx/LRecyclerView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+jdsjlzx/LRecyclerView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jdtommy/code-artifact-plugin,main,8,,gradlew,,
 jdzAndroid/Translate,main,8,,gradlew,,
 jease/jease,master,8,,maven,,
@@ -5525,7 +5525,7 @@ jenkinsci/credentials-binding-plugin,master,8,,maven,,
 jenkinsci/credentials-plugin,master,8,,maven,,
 jenkinsci/cronProjectAction-plugin,master,8,,maven,,
 jenkinsci/cron_column-plugin,master,8,,maven,,
-jenkinsci/crossbrowsertesting-plugin,master,8,,gradlew,,
+jenkinsci/crossbrowsertesting-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jenkinsci/crowd-plugin,master,8,,maven,,
 jenkinsci/crowd2-plugin,master,8,,maven,,
 jenkinsci/cryptomove-plugin,master,8,,maven,,
@@ -6731,7 +6731,7 @@ jfeinstein10/SlidingMenu,master,8,,maven,,
 jfinal/jetty-server,master,8,,maven,,
 jfinal/jfinal,master,8,,maven,,
 jflex-de/jflex,master,8,,maven,,
-jfoenixadmin/JFoenix,master,8,,gradlew,,
+jfoenixadmin/JFoenix,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jfrog/build-info,master,8,,gradlew,,
 jfrog/teamcity-artifactory-plugin,master,8,,maven,,
 jgilfelt/SystemBarTint,master,8,,gradlew,,
@@ -6778,7 +6778,7 @@ jhipster/jhipster-sample-application2006012247,master,8,,maven,,
 jhonnymertz/java-wkhtmltopdf-wrapper,master,8,,maven,,
 jhunters/jprotobuf,master,8,,maven,,
 jhy/jsoup,master,8,,maven,,
-jiangboh/ScannerController,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+jiangboh/ScannerController,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jianghejie/XRecyclerView,master,8,,gradlew,true,Build uses Gradle 2.x
 jiangqqlmj/FastDev4Android,master,8,,gradlew,true,Build uses Gradle 2.x
 jingwei/krati,master,8,,maven,,
@@ -6798,7 +6798,7 @@ jjohannes/missing-metadata-guava,main,8,,gradlew,,
 jjohannes/missing-metadata-jackson,main,8,,gradlew,,
 jjohannes/onepiece-limits,main,8,,gradlew,,
 jjzazuet/gradle-swig,master,8,,gradle,,
-jjzhang166/XBaseAndroid,master,8,,gradlew,,
+jjzhang166/XBaseAndroid,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jk1/Gradle-License-Report,master,11,,gradlew,,
 jk1/TeamCity-dependencies-gradle-plugin,master,8,,gradlew,,
 jkotlinski/lsdpatch,master,8,,maven,,
@@ -6859,7 +6859,7 @@ joshua-jandyco/gradle-test-results,master,8,,gradlew,true,Build uses Gradle 2.x
 joshua2ua/lonelyTwitter,master,8,,gradlew,,
 joskar201/kotlin-neo4j,master,8,,gradlew,,
 journeyapps/zxing-android-embedded,master,11,,gradlew,,
-joyoyao/superCleanMaster,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+joyoyao/superCleanMaster,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 joyrpc/joyrpc,master,8,,maven,,
 jpenilla/run-paper,master,8,,gradlew,,
 jphp-group/jphp,master,8,,gradlew,,
@@ -6877,7 +6877,7 @@ jrmcdonald/ms-gradle-baseline,main,11,,gradlew,,
 jruby-gradle/jruby-gradle-plugin,master,8,,gradlew,,
 jruby-gradle/jruby-gradle-storm-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 jruby/jruby,master,8,,maven,,
-jruyi/dist-gradle-plugin,master,8,,gradlew,,
+jruyi/dist-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jruyi/osgibnd-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 jruyi/thrift-gradle-plugin,master,8,,gradlew,,
 jsettlers/settlers-remake,master,8,,gradlew,,
@@ -6898,7 +6898,7 @@ junoyoon/simpleupdatesiterepo,master,8,,maven,,
 justinPihony/gradle-aws-plugin-reboot,master,8,,gradlew,,
 juulhobert/liquibase-validate,main,8,,gradlew,,
 jvadev/gradle-kotlin-common-plugin,master,8,,gradlew,,
-jwermuth/gradle-plugin-terraform,master,8,,gradlew,,
+jwermuth/gradle-plugin-terraform,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 jwtk/jjwt,master,8,,mvnw,,
 jwwam/tourismPro,master,8,,maven,,
 jython/jython,master,8,,gradlew,,
@@ -6916,14 +6916,14 @@ kageiit/gradle-robojava-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 kageiit/gradle-url-cache-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 kairosdb/kairosdb,develop,8,,maven,,
 kaitoy/pcap4j,v1,8,,maven,,
-kaiyangjia/ClassHandlerPlugin-Android,master,8,,gradlew,,
+kaiyangjia/ClassHandlerPlugin-Android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kakaragame/VersionFile,master,11,,gradlew,,
 kamatama41/gradle-embulk-plugin,master,8,,gradlew,,
 kamatama41/gradle-git-release-plugin,master,8,,gradlew,,
 kaminomobile/AndroidVersion,master,8,,gradlew,,
 kaminomobile/gradle-gcs-build-cache,master,8,,gradlew,,
 kaminomobile/gradle-lokalise,master,8,,gradlew,,
-kaminomobile/soter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+kaminomobile/soter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kana112233/codelinecountplugin,master,8,,gradlew,,
 karaimin/msstPlatform,master,8,,maven,,
 karatelabs/karate,master,8,,maven,,
@@ -6932,13 +6932,13 @@ karlmdavis/usgs-water-api-java,master,8,,maven,,
 karmann-dm/cloud-platform-api-configurer-plugin,master,8,,gradlew,,
 karmann-dm/cloud-platrofm-versions-plugin,master,8,,gradlew,,
 karmann-dm/gradle-versions-plugin,master,8,,gradlew,,
-karolitgolo/updategradle,master,8,,gradlew,,
+karolitgolo/updategradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 karriereat/gradle-version-plugin,master,8,,gradlew,,
 katjas/PDFrenderer,master,8,,maven,,
 kauailabs/GradleRIO,master,8,,gradlew,,
-kaushikgopal/RxJava-Android-Samples,master,8,,gradlew,,
+kaushikgopal/RxJava-Android-Samples,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kawasima/depict,master,8,,maven,,
-kazkn/gradle-strings-deduplication-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+kazkn/gradle-strings-deduplication-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kazurayam/VisualTestingInKatalonStudio,master,8,,gradlew,,
 kazurayam/visualtestinginks-gradle-plugin,master,8,,gradlew,,
 kazy1991/LicenseToolsPlugin,master,8,,gradlew,,
@@ -6946,11 +6946,11 @@ kazyApp/GradleDependencyGraph,master,8,,gradlew,,
 kazyApp/LicenseToolsPlugin,master,8,,gradlew,,
 kbastani/spring-cloud-microservice-example,master,8,,maven,,
 kcloss/gradle-bluej-jar,main,8,,gradlew,,
-kdabir/gradle-helpers,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+kdabir/gradle-helpers,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kdabir/mksrc,master,8,,gradlew,,
-kdabir/roft,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+kdabir/roft,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 keeps/roda,master,8,,maven,,
-keiththompson/swarmer-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+keiththompson/swarmer-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kelinZhou/EnvironmentPlugin,master,8,,gradlew,,
 kemuri-9/gradle-plugin-mrjar,main,8,,gradlew,,
 kenglxn/QRGen,master,8,,maven,,
@@ -7018,10 +7018,10 @@ kohsuke/jenkins,master,8,,maven,,
 komapper/komapper,main,8,,gradlew,,
 komarovd95/stale-dependencies-gradle-plugin,master,8,,gradlew,,
 kongchen/swagger-maven-plugin,master,8,,maven,,
-konifar/gradle-unused-resources-remover-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+konifar/gradle-unused-resources-remover-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 konrad-garus/classycle-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 konsoletyper/teavm,master,8,,maven,,
-kontalk/desktopclient-java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+kontalk/desktopclient-java,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kontext-e/jqassistant-gradle-plugin,master,8,,gradlew,,
 koolskateguy89/Mobile-OS,main,8,,maven,,
 koraktor/mavanagaiata,master,8,,maven,,
@@ -7055,10 +7055,10 @@ krakowski/gradle-jextract,master,8,,gradlew,,
 krakowski/protodep,master,8,,gradlew,,
 kreait/aws-credentials-support-plugin,master,8,,gradlew,,
 kroegerama/openapi-kgen,master,8,,gradlew,,
-kropp/gradle-plugin-thanks,master,8,,gradlew,,
+kropp/gradle-plugin-thanks,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kropp/gradle-teamcity-gitversion-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 krosenvold/maven,parallel,8,,maven,,
-krotki/gradle-apidoc-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+krotki/gradle-apidoc-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 krs/xrepo-gradle-plugin,master,8,,gradlew,,
 ksoichiro/Android-ObservableScrollView,master,8,,gradlew,true,Build uses Gradle 2.x
 ksoichiro/gradle-build-info-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -7073,7 +7073,7 @@ kuali/kfs,master,8,,maven,,
 kubernetes-client/java,master,8,,mvnw,,
 kumuluz/kumuluzee,master,11,,maven,,
 kungfoo/ergon-gradle-goodies-versioning,master,8,,gradlew,,
-kungfoo/http-glassfish-deployer,master,8,,gradlew,,
+kungfoo/http-glassfish-deployer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 kuoruan/Chromium-Android,73.0.3683.93,8,,gradlew,,
 kusumotolab/JTDog,master,11,,gradlew,,
 kxalex/gradle-docker,master,8,,gradlew,,
@@ -7092,7 +7092,7 @@ langrp/gradle-angular-plugin,master,8,,gradlew,,
 langrp/gradle-node-plugin,master,8,,gradlew,,
 languagetool-org/languagetool,master,8,,maven,,
 lanxiaoha/SwitchAdbWiFiConnectIp,master,8,,gradlew,,
-laobie/StatusBarUtil,master,8,,gradlew,,
+laobie/StatusBarUtil,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 larsga/Duke,master,8,,maven,,
 launchdarkly/android-client-sdk,main,8,,gradlew,,
 launchdarkly/api-client-java,main,8,,gradlew,,
@@ -7115,7 +7115,7 @@ lebonq/modpack_updater,main,17,,maven,,
 lecho/hellocharts-android,master,8,,gradlew,,
 leier123/netty,master,8,,maven,,
 leinardi/android-checkstyle-plugin,master,8,,gradlew,,
-leinardi/android-findbugs-plugin,master,8,,gradlew,,
+leinardi/android-findbugs-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 leiyi1152/shancai,master,8,,maven,,
 leleliu008/BintrayUploadGradlePlugin,master,8,,gradlew,,
 lemire/RoaringBitmapReal,master,8,,maven,,
@@ -7126,7 +7126,7 @@ lenala/azure-gradle-plugins,master,8,,gradlew,,
 lendylongli/qianghongbao,master,8,,gradlew,true,Build uses Gradle 2.x
 leobia/JsGradleCompiler,master,8,,gradlew,,
 leobia/SassGradleCompiler,master,8,,gradlew,,
-leolin310148/ShortcutBadger,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+leolin310148/ShortcutBadger,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 leonbloy/pngj,master,8,,maven,,
 leonchen83/redis-rdb-cli,master,8,,maven,,
 leontebbens/chromedriver-updater-plugin,master,8,,gradlew,,
@@ -7139,13 +7139,13 @@ levibostian/dotenv-android,main,8,,gradlew,,
 levkopo/vgradle,main,8,,gradlew,,
 lferenczi/gradle-env-plugin,master,8,,gradle,,
 lgvalle/Material-Animations,master,8,,gradle,,
-lhotari/build-size-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+lhotari/build-size-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 lhotari/gradle-nar-plugin,master,8,,gradlew,,
 lhotari/jfr-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 lhotari/swagger2markup-gradle-plugin,master,8,,gradlew,,
 li-liangshan/StarMVC,master,8,,gradlew,,
 liangbangke/CloudStack,master,8,,maven,,
-liangdy/CloudStation,master,8,,gradlew,,
+liangdy/CloudStation,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 liaohuqiu/android-Ultra-Pull-To-Refresh,master,8,,gradlew,true,Build uses Gradle 2.x
 liaozhoubei/NetEasyNews,master,8,,gradlew,,
 libgdx/libgdx,master,11,,gradlew,,
@@ -7158,8 +7158,8 @@ liferay/liferay-blade-cli,master,8,,gradlew,,
 liferay/liferay-ide,master,11,,maven,,
 liferay/liferay-intellij-plugin,master,8,,gradlew,,
 liferay/liferay-plugins,7.0.x,8,,gradlew,true,Build uses Gradle 3.x
-ligol/IconicsFontGenerator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-lijiankun24/Koala,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ligol/IconicsFontGenerator,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+lijiankun24/Koala,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 lilin409546297/spring-source,master,8,,maven,,
 lilylotus/arbitrary-coding,develop,8,,gradlew,,
 linagora/linshare-core,master,11,,maven,,
@@ -7177,7 +7177,7 @@ linkedin/dexmaker,main,8,,gradlew,,
 linkedin/gradle-plugin-insight,master,8,,gradlew,true,Build uses Gradle 2.x
 linkedin/kafka-monitor,master,8,,gradlew,,
 linkedin/linkedin-calcite,li-1.21.0,8,,maven,,
-linkedin/linkedin-gradle-plugin-for-apache-hadoop,master,8,,gradlew,,
+linkedin/linkedin-gradle-plugin-for-apache-hadoop,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 linkedin/parseq,master,8,,gradlew,,
 linkedin/pinot,master,8,,maven,,
 linkedin/pygradle,master,8,,gradlew,,
@@ -7191,7 +7191,7 @@ linsheng9731/scalariform-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 
 linuxcali/jain-slee,master,8,,maven,,
 lion7/gradle-jpms-plugin,master,8,,gradlew,,
 lipangit/JiaoZiVideoPlayer,develop,8,,gradlew,,
-lipeiyong/trip,master,8,,gradlew,,
+lipeiyong/trip,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 liqipeng/spring-framework-4.3.x,main,8,,maven,,
 liquibase/liquibase,master,8,,maven,,
 liquibase/liquibase-gradle-plugin,master,8,,gradlew,,
@@ -7222,7 +7222,7 @@ logbee/gradle-protobuf-plugin,master,8,,gradlew,,
 logisim-evolution/logisim-evolution,master,8,,gradlew,,
 logpresso/CVE-2021-44228-Scanner,main,8,,maven,,
 logzio/jmx2graphite,main,8,,maven,,
-lokkie/gradle-serviceloader,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+lokkie/gradle-serviceloader,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 loklak/loklak_server,development,8,,gradlew,,
 lolo101/MsgViewer,master,11,,maven,,
 longlylong/spring-cloud-alibaba,master,8,,maven,,
@@ -7240,7 +7240,7 @@ lovetuzitong/MultiImageSelector,master,8,,gradlew,true,Build uses Gradle 2.x
 low205/gradle-semantic-release-plugin,master,8,,gradlew,,
 lqfGaara/AOPUiAdapter,master,8,,gradle,,
 lqwwoshi/spring-framework-5.0,master,8,,gradlew,,
-lsjwzh/RecyclerViewPager,master,8,,gradlew,,
+lsjwzh/RecyclerViewPager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ltsopensource/light-task-scheduler,master,8,,maven,,
 lucacampanella/corda-deterministic-validator-plugin,master,8,,gradlew,,
 lucacampanella/corda-flows-doc-builder,master,8,,gradlew,,
@@ -7259,13 +7259,13 @@ lukoerfer/gradle-magicdraw,master,8,,gradlew,,
 lukosan/gradle-local-dependencies-plugin,master,8,,gradle,,
 lukstei/trading-backtest,master,8,,gradlew,true,Build uses Gradle 2.x
 luo6834/weixin4j,master,8,,maven,,
-luossfi/FileNamingWatchDogGradlePlugin,master,8,,gradlew,,
-luozhimin0918/yiniuProgress,V6.2.0,8,,gradlew,,
+luossfi/FileNamingWatchDogGradlePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+luozhimin0918/yiniuProgress,V6.2.0,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 lusingander/kraphql,master,8,,gradlew,,
 lutece-platform/lutece-core,master,8,,maven,,
 lutfialquraan/literatum-lutfi,master,8,,maven,,
 luvender85/testproject,master,8,,maven,,
-luzzif/gradle-integration-tests,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+luzzif/gradle-integration-tests,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 lvyahui8/jutils,master,8,,maven,,
 lyft/presto-gateway,master,8,,maven,,
 lygttpod/SuperTextView,master,8,,gradlew,,
@@ -7304,9 +7304,9 @@ manifold-systems/manifold,master,8,,maven,,
 maning0303/GankMM,master,8,,gradlew,,
 manoelcyreno/selenium-commons,master,8,,gradlew,,
 manolo/Gradle-Sauce-Connect-Plugin,master,8,,gradlew,,
-manosbatsis/gradle-reflections-plugin,master,8,,gradlew,,
+manosbatsis/gradle-reflections-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 manuel-freire/ac2,master,8,,maven,,
-manupsunny/gauge-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+manupsunny/gauge-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mapfish/mapfish-print,master,8,,gradlew,,
 marcin-chwedczuk/manga2pdf,master,8,,maven,,
 marcingrzejszczak/gradle-test-profiler,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -7315,7 +7315,7 @@ marcphilipp/nexus-publish-plugin,master,8,,gradlew,,
 marekventur/tsvtojson,master,8,,maven,,
 mariadb-corporation/mariadb-connector-j,master,8,,maven,,
 marie-christin/jaulp.core,master,8,,maven,,
-mark-vieira/gradle-maven-settings-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+mark-vieira/gradle-maven-settings-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 markelliot/gradle-versions,develop,8,,gradlew,,
 markiantorno/xylographer,master,8,,gradlew,,
 marklogic/java-client-api,master,8,,gradlew,,
@@ -7328,7 +7328,7 @@ martoe/gradle-svntools-plugin,master,8,,gradlew,,
 marytts/gradle-marytts-component-plugin,master,8,,gradlew,,
 marytts/gradle-marytts-crossvalidation-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 marytts/gradle-marytts-kaldi-mfa-plugin,master,8,,gradlew,,
-marytts/gradle-marytts-lexicon-compiler-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+marytts/gradle-marytts-lexicon-compiler-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 marytts/marytts,master,8,,gradlew,,
 marzika/Snapprefs,stable,8,,gradlew,true,Build uses Gradle 2.x
 material-components/material-components-android,master,11,,gradlew,,
@@ -7346,7 +7346,7 @@ maxcheung998/relive,master,8,,gradlew,,
 maxmind/MaxMind-DB-Reader-java,main,8,,maven,,
 mayope/deployment-plugin,main,8,,gradlew,,
 mayubao/KuaiChuan,master,8,,gradlew,true,Build uses Gradle 2.x
-mazzeb/gradle-auto-version,master,8,,gradlew,,
+mazzeb/gradle-auto-version,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mbogner/gradle-status-plugin,develop,8,,gradlew,,
 mbok/logsniffer,master,8,,maven,,
 mborzenkov/jqf-gradle-plugin,master,8,,gradlew,,
@@ -7377,7 +7377,7 @@ medranocalvo/gradle-kawa-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 meertensinstituut/mtas,master,8,,maven,,
 meiskalt7/simple-gradle-versioning-plugin,master,8,,gradlew,,
 melix/antlr4-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 1.x
-melix/gradle-buildscan-recipes,master,8,,gradlew,,
+melix/gradle-buildscan-recipes,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 melix/groovy-android-gradle-plugin,master,8,,gradlew,,
 melix/japicmp-gradle-plugin,master,8,,gradlew,,
 melix/jmh-gradle-plugin,master,8,,gradlew,,
@@ -7396,7 +7396,7 @@ metova/Cappuccino,master,8,,gradlew,,
 meuperio/sakai,main,8,,maven,,
 mfarsikov/kewt-versioning,master,8,,gradlew,,
 mfilippov/gradle-jvm-wrapper,master,8,,gradlew,,
-mfuchs/android-emulators-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+mfuchs/android-emulators-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mfuerstenau/gradle-buildconfig-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 mgarin/weblaf,master,8,,maven,,
 mgm-tp/gradle-libactivity-plugin,master,8,,gradlew,,
@@ -7490,19 +7490,19 @@ microsoft/Data-Appliance-GX,main,8,,gradlew,,
 microsoft/DepthGauger,main,8,,gradlew,,
 microsoft/DevDay2020KeynoteDemoAndroid,master,8,,gradlew,,
 microsoft/Dhalion,master,8,,maven,,
-microsoft/EmbeddedSocial-Java-API-Library,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+microsoft/EmbeddedSocial-Java-API-Library,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 microsoft/Git-Credential-Manager-for-Mac-and-Linux,master,8,,maven,,
 microsoft/Loop-Sample-Drives-Android,master,8,,gradlew,true,Build uses Gradle 2.x
 microsoft/Loop-Sample-Hello-Android,develop,8,,gradlew,true,Build uses Gradle 2.x
 microsoft/Loop-Sample-TestUser-Android,develop,8,,gradlew,true,Build uses Gradle 2.x
 microsoft/Loop-Sample-Trips-Android,master,8,,gradlew,true,Build uses Gradle 2.x
-microsoft/MicrosoftStreetsidePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+microsoft/MicrosoftStreetsidePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 microsoft/Telemetry-Client-for-Android,master,8,,gradlew,true,Build uses Gradle 2.x
 microsoft/appcenter-sampleapp-android,master,8,,gradlew,,
 microsoft/appcenter-sdk-android,develop,8,,gradlew,,
 microsoft/azure-app-service-plugin,dev,8,,maven,,
 microsoft/azure-cosmos-db-sampler,main,8,,maven,,
-microsoft/azure-devops-intellij,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+microsoft/azure-devops-intellij,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 microsoft/azure-gradle-plugins,master,8,,gradlew,,
 microsoft/azure-iot-edge-jenkins-plugin,master,8,,maven,,
 microsoft/azure-maven-plugins,develop,8,,maven,,
@@ -7549,14 +7549,14 @@ microsoft/vsts-authentication-library-for-java,master,8,,maven,,
 microsoft/vsts-vmware,master,8,,maven,,
 midonet/midonet,master,8,,gradlew,true,Build uses Gradle 3.x
 mihaip/dex-method-counts,master,8,,gradlew,true,Build uses Gradle 3.x
-miho/VMF-Gradle-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-miho/VMF-Text-Gradle-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+miho/VMF-Gradle-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+miho/VMF-Text-Gradle-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mikanbako/sphinx-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 mike-neck/graalvm-native-image-plugin,master,8,,gradlew,,
-mike-neck/gradle-jdeprscan-plugin,master,8,,gradlew,,
+mike-neck/gradle-jdeprscan-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mike-neck/gradle-payara-unofficial-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 mike-neck/gradle-testkit-support,master,8,,gradlew,true,Build uses Gradle 2.x
-mike-neck/junit-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+mike-neck/junit-starter,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mike-neck/rule-base-model-generation-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 mike-neck/savanna-gradle-plugin,master,8,,gradlew,,
 mikepenz/AboutLibraries,develop,11,,gradlew,,
@@ -7641,7 +7641,7 @@ monnage/gradle-test-report,master,8,,gradlew,,
 mono/sharpen,master,8,,maven,,
 monosoul/markdown-page-generator-gradle-plugin,master,8,,gradlew,,
 monosoul/yadegrap,not-ant,8,,gradlew,,
-montoyo/mcef,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+montoyo/mcef,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 moodysalem/java-phantomjs-wrapper,master,8,,maven,,
 mooltiverse/nyx,master,8,,gradlew,,
 moonlitdoor/mld-git-version,master,8,,gradlew,,
@@ -7676,7 +7676,7 @@ mukendik/chutney,master,8,,maven,,
 mukesh154/test,main,8,,gradlew,,
 mukhanov/gradle-docker-plugin,master,8,,gradlew,,
 mulecode/artifact-versioning,master,11,,gradlew,,
-mulesoft-labs/mule-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+mulesoft-labs/mule-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 mulesoft-labs/raml-java-client-generator,master,8,,maven,,
 mulesoft-labs/rhinodo,master,8,,maven,,
 mulesoft/mule,master,8,,maven,,
@@ -7694,7 +7694,7 @@ mybatis/migrations,master,8,,maven,,
 mybatis/mybatis-3,master,8,,mvnw,,
 mybatis/spring,master,8,,mvnw,,
 mybatis/spring-boot-starter,master,8,,mvnw,,
-myniva/gradle-s3-build-cache,master,8,,gradlew,,
+myniva/gradle-s3-build-cache,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 myrrix/myrrix-recommender,master,8,,maven,,
 mysql-time-machine/replicator,master,8,,maven,,
 mytakedotorg/mtdo,staging,8,,gradlew,,
@@ -7747,10 +7747,10 @@ nebula-plugins/gradle-ospackage-plugin,main,8,,gradlew,,
 nebula-plugins/gradle-override-plugin,main,8,,gradlew,,
 nebula-plugins/gradle-resolution-rules,main,8,,gradlew,,
 nebula-plugins/gradle-resolution-rules-plugin,main,8,,gradlew,,
-nebula-plugins/gradle-rxjava-project-plugin,master,8,,gradlew,,
+nebula-plugins/gradle-rxjava-project-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 nebula-plugins/gradle-scm-plugin,main,8,,gradlew,,
 nebula-plugins/gradle-stash-plugin,main,8,,gradlew,,
-nebula-plugins/investigate-insight,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+nebula-plugins/investigate-insight,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 nebula-plugins/java-source-refactor,master,8,,gradlew,,
 nebula-plugins/lock-experimental,master,8,,gradlew,true,Build uses Gradle 3.x
 nebula-plugins/nebula-bintray-plugin,master,8,,gradlew,,
@@ -7804,7 +7804,7 @@ neow3j/neow3j,main,8,,gradlew,,
 neradb/openddal,master,8,,maven,,
 netarchivesuite/netarchivesuite,master,8,,maven,,
 netarchivesuite/solrwayback,master,8,,maven,,
-netfalo/gradle-raml-plugin,master,8,,gradlew,,
+netfalo/gradle-raml-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 netflix/spectator,main,8,,gradlew,,
 netifi/gradle-flatbuffers-plugin,master,8,,gradlew,,
 netty/netty,4.1,8,,mvnw,,
@@ -7899,11 +7899,11 @@ noelob/jmeter-gradle-plugin,master,8,,gradlew,,
 nomisp/confluence-publisher-plugin,master,8,,gradlew,,
 nordic-institute/misp2-web-app,master,8,,maven,,
 nordicway/moji,master,8,,maven,,
-north2016/T-MVP,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+north2016/T-MVP,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 nostra13/Android-Universal-Image-Loader,master,8,,gradlew,,
 notnoop/java-apns,master,8,,maven,,
 novemio/checknamingconvention,master,8,,gradlew,,
-novoda/gradle-build-properties-plugin,master,8,,gradlew,,
+novoda/gradle-build-properties-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 novoda/gradle-static-analysis-plugin,master,8,,gradlew,,
 novoda/sqlite-analyzer,master,8,,gradlew,true,Build uses Gradle 2.x
 np7sky/MyFristGitHub,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -7927,13 +7927,13 @@ nuxeo/nuxeo-connect,master,8,,maven,,
 nuxeo/nuxeo-ide,master,8,,maven,,
 nuxeo/nuxeo-labs,master,8,,maven,,
 nviennot/jd-core-java,master,8,,gradlew,,
-nwillc/buildInfo,master,8,,gradlew,,
+nwillc/buildInfo,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 nyholku/purejavacomm,master,8,,gradlew,,
 nysenate/GeoApi,dev,17,,maven,,
 nysenate/OpenLegislation,dev,8,,maven,,
 oahnus/luqian-common,master,8,,maven,,
 oasalonen/schema-registry-plugin,master,8,,gradlew,,
-obecker/gradle-degraph,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+obecker/gradle-degraph,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 obiba/obiba-commons,master,8,,maven,,
 obiba/onyx,master,8,,maven,,
 objectbox/objectbox-java,main,8,,gradlew,,
@@ -8082,8 +8082,8 @@ orctom/was-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 orekyuu/LibraryVersionUpdater,master,8,,gradlew,,
 orfjackal/retrolambda,master,8,,maven,,
 orhanobut/dialogplus,master,8,,gradlew,,
-orhanobut/hawk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-orhanobut/logger,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+orhanobut/hawk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+orhanobut/logger,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 orientechnologies/orientdb,develop,8,,maven,,
 orzwalker/spring-framework,main,8,,gradlew,,
 os72/protoc-jar-maven-plugin,master,8,,maven,,
@@ -8096,7 +8096,7 @@ osmlab/atlas-checks,dev,11,,gradlew,,
 oss-ethinking/gradle-escenic-plugin,master,8,,gradlew,,
 oss-ethinking/gradle-gaffer-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 otkmnb2783/gradle-dotenv-plugin,master,8,,gradlew,,
-otto-de/gradle-plugin-classycle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+otto-de/gradle-plugin-classycle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 otto-de/gradle-projectversion,main,11,,gradlew,,
 oun/monjam,master,8,,gradlew,,
 over-space/spring-framework-5.3.5,master,8,,gradlew,,
@@ -8185,24 +8185,24 @@ paleozogt/republish-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 pangyuanjd/sonarqueb,master,8,,maven,,
 pardom/ActiveAndroid,master,8,,gradlew,,
 parj/AddOnJavaAntTasks,master,8,,maven,,
-parry-li/AndroidToolsUtils,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+parry-li/AndroidToolsUtils,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 passy/build-time-tracker-plugin,master,8,,gradlew,,
 patchedsoul/Gadgetbridge,master,8,,gradlew,,
 patrick-choe/mojang-spigot-remapper,main,8,,gradlew,,
 patuf/gradle-buildinfo-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
-paul-nelson-baker/gradle-shaded-log4j-transformer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-paul-nelson-baker/gradle-shaded-log4j2-cachefile-transformer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+paul-nelson-baker/gradle-shaded-log4j-transformer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+paul-nelson-baker/gradle-shaded-log4j2-cachefile-transformer,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 paulo-raca/gradle-plugins,master,8,,gradlew,,
 paulzfm/gradle-plugin-ll1pg,master,8,,gradlew,true,Build uses Gradle 3.x
 pawankeshri/aws-sdk-java-master,master,8,,maven,,
-pawmot/dockerize-spring-boot,master,8,,gradlew,,
+pawmot/dockerize-spring-boot,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 payara/Payara,master,8,,maven,,
 paypal/SeLion,develop,8,,maven,,
 paypal/butterfly,master,8,,gradlew,,
 paypay/paypayopa-sdk-java,master,8,,gradlew,,
 pcdv/jocket,master,8,,gradlew,,
 pcingola/SnpEff,master,8,,maven,,
-pcpatidar4488/RecyclerVIewToPDF,master,8,,gradlew,,
+pcpatidar4488/RecyclerVIewToPDF,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 pdprober/uploadPGYER,master,8,,gradlew,,
 pdt-eg/Core-Plugin,master,8,,maven,,
 pearxteam/multigradle,master,8,,gradlew,,
@@ -8215,7 +8215,7 @@ pedrovgs/DraggablePanel,develop,11,,gradlew,true,Build uses Gradle 2.x
 pedrovgs/EffectiveAndroidUI,master,8,,gradlew,true,Build uses Gradle 2.x
 pedrovgs/Kuronometer,master,8,,gradlew,true,Build uses Gradle 3.x
 peizihui/netty-source-learn-day-by-day,master,8,,maven,,
-pellierd/pddl4j,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+pellierd/pddl4j,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 pengchengluo/Peking-University-Open-Research-Data-Platform,master,8,,maven,,
 pengjianbo/GalleryFinal,master,8,,gradlew,true,Build uses Gradle 2.x
 pentaho/pentaho-kettle,master,8,,maven,,
@@ -8234,7 +8234,7 @@ pf4j/pf4j,master,8,,maven,,
 pfmiles/dropincc.java,master,8,,maven,,
 pgjdbc/pgjdbc,master,8,,gradlew,,
 ph4r05/javacard-gradle-plugin,master,8,,gradlew,,
-phatblat/Clamp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+phatblat/Clamp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 phatblat/ShellExec,main,8,,gradlew,,
 phatblat/SwiftPM-Plugin,master,8,,gradlew,,
 phax/as2-lib,master,8,,maven,,
@@ -8243,7 +8243,7 @@ phenotips/phenotips,master,8,,maven,,
 philburk/jsyn,master,8,,gradlew,,
 philcali/everywhere-model,master,8,,gradle,,
 picketbox/picketbox,master,8,,maven,,
-pie-flavor/promptsign,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+pie-flavor/promptsign,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 pilgrimdbio/pilgrimdb,master,8,,gradlew,,
 pinterest/secor,master,8,,maven,,
 piotrmadry/firebase-test-lab-gradle-plugin,master,8,,gradlew,,
@@ -8304,7 +8304,7 @@ protegeproject/webprotege,master,8,,maven,,
 provenance-io/p8e-gradle-plugin,main,8,,gradlew,,
 proxyee-down-org/proxyee-down,master,8,,maven,,
 psi-probe/psi-probe,master,11,,maven,,
-pt-osda/java-dependencies-analysis,master,8,,gradlew,,
+pt-osda/java-dependencies-analysis,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ptkltm/com.github.ptkltm.development.recursiveinclude.gradleplugin,master,8,,gradlew,,
 pubnub/java,master,8,,gradlew,,
 pulsarIO/jetstream,master,8,,maven,,
@@ -8335,7 +8335,7 @@ qianshui423/greeting-plugin,master,8,,gradlew,,
 qii/weiciyuan,0.50,8,,gradlew,true,Build uses Gradle 2.x
 qinhuagui/MyPlugin,master,8,,gradlew,,
 qiniu/java-sdk,master,8,,gradlew,,
-qinwang/hibernate-orm,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+qinwang/hibernate-orm,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 qiurunze123/miaosha,master,8,,mvnw,,
 qoomon/gradle-git-versioning-plugin,master,8,,gradlew,,
 qos-ch/logback,master,8,,maven,,
@@ -8399,15 +8399,15 @@ quiro91/sheath,main,8,,gradlew,,
 qunarcorp/bistoury,master,8,,maven,,
 qunarcorp/qconfig,master,8,,maven,,
 qvaughan/kue,master,8,,gradlew,true,Build uses Gradle 2.x
-qwazer/markdown-confluence-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+qwazer/markdown-confluence-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 r-d-kmd/gradle-helm-chart-publisher,main,8,,gradlew,,
 r-ralph/gradle-dependency-plantuml-exporter-plugin,master,8,,gradlew,,
 r0adkll/Slidr,master,8,,gradlew,,
 rabidgremlin/Mutters,master,8,,gradlew,,
 race604/FlyRefresh,master,8,,gradlew,true,Build uses Gradle 2.x
-rackerlabs/gradle-codacy-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-rackerlabs/gradle-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-rackerlabs/gradle-linkchecker-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+rackerlabs/gradle-codacy-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+rackerlabs/gradle-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+rackerlabs/gradle-linkchecker-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 rackshift/rackshift,master,8,,maven,,
 radargun/radargun,master,11,,maven,,
 radarsh/gradle-test-logger-plugin,develop,8,,gradlew,,
@@ -8420,7 +8420,7 @@ rafoli/splitest,master,8,,gradlew,true,Build uses Gradle 2.x
 ragill/nar-gradle-plugin,master,8,,gradlew,,
 rahulsom/linters,master,8,,gradlew,true,Build uses Gradle 2.x
 rahulsom/waena,master,8,,gradlew,,
-rainbowQQsugar/ontap,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+rainbowQQsugar/ontap,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ramonwirsch/fopRenderer,master,8,,gradlew,,
 raniejade/godot-kotlin,master,8,,gradlew,,
 raphw/byte-buddy,master,8,,maven,,
@@ -8490,7 +8490,7 @@ renatoathaydes/ceylon-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 renatoathaydes/pony-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 rengwuxian/MaterialEditText,master,8,,gradlew,true,Build uses Gradle 2.x
 renyuneyun/Easer,master,8,,gradlew,,
-requery/requery,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+requery/requery,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 researchgate/gradle-release,master,8,,gradlew,,
 resilience4j/resilience4j,master,11,,gradlew,,
 resource-jason-org/jspxcms,master,8,,maven,,
@@ -8508,7 +8508,7 @@ rey5137/material,master,8,,gradlew,,
 reyerizo/jcstress-gradle-plugin,master,8,,gradlew,,
 rfksystems/gmdoc,master,8,,gradle,,
 rfoltyns/log4j2-elasticsearch,master,8,,maven,,
-rgoldberg/gradle-java-modules,master,8,,gradlew,,
+rgoldberg/gradle-java-modules,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 rhatlapa/jboss-eap-quickstarts,7.0.x-develop,8,,maven,,
 rholder/gradle-view,master,8,,gradlew,,
 rhubarb-geek-nz/barefoot,main,11,,maven,,
@@ -8546,12 +8546,12 @@ robyf/gradle-jarinjar-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 rockerhieu/Versionberg,master,8,,gradlew,true,Build uses Gradle 2.x
 rockerhieu/emojicon,master,8,,gradlew,true,Build uses Gradle 2.x
 rocketraman/gradle-dep-excludes-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-rodm/gradle-teamcity-dsl-plugin,master,8,,gradlew,,
+rodm/gradle-teamcity-dsl-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 rodm/gradle-teamcity-plugin,main,8,,gradlew,,
 rohanprabhu/kotlin-dsl-gradle-jooq-plugin,master,8,,gradlew,,
 rollbar/rollbar-java,master,8,,gradlew,,
 romainguy/ViewServer,master,8,,gradlew,true,Build uses Gradle 2.x
-romandanylyk/PageIndicatorView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+romandanylyk/PageIndicatorView,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 romannurik/muzei,main,11,,gradlew,,
 romanshvets/postgresql-migrations,main,8,,gradlew,,
 roncoo/roncoo-pay,master,8,,maven,,
@@ -8561,10 +8561,10 @@ rostaslaszlo/openapi-codegen-gradle-plugin,master,8,,gradle,,
 rototor/pdfbox-graphics2d,master,8,,maven,,
 roughike/BottomBar,master,8,,gradlew,true,Build uses Gradle 3.x
 rovo89/XposedBridge,art,8,,gradlew,true,Build uses Gradle 3.x
-rovo89/XposedInstaller,master,8,,gradlew,,
+rovo89/XposedInstaller,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 rozaydin/SpringBootVersionPlugin,master,8,,gradle,,
 rozaydin/migrateplugin,master,8,,gradlew,,
-rpalcolea/gradle-gcs-build-cache,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+rpalcolea/gradle-gcs-build-cache,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 rpavlik/file-to-resource-plugin,master,8,,gradlew,,
 rrd4j/rrd4j,master,8,,maven,,
 rsavin/microwave-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -8667,7 +8667,7 @@ scy888/springboot_tensquare,master,8,,maven,,
 sd6352051/NiftyDialogEffects,master,8,,gradlew,true,Build uses Gradle 2.x
 sdbg/sdbg,master,8,,maven,,
 sdelamo/build-info-gradle-plugin,master,8,,gradlew,,
-seanrl/gradle-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+seanrl/gradle-jaxb-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 searchbox-io/Jest,master,8,,maven,,
 searchisko/searchisko,master,8,,maven,,
 searls/jasmine-maven-plugin,master,8,,maven,,
@@ -8680,7 +8680,7 @@ secure-software-engineering/FlowDroid,develop,8,,maven,,
 sedmelluq/jdaction,master,8,,gradlew,true,Build uses Gradle 3.x
 sedmelluq/mass-relocator,master,8,,gradlew,true,Build uses Gradle 3.x
 sedovalx/gradle-aspectj-binary,master,8,,gradlew,,
-seek-oss/gradle-aws-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+seek-oss/gradle-aws-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 selendroid/selendroid,master,8,,gradle,,
 selenide/selenide,master,8,,gradlew,,
 seleniumkit/gridrouter,master,8,,maven,,
@@ -8702,7 +8702,7 @@ sfsheng0322/MarqueeView,master,8,,gradlew,,
 sghill/distribution-sha-plugin,master,8,,gradlew,,
 sglahn/gradle-dockerfile-plugin,master,8,,gradlew,,
 sgornostal/gradle-docker-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
-sh0nk/matplotlib4j,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+sh0nk/matplotlib4j,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 sh3lan93/version-manager-android,main,8,,gradlew,,
 shadowxiehao/repairer-gradle-plugin,master,8,,gradlew,,
 shallows-hub/bpm,master,8,,maven,,
@@ -8724,7 +8724,7 @@ shoebox/gradle-haxe,master,8,,gradlew,true,Build uses Gradle 2.x
 shopizer-ecommerce/shopizer,master,11,,mvnw,,
 shrinkwrap/shrinkwrap,main,8,,maven,,
 shuizuyizu/springsource,master,8,,gradlew,,
-shukia/azkaban-unsafe,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+shukia/azkaban-unsafe,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 shukia/pippo-unsafe,master,8,,maven,,
 shurun19851206/cloudstack,master,8,,maven,,
 shuzheng/zheng,master,8,,maven,,
@@ -8739,18 +8739,18 @@ siggijons/dex-methods,master,8,,gradlew,,
 signalapp/Signal-Android,main,8,,gradlew,,
 signalapp/libsignal-service-java,master,8,,gradlew,,
 sigrennesmetropole/geor_signalement,master,11,,maven,,
-simdea/android-quality-verifier,master,8,,gradlew,,
+simdea/android-quality-verifier,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 simkuenzi/gradle-readme-plugin,master,11,,gradlew,,
 simkuenzi/gradle-webplay-plugin,master,11,,gradlew,,
 simlu/voxelshop,develop,8,,maven,,
 simomat/gradle-postman-runner,master,8,,gradlew,,
 simonasvaskevicius/methodSwap,master,8,,gradlew,,
 simonespa/monkey-world,master,8,,maven,,
-simonharrer/gradle-graphviz-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+simonharrer/gradle-graphviz-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 simonharrer/gradle-modernizer-plugin,master,8,,gradlew,,
 simonschiller/permissioncheck,main,8,,gradlew,,
 simonschiller/prefiller,main,8,,gradlew,,
-simpleton/Yasp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+simpleton/Yasp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 simpligility/android-maven-plugin,master,8,,maven,,
 sing1ee/dict_build,master,8,,gradlew,,
 singh4java/jersey,master,8,,maven,,
@@ -8778,7 +8778,7 @@ skylot/raung,main,8,,gradlew,,
 skyscanner/gradle-time-logger-plugin,master,8,,gradlew,,
 slabiak/AppointmentScheduler,develop,8,,maven,,
 slackhq/kaldb,master,8,,maven,,
-slamdev/js-builder-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+slamdev/js-builder-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 slamdev/kubernetes-deployer-gradle-plugin,master,8,,gradlew,,
 slamdev/openapi-spring-generator,main,8,,gradlew,,
 slamdev/swagger-gradle-plugin,master,8,,gradlew,,
@@ -8786,7 +8786,7 @@ sleberknight/zookeeper-samples,master,8,,maven,,
 sleekbyte/tailor,master,8,,gradlew,true,Build uses Gradle 3.x
 slugstack/slugstack-gradle-plugin,main,8,,gradlew,,
 slugstack/slugstack-publishing-plugin,main,8,,gradlew,,
-smac89/aspectj-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+smac89/aspectj-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 smac89/gradle-flatbuffers-plugin,development,8,,gradlew,,
 smacke/jaydio,master,8,,maven,,
 smart-doc-group/smart-doc-gradle-plugin,master,8,,gradlew,,
@@ -8808,7 +8808,7 @@ soabase/exhibitor,master,8,,maven,,
 soarcn/BottomSheet,master,8,,gradlew,,
 soasecurity/carbon-kernel,master,8,,maven,,
 societe-generale/arch-unit-gradle-plugin,master,8,,gradlew,,
-sockeqwe/mosby,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+sockeqwe/mosby,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 socketio/socket.io-client-java,master,8,,maven,,
 socrata/datasync,main,8,,maven,,
 sofastack/sofa-ark,master,8,,maven,,
@@ -8863,7 +8863,7 @@ sourcegraph/srclib-java,master,8,,gradlew,true,Build uses Gradle 2.x
 sourcemuse/GradleMongoPlugin,master,8,,gradlew,,
 spark-teams/jootainer,master,8,,gradle,,
 spasam/spring-boot-build-info,master,17,,gradlew,,
-spengreb/gradle-openshift-plugin,master,8,,gradlew,,
+spengreb/gradle-openshift-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 spgangwar7/UniTrack_UniQ,master,8,,maven,,
 spigradle/spigradle,master,8,,gradlew,,
 spindriftgroup/gradle-startsql-repository,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -8875,7 +8875,7 @@ spinnaker/halyard,master,11,,gradlew,,
 spinnaker/kayenta,master,11,,gradlew,,
 spinnaker/kork,master,11,,gradlew,,
 spinnaker/scheduled-actions,master,11,,gradlew,true,Build uses Gradle 2.x
-splunk/dsp-plugins-sdk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+splunk/dsp-plugins-sdk,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 splunk/flink,master,8,,maven,,
 splunk/kafka-connect-splunk,develop,8,,maven,,
 splunk/lightproto,master,8,,maven,,
@@ -8932,16 +8932,16 @@ spring-cloud/spring-cloud-task,main,8,org.openrewrite.java.SpringFormat,mvnw,,
 spring-cloud/spring-cloud-vault,main,8,org.openrewrite.java.SpringFormat,mvnw,,
 spring-cloud/spring-cloud-zookeeper,main,8,org.openrewrite.java.SpringFormat,mvnw,,
 spring-cloud/stream-applications,main,8,,maven,,
-spring-gradle-plugins/dependency-lock,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+spring-gradle-plugins/dependency-lock,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 spring-gradle-plugins/dependency-management-plugin,main,8,,gradlew,,
 spring-gradle-plugins/javadoc-plugin,main,8,,gradlew,,
 spring-gradle-plugins/rewrite-gradle,master,8,,gradlew,true,Build uses Gradle 3.x
-spring-gradle-plugins/spring-bintray-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-spring-gradle-plugins/spring-project-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-spring-gradle-plugins/spring-release-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+spring-gradle-plugins/spring-bintray-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+spring-gradle-plugins/spring-project-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+spring-gradle-plugins/spring-release-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 spring-guides/tut-spring-security-and-angular-js,main,8,,mvnw,,
 spring-io/nohttp,main,8,,gradlew,,
-spring-media/apps-android-testdevicemanager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+spring-media/apps-android-testdevicemanager,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 spring-projects-experimental/spring-boot-thin-launcher,main,8,,mvnw,,
 spring-projects/eclipse-integration-commons,main,8,,maven,,
 spring-projects/eclipse-integration-gradle,main,8,,maven,,
@@ -8983,7 +8983,7 @@ spring-projects/spring-ide,main,8,,maven,,
 spring-projects/spring-integration,main,8,,gradlew,,
 spring-projects/spring-integration-aws,main,8,,gradlew,,
 spring-projects/spring-integration-flow,master,8,,gradlew,true,Build uses Gradle 3.x
-spring-projects/spring-integration-java-dsl,master,8,,gradlew,,
+spring-projects/spring-integration-java-dsl,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 spring-projects/spring-integration-kafka,master,8,,gradlew,,
 spring-projects/spring-integration-samples,main,8,,gradlew,,
 spring-projects/spring-integration-splunk,master,8,,gradlew,true,Build uses Gradle 1.x
@@ -9023,7 +9023,7 @@ spx1998/nettystudy,4.1,8,,maven,,
 square/RxIdler,master,8,,gradlew,,
 square/android-times-square,master,11,,gradlew,,
 square/anvil,main,8,,gradlew,,
-square/assertj-android,master,8,,gradlew,,
+square/assertj-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 square/auto-value-redacted,master,8,,gradlew,,
 square/burst,master,8,,maven,,
 square/cascading-helpers,master,8,,maven,,
@@ -9031,7 +9031,7 @@ square/cascading2-protobufs,master,8,,maven,,
 square/connect-java-sdk,master,8,,gradlew,true,Build uses Gradle 2.x
 square/coordinators,master,8,,gradlew,,
 square/dagger,master,8,,maven,,
-square/flow,master,8,,gradlew,,
+square/flow,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 square/gifencoder,master,8,,maven,,
 square/hephaestus,main,8,,gradlew,,
 square/in-app-payments-android-quickstart,master,8,,gradlew,,
@@ -9057,7 +9057,7 @@ square/retrofit,master,8,,gradlew,,
 square/seismic,master,8,,maven,,
 square/sqlbrite,trunk,11,,gradlew,,
 square/square-java-sdk,master,8,,maven,,
-square/squickpic,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+square/squickpic,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 square/tape,master,8,,gradlew,,
 square/wire,master,8,,gradlew,,
 squedgy/faris-test-plugin,master,8,,gradlew,,
@@ -9081,10 +9081,10 @@ steffensky/latex-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 steklopod/gradle-deploy-plugin,master,8,,gradlew,,
 steklopod/gradle-docker-plugin,master,8,,gradlew,,
 steklopod/gradle-ssh-plugin,master,8,,gradlew,,
-stempler/bnd-platform,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+stempler/bnd-platform,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 stempler/gradle-eclipseconfig,master,8,,gradlew,true,Build uses Gradle 3.x
 stempler/gradle-include-plugin,master,8,,gradlew,,
-stempler/gradle-versioneye-plugin,master,8,,gradlew,,
+stempler/gradle-versioneye-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 stepango/aar2jar,master,8,,gradlew,,
 stepango/android-jar,master,8,,gradlew,,
 stephanenicolas/robospice,release,8,,maven,,
@@ -9106,7 +9106,7 @@ structr/structr,main,11,,maven,,
 stuforbes/kapacity-gradle-plugin,master,8,,gradlew,,
 stzdzyhs/bms,master,8,,maven,,
 stzdzyhs/web1,master,8,,maven,,
-su-kun1899/wanko-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+su-kun1899/wanko-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 subclipse/subclipse,master,8,,maven,,
 sunbenjin/cap-hjy,master,8,,maven,,
 superblaubeere27/obfuscator,master,8,,maven,,
@@ -9136,7 +9136,7 @@ synapticloop/project-filestatistics,master,8,,gradlew,,
 synapticloop/templar-gen,master,11,,gradlew,,
 syncany/syncany,develop,8,,gradlew,,
 synchronoss/nio-stream-storage,master,8,,maven,,
-synchrony/smsn,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+synchrony/smsn,develop,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 synthetichealth/synthea,master,8,,gradlew,,
 synyx/messagesource,master,8,,maven,,
 sysgears/grain-gradle-plugin,master,8,,gradlew,,
@@ -9145,7 +9145,7 @@ szczepiq/gradle-plugin-insight,master,8,,gradlew,true,Build uses Gradle 2.x
 szpak/gradle-pitest-plugin,master,8,,gradlew,,
 t-oster/VisiCut,master,8,,maven,,
 tac-yacht/codeartifact-repository-gradleplugin,master,8,,gradlew,,
-tadaskay/gradle-auto-jooq-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+tadaskay/gradle-auto-jooq-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tailrocks/tailrocks-gradle-conventions,main,8,,gradlew,,
 takari/polyglot-maven,master,8,,maven,,
 takeseem/diamond,bbg-dev,8,,maven,,
@@ -9174,7 +9174,7 @@ tdunning/log-synth,master,11,,maven,,
 tdunning/pig-vector,master,8,,maven,,
 te-con/ehour,master,8,,maven,,
 team-carepay/sonar-qualitygate,main,8,,gradlew,,
-team401/snakeskin-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+team401/snakeskin-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 technoir42/aar-publish-plugin,master,8,,gradlew,,
 tedyoung/kid-bank,master,8,,mvnw,,
 tehlers/gradle-duplicate-classes-check,master,8,,gradlew,,
@@ -9198,12 +9198,12 @@ test-editor/test-editor-gradle-plugin,master,8,,gradlew,,
 testaxis/coverage-per-test-gradle-plugin,master,8,,gradlew,,
 testcontainers/testcontainers-java,master,8,,gradlew,,
 testwhat/SmaliEx,master,8,,gradlew,,
-teutahyseni/testThis,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+teutahyseni/testThis,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 teyckmans/kuberig,master,8,,gradlew,,
 teyckmans/kuberig-dsl,master,8,,gradlew,,
 tferr/ASA,master,8,,maven,,
 tflobbe/solrmeter,master,8,,maven,,
-tha2015/swagger-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+tha2015/swagger-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 thahnen/GitDiffUpToDatePlugin,main,8,,gradlew,,
 thahnen/RunTestsSeparateJVMPlugin,main,8,,gradlew,,
 thahnen/UniformDependenciesPlugin,main,8,,gradlew,,
@@ -9219,7 +9219,7 @@ theotherp/nzbhydra2,master,8,,maven,,
 thingsboard/thingsboard,master,8,,maven,,
 thinkaurelius/titan,titan10,8,,maven,,
 thinkgem/jeesite,master,8,,maven,,
-thomashan/gradle-environment-config,master,8,,gradlew,,
+thomashan/gradle-environment-config,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 thomasjungblut/thomasjungblut-common,master,8,,maven,,
 thomasmueller/minperf,master,8,,maven,,
 thombergs/docx-stamper,master,8,,gradlew,,
@@ -9238,7 +9238,7 @@ timfreiheit/ResourcePlaceholdersPlugin,master,8,,gradlew,,
 timmolter/XChange,develop,8,,maven,,
 timols/java-gitlab-api,master,8,,gradlew,,
 timroes/gradle-git-version,master,8,,gradlew,true,Build uses Gradle 2.x
-tingshuonitiao/CreateActivityPlugin,master,8,,gradlew,,
+tingshuonitiao/CreateActivityPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tinkerpop/blueprints,master,8,,maven,,
 tinylog-org/tinylog,v2.5,8,,maven,,
 tipsy/javalin,master,8,,mvnw,,
@@ -9248,8 +9248,8 @@ tkruse/gradle-groovysh-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 tmiyamon/gradle-config,master,8,,gradlew,true,Build uses Gradle 3.x
 tmiyamon/gradle-mdicons,master,8,,gradlew,true,Build uses Gradle 2.x
 tmohme/gradle-elm-plugin,master,8,,gradlew,,
-tnj/gradle-auto-debug-suffix-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-tnj/gradle-locate-apk-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+tnj/gradle-auto-debug-suffix-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+tnj/gradle-locate-apk-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 to-be-deleted/gradle-modules-plugin,master,8,,gradlew,,
 to2mbn/JMCCC,master,8,,maven,,
 tobyweston/simple-excel,master,8,,maven,,
@@ -9277,7 +9277,7 @@ tordanik/OSM2World,master,8,,maven,,
 torodb/stampede,master,8,,maven,,
 torquebox/jruby-maven-plugins,master,8,,maven,,
 torrescd/junitxml-gradle-plugin,master,8,,gradlew,,
-totokaka/gradle-pyenv,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+totokaka/gradle-pyenv,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tough1985/XibaMvpPlugin,master,8,,gradle,,
 tough1985/mvvmplugin,master,8,,gradle,,
 tracingplane/tracingplane-java,master,8,,maven,,
@@ -9303,9 +9303,9 @@ tronprotocol/java-tron,develop,8,,gradlew,,
 tsantalis/RefactoringMiner,master,8,,gradlew,,
 tschulte/gradle-jnlp-plugin,develop,8,,gradlew,true,Build uses Gradle 2.x
 tschulte/gradle-semantic-release-plugin,master,8,,gradlew,,
-tslamic/versioning,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+tslamic/versioning,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tterrag1098/BON2,master,8,,gradlew,true,Build uses Gradle 2.x
-ttymsd/stf-android-test-client,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ttymsd/stf-android-test-client,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tuguangquan/mybatis,master,8,,maven,,
 tunguski/interfacer,master,8,,maven,,
 turansky/kfc-plugins,master,8,,gradlew,,
@@ -9315,10 +9315,10 @@ turbolocust/GZipper,master,8,,maven,,
 turbolocust/MultiLayerPerceptron,master,8,,maven,,
 tus/tus-java-client,master,8,,gradlew,,
 tutorial0/flink-1.11.0,master,8,,maven,,
-tututututututu/TallyBook,master,8,,gradlew,,
+tututututututu/TallyBook,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 twasyl/SlideshowFX,master,8,,gradlew,,
 twilio/calcite-kudu,main,8,,maven,,
-twilio/mobile-sdk-sample-android,master,8,,gradlew,,
+twilio/mobile-sdk-sample-android,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 twilio/superclass-voice,master,8,,maven,,
 twilio/sync-quickstart-android,master,8,,gradlew,,
 twilio/twilio-java,main,8,,maven,,
@@ -9328,7 +9328,7 @@ twilio/video-quickstart-android,master,11,,gradlew,,
 twilio/voice-quickstart-server-java,master,8,,maven,,
 twilio/wiztowar,master,8,,maven,,
 twitch4j/nitro-codegen,master,8,,gradlew,,
-twitch4j/sdcf4j-twitch,master,8,,gradlew,,
+twitch4j/sdcf4j-twitch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 twitch4j/streamlabs4j,master,8,,gradlew,,
 twitch4j/twitch4j,master,8,,gradlew,,
 twitch4j/twitch4j-chatbot,master,8,,gradlew,,
@@ -9353,11 +9353,11 @@ tylerbwong/metalava-gradle,main,8,,gradlew,,
 tylerpitchford/bitmap-all-the-things,master,8,,gradle,,
 typ0520/fastdex,master,8,,gradlew,true,Build uses Gradle 2.x
 typecraft-io/gradle-specialsource,main,8,,gradlew,,
-typelead/gradle-eta,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+typelead/gradle-eta,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 tyrantgit/ExplosionField,master,8,,gradlew,true,Build uses Gradle 2.x
 tyzlmjj/PagerBottomTabStrip,master,8,,gradlew,,
 uPortal-Project/uPortal,master,8,,gradlew,,
-uakihir0/j2objc-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+uakihir0/j2objc-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 uber-common/jvm-profiler,master,8,,maven,,
 uber/NullAway,master,8,,gradlew,,
 uber/okbuck,master,8,,gradlew,,
@@ -9372,7 +9372,7 @@ uea-machine-learning/tsml,master,8,,gradlew,,
 ufo22940268/UmengAutoPackage,master,8,,gradlew,true,Build uses Gradle 2.x
 uklance/gradle-dependency-export,master,8,,gradlew,,
 uklance/gradle-java-flavours,master,8,,gradlew,true,Build uses Gradle 3.x
-uklance/gradle-java-monkey-patch,master,8,,gradlew,,
+uklance/gradle-java-monkey-patch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 uklance/gradle-maven-share,master,8,,gradlew,true,Build uses Gradle 2.x
 uma-pi1/mgfsm,master,8,,maven,,
 umano/AndroidSlidingUpPanel,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -9380,7 +9380,7 @@ umeshh/my-aws-sdk,master,8,,maven,,
 umich-michr/h2-gradle-plugin,master,8,,gradlew,,
 umorigu/gradle-git-repo-plugin,master,8,,gradle,,
 unbroken-dome/gradle-aws-codeartifact-plugin,main,8,,gradlew,,
-unbroken-dome/gradle-gitversion-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+unbroken-dome/gradle-gitversion-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 unbroken-dome/gradle-helm-plugin,master,8,,gradlew,,
 unbroken-dome/gradle-testsets-plugin,master,8,,gradlew,,
 unbroken-dome/gradle-xjc-plugin,master,8,,gradlew,,
@@ -9398,12 +9398,12 @@ unifig/unifig,master,8,,maven,,
 unsiloai/gradle-jcasgen-plugin,master,8,,gradlew,,
 uploadcare/uploadcare-java,master,8,,maven,,
 upmc-enterprises/gradle-test-coverage-reporter-plugin,develop,8,,gradlew,,
-upthewaterspout/jpf-gradle,master,8,,gradlew,,
+upthewaterspout/jpf-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 upyun/android-sdk,master,8,,gradlew,,
 usc-isi-i2/Web-Karma,master,8,,maven,,
 usnistgov/MIST,master,8,,maven,,
 utfpr-dv/sireata,master,8,,maven,,
-uulib/gradletag,master,8,,gradlew,,
+uulib/gradletag,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 uulib/reckon,master,8,,gradlew,,
 uvalib/transmog,master,8,,maven,,
 uwescience/myria,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -9429,9 +9429,9 @@ valnaumov/gradle-google-drive-plugin,master,8,,gradlew,,
 valtoni/gradle-plugin-maven-pass,master,8,,gradle,,
 vanei-heidemann/retrocenter.java,master,8,,maven,,
 vanniktech/gradle-android-javadoc-plugin,master,8,,gradlew,,
-vastik/gradle-docker-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-vastik/gradle-plugin-liquibase,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-vastik/gradle-spring-environments,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+vastik/gradle-docker-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+vastik/gradle-plugin-liquibase,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+vastik/gradle-spring-environments,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 vavr-io/vavr,master,8,,gradlew,,
 veraPDF/veraPDF-library,integration,8,,maven,,
 veraPDF/veraPDF-rest,integration,8,,maven,,
@@ -9506,7 +9506,7 @@ vincenzopalazzo/gradle-database,master,8,,gradlew,,
 vincetreur/AppVersionPlugin,master,8,,gradlew,true,Build uses Gradle 2.x
 vipshop/pallas,develop,8,,maven,,
 vipulasri/Timeline-View,master,8,,gradlew,,
-virgo47/gradle-classpath-jar-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+virgo47/gradle-classpath-jar-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 virtix/webdriver,master,8,,maven,,
 vitalidze/traccar-web,dev,8,,maven,,
 vivin/gradle-semantic-build-versioning,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -9561,7 +9561,7 @@ walmartlabs/concord-plugins,master,8,,mvnw,,
 walmartlabs/gozer,master,8,,maven,,
 walmartlabs/hadoop-openstack-swifta,master,8,,maven,,
 walmartlabs/strati-functional,master,8,,maven,,
-wangchao0837/ArouterComponent,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+wangchao0837/ArouterComponent,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 wangdan/AisenWeiBo,master,8,,gradlew,true,Build uses Gradle 3.x
 wangdefa7/SpringBoot-WDF,master,8,,maven,,
 wangdexiao/spring4.3.25,master,8,,gradlew,,
@@ -9570,7 +9570,7 @@ wangweiomg/credit-center,master,8,,maven,,
 wangwenteng/CommonUtil,master,8,,maven,,
 wangyingjie/tomcatsrc,master,8,,maven,,
 wangyong0716/Firenews,master,8,,gradlew,true,Build uses Gradle 3.x
-wangzhizy/PublishAppPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+wangzhizy/PublishAppPlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 wannagodev1/app-frontend-application,master,8,,maven,,
 wasabeef/Blurry,main,11,,gradlew,,
 wasabeef/glide-transformations,main,8,,gradlew,,
@@ -9606,8 +9606,8 @@ wildfly/galleon,main,8,,maven,,
 wildfly/jandex,master,8,,maven,,
 wildfly/wildfly,main,11,,mvnw,,
 wildfly/wildfly-core,main,11,,maven,,
-wildfly/wildfly-gradle-tools,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-willemevertse/ICM-Code-Generator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+wildfly/wildfly-gradle-tools,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+willemevertse/ICM-Code-Generator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 willir/cargo-ndk-android-gradle,master,8,,gradlew,,
 wilmerkrisp/archidoc,master,8,,gradlew,,
 wind57/0x-plugin-bom,master,8,,gradlew,,
@@ -9626,7 +9626,7 @@ woodpecker-framework/ysoserial-for-woodpecker,master,8,,maven,,
 wooio/htmltopdf-java,master,8,,gradlew,true,Build uses Gradle 3.x
 wordpress-mobile/WordPress-Android,trunk,8,,gradlew,,
 worker8/AndroidLintReporter,master,8,,gradlew,,
-worker8/TourGuide,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+worker8/TourGuide,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 wpilibsuite/GradleRIO,main,11,,gradlew,,
 wpilibsuite/deploy-utils,main,11,,gradlew,,
 wpilibsuite/gradle-cpp-vscode,main,11,,gradlew,,
@@ -9673,26 +9673,26 @@ wttech/gradle-common-plugin,master,8,,gradlew,,
 wttech/gradle-environment-plugin,master,8,,gradlew,,
 wttech/gradle-lighthouse-plugin,master,8,,gradlew,,
 wuchong/flink-hackathon,master,8,,maven,,
-wugui2020/gradle-scalafmt,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+wugui2020/gradle-scalafmt,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 wumo/gradle-graalvm-plugin,master,8,,gradlew,,
 wumo/gradle-javacpp-plugin,master,8,,gradlew,,
 wuyr/incremental-compiler,main,8,,gradlew,,
 wvanderdeijl/oracle-cci-sonarqube,master,8,,maven,,
-wwadge/dockerPreparePlugin,master,8,,gradlew,,
+wwadge/dockerPreparePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 wwong/commons-crypto,master,8,,maven,,
 www-splitcells-net/net.splitcells.network,master,8,,maven,,
 wx930910/deltaspike_mocking_refactoring,master,8,,maven,,
 wxmlabs/java-compatibility-plugin,master,8,,gradlew,,
 wyouflf/xUtils3,master,8,,gradle,,
 x2on/gradle-cocoapods-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-x2on/gradle-hockeyapp-plugin,master,8,,gradlew,,
+x2on/gradle-hockeyapp-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xSAVIKx/AndroidScreencast,develop,8,,maven,,
 xaniox/HeavySpleef,master,8,,maven,,
 xap/xap,master,8,,maven,,
 xcltapestry/XCL-Charts,master,8,,gradlew,true,Build uses Gradle 3.x
 xcporter/jpkg,main,8,,gradlew,,
 xcporter/metaView,main,8,,gradlew,,
-xebialabs-community/gradle-xld-plugin,master,8,,gradlew,,
+xebialabs-community/gradle-xld-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xebialabs-community/xl-docker-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 xebialabs-community/xld-docker-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 xebialabs-community/xldp-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -9708,15 +9708,15 @@ xetorthio/jedis,master,8,,maven,,
 xhujinjun/istart,master,8,,maven,,
 xiancloud/xian,master,8,,gradle,,
 xiao9-web/spring-framework,main,8,,gradlew,,
-xiaobaoyihao/PostBuild,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-xiaobaoyihao/android-translate-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+xiaobaoyihao/PostBuild,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+xiaobaoyihao/android-translate-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xiaolutang/easySmallWidth,main,8,,gradlew,,
-xiaoquanWu/support-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+xiaoquanWu/support-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xiaoweialien/gradle-applyfrom-plugin,master,8,,gradle,,
 xiechangzhen/agile-bpm,master,8,,maven,,
-ximsfei/Android-skin-support,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ximsfei/Android-skin-support,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xingguiyang/netty,4.1,8,,maven,,
-xinshengfan/ClassPlaceholder,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+xinshengfan/ClassPlaceholder,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 xinulx/jspxcms,master,8,,maven,,
 xinulx/springboot-modules,master,8,,maven,,
 xinxiamu/MuStudy,master,8,,maven,,
@@ -9744,7 +9744,7 @@ xxxlxy2008/mybatis,master,8,,maven,,
 xy900/jeecmsv9_3,master,8,,maven,,
 xzel23/javafx-gradle-plugin,master,11,,gradlew,,
 y17920/gradle-plugin,master,8,,gradlew,,
-y6692/qimalock_app,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+y6692/qimalock_app,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yWorks/yGuard,master,8,,gradlew,,
 yacota/stagemonitor-issue127,master,8,,gradlew,true,Build uses Gradle 2.x
 yacy/yacy_grid_loader,master,8,,gradlew,,
@@ -9757,7 +9757,7 @@ yahoo/parsec,master,8,,gradlew,,
 yakworks/gradle-plugins,master,17,,gradlew,,
 yamcs/yamcs,master,8,,maven,,
 yamilmedina/appgallery-publisher,master,8,,gradlew,,
-yaming116/uiautomatorview,master,8,,gradlew,,
+yaming116/uiautomatorview,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yanchunlei/smali,master,8,,gradlew,,
 yandex-qatools/postgresql-embedded,master,8,,maven,,
 yandex/yoctodb,master,8,,maven,,
@@ -9767,26 +9767,26 @@ yangjiantao/RapidAnt,master,8,,gradlew,,
 yangkun19921001/DexEncryptionDecryption,master,8,,gradlew,,
 yangzb0922/netty-source-learn,master,8,,maven,,
 yanzhenjie/AndServer,master,8,,gradlew,,
-yanzhenjie/NoHttp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+yanzhenjie/NoHttp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yanziyang2016/cms_wanzi_6.5.2,master,8,,maven,,
 yanziyang2016/jspxcms,,8,,maven,,
 yanziyang2016/jspxcms-8.0.3,master,8,,maven,,
 yanziyang2016/jspxcms_6.5.2_ep,master,8,,maven,,
-yaozs/YzsLib,master,8,,gradlew,,
+yaozs/YzsLib,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yarolegovich/DiscreteScrollView,master,8,,gradlew,,
 yarolegovich/SlidingRootNav,master,8,,gradlew,,
 yasserg/crawler4j,master,8,,gradlew,,
 ybonjour/test-store,master,8,,gradlew,,
-ybq/Android-SpinKit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ybq/Android-SpinKit,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yegor256/qulice,master,8,,maven,,
 yegor256/rultor,master,8,,maven,,
 yegor256/takes,master,8,,maven,,
 yello-labs/gradle-keyring,master,8,,gradlew,,
 yello-labs/keyring,main,8,,gradlew,,
 yelloohe/jspxcms,master,8,,maven,,
-yellowcath/VideoProcessor,master,8,,gradlew,,
+yellowcath/VideoProcessor,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yfiton/yfiton,master,17,,gradlew,,
-yhaolpz/FloatWindow,master,8,,gradlew,,
+yhaolpz/FloatWindow,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yinmb1/spring-framework,master,8,,gradlew,,
 yinwang0/pysonar2,master,8,,maven,,
 yinwang0/rubysonar,master,8,,maven,,
@@ -9808,7 +9808,7 @@ yoylee/janusgraph-source-article,master,8,,maven,,
 yqritc/RecyclerView-FlexibleDivider,master,8,,gradlew,true,Build uses Gradle 2.x
 yqxyz/movie,master,8,,maven,,
 ys-kalyakin/gradle-pull-dependencies-plugin,main,8,,gradle,,
-ysb33r/bintray,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ysb33r/bintray,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ysb33r/doxygen-gradle-plugin,master,8,,gradlew,,
 ysb33r/gnumake-gradle-plugin,master,8,,gradlew,,
 ysb33r/gradle-cloudci-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -9816,17 +9816,17 @@ ysc/APDPlat,master,8,,maven,,
 ysc/QuestionAnsweringSystem,master,8,,mvnw,,
 yu199195/hmily,master,8,,maven,,
 yuanmabiji/spring-boot-2.1.0.RELEASE,master,8,,maven,,
-yunarta/works-athena-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+yunarta/works-athena-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yunarta/works-ci-publish-gradle-plugin,master,8,,gradlew,,
 yunarta/works-enteprise-repo-gradle-plugin,master,8,,gradlew,,
-yunarta/works-jacoco-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+yunarta/works-jacoco-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 yupzip/wsdl2java,master,8,,gradlew,,
 yusuke/twitter4j,master,8,,maven,,
 yuteng2014/gradle-plugin,master,8,,gradlew,,
 yuuki1967/sonarqube,master,8,,gradlew,,
 yuzhaoyang001/ofcms,master,8,,maven,,
 ywwynm/EverythingDone,master,8,,gradlew,true,Build uses Gradle 3.x
-yxc023/gradle-plugin-scaffold,master,8,,gradlew,,
+yxc023/gradle-plugin-scaffold,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 z1978/zac-spring-boot-manager,master,8,,maven,,
 zalopay-oss/jmeter-grpc-request,master,8,,maven,,
 zaproxy/gradle-plugin-add-on,main,8,,gradlew,,
@@ -9854,17 +9854,17 @@ zhengcx/MethodTraceMan,master,8,,gradlew,,
 zhengxyit/ofbiz-mini-saas,master,8,,maven,,
 zhey/decompression,master,8,,maven,,
 zhihu/Matisse,master,8,,gradlew,,
-zhimin711/ch,master,8,,gradlew,,
+zhimin711/ch,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zhisheng17/flink-learning,master,8,,maven,,
 zhkl0228/unidbg,master,8,,maven,,
 zhongjibing/utils,master,8,,maven,,
 zhouaijia/AndroidBatchPacker,master,8,,gradlew,,
 zhudebin/jspxcms,master,8,,maven,,
 zhuhaihang/Jspxcms,master,8,,maven,,
-zhurlik/gradle-swagger-plugin,master,8,,gradlew,,
-zhxyComing/ClickTrace,master,8,,gradlew,,
+zhurlik/gradle-swagger-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+zhxyComing/ClickTrace,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zi-jing/CuckooGradle,master,8,,gradlew,,
-zierler-f/YAML-Validator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+zierler-f/YAML-Validator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zkovari/gradle-changelog-automation-plugin,develop,8,,gradlew,,
 zladovan/gradle-avrohugger-plugin,master,8,,gradlew,,
 zml2008/gradle-plugins,dev,8,,gradlew,,
@@ -9874,13 +9874,13 @@ zowe-plugin-for-gradle/zowe-plugin-for-gradle,master,8,,gradle,,
 zpc888/jar-version-info-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 zpc888/whole-test-gradle-plugin,master,8,,gradlew,,
 zstackio/zstack,master,8,,maven,,
-ztw33/Amaze,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-zxfnicholas/CameraSDK,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
+ztw33/Amaze,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+zxfnicholas/CameraSDK,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zxhr/gradle-xtext-generator,master,8,,gradlew,,
 zxing/zxing,master,8,,maven,,
-zyj1609wz/GradlePlugin,master,8,,gradlew,,
-zyxist/chainsaw,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10
-zzhoujay/RichText,master,8,,gradlew,,
+zyj1609wz/GradlePlugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+zyxist/chainsaw,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+zzhoujay/RichText,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zzz40500/AndroidSweetSheet,master,8,,gradlew,true,Build uses Gradle 2.x
 zzz40500/GsonFormat,master,8,,gradlew,true,Build uses Gradle 3.x
 zzz40500/Tinker_imitator,master,8,,gradlew,true,Build uses Gradle 2.x
