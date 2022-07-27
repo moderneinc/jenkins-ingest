@@ -137,7 +137,7 @@ allprojects {
         if (!project.plugins.hasPlugin(io.moderne.gradle.ModernePlugin)) {
             project.plugins.apply(io.moderne.gradle.ModernePlugin)
         }
-        if (project.group == null || project.group?.trim()) {
+        if (project.group == null || !project.group?.trim()) {
             // For publishing to succeed a groupId must be set
             project.group = "io.moderne.unknown"
         }
