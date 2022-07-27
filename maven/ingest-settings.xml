@@ -7,18 +7,1249 @@
             </mirrorOf>
             <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
         </mirror>
+
+        <mirror>
+            <id>secure-hypergraphdb</id>
+            <mirrorOf>hypergraphdb</mirrorOf>
+            <url>https://hypergraphdb.org/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-axiom-public</id>
+            <mirrorOf>axiom-public</mirrorOf>
+            <url>https://nexus.axiomalaska.com/nexus/content/repositories/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-public-snapshot</id>
+            <mirrorOf>public-snapshot</mirrorOf>
+            <url>https://maven.nuxeo.org/nexus/content/groups/public-snapshot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-milestones</id>
+            <mirrorOf>spring-milestones</mirrorOf>
+            <url>https://repo.spring.io/milestone/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-terracotta-releases</id>
+            <mirrorOf>terracotta-releases</mirrorOf>
+            <url>https://www.terracotta.org/download/reflector/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-repo.bodar.com</id>
+            <mirrorOf>repo.bodar.com</mirrorOf>
+            <url>https://repo.bodar.com/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jcenter-snapshots</id>
+            <mirrorOf>jcenter-snapshots</mirrorOf>
+            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-public</id>
+            <mirrorOf>jboss-public</mirrorOf>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-glassfish-repository</id>
+            <mirrorOf>glassfish-repository</mirrorOf>
+            <url>https://maven.glassfish.org/content/groups/glassfish/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-powermock-repo</id>
+            <mirrorOf>powermock-repo</mirrorOf>
+            <url>https://powermock.googlecode.com/svn/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-juniper-contrail</id>
+            <mirrorOf>juniper-contrail</mirrorOf>
+            <url>https://juniper.github.io/contrail-maven/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-asascience</id>
+            <mirrorOf>asascience</mirrorOf>
+            <url>https://maven.asascience.com/maven/thirdparty/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-rubygems-releases</id>
+            <mirrorOf>rubygems-releases</mirrorOf>
+            <url>https://rubygems-proxy.torquebox.org/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-confluent</id>
+            <mirrorOf>confluent</mirrorOf>
+            <url>https://packages.confluent.io/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jai-imageio</id>
+            <mirrorOf>jai-imageio</mirrorOf>
+            <url>https://maven.geotoolkit.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-hapi-sf</id>
+            <mirrorOf>hapi-sf</mirrorOf>
+            <url>https://hl7api.sourceforge.net/m2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-scala-tools.org</id>
+            <mirrorOf>scala-tools.org</mirrorOf>
+            <url>https://scala-tools.org/repo-releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-forgerock-community-repository</id>
+            <mirrorOf>forgerock-community-repository</mirrorOf>
+            <url>https://maven.forgerock.org/repo/community/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Apache</id>
+            <mirrorOf>Apache</mirrorOf>
+            <url>https://repo1.maven.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-conjars.org</id>
+            <mirrorOf>conjars.org</mirrorOf>
+            <url>https://conjars.org/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ops4j.oss.sonatype.org</id>
+            <mirrorOf>ops4j.oss.sonatype.org</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/ops4j-with-staging/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-caja</id>
+            <mirrorOf>caja</mirrorOf>
+            <url>https://google-caja.googlecode.com/svn/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-fungal</id>
+            <mirrorOf>fungal</mirrorOf>
+            <url>https://jesperpedersen.github.com/fungal/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-repository.spring.milestone</id>
+            <mirrorOf>repository.spring.milestone</mirrorOf>
+            <url>https://repo.spring.io/milestone/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven.aksw.snapshots</id>
+            <mirrorOf>maven.aksw.snapshots</mirrorOf>
+            <url>https://maven.aksw.org/repository/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jr-snapshots</id>
+            <mirrorOf>jr-snapshots</mirrorOf>
+            <url>https://jaspersoft.jfrog.io/jaspersoft/jr-ce-snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-rubygems-release</id>
+            <mirrorOf>rubygems-release</mirrorOf>
+            <url>https://rubygems-proxy.torquebox.org/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-sk89q-repo</id>
+            <mirrorOf>sk89q-repo</mirrorOf>
+            <url>https://maven.sk89q.com/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-releases.java.net</id>
+            <mirrorOf>releases.java.net</mirrorOf>
+            <url>https://maven.java.net/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-builds.archive.org,maven2</id>
+            <mirrorOf>builds.archive.org,maven2</mirrorOf>
+            <url>https://builds.archive.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-clojars.org</id>
+            <mirrorOf>clojars.org</mirrorOf>
+            <url>https://clojars.org/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-netbeans</id>
+            <mirrorOf>netbeans</mirrorOf>
+            <url>https://bits.netbeans.org/nexus/content/groups/netbeans/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-codehaus.snapshots</id>
+            <mirrorOf>codehaus.snapshots</mirrorOf>
+            <url>https://snapshots.repository.codehaus.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-alimaven</id>
+            <mirrorOf>alimaven</mirrorOf>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven-restlet</id>
+            <mirrorOf>maven-restlet</mirrorOf>
+            <url>https://maven.restlet.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-mvmsearch</id>
+            <mirrorOf>mvmsearch</mirrorOf>
+            <url>https://www.mvnsearch.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-teamNexus.snapshots</id>
+            <mirrorOf>teamNexus.snapshots</mirrorOf>
+            <url>https://artifacts.eastus.cloudapp.azure.com:8081/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-forgerock-staging-repository</id>
+            <mirrorOf>forgerock-staging-repository</mirrorOf>
+            <url>https://maven.forgerock.org/repo/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-central1</id>
+            <mirrorOf>central1</mirrorOf>
+            <url>https://www.ibiblio.org/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jeecg</id>
+            <mirrorOf>jeecg</mirrorOf>
+            <url>https://maven.jeecg.org/nexus/content/repositories/jeecg/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-openimaj-maven</id>
+            <mirrorOf>openimaj-maven</mirrorOf>
+            <url>https://maven.openimaj.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ejt</id>
+            <mirrorOf>ejt</mirrorOf>
+            <url>https://maven.ej-technologies.com/repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-CogcompSoftware</id>
+            <mirrorOf>CogcompSoftware</mirrorOf>
+            <url>https://macniece.seas.upenn.edu/m2repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-openmrs-repo</id>
+            <mirrorOf>openmrs-repo</mirrorOf>
+            <url>https://mavenrepo.openmrs.org/nexus/content/repositories/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-acoveo-repo</id>
+            <mirrorOf>acoveo-repo</mirrorOf>
+            <url>https://acoveo.com/maven2/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-decipher</id>
+            <mirrorOf>decipher</mirrorOf>
+            <url>https://decipher.chpc.utah.edu/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-clojars</id>
+            <mirrorOf>clojars</mirrorOf>
+            <url>https://clojars.org/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2.releases</id>
+            <mirrorOf>wso2.releases</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-n52-releases</id>
+            <mirrorOf>n52-releases</mirrorOf>
+            <url>https://52north.org/maven/repo/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-public-repository-group</id>
+            <mirrorOf>jboss-public-repository-group</mirrorOf>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-sonatype-snapshots</id>
+            <mirrorOf>sonatype-snapshots</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/jetty/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-apache.incubator</id>
+            <mirrorOf>apache.incubator</mirrorOf>
+            <url>https://people.apache.org/repo/m2-incubating-repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-zt-public</id>
+            <mirrorOf>zt-public</mirrorOf>
+            <url>https://repos.zeroturnaround.com/nexus/content/repositories/zt-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-conjars</id>
+            <mirrorOf>conjars</mirrorOf>
+            <url>https://conjars.org/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-codehaus</id>
+            <mirrorOf>codehaus</mirrorOf>
+            <url>https://repository.codehaus.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-matze-repo</id>
+            <mirrorOf>matze-repo</mirrorOf>
+            <url>https://repo.xaniox.de/artifactory/release/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-forgerock-snapshots-repository</id>
+            <mirrorOf>forgerock-snapshots-repository</mirrorOf>
+            <url>https://maven.forgerock.org/repo/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jsweet-external</id>
+            <mirrorOf>jsweet-external</mirrorOf>
+            <url>https://repository.jsweet.org/artifactory/ext-release-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-bintray-kevinlee-maven</id>
+            <mirrorOf>bintray-kevinlee-maven</mirrorOf>
+            <url>https://dl.bintray.com/kevinlee/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-WSO2-Nexus-Maven-Repository</id>
+            <mirrorOf>WSO2-Nexus-Maven-Repository</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-java.net</id>
+            <mirrorOf>java.net</mirrorOf>
+            <url>https://download.java.net/maven/2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-vaadin-snapshots</id>
+            <mirrorOf>vaadin-snapshots</mirrorOf>
+            <url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-zk-ce</id>
+            <mirrorOf>zk-ce</mirrorOf>
+            <url>https://mavensync.zkoss.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-openqa-snapshots</id>
+            <mirrorOf>openqa-snapshots</mirrorOf>
+            <url>https://nexus.openqa.org/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jeecg-snapshots</id>
+            <mirrorOf>jeecg-snapshots</mirrorOf>
+            <url>https://maven.jeecg.org/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven.wso2.org</id>
+            <mirrorOf>maven.wso2.org</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-geosolutions</id>
+            <mirrorOf>geosolutions</mirrorOf>
+            <url>https://maven.geo-solutions.it/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven.aksw.internal</id>
+            <mirrorOf>maven.aksw.internal</mirrorOf>
+            <url>https://maven.aksw.org/repository/internal/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-apache.extras.kalumet.m2</id>
+            <mirrorOf>apache.extras.kalumet.m2</mirrorOf>
+            <url>https://svn.codespot.com/a/apache-extras.org/kalumet-extras/m2-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ZK CE</id>
+            <mirrorOf>ZK CE</mirrorOf>
+            <url>https://mavensync.zkoss.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-restapi</id>
+            <mirrorOf>restapi</mirrorOf>
+            <url>https://download.java.net/maven/2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2-maven2-repository</id>
+            <mirrorOf>wso2-maven2-repository</mirrorOf>
+            <url>https://dist.wso2.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-52n-repo</id>
+            <mirrorOf>52n-repo</mirrorOf>
+            <url>https://52north.org/maven/repo/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-servicemix</id>
+            <mirrorOf>servicemix</mirrorOf>
+            <url>https://svn.apache.org/repos/asf/servicemix/m2-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ops4j</id>
+            <mirrorOf>ops4j</mirrorOf>
+            <url>https://repository.ops4j.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2.snapshots</id>
+            <mirrorOf>wso2.snapshots</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-kuali.nexus</id>
+            <mirrorOf>kuali.nexus</mirrorOf>
+            <url>https://nexus.kuali.org/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2nexus</id>
+            <mirrorOf>wso2nexus</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-WSO2-Nexus-Maven-SNAPSHOT-Repository</id>
+            <mirrorOf>WSO2-Nexus-Maven-SNAPSHOT-Repository</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/repositories/wso2.maven2.snapshot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-4thline-repo</id>
+            <mirrorOf>4thline-repo</mirrorOf>
+            <url>https://4thline.org/m2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-osgeo</id>
+            <mirrorOf>osgeo</mirrorOf>
+            <url>https://download.osgeo.org/webdav/geotools/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-arnaudroger-maven-repository</id>
+            <mirrorOf>arnaudroger-maven-repository</mirrorOf>
+            <url>https://arnaudroger.github.io/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-buzzmedia</id>
+            <mirrorOf>buzzmedia</mirrorOf>
+            <url>https://maven.thebuzzmedia.com/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-releases</id>
+            <mirrorOf>spring-releases</mirrorOf>
+            <url>https://repo.spring.io/libs-release-remote/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ukp-oss-snapshots</id>
+            <mirrorOf>ukp-oss-snapshots</mirrorOf>
+            <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-ukp-snapshots-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Liberty</id>
+            <mirrorOf>Liberty</mirrorOf>
+            <url>https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/maven/repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-geronimo-svn-repo</id>
+            <mirrorOf>geronimo-svn-repo</mirrorOf>
+            <url>https://svn.apache.org/repos/asf/geronimo/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-datanucleus</id>
+            <mirrorOf>datanucleus</mirrorOf>
+            <url>https://www.datanucleus.org/downloads/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-glassfish-repo-archive</id>
+            <mirrorOf>glassfish-repo-archive</mirrorOf>
+            <url>https://maven.glassfish.org/content/groups/glassfish/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-com.google.javascript</id>
+            <mirrorOf>com.google.javascript</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/staging/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss</id>
+            <mirrorOf>jboss</mirrorOf>
+            <url>https://repository.jboss.com/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-apache-snapshots</id>
+            <mirrorOf>apache-snapshots</mirrorOf>
+            <url>https://repository.apache.org/content/groups/snapshots-group/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-download.oracle.com</id>
+            <mirrorOf>download.oracle.com</mirrorOf>
+            <url>https://download.oracle.com/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-nexus.repository</id>
+            <mirrorOf>nexus.repository</mirrorOf>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-snapshots</id>
+            <mirrorOf>jboss-snapshots</mirrorOf>
+            <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-bintray-spring</id>
+            <mirrorOf>bintray-spring</mirrorOf>
+            <url>https://dl.bintray.com/spring/jars/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-oauth</id>
+            <mirrorOf>oauth</mirrorOf>
+            <url>https://oauth.googlecode.com/svn/code/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-snapshots-continuous</id>
+            <mirrorOf>spring-snapshots-continuous</mirrorOf>
+            <url>https://repo.spring.io/libs-snapshot-continuous-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-clapper-org-maven-repo</id>
+            <mirrorOf>clapper-org-maven-repo</mirrorOf>
+            <url>https://maven.clapper.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-marc-te-main</id>
+            <mirrorOf>marc-te-main</mirrorOf>
+            <url>https://te.marc-hi.ca/mvn/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jasperreports</id>
+            <mirrorOf>jasperreports</mirrorOf>
+            <url>https://jasperreports.sourceforge.net/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Heritrix</id>
+            <mirrorOf>Heritrix</mirrorOf>
+            <url>https://builds.archive.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-geotoolkit</id>
+            <mirrorOf>geotoolkit</mirrorOf>
+            <url>https://maven.geotoolkit.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-openqa-releases</id>
+            <mirrorOf>openqa-releases</mirrorOf>
+            <url>https://nexus.openqa.org/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-japidiff</id>
+            <mirrorOf>japidiff</mirrorOf>
+            <url>https://japidiff.googlecode.com/svn/m2-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-default-repo</id>
+            <mirrorOf>default-repo</mirrorOf>
+            <url>https://repo1.maven.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-vaadin-addons</id>
+            <mirrorOf>vaadin-addons</mirrorOf>
+            <url>https://maven.vaadin.com/vaadin-addons/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jetty.oss.sonatype.org</id>
+            <mirrorOf>jetty.oss.sonatype.org</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/jetty-with-staging/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-gforge.inria.fr-release</id>
+            <mirrorOf>gforge.inria.fr-release</mirrorOf>
+            <url>https://maven.inria.fr/artifactory/spoon-public-snapshot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-prime-repo</id>
+            <mirrorOf>prime-repo</mirrorOf>
+            <url>https://repository.primefaces.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2snapshots</id>
+            <mirrorOf>wso2snapshots</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-inhouse</id>
+            <mirrorOf>inhouse</mirrorOf>
+            <url>https://svninfra.yourzephyr.com/repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-vco-maven</id>
+            <mirrorOf>vco-maven</mirrorOf>
+            <url>https://192.168.241.44:7100/vco-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-caucho</id>
+            <mirrorOf>caucho</mirrorOf>
+            <url>https://caucho.com/m2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-amateras</id>
+            <mirrorOf>amateras</mirrorOf>
+            <url>https://amateras.osdn.jp/mvn/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-twitter</id>
+            <mirrorOf>twitter</mirrorOf>
+            <url>https://maven.twttr.com/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven-central</id>
+            <mirrorOf>maven-central</mirrorOf>
+            <url>https://repo1.maven.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-added-by-archetype</id>
+            <mirrorOf>added-by-archetype</mirrorOf>
+            <url>https://192.168.241.44:7100/vco-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jaspersoft-third-party</id>
+            <mirrorOf>jaspersoft-third-party</mirrorOf>
+            <url>https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-laughing-panda</id>
+            <mirrorOf>laughing-panda</mirrorOf>
+            <url>https://www.laughingpanda.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-allanbank</id>
+            <mirrorOf>allanbank</mirrorOf>
+            <url>https://www.allanbank.com/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-HortonWorks HDP</id>
+            <mirrorOf>HortonWorks HDP</mirrorOf>
+            <url>https://repo.hortonworks.com/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-m.g.o-public</id>
+            <mirrorOf>m.g.o-public</mirrorOf>
+            <url>https://maven.glassfish.org/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jmockit-svn</id>
+            <mirrorOf>jmockit-svn</mirrorOf>
+            <url>https://jmockit.googlecode.com/svn/maven-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-imagej.public</id>
+            <mirrorOf>imagej.public</mirrorOf>
+            <url>https://maven.imagej.net/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jsweet-snapshots</id>
+            <mirrorOf>jsweet-snapshots</mirrorOf>
+            <url>https://repository.jsweet.org/artifactory/libs-snapshot-local/</url>
+            Exception in thread "OkHttp Dispatcher" java.lang.StringIndexOutOfBoundsException: begin 7, end 4, length 4
+            at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
+            at java.base/java.lang.String.substring(String.java:2707)
+            at java.base/java.lang.String.substring(String.java:2680)
+            at io.moderne.jenkins.failjobs.MineJobsData$1.onResponse(MineJobsData.java:122)
+            at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+            at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+            at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+            at java.base/java.lang.Thread.run(Thread.java:833)
+        </mirror>
+
+        <mirror>
+            <id>secure-maven.jenkins-ci.org</id>
+            <mirrorOf>maven.jenkins-ci.org</mirrorOf>
+            <url>https://maven.jenkins-ci.org/content/groups/artifacts/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven2-repository.dev.java.net</id>
+            <mirrorOf>maven2-repository.dev.java.net</mirrorOf>
+            <url>https://download.java.net/maven/2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-teamNexus</id>
+            <mirrorOf>teamNexus</mirrorOf>
+            <url>https://artifacts.eastus.cloudapp.azure.com:8081/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-maven-repository</id>
+            <mirrorOf>maven-repository</mirrorOf>
+            <url>https://repo2.maven.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-developer-staging-repository</id>
+            <mirrorOf>jboss-developer-staging-repository</mirrorOf>
+            <url>https://jboss-developer.github.io/temp-maven-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jcenter</id>
+            <mirrorOf>jcenter</mirrorOf>
+            <url>https://jcenter.bintray.com/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-isource</id>
+            <mirrorOf>isource</mirrorOf>
+            <url>https://3cnd01251.china.nsn-net.net:8090/archiva/repository/internal/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-snapshot</id>
+            <mirrorOf>jboss-snapshot</mirrorOf>
+            <url>https://snapshots.jboss.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ow2-legacy-maven-repo</id>
+            <mirrorOf>ow2-legacy-maven-repo</mirrorOf>
+            <url>https://repository.ow2.org/nexus/content/repositories/ow2-legacy/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-oscar_repo</id>
+            <mirrorOf>oscar_repo</mirrorOf>
+            <url>https://oscarmcmaster.sourceforge.net/m2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-com.fusesource.m2</id>
+            <mirrorOf>com.fusesource.m2</mirrorOf>
+            <url>https://repo.fusesource.com/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-geotools</id>
+            <mirrorOf>geotools</mirrorOf>
+            <url>https://download.osgeo.org/webdav/geotools/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-cogcomp</id>
+            <mirrorOf>cogcomp</mirrorOf>
+            <url>https://cogcomp.org/m2repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-praqma-repo</id>
+            <mirrorOf>praqma-repo</mirrorOf>
+            <url>https://code.praqma.net/repo/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ukp-oss</id>
+            <mirrorOf>ukp-oss</mirrorOf>
+            <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-java.net.2</id>
+            <mirrorOf>java.net.2</mirrorOf>
+            <url>https://download.java.net/maven/2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-com.springsource.repository.bundles.release</id>
+            <mirrorOf>com.springsource.repository.bundles.release</mirrorOf>
+            <url>https://repository.springsource.com/maven/bundles/release/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-dma AIS</id>
+            <mirrorOf>dma AIS</mirrorOf>
+            <url>https://repository-dma.forge.cloudbees.com/release/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-conveyal</id>
+            <mirrorOf>conveyal</mirrorOf>
+            <url>https://maven.conveyal.com/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-vault-repo</id>
+            <mirrorOf>vault-repo</mirrorOf>
+            <url>https://nexus.hc.to/content/repositories/pub_releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-daisy</id>
+            <mirrorOf>daisy</mirrorOf>
+            <url>https://daisycms.org/maven/maven2/deploy/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-com.springsource.repository.bundles.external</id>
+            <mirrorOf>com.springsource.repository.bundles.external</mirrorOf>
+            <url>https://repository.springsource.com/maven/bundles/external/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jvnet-nexus-snapshots</id>
+            <mirrorOf>jvnet-nexus-snapshots</mirrorOf>
+            <url>https://maven.java.net/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-org.webmacro</id>
+            <mirrorOf>org.webmacro</mirrorOf>
+            <url>https://webmacro.sourceforge.net/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2releases</id>
+            <mirrorOf>wso2releases</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-n52-snapshots</id>
+            <mirrorOf>n52-snapshots</mirrorOf>
+            <url>https://52north.org/maven/repo/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-OpenGEO</id>
+            <mirrorOf>OpenGEO</mirrorOf>
+            <url>https://repo.opengeo.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-lsfusion</id>
+            <mirrorOf>lsfusion</mirrorOf>
+            <url>https://repo.lsfusion.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jvnet-nexus-staging</id>
+            <mirrorOf>jvnet-nexus-staging</mirrorOf>
+            <url>https://maven.java.net/content/repositories/staging/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-sonatype-postgis-releases</id>
+            <mirrorOf>sonatype-postgis-releases</mirrorOf>
+            <url>https://oss.sonatype.org/content/repositories/postgis-releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-lutece</id>
+            <mirrorOf>lutece</mirrorOf>
+            <url>https://dev.lutece.paris.fr/maven_repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-unidal.releases</id>
+            <mirrorOf>unidal.releases</mirrorOf>
+            <url>https://unidal.org/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-DataNucleus</id>
+            <mirrorOf>DataNucleus</mirrorOf>
+            <url>https://www.datanucleus.org/downloads/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-shapshots.java.net</id>
+            <mirrorOf>shapshots.java.net</mirrorOf>
+            <url>https://maven.java.net/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-apache.incubating</id>
+            <mirrorOf>apache.incubating</mirrorOf>
+            <url>https://people.apache.org/repo/m2-incubating-repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Codehaus SVN Repository</id>
+            <mirrorOf>Codehaus SVN Repository</mirrorOf>
+            <url>https://svn.codehaus.org/fest/m2/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2-maven2-snapshot-repository</id>
+            <mirrorOf>wso2-maven2-snapshot-repository</mirrorOf>
+            <url>https://dist.wso2.org/snapshots/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-milestone</id>
+            <mirrorOf>spring-milestone</mirrorOf>
+            <url>https://s3.amazonaws.com/maven.springframework.org/milestone/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-apache.snapshots</id>
+            <mirrorOf>apache.snapshots</mirrorOf>
+            <url>https://repository.apache.org/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-melati</id>
+            <mirrorOf>melati</mirrorOf>
+            <url>https://melati.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-java.net2</id>
+            <mirrorOf>java.net2</mirrorOf>
+            <url>https://download.java.net/maven/2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-PJC</id>
+            <mirrorOf>PJC</mirrorOf>
+            <url>https://www.sparetimelabs.com/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Central</id>
+            <mirrorOf>Central</mirrorOf>
+            <url>https://central.maven.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-dmulloy2-repo</id>
+            <mirrorOf>dmulloy2-repo</mirrorOf>
+            <url>https://repo.dmulloy2.net/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-EclipseLink Repo</id>
+            <mirrorOf>EclipseLink Repo</mirrorOf>
+            <url>https://download.eclipse.org/rt/eclipselink/maven.repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-melati_plugin</id>
+            <mirrorOf>melati_plugin</mirrorOf>
+            <url>https://www.melati.org/maven2/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-com.fusesource.m2.snapshot</id>
+            <mirrorOf>com.fusesource.m2.snapshot</mirrorOf>
+            <url>https://repo.fusesource.com/maven2-snapshot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-pentaho</id>
+            <mirrorOf>pentaho</mirrorOf>
+            <url>https://repo.pentaho.org/artifactory/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-repo.jenkins-ci.org</id>
+            <mirrorOf>repo.jenkins-ci.org</mirrorOf>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-eclipselink.repository</id>
+            <mirrorOf>eclipselink.repository</mirrorOf>
+            <url>https://download.eclipse.org/rt/eclipselink/maven.repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-diff_match_patch</id>
+            <mirrorOf>diff_match_patch</mirrorOf>
+            <url>https://google-diff-match-patch.googlecode.com/svn/trunk/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jr-ce-releases</id>
+            <mirrorOf>jr-ce-releases</mirrorOf>
+            <url>https://jaspersoft.jfrog.io/jaspersoft/jr-ce-releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-eclipse</id>
+            <mirrorOf>eclipse</mirrorOf>
+            <url>https://download.eclipse.org/rt/eclipselink/maven.repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-new_oscar_repo</id>
+            <mirrorOf>new_oscar_repo</mirrorOf>
+            <url>https://mvn.oscar-emr.com/repository/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-oss.sonatype.org</id>
+            <mirrorOf>oss.sonatype.org</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-servicemix.m2</id>
+            <mirrorOf>servicemix.m2</mirrorOf>
+            <url>https://svn.apache.org/repos/asf/servicemix/m2-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-wso2-nexus</id>
+            <mirrorOf>wso2-nexus</mirrorOf>
+            <url>https://maven.wso2.org/nexus/content/groups/wso2-public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-miredot</id>
+            <mirrorOf>miredot</mirrorOf>
+            <url>https://nexus.qmino.com/content/repositories/miredot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-nexus.snapshots.repository</id>
+            <mirrorOf>nexus.snapshots.repository</mirrorOf>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/snapshots/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-smx.svn</id>
+            <mirrorOf>smx.svn</mirrorOf>
+            <url>https://svn.apache.org/repos/asf/servicemix/m2-repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-snapshots</id>
+            <mirrorOf>spring-snapshots</mirrorOf>
+            <url>https://repo.spring.io/snapshot/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-public</id>
+            <mirrorOf>public</mirrorOf>
+            <url>https://maven.nuxeo.org/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-HortonWorks HDP LOCAL</id>
+            <mirrorOf>HortonWorks HDP LOCAL</mirrorOf>
+            <url>https://repo.hortonworks.com/service/local/repositories/releases/content/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-oracleReleases</id>
+            <mirrorOf>oracleReleases</mirrorOf>
+            <url>https://download.oracle.com/maven/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-openimaj-snapshots-maven</id>
+            <mirrorOf>openimaj-snapshots-maven</mirrorOf>
+            <url>https://snapshots.openimaj.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jsweet-central</id>
+            <mirrorOf>jsweet-central</mirrorOf>
+            <url>https://repository.jsweet.org/artifactory/libs-release-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-jboss-public-repository</id>
+            <mirrorOf>jboss-public-repository</mirrorOf>
+            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-aliyun</id>
+            <mirrorOf>aliyun</mirrorOf>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-ow2-maven-repo</id>
+            <mirrorOf>ow2-maven-repo</mirrorOf>
+            <url>https://repository.ow2.org/nexus/content/repositories/releases/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-codelibs.org</id>
+            <mirrorOf>codelibs.org</mirrorOf>
+            <url>https://maven.codelibs.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-codehaus.org</id>
+            <mirrorOf>codehaus.org</mirrorOf>
+            <url>https://snapshots.repository.codehaus.org/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-Conjars</id>
+            <mirrorOf>Conjars</mirrorOf>
+            <url>https://conjars.org/repo/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-aliyun-repos</id>
+            <mirrorOf>aliyun-repos</mirrorOf>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-sonatype</id>
+            <mirrorOf>sonatype</mirrorOf>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-spring-snapshots-local</id>
+            <mirrorOf>spring-snapshots-local</mirrorOf>
+            <url>https://repo.spring.io/libs-snapshot-local/</url>
+        </mirror>
+
+        <mirror>
+            <id>secure-acoveo-snapshotrepo</id>
+            <mirrorOf>acoveo-snapshotrepo</mirrorOf>
+            <url>https://acoveo.com/maven2/snapshots/</url>
+        </mirror>
+
+
+        Process finished with exit code 0
+
     </mirrors>
 
     <profiles>
         <profile>
             <id>moderne-cache-setup</id>
-            <activation><activeByDefault>true</activeByDefault></activation>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <repositories>
                 <repository>
                     <id>moderne-remote-cache</id>
                     <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
                 </repository>
             </repositories>
         </profile>
