@@ -867,6 +867,7 @@ JetBrains/tfsIntegration,master,8,,gradlew,,
 JetBrains/xodus,master,8,,gradlew,,
 JetBrains/youtrack-confluence-plugin,master,8,,maven,,
 Jhvictor4/gradle-plugins,main,8,,gradlew,,
+jimbethancourt/RefactorFirst,main,8,,maven,,
 JodaOrg/joda-time,master,8,,maven,,
 JoeHughes-IBM/Kafka,trunk,8,,gradle,,
 JohnPersano/SuperToasts,master,8,,gradlew,true,Build uses Gradle 2.x
