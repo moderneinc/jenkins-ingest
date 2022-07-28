@@ -86,7 +86,7 @@ Andavin/reflections-gradle-plugin,master,8,,gradlew,,
 AnderWeb/discreteSeekBar,master,8,,gradlew,true,Build uses Gradle 2.x
 Andrei-Straut/monkins,master,8,,maven,,
 AndreyBaluevsky/lsFusion-platform,master,8,,maven,,
-AndroidSupport/AutoPack,master,8,,gradlew,,
+AndroidSupport/AutoPack,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 AndroidUFO/Aspectj-Plugin,main,8,,gradlew,,
 AnkBurov/database-update-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 AntennaPod/AntennaPod,develop,8,,gradlew,,
@@ -96,7 +96,7 @@ Apicurio/apicurio-registry,master,8,,maven,,
 ApolloFoundation/Apollo,master,11,,maven,,
 AppSci/Eventsdroid,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 Appverse/appverse-builder-api,master,8,,maven,,
-Apress/pro-spring-5,master,8,,gradle,,
+Apress/pro-spring-5,master,8,,gradle,true,requires gradle 5.x but doesn't use wrapper
 Arakaii1083/AWS-SDK,master,8,,maven,,
 Arc-blroth/gradle-cargo-wrapper,main,8,,gradlew,,
 ArcadeData/arcadedb,main,11,,mvnw,,
@@ -193,7 +193,7 @@ Blackcbears/DDDBook,master,8,,maven,,
 Blankj/AndroidUtilCode,master,8,,gradlew,,
 BlueBoxWare/LibGDXGradlePlugin,master,8,,gradlew,,
 BlueBoxWare/TocMe,master,8,,gradle,,
-Bobkim/publish-plugin,master,8,,gradlew,,
+Bobkim/publish-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 BoltsFramework/Bolts-Android,master,8,,gradlew,,
 Boozilla/houston-gradle,master,8,,gradle,,
 BorderTech/java-config,master,8,,maven,,
@@ -268,8 +268,8 @@ Clashsoft/Angular-Gradle,master,8,,gradlew,,
 Clashsoft/GenTreeSrc-Gradle,master,8,,gradlew,,
 Clashsoft/Simple-Publish,master,8,,gradlew,,
 ClearTK/cleartk,master,8,,maven,,
-CleverPumpkin/App-Badge,master,8,,gradlew,,
-CleverPumpkin/Proguard-Dictionaries-Generator,master,8,,gradlew,,
+CleverPumpkin/App-Badge,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+CleverPumpkin/Proguard-Dictionaries-Generator,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ClickHouse/clickhouse-jdbc,master,8,,maven,,
 CloudNetService/updateserver,master,11,,maven,,
 CloudOpting/cloudopting-manager,master,8,,maven,,
@@ -302,8 +302,8 @@ CoreMedia/jangaroo-tools,master-4.1,8,,maven,,
 CorfuDB/CorfuDB,master,8,,maven,,
 CraftCoderr/GradleDeploy,master,8,,gradlew,,
 CrawlScript/WebCollector,master,8,,maven,,
-Crimix/ChangedProjectsTaskPlugin,main,8,,gradlew,,
-Crimix/ReplacePlaceholdersPlugin,main,8,,gradlew,,
+Crimix/ChangedProjectsTaskPlugin,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+Crimix/ReplacePlaceholdersPlugin,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 CruxFramework/crux,master,8,,maven,,
 Cue/greplin-bloom-filter,master,8,,maven,,
 CyberAgent/android-gpuimage,master,8,,gradlew,,
@@ -339,7 +339,7 @@ DataBiosphere/consent,develop,8,,maven,,
 DataBiosphere/terra-workspace-manager,main,8,,gradlew,,
 DataDog/datadog-api-client-java,master,8,,maven,,
 DataDog/datadog-kafka-connect-logs,master,8,,maven,,
-DataDog/datadog-lambda-java,main,8,,gradlew,,
+DataDog/datadog-lambda-java,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 DataDog/dd-continuous-profiler-dash2021,main,8,,gradlew,,
 DataDog/dd-trace-java-kinesis-example,master,8,,maven,,
 DataDog/java-dogstatsd-client,master,8,,maven,,
@@ -352,7 +352,7 @@ DavidTanner/aws-beanstalk-publisher,master,8,,maven,,
 DaxiaK/MyDiary,master,8,,gradlew,true,Build uses Gradle 3.x
 DbMaintain/dbmaintain,develop,8,,maven,,
 DeepBlueRobotics/DeepBlueSim,master,8,,gradlew,,
-DeflatedPickle/gradle-concurnas,master,8,,gradlew,,
+DeflatedPickle/gradle-concurnas,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 DengSinkiang/sk-admin,master,8,,maven,,
 Desperado24/apkreduce,master,8,,gradlew,true,Build uses Gradle 3.x
 DeveloperCielo/LIO-SDK-API-Integracao-Remota-v1-Java,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -434,7 +434,7 @@ FIDATA/gradle-prerequisites-plugin,master,8,,gradlew,,
 FINRAOS/DataGenerator,master,8,,maven,,
 FISCO-BCOS/bcos-sdk-jni,master,8,,gradlew,,
 FMSLLC/Keycloak-8.0.1,master,8,,maven,,
-FRCTeam1277/gradle-frc-plugin,master,8,,gradlew,,
+FRCTeam1277/gradle-frc-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 Faire/gradle-kotlin-buildozer,main,8,,gradlew,,
 FairyProject/fairy,v5,8,,gradlew,,
 FalseHonesty/ElementaTools,master,8,,gradlew,,
@@ -559,12 +559,12 @@ GoogleCloudPlatform/crashlytics-logs-to-datadog,main,8,,gradlew,,
 GoogleCloudPlatform/data-timeseries-java,master,8,,maven,,
 GoogleCloudPlatform/datacatalog-tag-history,master,8,,maven,,
 GoogleCloudPlatform/dataflow-opinion-analysis,master,8,,maven,,
-GoogleCloudPlatform/dataflow-stt-auto-caption,master,8,,gradlew,,
-GoogleCloudPlatform/dataflow-video-analytics,master,8,,gradlew,,
-GoogleCloudPlatform/dataflow-vision-analytics,master,8,,gradlew,,
+GoogleCloudPlatform/dataflow-stt-auto-caption,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+GoogleCloudPlatform/dataflow-video-analytics,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+GoogleCloudPlatform/dataflow-vision-analytics,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 GoogleCloudPlatform/datanucleus-appengine,master,8,,maven,,
-GoogleCloudPlatform/df-ml-anomaly-detection,master,8,,gradlew,,
-GoogleCloudPlatform/dlp-dataflow-deidentification,master,8,,gradlew,,
+GoogleCloudPlatform/df-ml-anomaly-detection,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+GoogleCloudPlatform/dlp-dataflow-deidentification,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 GoogleCloudPlatform/endpoints-codelab-android,master,8,,gradlew,true,Build uses Gradle 2.x
 GoogleCloudPlatform/endpoints-framework-gradle-plugin,master,8,,gradlew,,
 GoogleCloudPlatform/endpoints-framework-maven-plugin,master,8,,maven,,
@@ -760,7 +760,7 @@ JavierSegoviaCordoba/gradle-plugins,main,8,,gradlew,,
 JavierSegoviaCordoba/semver-gradle-plugin,main,8,,gradlew,,
 JeffLi1993/springboot-learning-example,master,8,,maven,,
 JesusFreke/smali,master,8,,gradlew,,
-JetBrains-Research/GraphVarMiner,main,8,,gradlew,,
+JetBrains-Research/GraphVarMiner,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 JetBrains-Research/IRen,main,8,,gradlew,,
 JetBrains-Research/IntelliJDeodorant,master,8,,gradlew,,
 JetBrains-Research/MoveMethodGenerator,master,8,,gradlew,,
@@ -968,7 +968,7 @@ ManbangGroup/Phantom,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 
 MangoAutomation/ma-core-public,main,8,,maven,,
 MangoIceCup/gradle-aliyunmirror-plugin,master,8,,gradlew,,
 Manopraba/Pre_Reg_Common_kernel,master,8,,maven,,
-ManuelPeinado/FadingActionBar,master,8,,gradlew,,
+ManuelPeinado/FadingActionBar,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ManyDesigns/Portofino,master,8,,maven,,
 MarcusWolschon/osmeditor4android,master,8,,gradlew,,
 MarginallyClever/Makelangelo-software,master,11,,maven,,
@@ -1091,7 +1091,7 @@ NixLabAdmin/Opencell,master,8,,maven,,
 NoRulesJustFeels/Fling,master,8,,maven,,
 NocWriter/runsql-gradle-plugin,master,8,,gradlew,,
 Nodeclipse/nodeclipse,master,8,,maven,,
-NomenSvyat/SwitchBoxPlugin,master,8,,gradlew,,
+NomenSvyat/SwitchBoxPlugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 Norconex/collector-http,master,8,,maven,,
 Novartis/YADA,master,8,,maven,,
 NullStress/gradle-dependency-analysis-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -1182,7 +1182,7 @@ PrisonTeam/Prison,master,8,,gradlew,,
 Protelis/Protelis-KDoc-generator,master,8,,gradlew,,
 ProtonMail/protoncore_android,main,11,,gradlew,,
 Prototik/HoloEverywhere,master,8,,gradlew,,
-Prototik/gradle-onesky-plugin,master,8,,gradlew,,
+Prototik/gradle-onesky-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 PrzemyslawSwiderski/helm-gradle-plugin,master,8,,gradlew,,
 PrzemyslawSwiderski/kubernetes-gradle-plugin,master,8,,gradlew,,
 PrzemyslawSwiderski/python-gradle-plugin,master,8,,gradlew,,
@@ -1270,7 +1270,7 @@ Sebastian1984/tika,master,8,,maven,,
 SeleniumHQ/htmlunit-driver,master,8,,maven,,
 SenhLinsh/Utils-Everywhere,master,8,,gradlew,,
 SerliDojo/gradle-safegit,master,8,,gradlew,,
-SetoKaiba/aether-gradle-plugin,master,8,,gradlew,,
+SetoKaiba/aether-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 SexyTeam/EsBuildGradle,main,8,,gradlew,,
 SgtSilvio/android-retrofix,master,8,,gradlew,,
 SgtSilvio/gradle-defaults,master,8,,gradlew,,
@@ -1406,10 +1406,10 @@ TheBoegl/shadow-log4j-transformer,master,8,,gradlew,,
 TheFinestArtist/FinestWebView-Android,master,8,,gradlew,,
 TheHortonMachine/hortonmachine,master,8,,maven,,
 TheMrMilchmann/gradle-curseforge-publish,master,8,,gradlew,,
-TheTemportalist/AutomataGradlePlugin,master,8,,gradlew,,
+TheTemportalist/AutomataGradlePlugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 TheurgistFin/F-IBase,master,8,,maven,,
 Tinder/GitQuery,main,8,,gradlew,,
-Todd-Davies/ProgressWheel,master,8,,gradlew,,
+Todd-Davies/ProgressWheel,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 TomDmitriev/gradle-bundle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 TommyLemon/Android-ZBLibrary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 TonicArtos/SuperSLiM,master,8,,gradlew,true,Build uses Gradle 3.x
@@ -1448,7 +1448,7 @@ Vankka/DependencyDownload,main,8,,gradlew,,
 Vartemov/Jenkinstest,master,8,,maven,,
 Vatuu/discord-rpc,master,8,,maven,,
 Vertispan/j2clmavenplugin,main,8,,maven,,
-Vinccool96/junit4AllTestsGenerator,master,8,,gradlew,,
+Vinccool96/junit4AllTestsGenerator,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 Vipter/demo,master,8,,maven,,
 Virelion/buildata,master,8,,gradlew,,
 Vraiment/gradle-jni-plugin,master,8,,gradle,,
@@ -1491,7 +1491,7 @@ Xpdustry/Toxopid,master,8,,gradlew,,
 XunMengWinter/CircularAnim,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 YANG-DB/yang-db,dev-opensearch,8,,maven,,
 YahooArchive/samoa,master,8,,maven,,
-YahyaAlfayad/gradle-build-profiles,master,8,,gradlew,,
+YahyaAlfayad/gradle-build-profiles,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 Yalantis/Context-Menu.Android,master,8,,gradlew,,
 Yalantis/Euclid,master,8,,gradle,,
 Yalantis/GuillotineMenu-Android,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -1621,7 +1621,7 @@ advantageous/docker-test-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 advantageous/marathon-deploy-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 advantageous/qbit,master,8,,gradlew,true,Build uses Gradle 2.x
 aefox/gradle-templates,master,8,,gradle,,
-aegis123/minio-buildcache,master,8,,gradlew,,
+aegis123/minio-buildcache,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 aeon-io/gradle-plugins,master,8,,gradlew,true,Build uses Gradle 2.x
 aesanch2/salesforce-migration-assistant,master,8,,maven,,
 aeshell/aesh,master,8,,maven,,
@@ -1826,7 +1826,7 @@ amzn/amazon-hub-counter-sdk-java,master,8,,maven,,
 amzn/amazon-instant-access-sdk-java,master,8,,maven,,
 amzn/amazon-pay-api-sdk-java,master,8,,maven,,
 amzn/amazon-pay-sdk-java,master,8,,maven,,
-amzn/drs-sample-android-app,master,8,,gradlew,,
+amzn/drs-sample-android-app,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 amzn/exoplayer-amazon-port,amazon/r2.17.1,11,,gradlew,,
 amzn/firetv-sample-touch-app,main,8,,gradlew,,
 amzn/ion-docs,gh-pages,8,,maven,,
@@ -2886,11 +2886,11 @@ apereo/cas,master,11,,gradlew,,
 apiman/apiman-cli,master,8,,gradlew,,
 apl-devs/AppIntro,main,11,,gradlew,,
 apollographql/apollo-android,main,8,,gradlew,,
-appdynamics/ACE_DynamicServiceTest,master,8,,gradlew,,
-appdynamics/AD-Capital,master,8,,gradlew,,
-appdynamics/AD-Capital-Load,master,8,,gradlew,,
+appdynamics/ACE_DynamicServiceTest,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+appdynamics/AD-Capital,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+appdynamics/AD-Capital-Load,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 appdynamics/CRMOnline-Demo,master,8,,maven,,
-appdynamics/CloudIntegrationSampleMultitierApp,master,8,,gradlew,,
+appdynamics/CloudIntegrationSampleMultitierApp,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 appdynamics/Command-Watcher-Extension,master,8,,maven,,
 appdynamics/Field-lab-correlation,master,8,,maven,,
 appdynamics/MAExtensionFramework,master,8,,maven,,
@@ -2901,7 +2901,7 @@ appdynamics/TibcoBWProcessMonitor,master,8,,maven,,
 appdynamics/UniversalAgentGUIManager,master,8,,maven,,
 appdynamics/UserAudit,master,8,,maven,,
 appdynamics/activemq-monitoring-extension,master,8,,maven,,
-appdynamics/android-places-gradle,master,8,,gradlew,,
+appdynamics/android-places-gradle,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 appdynamics/android-places-maven,master,8,,maven,,
 appdynamics/apache-monitoring-extension,master,8,,maven,,
 appdynamics/apache-spark-monitoring-extension,master,8,,maven,,
@@ -2929,7 +2929,7 @@ appdynamics/cloud-foundry-extension,master,8,,maven,,
 appdynamics/cloudfoundry-firehose-monitoring-extension,master,8,,maven,,
 appdynamics/couchbase-monitoring-extension,master,8,,maven,,
 appdynamics/datapower-monitoring-extension,master,8,,maven,,
-appdynamics/docker-dbwrapper,master,8,,gradlew,,
+appdynamics/docker-dbwrapper,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 appdynamics/docker-jenkins-cdDemo,master,8,,maven,,
 appdynamics/docker-monitoring-extension,master,8,,maven,,
 appdynamics/dropwizard-sample-app,master,8,,maven,,
@@ -3326,7 +3326,7 @@ bymm/hive,HIVE-24204-llap-job-token-each-fragment,8,,maven,,
 byte-shifter-ltd/soapui-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 bytedeco/javacpp,master,8,,maven,,
 bytedeco/javacv,master,8,,maven,,
-bytehala/gradle-svnbuildversion,master,8,,gradlew,,
+bytehala/gradle-svnbuildversion,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 bytekast/local-apigateway-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 byzer-org/byzer-lang,master,8,,maven,,
 c64lib/gradle-retro-assembler-plugin,master,8,,gradlew,,
@@ -3449,7 +3449,7 @@ cloudfoundry/uaa,develop,8,,gradlew,,
 cloudinary/cloudinary_java,master,8,,gradlew,,
 cloudmation-llc/gradle-infrastructure-plugins,master,8,,gradlew,,
 cloudups/iTransfer,master,8,,gradlew,true,Build uses Gradle 2.x
-cmeng-git/atalk-android,master,8,,gradlew,,
+cmeng-git/atalk-android,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 cmusphinx/sphinx4,master,8,,gradle,,
 cnescatlab/sonar-cnes-report,master,8,,maven,,
 coalman321/versiondataplugin,master,8,,gradlew,,
@@ -3625,7 +3625,7 @@ davidB/gradle-getdown-plugin,master,8,,gradle,,
 davidB/scala-maven-plugin,master,8,,maven,,
 davidB/yuicompressor-maven-plugin,master,8,,maven,,
 davideas/FlexibleAdapter,master,8,,gradlew,,
-davideas/GrabVer,master,8,,gradlew,,
+davideas/GrabVer,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 davidfauthoux/ninio,develop,8,,maven,,
 davidmc24/gradle-avro-plugin,master,8,,gradlew,,
 davidmoten/rxjava-extras,master,8,,maven,,
@@ -3664,7 +3664,7 @@ dessalines/torrenttunes-client,master,8,,maven,,
 devcrocod/korro,master,8,,gradlew,,
 develhack/gradle-eclipse-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 developersu/ns-usbloader,master,8,,maven,,
-devxchangeio/gatling-gradle-plugin,master,8,,gradlew,,
+devxchangeio/gatling-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 dgageot/barbarywatchservice,master,8,,maven,,
 dgageot/simplelenium,master,8,,maven,,
 dgarijo/Widoco,master,11,,maven,,
@@ -4025,7 +4025,7 @@ elastic/elasticsearch-transport-memcached,master,8,,maven,,
 elastic/elasticsearch-transport-thrift,master,8,,maven,,
 elastic/found-shield-example,master,8,,maven,,
 elastic/gradle-code-manifest-plugin,master,8,,gradlew,,
-elastic/ingest-opa,master,8,,gradlew,,
+elastic/ingest-opa,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 elastic/java-langserver,master,8,,maven,,
 elastic/java-lumber,master,8,,gradlew,true,Build uses Gradle 2.x
 elastic/jvm-languages-sniffer,master,8,,gradlew,,
@@ -4104,7 +4104,7 @@ europace/artifact-version-gradle-plugin,master,8,,gradlew,,
 europace/docker-publish-gradle-plugin,main,8,,gradlew,,
 eutro/hierarchical-lang,master,8,,gradlew,,
 evant/gradle-retrolambda,main,8,,gradlew,,
-evant/holdr,main,8,,gradlew,,
+evant/holdr,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 evant/pom,main,8,,gradlew,true,Build uses Gradle 3.x
 evant/silent-support,main,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 eventis/jbossws-stack-native,master,8,,maven,,
@@ -4239,7 +4239,7 @@ fpompermaier/onvif,master,8,,maven,,
 fr1zle/azureblob-build-cache,master,8,,gradlew,,
 fraenkelc/apiscanner,master,8,,gradlew,,
 francis36012/ktsyntastic,master,8,,gradlew,true,Build uses Gradle 3.x
-frankfarrell/blast-radius,master,8,,gradlew,,
+frankfarrell/blast-radius,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 frapontillo/gradle-switch-dependencies-plugin,develop,8,,gradlew,true,Build uses Gradle 2.x
 fred84/swagger2markup-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 freedomotic/freedomotic,master,8,,maven,,
@@ -4260,7 +4260,7 @@ funktionio/funktion-connectors,master,8,,maven,,
 funtl/MyShopPlus,master,8,,maven,,
 futuredapp/arkitekt,5.x,11,,gradlew,,
 futuresimple/android-floating-action-button,master,8,,gradlew,true,Build uses Gradle 2.x
-fuzz-productions/skeleton,master,8,,gradlew,,
+fuzz-productions/skeleton,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 fwilhe/asciidoctor-pdf-theme-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 fyhertz/libstreaming,master,8,,maven,,
 g3force/gradle-oc,master,8,,gradlew,,
@@ -4289,7 +4289,7 @@ gdutxiaoxu/CoordinatorLayoutExample,master,8,,gradlew,true,Build uses Gradle 4.x
 ge0ffrey/optaconf,master,8,,maven,,
 geeeeeeeeek/WeChatLuckyMoney,stable,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 geeker-lait/x-framework,master,8,,maven,,
-gemdat/gemdat-gradle-plugin,master,8,,gradlew,,
+gemdat/gemdat-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 gengjie/jnuget,master,8,,maven,,
 geogebra/geogebra,master,8,,gradlew,,
 geosolutions-it/imageio-ext,master,8,,maven,,
@@ -4319,7 +4319,7 @@ gladed/gradle-android-git-version,master,8,,gradlew,,
 glazedlists/glazedlists,master,8,,gradlew,,
 gliptak/JAllele,master,8,,gradlew,,
 globalbioticinteractions/globalbioticinteractions,main,8,,maven,,
-glomadrian/Grav,master,8,,gradlew,,
+glomadrian/Grav,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 gluonhq/client-gradle-plugin,master,11,,gradlew,,
 gluonhq/gluonfx-gradle-plugin,master,11,,gradlew,,
 gluonhq/scenebuilder,master,8,,maven,,
@@ -4370,7 +4370,7 @@ google/caliper,master,8,,maven,,
 google/cameraview,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/capillary,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 google/cbortree,master,8,,maven,,
-google/cdep,master,8,,gradlew,,
+google/cdep,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 google/closure-stylesheets,master,8,,maven,,
 google/closure-templates,master,8,,maven,,
 google/cloud-cup-android,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -4728,7 +4728,7 @@ hongyangAndroid/okhttp-utils,master,8,,gradlew,true,Build uses Gradle 2.x
 hongyangAndroid/okhttputils,master,8,,gradlew,true,Build uses Gradle 2.x
 honourednihilist/gradle-kafka-deserializers,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 honourednihilist/gradle-postgresql-embedded,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-hori-ryota/gradle-node-packagejson-generator,master,8,,gradlew,,
+hori-ryota/gradle-node-packagejson-generator,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 hortonworks/cloudbreak,master,8,,gradlew,,
 hortonworks/dstream,master,8,,gradlew,true,Build uses Gradle 2.x
 hotchemi/PermissionsDispatcher,master,8,,gradlew,,
@@ -4821,7 +4821,7 @@ ibm/Lagom-Liberty-Kubernetes,master,8,,maven,,
 ibm/TAT-Banking,main,8,,maven,,
 ibm/acmeair-quarkus,main,11,,maven,,
 ibm/airlock-sdk-common,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-ibm/airlock-sdk-java,master,8,,gradlew,,
+ibm/airlock-sdk-java,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ibm/airlock-sdk-rest,master,8,,gradle,,
 ibm/akamai-g2o-java,master,8,,maven,,
 ibm/android-app,master,8,,gradlew,,
@@ -4881,7 +4881,7 @@ ibm/java-sdk-core,main,8,,maven,,
 ibm/jdbc-driver,master,8,,maven,,
 ibm/kafka-connect-new-relic,master,8,,gradlew,,
 ibm/kafka-connect-servicenow,master,8,,gradlew,,
-ibm/kafka-connect-splunk-transformer,main,8,,gradlew,,
+ibm/kafka-connect-splunk-transformer,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ibm/kafka-eventing-spring-boot-starter,master,8,,maven,,
 ibm/kafka-retry,main,8,,gradlew,,
 ibm/keyprotect-java-client,master,8,,maven,,
@@ -6857,7 +6857,7 @@ jopt-simple/jopt-simple,master,8,,maven,,
 joschi/licenser,main,8,,gradlew,,
 josephglanville/gradle-gcs-build-cache,master,8,,gradlew,,
 joshua-jandyco/gradle-test-results,master,8,,gradlew,true,Build uses Gradle 2.x
-joshua2ua/lonelyTwitter,master,8,,gradlew,,
+joshua2ua/lonelyTwitter,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 joskar201/kotlin-neo4j,master,8,,gradlew,,
 journeyapps/zxing-android-embedded,master,11,,gradlew,,
 joyoyao/superCleanMaster,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
@@ -7048,7 +7048,7 @@ korlibs/easy-kotlin-mpp-gradle-plugin,master,8,,gradlew,,
 korlibs/kotlin-source-dependency-gradle-plugin,main,8,,gradlew,,
 kormachevt/qa-ci-reporter,master,8,,gradlew,,
 korpling/ANNIS,main,8,,maven,,
-koush/AndroidAsync,master,8,,gradlew,,
+koush/AndroidAsync,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 koush/ion,master,8,,gradle,,
 kpramesh2212/json2java-gradle-plugin,main,8,,gradlew,,
 kpramesh2212/openapi-merger-plugin,main,8,,gradlew,,
@@ -7118,7 +7118,7 @@ leier123/netty,master,8,,maven,,
 leinardi/android-checkstyle-plugin,master,8,,gradlew,,
 leinardi/android-findbugs-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 leiyi1152/shancai,master,8,,maven,,
-leleliu008/BintrayUploadGradlePlugin,master,8,,gradlew,,
+leleliu008/BintrayUploadGradlePlugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 lemire/RoaringBitmapReal,master,8,,maven,,
 lemire/RoaringVSConciseBenchmark,master,8,,maven,,
 lemire/externalsortinginjava,master,8,,maven,,
@@ -7144,7 +7144,7 @@ lhotari/build-size-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x pr
 lhotari/gradle-nar-plugin,master,8,,gradlew,,
 lhotari/jfr-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
 lhotari/swagger2markup-gradle-plugin,master,8,,gradlew,,
-li-liangshan/StarMVC,master,8,,gradlew,,
+li-liangshan/StarMVC,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 liangbangke/CloudStack,master,8,,maven,,
 liangdy/CloudStation,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 liaohuqiu/android-Ultra-Pull-To-Refresh,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -7234,7 +7234,7 @@ looly/hutool,v5-master,8,,maven,,
 loooon/fitnesse,master,8,,maven,,
 loopj/android-async-http,master,8,,gradlew,,
 lorisdanto/symbolicautomata,master,8,,maven,,
-louiswilliams/s3repo-gradle-plugin,master,8,,gradlew,,
+louiswilliams/s3repo-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 lovef/gradle-git-version-plugin,master,8,,gradlew,,
 lovelysystems/lovely-gradle-plugin,master,8,,gradlew,,
 lovetuzitong/MultiImageSelector,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -7250,7 +7250,7 @@ lucassklp/jinq,develop,8,,gradlew,,
 lucene-gosen/lucene-gosen,master,8,,gradlew,,
 luckyQing/patch,master,8,,maven,,
 luiqn2007/UselessGradlePlugin,main,8,,gradlew,,
-luispereira/LogThis,master,8,,gradlew,,
+luispereira/LogThis,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 luisrjaeger/slack-messaging,master,8,,gradlew,,
 lukas-krecan/ShedLock,master,8,,maven,,
 lukaszlenart/launch4j-maven-plugin,master,8,,maven,,
@@ -7318,10 +7318,10 @@ mariadb-corporation/mariadb-connector-j,master,8,,maven,,
 marie-christin/jaulp.core,master,8,,maven,,
 mark-vieira/gradle-maven-settings-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 markelliot/gradle-versions,develop,8,,gradlew,,
-markiantorno/xylographer,master,8,,gradlew,,
+markiantorno/xylographer,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 marklogic/java-client-api,master,8,,gradlew,,
 marklogic/marklogic-data-hub,master,8,,gradlew,,
-markuskruse/gradle-plugin-enum-adoc,master,8,,gradlew,,
+markuskruse/gradle-plugin-enum-adoc,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 martinbonnin/one-eight,main,8,,gradlew,,
 martinbonnin/strings2xls,master,8,,gradlew,true,Build uses Gradle 3.x
 martinschneider/justtestlah,master,8,,maven,,
@@ -7336,7 +7336,7 @@ material-components/material-components-android,master,11,,gradlew,,
 matsuyoido/gradle-ER-plugin,master,8,,gradlew,,
 matsuyoido/gradle-md-plugin,master,8,,gradlew,,
 matteobaccan/owner,master,8,,maven,,
-matthewfrank/gop-gmo-plugin,master,8,,gradlew,,
+matthewfrank/gop-gmo-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 matthewgallina/smockin,master,8,,maven,,
 matthewprenger/CurseGradle,master,8,,gradlew,,
 maurycyw/StaggeredGridView,develop,8,,maven,,
@@ -7376,7 +7376,7 @@ medly/norm,master,8,,gradlew,,
 medly/screen,main,11,,gradlew,,
 medranocalvo/gradle-kawa-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
 meertensinstituut/mtas,master,8,,maven,,
-meiskalt7/simple-gradle-versioning-plugin,master,8,,gradlew,,
+meiskalt7/simple-gradle-versioning-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 melix/antlr4-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 1.x
 melix/gradle-buildscan-recipes,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 melix/groovy-android-gradle-plugin,master,8,,gradlew,,
@@ -7416,7 +7416,7 @@ michel-kraemer/gradle-download-task,master,8,,gradlew,,
 michelin/suricate,dev,8,,maven,,
 michionlion/gradle-git-version,main,8,,gradle,,
 microapp-store/flash-waimai,master,8,,maven,,
-microbun/jooq-gradle-plugin,master,8,,gradlew,,
+microbun/jooq-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 micromata/projectforge,develop,8,,maven,,
 micrometer-metrics/micrometer,main,8,,gradlew,,
 micronaut-projects/micronaut-acme,master,8,,gradlew,,
@@ -7481,7 +7481,7 @@ micronaut-projects/micronaut-toml,master,8,,gradlew,,
 micronaut-projects/micronaut-tracing,master,8,,gradlew,,
 micronaut-projects/micronaut-validation,master,8,,gradlew,,
 micronaut-projects/micronaut-views,master,8,,gradlew,,
-microsoft/Adaptable,master,8,,gradlew,,
+microsoft/Adaptable,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 microsoft/AppCenter-Test-Appium-Java-Extensions,master,8,,gradle,,
 microsoft/AppCenter-Test-Espresso-Extensions,master,8,,gradle,,
 microsoft/ApplicationInsights-Java,main,8,,gradlew,,
@@ -7654,7 +7654,7 @@ moxi624/mogu_blog_v2,Nacos,8,,maven,,
 moxun1639/mklink,master,8,,gradle,,
 mozilla-mobile/gradle-apilint,master,8,,gradlew,,
 mozilla/megazord-gradle,master,8,,gradlew,,
-mozilla/offline-kws-stt-intent-parsing-android,master,8,,gradlew,,
+mozilla/offline-kws-stt-intent-parsing-android,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 mozilla/rust-android-gradle,master,8,,gradlew,,
 mparlee/build-info-gradle-plugin,master,8,,gradlew,,
 mpetazzoni/ttorrent,master,8,,maven,,
@@ -8066,7 +8066,7 @@ oracle/oci-compute-jenkins-plugin,master,8,,maven,,
 oracle/oci-hdfs-connector,master,8,,maven,,
 oracle/oci-java-sdk,master,8,,maven,,
 oracle/oci-toolkit-eclipse,master,8,,maven,,
-oracle/oci-toolkit-intellij,main,8,,gradlew,,
+oracle/oci-toolkit-intellij,main,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 oracle/okafka,master,8,,gradlew,,
 oracle/olcut,develop,8,,maven,,
 oracle/opengrok,master,11,,maven,,
@@ -8208,7 +8208,7 @@ pdprober/uploadPGYER,master,8,,gradlew,,
 pdt-eg/Core-Plugin,master,8,,maven,,
 pearxteam/multigradle,master,8,,gradlew,,
 pedant/sweet-alert-dialog,master,8,,gradlew,true,Build uses Gradle 2.x
-pedjak/gradle-dockerized-test-plugin,master,8,,gradlew,,
+pedjak/gradle-dockerized-test-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 pedromanjarresserrano/FAWSAC,master,8,,maven,,
 pedrovgs/Algorithms,master,8,,maven,,
 pedrovgs/AndroidWiFiADB,master,8,,gradlew,true,Build uses Gradle 2.x
@@ -8269,7 +8269,7 @@ pmairif/gradle-semver,master,8,,gradlew,,
 pndgz/maven-refresh,master,8,,gradlew,true,Build uses Gradle 3.x
 pnikosis/materialish-progress,master,8,,gradlew,true,Build uses Gradle 2.x
 pomes/gradle-plugin-distextra,master,8,,gradlew,true,Build uses Gradle 2.x
-pomes/gradle-plugin-props,master,8,,gradlew,,
+pomes/gradle-plugin-props,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 pomes/gradle-plugins,master,8,,gradlew,true,Build uses Gradle 2.x
 poorhua/matchfee,master,8,,maven,,
 powsybl/powsybl-core,main,11,,maven,,
@@ -8569,7 +8569,7 @@ rpalcolea/gradle-gcs-build-cache,master,8,,gradlew,true,Build uses Gradle 4.x pr
 rpavlik/file-to-resource-plugin,master,8,,gradlew,,
 rrd4j/rrd4j,master,8,,maven,,
 rsavin/microwave-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-rsksmart/rskj,master,8,,gradlew,,
+rsksmart/rskj,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 rstoyanchev/spring-websocket-portfolio,master,8,,maven,,
 rubenlagus/TelegramBots,master,8,,mvnw,,
 rubensousa/PreviewSeekBar,master,8,,gradlew,,
@@ -8589,7 +8589,7 @@ rythmengine/rythmengine,master,8,,maven,,
 rzabini/gradle-jython,master,8,,gradlew,,
 s1155030742/IndieLink_2.0,master,8,,gradlew,true,Build uses Gradle 2.x
 s4s0l/bootcker-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 3.x
-sa1nt/docker-gradle-teamcity-plugin,master,8,,gradlew,,
+sa1nt/docker-gradle-teamcity-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 saadfarooq/android-featuresets,develop,8,,gradlew,true,Build uses Gradle 2.x
 saagie/html-to-zendesk-uploader,master,8,,gradlew,,
 saagie/technologies-plugin,master,8,,gradlew,,
@@ -8731,7 +8731,7 @@ shurun19851206/cloudstack,master,8,,maven,,
 shuzheng/zheng,master,8,,maven,,
 shwenzhang/AndResGuard,master,8,,gradlew,,
 shysteph/application-agent-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
-shysteph/intellij-stabilizer,master,8,,gradlew,,
+shysteph/intellij-stabilizer,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 siacs/Conversations,master,11,,gradlew,,
 siblis/pocket-java-backend,develop,8,,maven,,
 sidney-simmons/gradle-plugin-docker,master,8,,gradlew,,
@@ -8753,7 +8753,7 @@ simonschiller/permissioncheck,main,8,,gradlew,,
 simonschiller/prefiller,main,11,,gradlew,,
 simpleton/Yasp,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 simpligility/android-maven-plugin,master,8,,maven,,
-sing1ee/dict_build,master,8,,gradlew,,
+sing1ee/dict_build,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 singh4java/jersey,master,8,,maven,,
 sismics/music,master,8,,maven,,
 sismics/reader,master,8,,maven,,
@@ -8790,7 +8790,7 @@ slugstack/slugstack-publishing-plugin,main,8,,gradlew,,
 smac89/aspectj-gradle,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 smac89/gradle-flatbuffers-plugin,development,8,,gradlew,,
 smacke/jaydio,master,8,,maven,,
-smart-doc-group/smart-doc-gradle-plugin,master,8,,gradlew,,
+smart-doc-group/smart-doc-gradle-plugin,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 smartbcity/fixers-gradle,main,8,,gradlew,,
 smartsheet-platform/backup-java,master,8,,maven,,
 smolakalaLoginsoft/keycloakVersion13,main,8,,maven,,
@@ -9208,7 +9208,7 @@ tha2015/swagger-gradle-plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior
 thahnen/GitDiffUpToDatePlugin,main,8,,gradlew,,
 thahnen/RunTestsSeparateJVMPlugin,main,8,,gradlew,,
 thahnen/UniformDependenciesPlugin,main,8,,gradlew,,
-thaid/xylographer,master,8,,gradlew,,
+thaid/xylographer,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 thaliproject/Tor_Onion_Proxy_Library,master,8,,gradlew,,
 thatcherclough/BetterBackdoor,master,8,,maven,,
 the-i-engineers/tie-gradle-plugins,develop,8,,gradlew,,
@@ -9611,7 +9611,7 @@ wildfly/wildfly-gradle-tools,master,8,,gradlew,true,Build uses Gradle 4.x prior 
 willemevertse/ICM-Code-Generator-Plugin,master,8,,gradlew,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 willir/cargo-ndk-android-gradle,master,8,,gradlew,,
 wilmerkrisp/archidoc,master,8,,gradlew,,
-wind57/0x-plugin-bom,master,8,,gradlew,,
+wind57/0x-plugin-bom,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 winder/Universal-G-Code-Sender,master,8,,maven,,
 winterselmon/Practiceandlearn,master,8,,gradlew,true,Build uses Gradle 3.x
 winterstein/Eclipse-Markdown-Editor-Plugin,master,8,,maven,,
@@ -9799,7 +9799,7 @@ ylacaute/ez-Dashing,master,8,,maven,,
 ylemoigne/gradle-jboss-controller,master,8,,gradlew,,
 yngplgDiego/nifi.diego,NIFI-1122_nifi-0.4.0-RC1,8,,maven,,
 ynroberts/anarchyape,master,8,,maven,,
-yohom/fluttify-core,master,8,,gradlew,,
+yohom/fluttify-core,master,8,,gradlew,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 yongjhih/auto-parse,master,8,,gradlew,true,Build uses Gradle 2.x
 youlookwhat/CloudReader,master,8,,gradlew,,
 youribonnaffe/gradle-format-plugin,master,8,,gradlew,true,Build uses Gradle 2.x
