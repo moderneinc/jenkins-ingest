@@ -3445,7 +3445,7 @@ cloudera/cm_ext,master,8,,maven,,
 cloudera/kitten,master,8,,maven,,
 cloudera/livy,master,8,,maven,,
 cloudfoundry/multiapps-controller,master,8,,maven,,
-cloudfoundry/uaa,develop,8,,gradlew,,
+cloudfoundry/uaa,develop,11,,gradlew,,
 cloudinary/cloudinary_java,master,8,,gradlew,,
 cloudmation-llc/gradle-infrastructure-plugins,master,8,,gradlew,,
 cloudups/iTransfer,master,8,,gradlew,true,Build uses Gradle 2.x
