@@ -8290,6 +8290,72 @@ profyu/stock-tx,master,8,,maven,,
 progilone/numahop,master,8,,maven,,
 progress/latte,develop,8,,gradlew,,
 projectdanube/xdi2,master,8,,maven,,
+projectdiscovery/blackrock,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/cdncheck,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/chaos-client,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/clistats,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/cloudlist,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/cloudlist-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/collaborator,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/cryptoutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/dnsx,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/dnsx-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/dsl,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/executil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/expirablelru,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/fastdialer,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/fdmax,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/filekv,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/fileutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/folderutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/goconfig,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/goflags,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/gologger,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/hmap,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/httputil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/httpx,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/httpx-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/interactsh,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/interactsh-web,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/ipranger,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/iputil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/mapcidr,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/mapsutil,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/naabu,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/naabu-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/network-fingerprint,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/networkpolicy,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/notify,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/notify-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/nuclei,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/nuclei-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/nuclei-burp-plugin,main,8,,maven,,
+projectdiscovery/nuclei-docs,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/nuclei-templates,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/nuclei-updatecheck-api,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/php-app-race-condition,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/proxify,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/public-bugbounty-programs,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/rawhttp,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/reflectutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/resolvercache-go,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/retryabledns,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/retryablehttp-go,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/roundrobin,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/shuffledns,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/simplehttpserver,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/sliceutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/sslcert,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/stringsutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/subfinder,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/subfinder-action,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/templates-stats,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/tinydns,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/tlsx,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/uncover,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/urlutil,main,8,,,true,Top-level build tool file is missing
+projectdiscovery/wappalyzergo,master,8,,,true,Top-level build tool file is missing
+projectdiscovery/yamldoc-go,main,8,,,true,Top-level build tool file is missing
 projectodd/wunderboss,master,8,,maven,,
 projeto-siga/siga,develop,8,,maven,,
 prokod/gradle-crossbuild-scala,master,8,,gradlew,,
