@@ -62,7 +62,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoJavaVersion = tokens[2]
     def repoStyle = tokens[3]
     def repoBuildTool = tokens[4]
-    def repoSkip = tokens[5]
+    def repoBuildAction = tokens[5]
+    def repoSkip = tokens[6]
 
     if ("true" == repoSkip) {
         return
@@ -149,9 +150,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         makeExecutable(true)
                     }
                     if (repoStyle != null) {
-                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M")
+                        switches("--no-daemon -Dskip.tests=true -DactiveStyle=${repoStyle} -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M ${repoBuildAction}")
                     } else {
-                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M")
+                        switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M ${repoBuildAction}")
                     }
                     tasks('clean moderneJar artifactoryPublish')
                 }
@@ -170,7 +171,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     mavenName jenkinsMavenName
                     useWrapper(repoBuildTool == 'mvnw')
 
-                    goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dlicense.skip=true -Dlicense.skipCheckLicense=true -Drat.numUnapprovedLicenses=100 -Dgpg.skip -Darchetype.test.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -Dskip.npm -Dskip.yarn -Dskip.bower -Dskip.grunt -Dskip.gulp -Dskip.jspm -Dskip.karma -Dskip.webpack -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn install io.moderne:moderne-maven-plugin:0.18.3:ast"
+                    goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dlicense.skip=true -Dlicense.skipCheckLicense=true -Drat.numUnapprovedLicenses=100 -Dgpg.skip -Darchetype.test.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -Dskip.npm -Dskip.yarn -Dskip.bower -Dskip.grunt -Dskip.gulp -Dskip.jspm -Dskip.karma -Dskip.webpack -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn ${repoBuildAction} install io.moderne:moderne-maven-plugin:0.18.3:ast"
                 }
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
