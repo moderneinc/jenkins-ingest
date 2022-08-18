@@ -762,15 +762,6 @@
             <id>secure-jsweet-snapshots</id>
             <mirrorOf>jsweet-snapshots</mirrorOf>
             <url>https://repository.jsweet.org/artifactory/libs-snapshot-local/</url>
-            Exception in thread "OkHttp Dispatcher" java.lang.StringIndexOutOfBoundsException: begin 7, end 4, length 4
-            at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4604)
-            at java.base/java.lang.String.substring(String.java:2707)
-            at java.base/java.lang.String.substring(String.java:2680)
-            at io.moderne.jenkins.failjobs.MineJobsData$1.onResponse(MineJobsData.java:122)
-            at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
-            at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-            at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-            at java.base/java.lang.Thread.run(Thread.java:833)
         </mirror>
 
         <mirror>
