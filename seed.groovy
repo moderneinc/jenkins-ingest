@@ -94,9 +94,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             env('ANDROID_SDK_ROOT', '/usr/lib/android-sdk')
         }
 
-        properties(
-                [$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', daysToKeepStr: '30']]
-        )
+        logRotator {
+            daysToKeep(30)
+        }
 
         scm {
             git {
