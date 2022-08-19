@@ -65,6 +65,9 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoBuildAction = tokens[5]
     def repoSkip = tokens[6]
 
+    if (repoBuildAction == null) {
+        repoBuildAction = ""
+    }
     if ("true" == repoSkip) {
         return
     }
