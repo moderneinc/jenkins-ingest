@@ -5197,6 +5197,103 @@ jeecgboot/jeecg,master,8,,maven,,,
 jeffheaton/encog-java-core,master,8,,gradlew,,true,Build uses Gradle 2.x
 jeluard/semantic-versioning,master,8,,maven,,,
 jenetics/jenetics,master,8,,gradlew,,,
+jenkins-infra/.github,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/INFRA-896,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/acceptance-tests,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/account-app,main,8,,gradlew,,,
+jenkins-infra/admin,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/asciidoctor-jenkins-extensions,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/atlassian-base,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/awestruct-ibeams,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/aws,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/azure,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/backend-commit-history-parser,master,8,,maven,,,
+jenkins-infra/backend-confluence-spam-remover,master,8,,maven,,,
+jenkins-infra/backend-extension-indexer,master,8,,maven,,,
+jenkins-infra/backend-jenkins-ci.org-theme,master,8,,maven,,,
+jenkins-infra/backend-jenkins-plugin-info-plugin,master,8,,maven,,,
+jenkins-infra/backend-release.rss,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/captain-hook,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/cn.jenkins.io,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/community-functions,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/confluence-cache,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/core-taglibs-report-generator,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/crawler,master,8,,maven,,,
+jenkins-infra/datadog,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/digitalocean,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-404,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-builder,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-confluence-data,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-crond,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-datadog,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-hashicorp-tools,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-helmfile,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-jenkins-lts,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-jenkins-weekly,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-mamoto,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-mirrorbits,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-openvpn,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-packaging,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-plugin-site-issues,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-plugins-self-service,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/docker-rsyncd,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/documentation,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/efd,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/fastly,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/fetch-codeql-action,v1,8,,,,true,Top-level build tool file is missing
+jenkins-infra/fosdem-stands-website-jenkins,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/fosdem-stands-website-jenkins-static,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/github-reusable-workflows,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/helm-charts,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/helpdesk,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/homebrew-tap,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/iep,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/incrementals-publisher,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/infra-reports,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/interesting-category-action,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/ircbot,main,8,,maven,,,
+jenkins-infra/java.net-scm-issue-link,master,8,,maven,,,
+jenkins-infra/javadoc,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-codeql,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-codeql-action,HEAD,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-infra,production,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-maven-cd-action,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-security-scan,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-usage-stats,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins-version,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jenkins.io,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jira-checker,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/jira-ldap-syncer,master,8,,maven,,,
+jenkins-infra/keycloak-theme,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/kubernetes-management,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/l10n-server,master,8,,maven,,,
+jenkins-infra/ldap,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/loadtests,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/merge-all-repo,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/mirror-scripts,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/mock-ldap,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/oracle,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/packer-images,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/patron,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/pipeline-library,master,8,,maven,,,
+jenkins-infra/pipeline-metadata-utils,master,8,,maven,,,
+jenkins-infra/pipeline-steps-doc-generator,master,8,,maven,,,
+jenkins-infra/plugin-health-scoring,main,8,,maven,,,
+jenkins-infra/plugin-site,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/plugins-wiki-docs,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/puppet-apachelogcompressor,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/rating,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/release,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/repository-permissions-updater,master,8,,maven,,,
+jenkins-infra/robobutler,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/shared-tools,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/status,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/stories,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/update-center2,master,8,,maven,,,
+jenkins-infra/usage-log-decrypter,master,8,,maven,,,
+jenkins-infra/utility-scripts,main,8,,,,true,Top-level build tool file is missing
+jenkins-infra/verify-ci-status-action,master,8,,,,true,Top-level build tool file is missing
+jenkins-infra/wiki-maintainers-updater,master,8,,maven,,,
 jenkinsci/42crunch-security-audit-plugin,master,8,,maven,,,
 jenkinsci/BlameSubversion-plugin,master,8,,maven,,true,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 jenkinsci/CFLint-plugin,master,8,,maven,,,
