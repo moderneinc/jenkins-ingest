@@ -16,6 +16,10 @@ folder('ingest') {
     displayName('Ingest Jobs')
 }
 
+folder('validate') {
+    displayName('Recipe Run Validation Jobs')
+}
+
 configFiles {
     groovyScript {
         id(gradleInitFileId)
@@ -196,6 +200,70 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                             keyFromText 'moderne-public-ast'
                         }
                     }
+                }
+            }
+        }
+
+        publishers {
+            cleanWs()
+        }
+    }
+
+    job("validate/$repoJobName") {
+        parameters {
+            stringParam('buildName')
+            stringParam('patchDownloadUrl')
+        }
+        label('multi-jdk')
+
+        jdk("java${repoJavaVersion}")
+
+        environmentVariables {
+            env('ANDROID_HOME', '/usr/lib/android-sdk')
+            env('ANDROID_SDK_ROOT', '/usr/lib/android-sdk')
+        }
+
+        logRotator {
+            daysToKeep(30)
+        }
+
+        scm {
+            git {
+                remote {
+                    url("https://github.com/${repoName}")
+                    branch(repoBranch)
+                    credentials('jkschneider-pat')
+                }
+                extensions {
+                    localBranch(repoBranch)
+                }
+            }
+        }
+
+        wrappers {
+            buildName('${buildName}')
+        }
+
+        steps {
+            systemGroovyCommand(readFileFromWorkspace('groovy/apply-patch.groovy'))
+        }
+
+        if (isGradleBuild) {
+            steps {
+                gradle {
+                    tasks('assemble')
+                }
+            }
+        }
+
+        if (isMavenBuild) {
+            configure { node ->
+
+                node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
+                    mavenName jenkinsMavenName
+                    useWrapper(repoBuildTool == 'mvnw')
+
+                    goals 'compile'
                 }
             }
         }
