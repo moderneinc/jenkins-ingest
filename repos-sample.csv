@@ -1,2 +1,3 @@
 openmrs/openmrs-core,master,8,,maven,,,
 Netflix/servo,master,8,,gradlew,,,
+Netflix/eureka,master,8,com.netflix.eureka.Style,gradlew,,,
