@@ -214,7 +214,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             stringParam('buildName')
             stringParam('patchDownloadUrl')
         }
-        label('multi-jdk')
+        label('validate')
 
         jdk("java${repoJavaVersion}")
 
