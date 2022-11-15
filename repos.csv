@@ -4530,53 +4530,92 @@ gradle-dependency-analyze/gradle-dependency-analyze,master,8,,gradlew,,,
 gradle-nexus/publish-plugin,master,8,,gradlew,,,
 gradle-plugins/toolbox,main,8,,gradlew,,,
 gradle-webtools/gradle-minify-plugin,master,8,,gradlew,,,
+gradle/.github,master,8,,,,true,Top-level build tool file is missing
 gradle/android-cache-fix-gradle-plugin,main,8,,gradlew,,,
 gradle/android-relocation-test,master,8,,gradlew,,,
+gradle/apachecon2021,main,8,,,,true,Top-level build tool file is missing
 gradle/api-evolution-demo,main,8,,gradlew,,,
+gradle/bazel-comparison,master,8,,,,true,Top-level build tool file is missing
 gradle/bt-dev-prod-data-collector,main,8,,gradlew,,,
 gradle/build-analysis-demo,master,8,,gradlew,,,
+gradle/build-tool-issue-automation-actions,main,8,,,,true,Top-level build tool file is missing
+gradle/build-tool-roadmap,main,8,,,,true,Top-level build tool file is missing
+gradle/build-tool-training-exercises,main,8,,,,true,Top-level build tool file is missing
+gradle/cc-hackathon-2022,main,8,,,,true,Top-level build tool file is missing
 gradle/common-custom-user-data-gradle-plugin,main,8,,gradlew,,,
 gradle/common-custom-user-data-maven-extension,main,8,,maven,,,
 gradle/configuration-cache-report,main,8,,gradlew,,,
+gradle/exemplar,main,8,,gradlew,,,
 gradle/exemplar,master,8,,gradlew,,,
 gradle/gcc2speedscope,master,8,,gradlew,,,
+gradle/ge-customer-support-zendesk-theme,main,8,,,,true,Top-level build tool file is missing
 gradle/github-dependency-extractor,main,8,,gradlew,,,
 gradle/gradle,master,8,,gradlew,,,
+gradle/gradle-20388-multiple-toml,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-all,master,8,,gradlew,,,
+gradle/gradle-benchmark-base,master,8,,,,true,Top-level build tool file is missing
+gradle/gradle-build-action,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-build-scan-quickstart,main,8,,gradlew,,,
 gradle/gradle-checksum,master,8,,gradlew,,,
+gradle/gradle-completion,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-dependency-constrain,main,8,,gradlew,,,
 gradle/gradle-enterprise-api-samples,main,8,,gradlew,,,
+gradle/gradle-enterprise-build-config-samples,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-enterprise-build-optimization-experiments,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-build-validation-scripts,main,8,,gradlew,,,
 gradle/gradle-enterprise-conventions-plugin,master,8,,gradlew,,,
+gradle/gradle-enterprise-export-api-samples,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-enterprise-oss-projects,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-enterprise-testing-annotations,main,8,,gradlew,,,
+gradle/gradle-hello-world-plugin,master,8,,gradlew,,,
 gradle/gradle-hello-world-plugin,master,8,,gradlew,,true,Build uses Gradle 1.x
 gradle/gradle-issue-reproducer,groovy-dsl,8,,gradlew,,,
+gradle/gradle-native,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-org-conventions-plugin,master,8,,gradlew,,,
+gradle/gradle-performance,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-profiler,master,8,,gradlew,,,
 gradle/gradle-profiler-plugin,master,8,,gradlew,,,
+gradle/gradle-project-templates,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-site-plugin,master,8,,gradlew,,,
 gradle/greeting-plugin-example,master,8,,gradlew,,,
+gradle/guides,master,8,,,,true,Top-level build tool file is missing
 gradle/jfr-polyfill,main,8,,gradlew,,,
 gradle/kotlin-dsl,master,8,,gradlew,,,
 gradle/kotlin-dsl-conventions,master,8,,gradlew,,,
 gradle/kotlin-dsl-docs,master,8,,gradlew,,,
+gradle/kotlin-relocation-test,master,8,,gradlew,,,
 gradle/kotlin-relocation-test,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+gradle/maven-build-cache-unstable-inputs-samples,main,8,,maven,,,
 gradle/maven-build-cache-unstable-inputs-samples,master,8,,maven,,,
 gradle/maven-build-scan-quickstart,main,8,,maven,,,
+gradle/multi-project-composite-gradle-plugins-builds,master,8,,,,true,Top-level build tool file is missing
 gradle/native-platform,master,8,,gradlew,,,
 gradle/native-samples,master,8,,gradlew,,,
 gradle/native-samples-cpp-library,master,8,,gradle,,,
 gradle/native-samples-swift-library,master,8,,gradle,,,
 gradle/perf-android-large-2,main,11,,gradlew,,,
+gradle/perf-android-large-2,main,8,,gradlew,,,
 gradle/perf-android-local-repo,master,8,,gradlew,,,
+gradle/perf-android-mono-large,master,8,,,,true,Top-level build tool file is missing
+gradle/perf-android-multi-large,master,8,,,,true,Top-level build tool file is missing
+gradle/perf-enterprise-large,master,8,,,,true,Top-level build tool file is missing
+gradle/perf-native-headers-large,HEAD,8,,,,true,Top-level build tool file is missing
 gradle/perf-native-large,master,8,,gradle,,,
+gradle/performance-comparisons,master,8,,,,true,Top-level build tool file is missing
 gradle/playframework,master,8,,gradlew,,,
+gradle/plugin-portal-requests,master,8,,,,true,Top-level build tool file is missing
+gradle/provider-api-migration-testbed,main,8,,,,true,Top-level build tool file is missing
+gradle/santa-tracker-performance,main,8,,,,true,Top-level build tool file is missing
+gradle/source-resolution-demo,main,8,,,,true,Top-level build tool file is missing
+gradle/speed-challenge,main,8,,,,true,Top-level build tool file is missing
+gradle/test-retry-gradle-plugin,main,8,,gradlew,,,
 gradle/test-retry-gradle-plugin,master,8,,gradlew,,,
 gradle/webinar-dep-mgmt-part-1,master,8,,gradlew,,,
 gradle/webinar-dep-mgmt-part-3,master,8,,gradlew,,,
 gradle/webinar-getting-started-with-the-gradle-kotlin-dsl,master,8,,gradlew,,,
 gradle/webinar-gradle-6,master,8,,gradlew,,,
 gradle/wrapper-upgrade-gradle-plugin,main,8,,gradlew,,,
+gradle/wrapper-validation-action,master,8,,,,true,Top-level build tool file is missing
 gradleutil/gradle-aws-plugin,master,8,,gradlew,,,
 gradleutil/gradle-jte,master,8,,gradlew,,,
 gradusnikov/jmatio,master,8,,maven,,,
