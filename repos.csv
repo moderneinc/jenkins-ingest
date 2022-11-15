@@ -2479,7 +2479,7 @@ apache/pluto,trunk,8,,maven,,,
 apache/poi,trunk,8,,gradlew,,,
 apache/polygene-java,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 apache/portals-pluto,master,8,,maven,,,
-apache/pulsar,master,8,,mvnw,,,
+apache/pulsar,master,17,,mvnw,,,
 apache/pulsar-adapters,master,8,,maven,,,
 apache/pulsar-connectors,master,8,,maven,,,
 apache/pulsar-presto,master,8,,maven,,,
