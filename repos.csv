@@ -4575,7 +4575,7 @@ gradle/gradle-org-conventions-plugin,master,8,,gradlew,,,
 gradle/gradle-performance,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-profiler,master,8,,gradlew,,,
 gradle/gradle-profiler-plugin,master,8,,gradlew,,,
-gradle/gradle-project-templates,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-project-templates,main,8,,gradlew,,,
 gradle/gradle-site-plugin,master,8,,gradlew,,,
 gradle/greeting-plugin-example,master,8,,gradlew,,,
 gradle/guides,master,8,,,,true,Top-level build tool file is missing
