@@ -5,24 +5,31 @@ on:
     inputs:
       org:
         type: string
-        required: true
+        required: false
         description: The organization to add to the ingest
-
+      user:
+        type: string
+        required: false
+        description: The user to add to the ingest
 jobs:
   fetch-repositories:
     runs-on: ubuntu-latest
     env:
-      ORG: ${{ github.event.inputs.org }}
+      ORG: ${{ github.event.inputs.org || github.event.inputs.user }}
       PAGINATE: true
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-      - name: Fetch organizations
-
+      - name: Fetch organization repositories
+        if: github.event.inputs.org
         run: |
           gh api graphql --paginate="${{ env.PAGINATE }}" -F org="${{ env.ORG }}" -f query='query($org: String!, $endCursor: String) { organization(login: $org) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.organization.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
+      - name: Fetch user repositories
+        if: github.event.inputs.user
+        run: |
+          gh api graphql --paginate="${{ env.PAGINATE }}" -F user="${{ env.USER }}" -f query='query($user: String!, $endCursor: String) { user(login: $user) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.user.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
       - uses: actions/upload-artifact@v3
-        if: always()
+        if: success()
         with:
           name: "${{ env.ORG }}-repositories.csv"
           path: "${{ env.ORG }}-repositories.csv"
@@ -30,7 +37,7 @@ jobs:
     needs: [fetch-repositories]
     runs-on: ubuntu-latest
     env:
-      ORG: ${{ github.event.inputs.org }}
+      ORG: ${{ github.event.inputs.org || github.event.inputs.user }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
