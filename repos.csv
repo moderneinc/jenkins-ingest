@@ -4110,19 +4110,11 @@ ethanmdavidson/oracleformsgradleplugin,master,8,,gradlew,,,
 ethauvin/semver-gradle,master,8,,gradlew,,,
 etherealscope/gradle-git-flow-version-plugin,master,8,,gradlew,,,
 ethereum/ethereumj,develop,8,,gradlew,,,
-etiennestuder/build-scan-github-action,main,8,,,,true,Top-level build tool file is missing
-etiennestuder/gradle-build-scan-teamcity-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-build-scan-teamcity-plugin,master,8,,gradlew,,,
-etiennestuder/gradle-credentials-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-credentials-plugin,master,8,,gradlew,,,
-etiennestuder/gradle-jooq-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-jooq-plugin,master,8,,gradlew,,,
-etiennestuder/gradle-plugindev-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-plugindev-plugin,master,8,,gradlew,,,
-etiennestuder/gradle-rocker-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-rocker-plugin,master,8,,gradlew,,,
-etiennestuder/java-ordered-properties,main,8,,gradlew,,,
-etiennestuder/teamcity-build-scan-plugin,main,8,,gradlew,,,
 etraveli/bom-verifier,master,8,,gradlew,,true,Build uses Gradle 3.x
 etsy/AndroidStaggeredGrid,master,8,,gradlew,,true,Build uses Gradle 1.x
 etulupov/training-apache-commons,master,8,,maven,,,
@@ -10096,66 +10088,6 @@ zhuhaihang/Jspxcms,master,8,,maven,,,
 zhurlik/gradle-swagger-plugin,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zhxyComing/ClickTrace,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zi-jing/CuckooGradle,master,8,,gradlew,,,
-zieka/alfred-bonsai-theme,master,8,,,,true,Top-level build tool file is missing
-zieka/angular-tacklebox,master,8,,,,true,Top-level build tool file is missing
-zieka/angular2_firebase,master,8,,,,true,Top-level build tool file is missing
-zieka/angular2_playground,master,8,,,,true,Top-level build tool file is missing
-zieka/apple-tv-xfinity-activation,master,8,,,,true,Top-level build tool file is missing
-zieka/baltimore_air_quality,master,8,,,,true,Top-level build tool file is missing
-zieka/blogging,master,8,,,,true,Top-level build tool file is missing
-zieka/bonsai-components,main,8,,,,true,Top-level build tool file is missing
-zieka/budgetparty,master,8,,,,true,Top-level build tool file is missing
-zieka/cars_manual_vs_automatic,master,8,,,,true,Top-level build tool file is missing
-zieka/cdd_best_sample,master,8,,,,true,Top-level build tool file is missing
-zieka/chat_app,master,8,,,,true,Top-level build tool file is missing
-zieka/cleaning_data_project,master,8,,,,true,Top-level build tool file is missing
-zieka/climate-change,master,8,,,,true,Top-level build tool file is missing
-zieka/codewatch,master,8,,,,true,Top-level build tool file is missing
-zieka/commit-cop-bot,master,8,,,,true,Top-level build tool file is missing
-zieka/computational_linguistics,master,8,,,,true,Top-level build tool file is missing
-zieka/datasciencecoursera,master,8,,,,true,Top-level build tool file is missing
-zieka/electron_project,master,8,,,,true,Top-level build tool file is missing
-zieka/emoji-printer,main,8,,,,true,Top-level build tool file is missing
-zieka/etsy_data,master,8,,,,true,Top-level build tool file is missing
-zieka/finance_mock,master,8,,,,true,Top-level build tool file is missing
-zieka/github-actions-for-packages,main,8,,,,true,Top-level build tool file is missing
-zieka/github-battle,master,8,,,,true,Top-level build tool file is missing
-zieka/graphql-reshape,main,8,,,,true,Top-level build tool file is missing
-zieka/hello_phoenix,master,8,,,,true,Top-level build tool file is missing
-zieka/hex_stripper,master,8,,,,true,Top-level build tool file is missing
-zieka/hubot_smeaglol,master,8,,,,true,Top-level build tool file is missing
-zieka/human_activity_recognition,master,8,,,,true,Top-level build tool file is missing
-zieka/javascript,master,8,,,,true,Top-level build tool file is missing
-zieka/mongodb,master,8,,,,true,Top-level build tool file is missing
-zieka/more_tabs,master,8,,,,true,Top-level build tool file is missing
-zieka/ng-bonsai-ui,master,8,,,,true,Top-level build tool file is missing
-zieka/ng-lazyload-image,master,8,,,,true,Top-level build tool file is missing
-zieka/node,master,8,,,,true,Top-level build tool file is missing
-zieka/optional-property-shorthand-in-object-literal,master,8,,,,true,Top-level build tool file is missing
-zieka/places,master,8,,,,true,Top-level build tool file is missing
-zieka/portal,master,8,,,,true,Top-level build tool file is missing
-zieka/protractor_notes,master,8,,,,true,Top-level build tool file is missing
-zieka/python_scripts,master,8,,,,true,Top-level build tool file is missing
-zieka/r_programming,master,8,,,,true,Top-level build tool file is missing
-zieka/raceday,master,8,,,,true,Top-level build tool file is missing
-zieka/recipefinder,master,8,,,,true,Top-level build tool file is missing
-zieka/reproducible_research_project1,master,8,,,,true,Top-level build tool file is missing
-zieka/reproducible_research_project2,master,8,,,,true,Top-level build tool file is missing
-zieka/simple-html-assignment,master,8,,,,true,Top-level build tool file is missing
-zieka/slow-crawler,main,8,,,,true,Top-level build tool file is missing
-zieka/spectacular,master,8,,,,true,Top-level build tool file is missing
-zieka/statistical_inference,master,8,,,,true,Top-level build tool file is missing
-zieka/stupid_break_calculator,master,8,,,,true,Top-level build tool file is missing
-zieka/tacklebox,master,8,,,,true,Top-level build tool file is missing
-zieka/test_api,master,8,,,,true,Top-level build tool file is missing
-zieka/tft-item-calculator,master,8,,,,true,Top-level build tool file is missing
-zieka/todolists,master,8,,,,true,Top-level build tool file is missing
-zieka/useful_rspecs,master,8,,,,true,Top-level build tool file is missing
-zieka/useful_scripts,master,8,,,,true,Top-level build tool file is missing
-zieka/webapp_base_box,master,8,,,,true,Top-level build tool file is missing
-zieka/workflow_specs,master,8,,,,true,Top-level build tool file is missing
-zieka/xml_extractor,master,8,,,,true,Top-level build tool file is missing
-zieka/zieka.github.io,master,8,,,,true,Top-level build tool file is missing
 zierler-f/YAML-Validator-Plugin,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 zkovari/gradle-changelog-automation-plugin,develop,8,,gradlew,,,
 zladovan/gradle-avrohugger-plugin,master,8,,gradlew,,,
