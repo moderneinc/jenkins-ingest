@@ -27,7 +27,7 @@ jobs:
       - name: Fetch user repositories
         if: github.event.inputs.user
         run: |
-          gh api graphql --paginate="${{ env.PAGINATE }}" -F user="${{ env.USER }}" -f query='query($user: String!, $endCursor: String) { user(login: $user) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.user.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
+          gh api graphql --paginate="${{ env.PAGINATE }}" -F user="${{ env.ORG }}" -f query='query($user: String!, $endCursor: String) { user(login: $user) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.user.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
       - uses: actions/upload-artifact@v3
         if: success()
         with:
