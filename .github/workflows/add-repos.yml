@@ -1,54 +1,58 @@
-name: Add org to ingest
+name: Add org/user to ingest
 
 on:
   workflow_dispatch:
     inputs:
-      org:
+      account:
+        description: The type of account to add to the ingest
+        required: true
+        default: 'organization' 
+        type: choice
+        options:
+        - organization
+        - user
+      login:
         type: string
-        required: false
-        description: The organization to add to the ingest
-      user:
-        type: string
-        required: false
-        description: The user to add to the ingest
+        required: true
+        description: Either the organization or user to ingest
 jobs:
   fetch-repositories:
     runs-on: ubuntu-latest
     env:
-      ORG: ${{ github.event.inputs.org || github.event.inputs.user }}
+      LOGIN: ${{ github.event.inputs.login }}
       PAGINATE: true
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Fetch organization repositories
-        if: github.event.inputs.org
+        if: github.event.inputs.account == 'organization'
         run: |
-          gh api graphql --paginate="${{ env.PAGINATE }}" -F org="${{ env.ORG }}" -f query='query($org: String!, $endCursor: String) { organization(login: $org) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.organization.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
+          gh api graphql --paginate="${{ env.PAGINATE }}" -F login="${{ env.LOGIN }}" -f query='query($login: String!, $endCursor: String) { organization(login: $login) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.organization.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.LOGIN }} '{print org"/"$0}' >> "${{ env.LOGIN }}-repositories.csv"
       - name: Fetch user repositories
-        if: github.event.inputs.user
+        if: github.event.inputs.account == 'user'
         run: |
-          gh api graphql --paginate="${{ env.PAGINATE }}" -F user="${{ env.ORG }}" -f query='query($user: String!, $endCursor: String) { user(login: $user) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.user.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.ORG }} '{print org"/"$0}' >> "${{ env.ORG }}-repositories.csv"
+          gh api graphql --paginate="${{ env.PAGINATE }}" -F login="${{ env.LOGIN }}" -f query='query($login: String!, $endCursor: String) { user(login: $login) { repositories(first: 100, after: $endCursor, isFork: false, isLocked: false, ) { pageInfo{ hasNextPage, endCursor } edges{ node { name isArchived isPrivate } } } } }'   --jq '.data.user.repositories.edges | map(select(.node.isPrivate == false and .node.isArchived == false)) | .[] | {name: .node.name} ' | jq -r '.name' | awk -v org=${{ env.LOGIN }} '{print org"/"$0}' >> "${{ env.LOGIN }}-repositories.csv"
       - uses: actions/upload-artifact@v3
         if: success()
         with:
-          name: "${{ env.ORG }}-repositories.csv"
-          path: "${{ env.ORG }}-repositories.csv"
+          name: "${{ env.LOGIN }}-repositories.csv"
+          path: "${{ env.LOGIN }}-repositories.csv"
   add-repositories:
     needs: [fetch-repositories]
     runs-on: ubuntu-latest
     env:
-      ORG: ${{ github.event.inputs.org || github.event.inputs.user }}
+      LOGIN: ${{ github.event.inputs.login }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@v3
         with:
-          name: "${{ env.ORG }}-repositories.csv"
+          name: "${{ env.LOGIN }}-repositories.csv"
       - run: |
-          ./add-repos.sh -i "${{ env.ORG }}-repositories.csv" -o "${{ github.workspace }}/repos.csv" -t "${{ github.workspace }}"
+          ./add-repos.sh -i "${{ env.LOGIN }}-repositories.csv" -o "${{ github.workspace }}/repos.csv" -t "${{ github.workspace }}"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add repos.csv 
-          git commit -m "Added ${{ env.ORG }} repositories to ingest"
+          git commit -m "Added ${{ env.LOGIN }} repositories to ingest"
           git pull
           git push
       - uses: actions/upload-artifact@v3
