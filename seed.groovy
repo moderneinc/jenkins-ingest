@@ -99,7 +99,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         logRotator {
-            daysToKeep(30)
+            daysToKeep(7)
         }
 
         scm {
@@ -224,7 +224,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         logRotator {
-            daysToKeep(30)
+            daysToKeep(7)
         }
 
         scm {
