@@ -85,7 +85,7 @@ do
         git sparse-checkout set --no-cone /build.gradle.kts /build.gradle /pom.xml /gradlew
         git checkout
 
-        if [ -f "build.gradle.kts" ] || [ -f "build.gradle" ]; then
+        if [ -f "build.gradle.kts" ] || [ -f "build.gradle" ] || [ -f "settings.gradle.kts" ] || [ -f "settings.gradle" ]; then
             if [ -f "gradlew" ]; then 
                 BUILD_TOOL=gradlew
             else
