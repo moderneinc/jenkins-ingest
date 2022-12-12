@@ -1710,6 +1710,8 @@ alexm118/aws-gradle-plugin,master,8,,gradlew,,,
 alexmazharouski/downloader-plugin,master,8,,gradlew,,,
 alexo/wro4j,1.7.x,8,,maven,,,
 alexruiz/fest-util,master,8,,maven,,,
+alextu/gradle-sample-1,main,11,,gradlew,,,
+alextu/gradle-sample-2,main,11,,gradlew,,,
 alexvas/kotlin2typescript,master,8,,gradlew,,,
 alexvasilkov/GradleGitDependenciesPlugin,master,8,,gradlew,,,
 algorithmfoundry/Foundry,master,8,,maven,,,
@@ -4117,6 +4119,7 @@ etiennestuder/gradle-credentials-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-credentials-plugin,master,8,,gradlew,,,
 etiennestuder/gradle-jooq-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-jooq-plugin,master,8,,gradlew,,,
+etiennestuder/gradle-plugindev-plugin,main,11,,gradlew,,,
 etiennestuder/gradle-plugindev-plugin,main,8,,gradlew,,,
 etiennestuder/gradle-plugindev-plugin,master,8,,gradlew,,,
 etiennestuder/gradle-rocker-plugin,main,8,,gradlew,,,
@@ -4558,21 +4561,27 @@ gradle/exemplar,master,8,,gradlew,,,
 gradle/gcc2speedscope,master,8,,gradlew,,,
 gradle/ge-customer-support-zendesk-theme,main,8,,,,true,Top-level build tool file is missing
 gradle/github-dependency-extractor,main,8,,gradlew,,,
+gradle/gradle,master,11,,gradlew,,,
 gradle/gradle,master,8,,gradlew,,,
 gradle/gradle-20388-multiple-toml,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-all,master,8,,gradlew,,,
 gradle/gradle-benchmark-base,master,8,,,,true,Top-level build tool file is missing
+gradle/gradle-build-action,main,11,,,,true,Top-level build tool file is missing
 gradle/gradle-build-action,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-build-scan-quickstart,main,8,,gradlew,,,
 gradle/gradle-checksum,master,8,,gradlew,,,
 gradle/gradle-completion,master,8,,,,true,Top-level build tool file is missing
 gradle/gradle-dependency-constrain,main,8,,gradlew,,,
 gradle/gradle-enterprise-api-samples,main,8,,gradlew,,,
+gradle/gradle-enterprise-build-config-samples,main,11,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-build-config-samples,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-enterprise-build-optimization-experiments,main,11,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-build-optimization-experiments,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-build-validation-scripts,main,8,,gradlew,,,
 gradle/gradle-enterprise-conventions-plugin,master,8,,gradlew,,,
+gradle/gradle-enterprise-export-api-samples,main,11,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-export-api-samples,main,8,,,,true,Top-level build tool file is missing
+gradle/gradle-enterprise-oss-projects,main,11,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-oss-projects,main,8,,,,true,Top-level build tool file is missing
 gradle/gradle-enterprise-testing-annotations,main,8,,gradlew,,,
 gradle/gradle-hello-world-plugin,master,8,,gradlew,,,
