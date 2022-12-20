@@ -165,7 +165,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     } else {
                         switches("--no-daemon -Dskip.tests=true -I ${gradleInitRepoFile} -Dorg.gradle.jvmargs=-Xmx2048M ${repoBuildAction}")
                     }
-                    tasks('clean moderneJar artifactoryPublish')
+                    tasks('moderneJar artifactoryPublish')
                 }
             }
         }
