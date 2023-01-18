@@ -7049,7 +7049,7 @@ jprante/gradle-plugin-shadow,master,11,,gradlew,,,
 jprante/gradle-plugins,main,8,,gradlew,,,
 jpush/jiguang-java-client-common,master,8,,maven,,,
 jraska/modules-graph-assert,master,8,,gradlew,,,
-jreleaser/jreleaser,main,8,,gradlew,,,
+jreleaser/jreleaser,main,11,,gradlew,,,
 jrmcdonald/ms-gradle-baseline,main,11,,gradlew,,,
 jruby-gradle/jruby-gradle-plugin,master,8,,gradlew,,,
 jruby-gradle/jruby-gradle-storm-plugin,master,8,,gradlew,,true,Build uses Gradle 2.x
