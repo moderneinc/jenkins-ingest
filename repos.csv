@@ -1086,7 +1086,7 @@ Netflix/curator,master,8,,maven,,,
 Netflix/dgs-codegen,master,8,,gradlew,,,
 Netflix/dgs-framework,master,8,,gradlew,,,
 Netflix/eureka,master,8,com.netflix.eureka.Style,gradlew,,,
-Netflix/genie,master,8,com.netflix.genie.Style,gradlew,,,
+Netflix/genie,master,11,com.netflix.genie.Style,gradlew,,,
 Netflix/governator,master,8,,gradlew,,,
 Netflix/hollow,master,8,com.netflix.eureka.Style,gradlew,,,
 Netflix/hollow-reference-implementation,master,8,,gradlew,,true,Build uses Gradle 3.x
