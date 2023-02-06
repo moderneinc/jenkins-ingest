@@ -24,5 +24,9 @@ The csv-file argument is expected to be a valid `csv` file, with optional header
 |style | Optional | OpenRewrite style name to apply during ingest. |
 |buildTool | Optional | Auto-detected if omitted. Current supported value: {`gradle`, `gradlew`, `maven`}. |
 
+For maintainers there's a [GitHub Action workflow](https://github.com/moderneinc/jenkins-ingest/blob/main/.github/workflows/add-repos.yml) that [runs the script for an argument organization or user](https://github.com/moderneinc/jenkins-ingest/actions/workflows/add-repos.yml).
+
+Then rerun [the Seed job](https://github.com/moderneinc/jenkins-ingest/blob/main/seed.groovy) in Jenkins to create the new ingestion jobs.
+
 ## NOTE: `init.gradle` changes
 The `init.gradle` file in this repository is imported into Jenkins. Any changes made to the file directly in Jenkins will be overwritten on each run of the seed job.
