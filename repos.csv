@@ -3040,7 +3040,7 @@ arquillian/arquillian-container-osgi,master,8,,maven,,,
 arquillian/arquillian-container-wls,master,8,,maven,,,
 arquillian/arquillian-cube,master,8,,maven,,,
 arquillian/arquillian-extension-drone,master,8,,maven,,,
-arrow-kt/arrow-gradle-config,main,8,,gradlew,,,
+arrow-kt/arrow-gradle-config,main,11,,gradlew,,,
 art-community/application-gradle-plugin,main,8,,gradlew,,,
 art-community/art-java,main,8,,gradlew,,,
 artikcloud/artikcloud-java,master,8,,gradlew,,true,Build uses Gradle 2.x
