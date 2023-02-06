@@ -3703,6 +3703,7 @@ dice-group/gerbil,master,8,,maven,,,
 didi/DroidAssist,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 diefferson/SecureBuildConfig,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 diegoceccarelli/json-wikipedia,master,11,,maven,,,
+diennea/herddb,master,8,,maven,,,
 diffblue/eclipse-cbmc,master,8,,maven,,,
 diffplug/atplug,main,8,,gradlew,,,
 diffplug/blowdryer,main,8,,gradlew,,,
