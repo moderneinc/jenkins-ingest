@@ -4321,7 +4321,6 @@ gclayburg/dockerPreparePlugin,master,8,,gradlew,,,
 gdmatrix/gdmatrix,master,8,,maven,,,
 gdulai/gitpublish,master,11,,gradlew,,,
 gdutxiaoxu/CoordinatorLayoutExample,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-ge0ffrey/optaconf,master,8,,maven,,,
 geeeeeeeeek/WeChatLuckyMoney,stable,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 geeker-lait/x-framework,master,8,,maven,,,
 gemdat/gemdat-gradle-plugin,master,8,,gradlew,,true,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
@@ -7158,7 +7157,7 @@ kiegroup/kie-soup,main,8,,maven,,,
 kiegroup/kie-wb-common,main,8,,maven,,,
 kiegroup/kogito-examples,stable,11,,mvnw,,,
 kiegroup/kogito-runtimes,main,8,,mvnw,,,
-kiegroup/optaplanner,main,8,,maven,,,
+kiegroup/optaplanner,main,11,,maven,,,
 kiegroup/optaweb-employee-rostering,main,11,,maven,,,
 kiegroup/optaweb-vehicle-routing,main,11,,mvnw,,,
 kilim/kilim,master,8,,maven,,,
