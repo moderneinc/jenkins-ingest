@@ -7246,6 +7246,7 @@ ksoichiro/gradle-spelling-plugin,master,8,,gradlew,,true,Build uses Gradle 2.x
 ksoichiro/gradle-web-resource-plugin,master,8,,gradlew,,true,Build uses Gradle 3.x
 kstyrc/embedded-redis,master,8,,maven,,,
 kt3k/ebean-enhance-plugin,master,8,,gradlew,,true,Build uses Gradle 3.x
+ktorio/ktor,main,8,,gradlew,,,
 kuali/kfs,master,8,,maven,,,
 kubernetes-client/java,master,8,,mvnw,,,
 kumuluz/kumuluzee,master,11,,maven,,,
