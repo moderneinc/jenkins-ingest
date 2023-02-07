@@ -1,4 +1,4 @@
-folder('ingest') {
+folder('cli-ingest') {
     displayName('Ingest Jobs')
 }
 
