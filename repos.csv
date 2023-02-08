@@ -9502,7 +9502,6 @@ toddway/BuildChecks,master,8,,gradlew,,,
 toddway/buildStatusPlugin,master,8,,gradlew,,,
 togglz/togglz,master,8,,maven,,,
 tomahawk-player/tomahawk-android,master,8,,gradlew,,true,Build uses Gradle 2.x
-tomakehurst/wiremock,master,8,,gradlew,,,
 tomasbjerre/git-changelog-gradle-plugin,master,8,,gradlew,,,
 tomasbjerre/violation-comments-to-github-gradle-plugin,master,8,,gradlew,,,
 tomasbjerre/violation-comments-to-gitlab-gradle-plugin,master,8,,gradlew,,,
@@ -9859,7 +9858,7 @@ wind57/0x-plugin-bom,master,8,,gradlew,,true,Error: Could not find or load main 
 winder/Universal-G-Code-Sender,master,8,,maven,,,
 winterselmon/Practiceandlearn,master,8,,gradlew,,true,Build uses Gradle 3.x
 winterstein/Eclipse-Markdown-Editor-Plugin,master,8,,maven,,,
-wiremock/wiremock,master,8,,gradlew,,,
+wiremock/wiremock,master,11,,gradlew,,,
 wiztools/rest-client,master,8,,gradlew,,,
 wizzardo/webery,master,8,,gradlew,,,
 wlindner/gradle-setup-frontend-plugin,master,8,,gradlew,,,
