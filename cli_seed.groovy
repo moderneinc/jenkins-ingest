@@ -41,8 +41,10 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
-            credentialsBinding {
-                usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+            wrappers {
+                credentialsBinding {
+                    usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+                }
             }
             String workspacePath = SEED_JOB.getWorkspace()
             shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest')
