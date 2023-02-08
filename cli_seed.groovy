@@ -24,26 +24,33 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
 
     job("cli-ingest/$repoJobName") {
 
-        //requires to enable "Use secret text(s) or file(s)" in the free style JOB and configure $GC_KEY
-        sh '''
-            chmod 600 $GC_KEY
-            cat $GC_KEY | docker login -u _json_key --password-stdin https://us.gcr.io
-
-            docker pull us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest
-        '''
-
-        git url:"https://github.com/${repoName}", branch:repoBranch, credentialsId:'jkschneider-pat'
-
-        withCredentials([usernamePassword(credentialsId: 'artifactory', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-
-            sh 'docker run -v ' + pwd() + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=' + USERNAME + ' -e PUBLISH_PWD=' + PASSWORD + ' us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest'
-
+        steps {
+            //requires to enable "Use secret text(s) or file(s)" in the free style JOB and configure $GC_KEY
+            shell("chmod 600 $GC_KEY")
+            shell("cat $GC_KEY | docker login -u _json_key --password-stdin https://us.gcr.io")
+            shell("docker pull us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest")
+            scm {
+                git {
+                    remote {
+                        url("https://github.com/${repoName}")
+                        branch(repoBranch)
+                        credentials('jkschneider-pat')
+                    }
+                    extensions {
+                        localBranch(repoBranch)
+                    }
+                }
+            }
+            credentialsBinding {
+                usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+            }
+            String workspacePath = SEED_JOB.getWorkspace()
+            shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest')
         }
 
         logRotator {
             daysToKeep(7)
         }
-
 
         triggers {
             cron('H 4 * * *')
