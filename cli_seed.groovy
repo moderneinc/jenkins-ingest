@@ -24,19 +24,15 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
 
     job("cli-ingest/$repoJobName") {
 
-        withCredentials([file(credentialsId: 'moderne-gcloud-key', variable: 'GC_KEY')]){
-            sh '''
-                chmod 600 $GC_KEY
-                cat $GC_KEY | docker login -u _json_key --password-stdin https://us.gcr.io
+        //requires to enable "Use secret text(s) or file(s)" in the free style JOB and configure $GC_KEY
+        sh '''
+            chmod 600 $GC_KEY
+            cat $GC_KEY | docker login -u _json_key --password-stdin https://us.gcr.io
 
-                docker pull us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest
-            '''
-        }
+            docker pull us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest
+        '''
+
         git url:"https://github.com/${repoName}", branch:repoBranch, credentialsId:'jkschneider-pat'
-
-        environment {
-            ARTIFACTORY_CREDS = credentials('artifactory')
-        }
 
         withCredentials([usernamePassword(credentialsId: 'artifactory', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 
