@@ -1,7 +1,7 @@
 def workspaceDir = new File(__FILE__).getParentFile()
 
 folder('cli-ingest') {
-    displayName('Ingest Jobs')
+    displayName('CLI Ingest Jobs')
 }
 
 
