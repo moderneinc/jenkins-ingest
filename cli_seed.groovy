@@ -26,10 +26,7 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
 
         steps {
             //requires to enable "Use secret text(s) or file(s)" in the free style JOB and configure $GC_KEY
-            shell("chmod 600 $GC_KEY")
-            shell("cat $GC_KEY | docker login -u _json_key --password-stdin https://us.gcr.io")
-            shell("docker pull us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest")
-            scm {
+              scm {
                 git {
                     remote {
                         url("https://github.com/${repoName}")
@@ -47,7 +44,7 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
                 }
             }
             String workspacePath = SEED_JOB.getWorkspace()
-            shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  us.gcr.io/moderne-dev/moderne/moderne-ingestor:latest')
+            shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  moderne/moderne-ingestor:latest')
         }
 
         logRotator {
