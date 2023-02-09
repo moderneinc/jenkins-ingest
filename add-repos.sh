@@ -64,6 +64,7 @@ do
     BUILD_ACTION=""
     SKIP=""
     SKIP_REASON=""
+    CUSTOM_COMMAND=""
 
     if [ -z "$JAVA_VERSION" ];then
         JAVA_VERSION="8"
@@ -114,7 +115,7 @@ do
     if [ ! -f "$output_csv" ]; then
         printf "repoName,branchName,javaVersion,style,buildTool,buildAction,skip,skipReason\n" >&3
     fi
-    printf "%s,%s,%s,%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$JAVA_VERSION" "$STYLE" "$BUILD_TOOL" "$BUILD_ACTION" "$SKIP" "$SKIP_REASON" >&3
+    printf "%s,%s,%s,%s,%s,%s,%s,%s,%s\n" "$REPO" "$BRANCH" "$JAVA_VERSION" "$STYLE" "$BUILD_TOOL" "$BUILD_ACTION" "$SKIP" "$SKIP_REASON" "$CUSTOM_COMMAND" >&3
 
 done < "$input_csv" 3>> "$output_csv"
 

@@ -68,6 +68,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoBuildTool = tokens[4]
     def repoBuildAction = tokens[5]
     def repoSkip = tokens[6]
+    def repoSkipReason = tokens[7]
+    def repoCustomCommand = tokens[8]
 
     if (repoBuildAction == null) {
         repoBuildAction = ""
@@ -182,7 +184,14 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     mavenName jenkinsMavenName
                     useWrapper(repoBuildTool == 'mvnw')
 
-                    goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dlicense.skip=true -Dlicense.skipCheckLicense=true -Drat.numUnapprovedLicenses=100 -Dgpg.skip -Darchetype.test.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -Dskip.npm -Dskip.yarn -Dskip.bower -Dskip.grunt -Dskip.gulp -Dskip.jspm -Dskip.karma -Dskip.webpack -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn ${repoBuildAction} install io.moderne:moderne-maven-plugin:0.33.0:ast"
+                    goals "-B -DpomCacheDirectory=. -Drat.skip=true -Dlicense.skip=true -Dlicense.skipCheckLicense=true -Drat.numUnapprovedLicenses=100 -Dgpg.skip -Darchetype.test.skip=true -Dmaven.findbugs.enable=false -Dspotbugs.skip=true -Dpmd.skip=true -Dcpd.skip=true -Dfindbugs.skip=true -DskipTests -DskipITs -Dcheckstyle.skip=true -Denforcer.skip=true -Dskip.npm -Dskip.yarn -Dskip.bower -Dskip.grunt -Dskip.gulp -Dskip.jspm -Dskip.karma -Dskip.webpack -s ${mavenIngestSettingsXmlRepoFile} ${(repoStyle != null) ? "-Drewrite.activeStyle=${repoStyle}" : ''} -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn ${repoBuildAction} "
+
+                    if (repoCustomCommand != null && !repoCustomCommand.isEmpty()) {
+                        // Add the custom command to the goals string
+                        goals += repoCustomCommand
+                    }
+
+                    goals += " install io.moderne:moderne-maven-plugin:0.33.0:ast"
                 }
 
                 node / 'buildWrappers' << 'org.jfrog.hudson.maven3.ArtifactoryMaven3Configurator' {
