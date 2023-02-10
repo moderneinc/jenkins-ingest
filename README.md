@@ -14,15 +14,19 @@ seed job will manage jobs for.
 
 The csv-file argument is expected to be a valid `csv` file, with optional header:
 
-`repoName, branch, label, style, buildTool`
+`repoName,branch,javaVersion,style,buildTool,buildAction,skip,skipReason`
 
-| Column | Required | Notes |
-|----|----|----|
-|repoName | Required | Github repository with form `organization/name`, i.e. `google/guava`. |
-|branch | Optional | Github branch name to ingest. |
-|label | Optional | Jenkins worker node label. Current supported values: {`java8`, `java11`}. Defaults to `java8`. |
-|style | Optional | OpenRewrite style name to apply during ingest. |
-|buildTool | Optional | Auto-detected if omitted. Current supported value: {`gradle`, `gradlew`, `maven`}. |
+| Column                   | Required   | Notes                                                                                            |
+|--------------------------|------------|--------------------------------------------------------------------------------------------------|
+| repoName                 | Required   | Github repository with form `organization/name`, i.e. `google/guava`.                            |
+| branch                   | Optional   | Github branch name to ingest.                                                                    |
+| label                    | Optional   | Jenkins worker node label. Current supported values: {`java8`, `java11`}. Defaults to `java8`.   |
+| style                    | Optional   | OpenRewrite style name to apply during ingest.                                                   |
+| buildTool                | Optional   | Auto-detected if omitted. Current supported value: {`gradle`, `gradlew`, `maven`}.               |
+| buildAction              | Optional   | Additional build tool tasks/targets to execute.                                                  |
+| skip                     | Optional   | Use 'true' to omit ingest job creation for the CSV row.                                          |
+| skipReason               | Optional   | Reason a job is set to skip                                                                      |
+
 
 For maintainers there's a [GitHub Action workflow](https://github.com/moderneinc/jenkins-ingest/blob/main/.github/workflows/add-repos.yml) that [runs the script for an argument organization or user](https://github.com/moderneinc/jenkins-ingest/actions/workflows/add-repos.yml).
 
