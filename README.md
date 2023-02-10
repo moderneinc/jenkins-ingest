@@ -10,7 +10,7 @@ Run the following Kotlin script to take an input `csv` file. The result will be 
 added to `repos.csv` in the root of this project, which serves as the source of repositories that the
 seed job will manage jobs for.
 
-`./add-repos.main.kts csv-file`
+`./add-repos.sh csv-file`
 
 The csv-file argument is expected to be a valid `csv` file, with optional header:
 
