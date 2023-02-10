@@ -44,7 +44,7 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
                 }
             }
             String workspacePath = SEED_JOB.getWorkspace()
-            shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  moderne/moderne-ingestor:latest')
+            shell('docker run -v ' + workspacePath + ':/repository -e JAVA_VERSION=1.'+ repoJavaVersion +' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest -e PUBLISH_USER=$ARTIFACTORY_USER -e PUBLISH_PWD=$ARTIFACTORY_PASSWORD  moderne/moderne-cli:latest')
         }
 
         logRotator {
