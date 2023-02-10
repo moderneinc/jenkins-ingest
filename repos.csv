@@ -1162,7 +1162,7 @@ OpenLimark/GitFlowSemVerPlugin,develop,8,,gradlew,,true,Build uses Gradle 4.x pr
 OpenNMS/newts,master,8,,maven,,,
 OpenNTF/SocialSDK,master,8,,maven,,,
 OpenOLAT/OpenOLAT,master,11,,maven,,,
-OpenRefine/OpenRefine,master,11,,maven,,,
+OpenRefine/OpenRefine,master,11,,maven,-Dmaven.antrun.skip=true -pl !packaging/pom.xml,,
 OpenRock/OpenDJ,master,8,,maven,,,
 OpenSOC/opensoc-streaming,master,8,,maven,,,
 OpenSeizureDetector/Android_Pebble_SD,master,11,,gradlew,,,
