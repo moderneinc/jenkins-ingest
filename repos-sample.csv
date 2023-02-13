@@ -98,7 +98,7 @@ Netflix/Priam,3.x,8,,gradlew,,,
 Netflix/SimianArmy,master,8,,gradlew,,true,Build uses Gradle 2.x
 Netflix/archaius,master,8,,gradlew,,true,Build uses Gradle 2.x
 Netflix/astyanax,master,8,,gradlew,,,
-Netflix/conductor,main,8,com.netflix.eureka.Style,gradlew,,,
+Netflix/conductor,main,11,com.netflix.eureka.Style,gradlew,,,
 Netflix/curator,master,8,,maven,,,
 Netflix/dgs-codegen,master,8,,gradlew,,,
 Netflix/dgs-framework,master,8,,gradlew,,,
