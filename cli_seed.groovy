@@ -40,14 +40,12 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
             }
             wrappers {
                 credentialsBinding {
-                    usernamePassword('ARTIFACTORY_USER', 'ARTIFACTORY_PASSWORD', 'artifactory')
+                    usernamePassword('MODERNE_PUBLISH_USER', 'MODERNE_PUBLISH_PWD', 'artifactory')
                 }
             }
             shell('docker run -v ${WORKSPACE}:/repository'
                     + ' -e JAVA_VERSION='+ repoJavaVersion
                     + ' -e MODERNE_PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest '
-                    + ' -e MODERNE_PUBLISH_USER=${ARTIFACTORY_USER}'
-                    + ' -e MODERNE_PUBLISH_PWD=${ARTIFACTORY_PASSWORD}'
                     + ' moderne/moderne-cli:latest')
         }
 
