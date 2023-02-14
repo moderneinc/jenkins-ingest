@@ -51,10 +51,10 @@ jobs:
           ./add-repos.sh -i "${{ env.LOGIN }}-repositories.csv" -o "${{ github.workspace }}/repos.csv" -t "${{ github.workspace }}"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git checkout -b "ingest-${{ env.LOGIN }}-repositories"
           git add repos.csv 
           git commit -m "Added ${{ env.LOGIN }} repositories to ingest"
-          git pull
-          git push
+          git push --set-upstream "ingest-${{ env.LOGIN }}-repositories" "origin/ingest-${{ env.LOGIN }}-repositories"
       - uses: actions/upload-artifact@v3
         if: always()
         with:
