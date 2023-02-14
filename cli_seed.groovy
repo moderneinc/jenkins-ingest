@@ -58,9 +58,9 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
                     + ' -e MODERNE_PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest'
                     + ' -e MODERNE_PUBLISH_USER=${MODERNE_PUBLISH_USER}'
                     + ' -e MODERNE_PUBLISH_PWD=${MODERNE_PUBLISH_PWD}'
-                    + ' -e MODERNE_ACTIVE_STYLE=' + repoStyle,
-                    + ' -e MODERNE_BUILD_ACTION=' + repoBuildAction,
-                    + ' -e MODERNE_MVN_SETTINGS_XML=' + mavenIngestSettingsXmlRepoFile,
+                    + ' -e MODERNE_ACTIVE_STYLE=' + repoStyle
+                    + ' -e MODERNE_BUILD_ACTION=' + repoBuildAction
+                    + ' -e MODERNE_MVN_SETTINGS_XML=' + mavenIngestSettingsXmlRepoFile
                     + ' moderne/moderne-cli:latest')
         }
 
