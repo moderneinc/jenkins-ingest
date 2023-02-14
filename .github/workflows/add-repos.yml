@@ -54,7 +54,7 @@ jobs:
           git checkout -b "ingest-${{ env.LOGIN }}-repositories"
           git add repos.csv 
           git commit -m "Added ${{ env.LOGIN }} repositories to ingest"
-          git push --set-upstream "ingest-${{ env.LOGIN }}-repositories" "origin/ingest-${{ env.LOGIN }}-repositories"
+          git push --set-upstream origin "ingest-${{ env.LOGIN }}-repositories"
       - uses: actions/upload-artifact@v3
         if: always()
         with:
