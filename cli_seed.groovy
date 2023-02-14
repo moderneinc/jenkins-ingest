@@ -15,8 +15,8 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
     def repoName = tokens[0]
     def repoBranch = tokens[1]
     def repoJavaVersion = tokens[2]
-    def repoStyle = tokens[3]
-    def repoBuildAction = tokens[5]
+    def repoStyle = tokens[3] ?: ''
+    def repoBuildAction = tokens[5] ?: ''
     def repoSkip = tokens[6]
 
     if ("true" == repoSkip) {
