@@ -45,9 +45,9 @@ new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
             }
             shell('docker run -v ${WORKSPACE}:/repository'
                     + ' -e JAVA_VERSION='+ repoJavaVersion
-                    + ' -e PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest '
-                    + ' -e PUBLISH_USER=${ARTIFACTORY_USER}'
-                    + ' -e PUBLISH_PWD=${ARTIFACTORY_PASSWORD}'
+                    + ' -e MODERNE_PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest '
+                    + ' -e MODERNE_PUBLISH_USER=${ARTIFACTORY_USER}'
+                    + ' -e MODERNE_PUBLISH_PWD=${ARTIFACTORY_PASSWORD}'
                     + ' moderne/moderne-cli:latest')
         }
 
