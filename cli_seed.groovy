@@ -8,6 +8,26 @@ folder('cli-ingest') {
 }
 
 
+configFiles {
+    mavenSettingsConfig {
+        id(mavenIngestSettingsXmlFileId)
+        name("Maven Settings: ingest-maven-settings.xml")
+        comment("Maven settings that sets mirror on repos that are known to use http, and injects artifactory credentials")
+        content readFileFromWorkspace('maven/ingest-settings.xml')
+        isReplaceAll(true)
+        serverCredentialMappings {
+            serverCredentialMapping {
+                serverId('moderne-public')
+                credentialsId('artifactory')
+            }
+            serverCredentialMapping {
+                serverId('moderne-remote-cache')
+                credentialsId('artifactory')
+            }
+        }
+    }
+}
+
 new File(workspaceDir, 'repos-sample.csv').splitEachLine(',') { tokens ->
     if (tokens[0].startsWith('repoName')) {
         return
