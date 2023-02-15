@@ -5,7 +5,7 @@
             <mirrorOf>
                 central
             </mirrorOf>
-            <url>https://artifactory.moderne.ninja/artifactory/moderne-remote-cache</url>
+            <url>https://artifactory.moderne.ninja/artifactory/moderne-cache-3</url>
         </mirror>
 
         <mirror>
