@@ -89,7 +89,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         triggers {
-            cron('H */6 * * *')
+            cron('H 4 * * *')
         }
 
         publishers {
