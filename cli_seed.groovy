@@ -81,7 +81,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     + ' -e MODERNE_ACTIVE_STYLE=' + repoStyle
                     + ' -e MODERNE_BUILD_ACTION=' + repoBuildAction
                     + ' -e MODERNE_MVN_SETTINGS_XML=' + mavenIngestSettingsXmlRepoFile
-                    + ' moderne/moderne-cli:v0.0.2')
+                    + ' moderne/moderne-cli:v0.0.5')
         }
 
         logRotator {
