@@ -3179,6 +3179,9 @@ barryearles/parallel-tasks-gradle-plugin,master,8,,gradlew,,true,Build uses Grad
 bastienpaulfr/gradle-git-extractor-plugin,master,8,,gradlew,,true,Build uses Gradle 3.x
 bauerca/drag-sort-listview,master,8,,maven,,,
 bbossgroups/bboss,master,8,,gradle,,,
+bbqwednesday/bbqwednesday.github.io,main,8,,,,true,Top-level build tool file is missing
+bbqwednesday/email-capture-function,main,8,,maven,,,
+bbqwednesday/tfe,main,8,,,,true,Top-level build tool file is missing
 bcgit/bc-java,master,8,,gradle,,,
 bcombes/TinyPngPlugin,master,8,,gradle,,,
 bdemers/generated-code-example,master,8,,maven,,,
