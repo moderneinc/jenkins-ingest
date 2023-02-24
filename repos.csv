@@ -9239,7 +9239,7 @@ spring-projects/spring-gemfire-examples,main,17,,gradlew,,true,Build uses Gradle
 spring-projects/spring-graphql,main,17,,gradlew,,,
 spring-projects/spring-guice,master,17,,maven,,,
 spring-projects/spring-hateoas,main,17,,mvnw,,,
-spring-projects/spring-hateoas-examples,main,17,,maven,,,
+spring-projects/spring-hateoas-examples,main,8,,maven,,,
 spring-projects/spring-ide,main,17,,maven,,,
 spring-projects/spring-integration,main,17,,gradlew,,,
 spring-projects/spring-integration-aws,main,17,,gradlew,,,
