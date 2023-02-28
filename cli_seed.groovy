@@ -97,8 +97,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 extraArgs = ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
             }
 
-            shell("curl --request GET ${moderneCLIURL} >> mod && chmod u+x mod")
-            shell('./mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
+            shell('mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
         }
 
         logRotator {
