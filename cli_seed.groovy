@@ -60,6 +60,16 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             label('multi-jdk')
             jdk("java${repoJavaVersion}")
         }
+        def extraArgs = ''
+        if (repoStyle != null && !repoStyle.equals("")) {
+            extraArgs = '--activeStyle ' + repoStyle
+        }
+        if (repoBuildAction != null && !repoBuildAction.equals("")) {
+            extraArgs = extraArgs + ' --buildAction ' + repoBuildAction
+        }
+        if (requiresJava) {
+            extraArgs = extraArgs + ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
+        }
 
         steps {
             scm {
@@ -83,16 +93,6 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                         targetLocation(mavenIngestSettingsXmlRepoFile)
                     }
                 }
-            }
-            def extraArgs = ''
-            if (repoStyle != null && !repoStyle.equals("")) {
-                extraArgs = '--activeStyle ' + repoStyle
-            }
-            if (repoBuildAction != null && !repoBuildAction.equals("")) {
-                extraArgs = extraArgs + ' --buildAction ' + repoBuildAction
-            }
-            if (requiresJava) {
-                extraArgs = extraArgs + ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
             }
 
             shell('mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
