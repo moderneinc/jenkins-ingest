@@ -92,9 +92,10 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 (fileExists('build.gradle', BaseDir.WORKSPACE) || fileExists('build.gradle.kts', BaseDir.WORKSPACE)) && !(fileExists('gradlew', BaseDir.WORKSPACE) || fileExists('gradlew.bat', BaseDir.WORKSPACE))
             }
             steps {
-            gradle {
+                gradle {
                     useWrapper(false)
                     gradleName 'gradle 7.4.2'
+                }
             }
         } 
         
