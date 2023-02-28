@@ -95,7 +95,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 }
             }
 
-            shell('mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
+            shell('mod publish --path . --url ' + publishURL + ' ' + extraArgs)
         }
 
         logRotator {
