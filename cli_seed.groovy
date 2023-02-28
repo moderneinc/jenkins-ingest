@@ -100,7 +100,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         
         conditionalSteps {
             condition {
-             fileExists('pom.xml', BaseDir.WORKSPACE) && !( fileExists('mvnw', BaseDir.WORKSPACE) || fileExists('mvnw.bat', BaseDir.WORKSPACE))    
+             fileExists('pom.xml', BaseDir.WORKSPACE) && !( fileExists('mvnw', BaseDir.WORKSPACE) || fileExists('mvnw.cmd', BaseDir.WORKSPACE))    
             }
             steps {
               configure { node ->
