@@ -85,8 +85,8 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                 }
             }
 
-            def requiresGradle = fileExists 'build.gradle' || fileExists 'build.gradle.kts' && (! fileExists 'gradlew' || fileExists 'gradlew.bat')
-            def requiresMaven = fileExists 'pom.xml' && (! fileExists 'mvnw' || fileExists 'mvnw.bat')
+            def requiresGradle = fileExists 'build.gradle' || fileExists 'build.gradle.kts' && !(fileExists 'gradlew' || fileExists 'gradlew.bat')
+            def requiresMaven = fileExists 'pom.xml' && !( fileExists 'mvnw' || fileExists 'mvnw.bat')
 
             if (requiresGradle) {
         
