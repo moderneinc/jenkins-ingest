@@ -3,10 +3,16 @@ def workspaceDir = new File(__FILE__).getParentFile()
 def mavenIngestSettingsXmlFileId = "maven-ingest-settings-credentials"
 def mavenIngestSettingsXmlRepoFile = ".mvn/ingest-settings.xml"
 
+def publishURL = 'https://artifactory.acme.com/artifactory/moderne-ingest'
+def publishCreds = 'artifactory'
+def scmCredentialsId = 'jkschneider-pat'
+def scheduling='H 4 * * *'
+def moderneCLIVersion= '0.0.14'
+def moderneCLIURL = 'https://pkgs.dev.azure.com/moderneinc/moderne_public/_packaging/moderne/maven/v1/io/moderne/moderne-cli-linux/' + moderneCLIVersion +'/moderne-cli-linux-'+ moderneCLIVersion
+
 folder('cli-ingest') {
     displayName('CLI Ingest Jobs')
 }
-
 
 configFiles {
     mavenSettingsConfig {
@@ -32,6 +38,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     if (tokens[0].startsWith('repoName')) {
         return
     }
+    def scmHost = 'github.com'
     def repoName = tokens[0]
     def repoBranch = tokens[1]
     def repoJavaVersion = tokens[2]
@@ -39,24 +46,30 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     def repoBuildAction = tokens[5] ?: ''
     def repoSkip = tokens[6]
 
-    if ("true" == repoSkip) {
+    if ('true' == repoSkip) {
         return
     }
 
     def repoJobName = repoName.replaceAll('/', '_')
 
+    boolean requiresJava = repoJavaVersion != null && !repoJavaVersion.equals("")
+
     println("creating job $repoJobName")
 
     job("cli-ingest/$repoJobName") {
 
+        if (requiresJava) {
+            label('multi-jdk')
+            jdk("java${repoJavaVersion}")
+        }
+
         steps {
-            //requires to enable "Use secret text(s) or file(s)" in the free style JOB and configure $GC_KEY
-              scm {
+            scm {
                 git {
                     remote {
-                        url("https://github.com/${repoName}")
+                        url("https://${scmHost}/${repoName}")
                         branch(repoBranch)
-                        credentials('jkschneider-pat')
+                        credentials(scmCredentialsId)
                     }
                     extensions {
                         localBranch(repoBranch)
@@ -65,7 +78,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
             wrappers {
                 credentialsBinding {
-                    usernamePassword('MODERNE_PUBLISH_USER', 'MODERNE_PUBLISH_PWD', 'artifactory')
+                    usernamePassword('MODERNE_PUBLISH_USER', 'MODERNE_PUBLISH_PWD', publishCreds)
                 }
                 configFiles {
                     file(mavenIngestSettingsXmlFileId) {
@@ -73,15 +86,19 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
-            shell('docker run -v ${WORKSPACE}:/repository'
-                    + ' -e JAVA_VERSION='+ repoJavaVersion
-                    + ' -e MODERNE_PUBLISH_URL=https://artifactory.moderne.ninja/artifactory/moderne-ingest'
-                    + ' -e MODERNE_PUBLISH_USER=${MODERNE_PUBLISH_USER}'
-                    + ' -e MODERNE_PUBLISH_PWD=${MODERNE_PUBLISH_PWD}'
-                    + ' -e MODERNE_ACTIVE_STYLE=' + repoStyle
-                    + ' -e MODERNE_BUILD_ACTION=' + repoBuildAction
-                    + ' -e MODERNE_MVN_SETTINGS_XML=' + mavenIngestSettingsXmlRepoFile
-                    + ' moderne/moderne-cli:v0.0.8')
+            def extraArgs = ''
+            if (repoStyle != null && !repoStyle.equals("")) {
+                extraArgs =  '--activeStyle ' + repoStyle
+            }
+            if (repoBuildAction != null && !repoBuildAction.equals("")) {
+                extraArgs = extraArgs + ' --buildAction ' + repoBuildAction
+            }
+            if (requiresJava) {
+                extraArgs = ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
+            }
+
+            shell("curl --request GET ${moderneCLIURL} >> mod && chmod u+x mod")
+            shell('./mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
         }
 
         logRotator {
@@ -89,7 +106,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
         }
 
         triggers {
-            cron('H 4 * * *')
+            cron(scheduling)
         }
 
         publishers {
