@@ -84,6 +84,28 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
+
+            def requiresGradle = fileExists 'build.gradle' || fileExists 'build.gradle.kts' && (! fileExists 'gradlew' || fileExists 'gradlew.bat')
+            def requiresMaven = fileExists 'pom.xml' && (! fileExists 'mvnw' || fileExists 'mvnw.bat')
+
+            if (requiresGradle) {
+        
+                gradle {
+                    useWrapper(false)
+                    gradleName 'gradle 7.4.2'
+                }
+            }
+
+            if (requiresMaven) {
+                
+                configure { node ->
+                    node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
+                        useWrapper(false)
+                        mavenName 'maven3.x'
+                    }
+                }
+            }
+            
             wrappers {
                 credentialsBinding {
                     usernamePassword('MODERNE_PUBLISH_USER', 'MODERNE_PUBLISH_PWD', publishCreds)
