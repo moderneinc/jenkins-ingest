@@ -3,7 +3,7 @@ def workspaceDir = new File(__FILE__).getParentFile()
 def mavenIngestSettingsXmlFileId = "maven-ingest-settings-credentials"
 def mavenIngestSettingsXmlRepoFile = ".mvn/ingest-settings.xml"
 
-def publishURL = 'https://artifactory.acme.com/artifactory/moderne-ingest'
+def publishURL = 'https://artifactory.moderne.ninja/artifactory/moderne-ingest'
 def publishCreds = 'artifactory'
 def scmCredentialsId = 'jkschneider-pat'
 def scheduling='H 4 * * *'
