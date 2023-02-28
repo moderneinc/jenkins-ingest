@@ -91,28 +91,28 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             condition {
                 (fileExists('build.gradle', BaseDir.WORKSPACE) || fileExists('build.gradle.kts', BaseDir.WORKSPACE)) && !(fileExists('gradlew', BaseDir.WORKSPACE) || fileExists('gradlew.bat', BaseDir.WORKSPACE))
             }
-        } 
-        steps {
+            steps {
             gradle {
                     useWrapper(false)
                     gradleName 'gradle 7.4.2'
             }
-        }
-
+        } 
+        
         conditionalSteps {
             condition {
              fileExists('pom.xml', BaseDir.WORKSPACE) && !( fileExists('mvnw', BaseDir.WORKSPACE) || fileExists('mvnw.bat', BaseDir.WORKSPACE))    
             }
-        } 
-        steps {
-            configure { node ->
+            steps {
+              configure { node ->
                     node / 'builders' << 'org.jfrog.hudson.maven3.Maven3Builder' {
                         useWrapper(false)
                         mavenName 'maven3.x'
                     }
+              }
             }
-        }
+        } 
         
+
         steps {
             wrappers {
                 credentialsBinding {
