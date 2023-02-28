@@ -86,13 +86,13 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
             }
             def extraArgs = ''
             if (repoStyle != null && !repoStyle.equals("")) {
-                extraArgs =  '--activeStyle ' + repoStyle
+                extraArgs = '--activeStyle ' + repoStyle
             }
             if (repoBuildAction != null && !repoBuildAction.equals("")) {
                 extraArgs = extraArgs + ' --buildAction ' + repoBuildAction
             }
             if (requiresJava) {
-                extraArgs = ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
+                extraArgs = extraArgs + ' --mvnSettingsXml ' + mavenIngestSettingsXmlRepoFile
             }
 
             shell('mod publish --path ' + ${WORKSPACE} + ' --url ' + publishURL + ' ' + extraArgs)
