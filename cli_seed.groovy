@@ -91,11 +91,12 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
+            def javaHome = ''
             if (requiresJava) {
-                shell("jenv local ${repoJavaVersion}")
+                javaHome = "export JAVA_HOME=/usr/lib/jvm/temurin-${repoJavaVersion}-jdk-amd64 && "
             }
             
-            shell('mod publish --path . --url ' + publishURL + ' ' + extraArgs)
+            shell(javaHome + 'mod publish --path . --url ' + publishURL + ' ' + extraArgs)
         }
 
         logRotator {
