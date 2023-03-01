@@ -1,3 +1,4 @@
+repoName,branch,javaVersion,style,buildTool,buildAction,skip,skipReason
 007shahzeb/FirebaseChatDemoShahzeb,master,8,,gradlew,,,
 007shishir/EEE_Formula,master,8,,gradlew,,,
 00pf00/dubbo,master,8,,maven,,,
@@ -29777,7 +29778,6 @@ renyaoxiang/gradle-frontend,master,8,,gradle,,,
 renyuneyun/Easer,master,8,,gradlew,,,
 REPLicated/classpath-collision-detector,master,8,,gradlew,,,
 replydev/Quboscanner,main,8,,maven,,,
-repoName,branch,javaVersion,style,buildTool,buildAction,skip,skipReason
 reportengine/report-engine,development,8,,maven,,,
 reportportal/agent-java-testNG,develop,8,,gradlew,,,
 reportportal/logger-java-log4j,develop,8,,gradlew,,,
