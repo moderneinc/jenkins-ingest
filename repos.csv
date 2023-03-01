@@ -21523,7 +21523,6 @@ itors/websocket-upload,master,8,,maven,,,
 itow0001/cron-shelve,master,8,,maven,,,
 itowne/posmall,master,8,,maven,,,
 itruong/web-bot-public,main,8,,,,true,Top-level build tool file is missing
-its-arun/D.A.T.A.,master,8,,gradlew,,,
 its-arun/Mini-UMS-App,master,8,,gradlew,,,
 its-danny/xibalba,master,8,,gradlew,,,
 its4u/vestiary,main,8,,maven,,,
@@ -26472,7 +26471,6 @@ liji123456/sude,master,8,,maven,,,
 lijiankun24/Koala,master,8,,gradlew,,true,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 lijiankun24/ShadowLayout,master,8,,gradlew,,,
 lijie2000/jhipsterWebSocketApplication,master,8,,maven,,,
-lijinchang3/spring-boot-seckill.,dev,8,,maven,,,
 lijinchao1997/bgd-parent,master,8,,maven,,,
 likaiyuan559/TikTokDemo,master,8,,gradlew,,,
 lil-lab/spf,master,8,,,,true,Top-level build tool file is missing
