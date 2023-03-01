@@ -34383,7 +34383,7 @@ spring-projects/spring-mvc-showcase,master,17,,maven,,,
 spring-projects/spring-petclinic,main,17,,gradlew,,,
 spring-projects/spring-plugin,main,17,,maven,,,
 spring-projects/spring-restdocs,main,17,,gradlew,,,
-spring-projects/spring-retry,main,17,,mvnw,,,
+spring-projects/spring-retry,main,17,org.openrewrite.java.SpringFormat,mvnw,,,
 spring-projects/spring-security,main,17,,gradlew,,,
 spring-projects/spring-security-kerberos,main,17,,gradlew,,true,Build uses Gradle 2.x
 spring-projects/spring-security-oauth,main,17,,mvnw,,,
