@@ -55,11 +55,7 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
     println("creating job $repoJobName")
 
     job("cli-ingest/$repoJobName") {
-
-        if (requiresJava) {
-            label('multi-jdk')
-            jdk("java${repoJavaVersion}")
-        }
+        
         def extraArgs = ''
         if (repoStyle != null && !repoStyle.equals("")) {
             extraArgs = '--activeStyle ' + repoStyle
@@ -95,7 +91,10 @@ new File(workspaceDir, 'repos.csv').splitEachLine(',') { tokens ->
                     }
                 }
             }
-
+            if (requiresJava) {
+                shell("jenv local ${repoJavaVersion}")
+            }
+            
             shell('mod publish --path . --url ' + publishURL + ' ' + extraArgs)
         }
 
