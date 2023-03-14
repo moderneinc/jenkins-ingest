@@ -11035,7 +11035,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-jxr,master,maven,,java8,,,,
 ,apache/maven-linkcheck-plugin,master,maven,,java8,,,,
 ,apache/maven-mapping,master,maven,,java8,,,,
-,apache/maven-mvnd,master,maven,,java8,,,,
+,apache/maven-mvnd,master,maven,,java11,,,,
 ,apache/maven-osgi,master,maven,,java8,,,,
 ,apache/maven-patch-plugin,master,maven,,java8,,,,
 ,apache/maven-pdf-plugin,master,maven,,java8,,,,
