@@ -1,33 +1,34 @@
-## Purpose
+# Jenkins ingest
+https://public.moderne.io allows users to run recipes against thousands of Open Source Software projects.
+This repository contains a comma separated value (CSV) file of repositories to ingest into Moderne on a daily basis.
 
-On a nightly basis, [Moderne](https://public.moderne.io) receives updated lossless semantic tree (LST) representations of a large body of OSS software from this process. Each repository that is subject to nightly ingest is listed in `repos.csv`, along with calculated information about its build tooling and language level requirements.
+## repos.csv file format
+The CSV file can use an optional header row.
+```csv
+repoName,branch,javaVersion,style,buildTool,buildAction,skip,skipReason
+```
 
-This same process can be used with a few tweaks in the enterprise to mass produce LSTs for ingestion into a private Moderne tenant, as described below.
+The columns are defined as follows:
 
-## How to add repositories
+| Column          | Required | Notes                                                                                             |
+|-----------------|----------|---------------------------------------------------------------------------------------------------|
+| scmHost         | Optional | Repository host such as `github.com`, `gitlab.com` or enterprise hosts. Defaults to `github.com`. |
+| repoName        | Required | Repository path with form `organization/name`, i.e. `google/guava`.                               |
+| repoBranch      | Optional | Git branch name to ingest. Defaults to `main`.                                                    |
+| mavenTool       | Optional | Name of the Maven Global Tool Configuration to use. Defaults to `maven`.                          |
+| gradleTool      | Optional | Name of the Gradle Global Tool Configuration to use. Defaults to `gradle`.                        |
+| jdkTool         | Optional | Name of the JDK Global Tool Configuration to use. Defaults to `java8`.                            |
+| repoStyle       | Optional | Name of the OpenRewrite style to apply during ingest. Defaults to empty.                          |
+| repoBuildAction | Optional | Additional build tool tasks/targets to execute before ingestion goal. Defaults to empty.          |
+| repoSkip        | Optional | Use 'TRUE' to omit ingest job creation for the CSV row. Defaults to empty.                        |
+| skipReason      | Optional | Reason a job is set to skip.                                                                      |
 
-Run the following script to take an input `csv` file. The result will be additional lines
-added to `repos.csv` in the root of this project, which serves as the source of repositories that the
-seed job will manage jobs for.
+## Creating Jenkins jobs
+The Jenkins ingestion jobs are created from `repos.csv` by running the moderne-cli command `moderne-cli connect jenkins`
+either on a local machine, or through GitHub Actions on the `moderne-cli` repository.
 
-`./add-repos.sh csv-file`
+## Upload `maven/ingest-settings.xml`
+Ingestion can optionally use a Maven settings file to configure authentication for private repositories.
+An example of which is given in `maven/ingest-settings.xml`.
+This file should be uploaded to the Jenkins master through `Manage Jenkins > Managed files > Add a new Config`.
 
-The csv-file argument is expected to be a valid `csv` file, with optional header:
-
-`repoName,branch,javaVersion,style,buildTool,buildAction,skip,skipReason`
-
-| Column                   | Required   | Notes                                                                                            |
-|--------------------------|------------|--------------------------------------------------------------------------------------------------|
-| repoName                 | Required   | Github repository with form `organization/name`, i.e. `google/guava`.                            |
-| branch                   | Optional   | Github branch name to ingest.                                                                    |
-| label                    | Optional   | Jenkins worker node label. Current supported values: {`java8`, `java11`}. Defaults to `java8`.   |
-| style                    | Optional   | OpenRewrite style name to apply during ingest.                                                   |
-| buildTool                | Optional   | Auto-detected if omitted. Current supported value: {`gradle`, `gradlew`, `maven`}.               |
-| buildAction              | Optional   | Additional build tool tasks/targets to execute.                                                  |
-| skip                     | Optional   | Use 'true' to omit ingest job creation for the CSV row.                                          |
-| skipReason               | Optional   | Reason a job is set to skip                                                                      |
-
-
-For maintainers there's a [GitHub Action workflow](https://github.com/moderneinc/jenkins-ingest/blob/main/.github/workflows/add-repos.yml) that [runs the script for an argument organization or user](https://github.com/moderneinc/jenkins-ingest/actions/workflows/add-repos.yml).
-
-Then rerun [the Seed job](https://github.com/moderneinc/jenkins-ingest/blob/main/seed.groovy) in Jenkins to create the new ingestion jobs.
