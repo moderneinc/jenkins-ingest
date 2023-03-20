@@ -30,5 +30,5 @@ either on a local machine, or through GitHub Actions on the `moderne-cli` reposi
 ## Upload `maven/ingest-settings.xml`
 Ingestion can optionally use a Maven settings file to configure authentication for private repositories.
 An example of which is given in `maven/ingest-settings.xml`.
-This file should be uploaded to the Jenkins master through `Manage Jenkins > Managed files > Add a new Config`.
+This file should be configured in Jenkins master through `Manage Jenkins > Global Tool Configuration > Maven Configuration`.
 
