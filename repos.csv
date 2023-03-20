@@ -27627,6 +27627,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,microsoftgraph/msgraph-sdk-android-msa-auth-for-android-adapter,master,,,java8,,,,
 ,microsoftgraph/msgraph-sdk-java,dev,,,java8,,,,
 ,microsoftgraph/msgraph-sdk-java-core,dev,,,java8,,,,
+,microstream-one/microstream,master,maven,,java11,,,,
 ,microwww/redis-mock,master,maven,,java8,,,,
 ,micycle1/JMedialAxis,master,maven,,java8,,,,
 ,micycle1/PeasyGradients,master,maven,,java8,,,,
@@ -37828,6 +37829,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,xddxdd/airflow-sense,master,,,java8,,,,
 ,xdefer/PilPoil,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,xdev-developer/javablog,master,maven,,java8,,,,
+,xdev-software/vaadin-grid-exporter,develop,maven,,java11,,,,
+,xdev-software/xapi,develop,maven,,java8,,,,
+,xdev-software/vaadin-date-range-picker,develop,maven,,java11,,,,
+,xdev-software/vaadin-maps-leaflet-flow,develop,maven,,java11,,,,
 ,xdocc/xdocc,master,,,java8,,,,
 ,xdrc/jhipster-sample-application,master,maven,,java8,,,,
 ,xdrop/fuzzywuzzy,master,maven,,java8,,,,
