@@ -27981,6 +27981,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,moderneinc/moderne-artifact-storage,main,,,java17,,,,
 ,moderneinc/moderne-ast-write,main,,,java17,,,,
 ,moderneinc/moderne-audit,main,,,java17,,,,
+,moderneinc/cobol-samples,main,,,,,,,
 ,moderneinc/moderne-common,main,,,java17,,,,
 ,moderneinc/moderne-eclipse-plugin,main,,,java17,,,,
 ,moderneinc/moderne-eureka,main,,,java17,,,,
