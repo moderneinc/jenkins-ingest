@@ -1,4 +1,4 @@
-package org.example;
+package io.moderne.jenkins.ingest;
 
 import java.io.FileWriter;
 import java.io.IOException;
