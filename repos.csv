@@ -10962,7 +10962,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/logging-log4j-tools,master,maven,,java8,,,,
 ,apache/logging-log4j1,main,maven,,java8,,,,
 ,apache/logging-log4j2,release-2.x,maven,,java8,,,,
-,apache/lucene,main,,,java8,,,,
+,apache/lucene,main,,,java17,,,,
 ,apache/mahout,trunk,maven,,java8,,,,
 ,apache/manifoldcf,trunk,maven,,java8,,,,
 ,apache/manifoldcf-integration-elasticsearch,trunk,maven,,java8,,,,
