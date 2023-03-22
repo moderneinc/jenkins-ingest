@@ -24747,7 +24747,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,kickstarter/telekinesis,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,kiddouk/gradle-vault,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,kiegroup/appformer,main,maven,,java8,,,,
-,kiegroup/drools,main,maven,,java8,,,,
+,kiegroup/drools,main,maven,,java17,,,,
 ,kiegroup/droolsjbpm-integration,main,maven,,java8,,,,
 ,kiegroup/droolsjbpm-knowledge,7.x,maven,,java8,,,,
 ,kiegroup/droolsjbpm-tools,main,maven,,java8,,,,
