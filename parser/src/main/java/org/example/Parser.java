@@ -15,7 +15,7 @@ public class Parser {
     private static final String MINIMUM_GRADLE_VERSION = "4.10";
 
     public static void main(String[] args) throws IOException {
-        updateReposBasedOnDatatable(Path.of(args[1]), Path.of(args[2]));
+        updateReposBasedOnDatatable(Path.of(args[0]), Path.of(args[1]));
     }
 
     public static void updateReposBasedOnDatatable(Path reposFile, Path datatableFile) throws IOException {
@@ -58,7 +58,7 @@ public class Parser {
     private static CsvRow updateCsvRow(CsvRow csvRow, DataTableRow datatableRow) {
         // Pick minimum required Java version
         String requiredJavaVersion = datatableRow.requiredJavaVersion();
-        if (requiredJavaVersion != null && !requiredJavaVersion.isBlank()) {
+        if (requiredJavaVersion != null && !requiredJavaVersion.isBlank() && 8 <= Integer.parseInt(requiredJavaVersion)) {
             csvRow = csvRow.withJdkTool("java" + requiredJavaVersion);
         }
 
