@@ -57,8 +57,8 @@ public class Parser {
 
     private static CsvRow updateCsvRow(CsvRow csvRow, DataTableRow datatableRow) {
         // Pick minimum required Java version
-        String requiredJavaVersion = datatableRow.requiredJavaVersion();
-        if (requiredJavaVersion != null && !requiredJavaVersion.isBlank() && 8 <= Integer.parseInt(requiredJavaVersion)) {
+        Integer requiredJavaVersion = javaVersion(datatableRow.requiredJavaVersion());
+        if (requiredJavaVersion != null) {
             csvRow = csvRow.withJdkTool("java" + requiredJavaVersion);
         }
 
@@ -77,6 +77,22 @@ public class Parser {
             }
         }
         return csvRow;
+    }
+
+    private static Integer javaVersion(String requiredJavaVersion) {
+        if (requiredJavaVersion == null || requiredJavaVersion.isBlank()) {
+            return null;
+        }
+        int javaVersion = Integer.parseInt(requiredJavaVersion);
+        if (javaVersion <= 8) {
+            return 8;
+        } else if (javaVersion <= 11) {
+            return 11;
+        } else if (javaVersion <= 17) {
+            return 17;
+        } else {
+            return 20;
+        }
     }
 }
 
