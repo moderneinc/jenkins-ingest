@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class ParserTest {
 
     @Test
-    void test(@TempDir Path tempDir) throws IOException {
+    void updateCsvWithDatatable(@TempDir Path tempDir) throws IOException {
         Path datatableFile = tempDir.resolve("datatable.csv");
         Files.writeString(datatableFile, """
                 repositoryOrigin,repositoryPath,repositoryBranch,type,version,command,exitCode,requiredJavaVersion,logOutput

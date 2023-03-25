@@ -60,6 +60,11 @@ public class Parser {
         Integer requiredJavaVersion = javaVersion(datatableRow.requiredJavaVersion());
         if (requiredJavaVersion != null) {
             csvRow = csvRow.withJdkTool("java" + requiredJavaVersion);
+            if (requiredJavaVersion < 8) {
+                csvRow = csvRow
+                        .withRepoSkip("TRUE")
+                        .withSkipReason("Java version " + requiredJavaVersion + " is not supported");
+            }
         }
 
         // Skip outdated Maven and Gradle wrappers
@@ -85,7 +90,7 @@ public class Parser {
         }
         int javaVersion = Integer.parseInt(requiredJavaVersion);
         if (javaVersion <= 8) {
-            return 8;
+            return javaVersion;
         } else if (javaVersion <= 11) {
             return 11;
         } else if (javaVersion <= 17) {
