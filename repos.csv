@@ -25134,8 +25134,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,kotlinx/ast,master,,,java8,,,,
 ,kotvertolet/youtube-jextractor,master,,,java8,,,,
 ,kouami/ldapcrudweb,master,,,java8,,,TRUE,Gradle wrapper 4.5.1 is not supported
-,kousen/java_8_recipes,master,,,java8,,,,
-,kousen/java_upgrade,main,,,java8,,,,
+,kousen/java_8_recipes,master,,,java11,,,,
+,kousen/java_latest,main,,,java20,,,,
+,kousen/java_upgrade,main,,,java11,,,,
+,kousen/junit5_workshop,master,,,java17,,,,
+,kousen/mockitobook,main,,,java11,,,,
+,kousen/mockitoproject,main,,,java17,,,,
+,kousen/spring-and-spring-boot,master,,,java11,,,,
 ,koush/AndroidAsync,master,,,java8,,,TRUE,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ,koush/ion,master,,gradle,java8,,,,
 ,koushik3/Text-Processor,master,,,java8,,,TRUE,Top-level build tool file is missing
