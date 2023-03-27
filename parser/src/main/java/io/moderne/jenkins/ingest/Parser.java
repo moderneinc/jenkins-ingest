@@ -28,7 +28,8 @@ public class Parser {
         List<String> datatableLines = Files.readAllLines(datatableFile);
         return datatableLines.stream()
                 .skip(1)
-                .map(line1 -> line1.split(",", -1))
+                .map(line -> line.replace("\"", ""))
+                .map(line -> line.split(",", -1))
                 .map(row -> new DataTableRow(row[0].equals("github.com") ? "" : row[0],
                         row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8]))
                 .collect(Collectors.toMap(

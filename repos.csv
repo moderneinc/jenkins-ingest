@@ -6184,7 +6184,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,OpenLiberty/openapi-ui-test-app,main,,,java8,,,,
 ,OpenLiberty/openliberty-realworld-example-app,main,,,java8,,,,
 ,OpenLiberty/project-templates,main,,,java8,,,,
-,OpenLiberty/sample-acmegifts,main,,,java8,,,,
+,OpenLiberty/sample-acmegifts,main,,,java8,,,TRUE,Gradle wrapper 4.4 is not supported
 ,OpenLiberty/sample-async-rest,main,,,java8,,,,
 ,OpenLiberty/sample-cqrs-jpa,main,,,java8,,,,
 ,OpenLiberty/sample-getting-started,main,,,java8,,,,
