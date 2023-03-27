@@ -37,8 +37,10 @@ To add a repository to the ingestion process, add a row to `repos.csv` with the 
 
 ```shell
 $ gh repo list openliberty --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java8,,,,{{"\n"}}{{end}}' | sort > new.csv
-$ cat repos.csv new.csv | LC_COLLATE=C sort | uniq > merged.csv
-$ mv merged.csv repos.csv
-$ rm new.csv
+$ head -n 1 repos.csv > header.csv
+$ tail -n +2 repos.csv > old.csv
+$ mv header.csv repos.csv
+$ cat old.csv new.csv | LC_COLLATE=C sort | uniq >> repos.csv
+$ rm old.csv new.csv
 ```
 
