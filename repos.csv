@@ -29939,6 +29939,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-recommendations,main,,,java17,,,,
 ,openrewrite/rewrite-sandbox,main,,,java17,,,,
 ,openrewrite/rewrite-spring,main,,,java17,,,,
+,openrewrite/rewrite-sql,main,,,java17,,,,
 ,openrewrite/rewrite-template-generator,main,,,java17,,,,
 ,openrewrite/rewrite-templating,main,,,java17,,,,
 ,openrewrite/rewrite-terraform,main,,,java17,,,,

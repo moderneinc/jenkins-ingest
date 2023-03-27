@@ -36,7 +36,7 @@ This file should be configured in Jenkins master through `Manage Jenkins > Globa
 To add a repository to the ingestion process, add a row to `repos.csv` with the repository name and branch.
 
 ```shell
-$ gh repo list openliberty --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java8,,,,{{"\n"}}{{end}}' | sort > new.csv
+$ gh repo list openrewrite --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java17,,,,{{"\n"}}{{end}}' | sort > new.csv
 $ head -n 1 repos.csv > header.csv
 $ tail -n +2 repos.csv > old.csv
 $ mv header.csv repos.csv
