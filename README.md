@@ -44,3 +44,4 @@ $ cat old.csv new.csv | LC_COLLATE=C sort | uniq >> repos.csv
 $ rm old.csv new.csv
 ```
 
+Then trigger a manual run of https://github.com/moderneinc/moderne-cli/actions/workflows/jenkins.yml, potentially with a prefix filter.
