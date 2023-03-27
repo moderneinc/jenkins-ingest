@@ -32,3 +32,13 @@ Ingestion can optionally use a Maven settings file to configure authentication f
 An example of which is given in `maven/ingest-settings.xml`.
 This file should be configured in Jenkins master through `Manage Jenkins > Global Tool Configuration > Maven Configuration`.
 
+## Adding repositories
+To add a repository to the ingestion process, add a row to `repos.csv` with the repository name and branch.
+
+```shell
+$ gh repo list openliberty --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java8,,,,{{"\n"}}{{end}}' | sort > new.csv
+$ cat repos.csv new.csv | LC_COLLATE=C sort | uniq > merged.csv
+$ mv merged.csv repos.csv
+$ rm new.csv
+```
+
