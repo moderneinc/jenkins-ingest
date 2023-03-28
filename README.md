@@ -44,4 +44,5 @@ $ cat old.csv new.csv | LC_COLLATE=C sort | uniq >> repos.csv
 $ rm old.csv new.csv
 ```
 
-Then trigger a manual run of https://github.com/moderneinc/moderne-cli/actions/workflows/jenkins.yml, potentially with a prefix filter.
+Then trigger a manual run of https://github.com/moderneinc/moderne-cli/actions/workflows/jenkins.yml to create the Jenkins jobs, potentially with a prefix filter.
+After the jobs have run once, you might want to update or skip failed jobs through [the parser](./parser/README.md).
