@@ -32045,7 +32045,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,renyaoxiang/gradle-frontend,master,,gradle,java8,,,,
 ,renyuneyun/Easer,master,,,java8,,,,
 ,replydev/Quboscanner,main,maven,,java11,,,,
-,repoName,branch,buildTool,buildTool,javaVersion,style,buildAction,skip,skipReason
 ,reportengine/report-engine,development,maven,,java8,,,,
 ,reportportal/agent-java-testNG,develop,,,java8,,,,
 ,reportportal/logger-java-log4j,develop,,,java8,,,,
