@@ -34308,7 +34308,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spotify/flo,master,maven,,java8,,,,
 ,spotify/fmt-maven-plugin,main,,,java8,,,,
 ,spotify/folsom,master,maven,,java8,,,,
-,spotify/futures-extra,master,maven,,java8,,,,
+,spotify/futures-extra,master,maven,,java11,,,,
 ,spotify/futuristic-feline,main,maven,,java8,,,,
 ,spotify/gcs-tools,main,,,java8,,,,
 ,spotify/github-java-client,master,maven,,java11,,,,
