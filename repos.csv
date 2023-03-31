@@ -34279,8 +34279,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spotbugs/spotbugs,master,,,java11,,,,
 ,spotbugs/spotbugs-gradle-plugin,master,,,java11,,,,
 ,spoter-ME/trellis,master,,,java8,,,,
-,spotify-web-api-java/spotify-web-api-java,develop,maven,,java8,,,,
-,spotify/NFDriver,master,,,java8,,,,
+,spotify-web-api-java/spotify-web-api-java,develop,maven,,java11,,,,
+,spotify/NFDriver,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
 ,spotify/NFGrapher,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,spotify/Vandelay,main,,,java8,,,,
 ,spotify/android-auth,master,,,java8,,,,
@@ -34288,7 +34288,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spotify/annoy-java,master,maven,,java8,,,,
 ,spotify/apollo,1.x,maven,,java8,,,,
 ,spotify/async-datastore-client,master,maven,,java8,,,,
-,spotify/async-google-pubsub-client,master,maven,,java8,,,,
+,spotify/async-google-pubsub-client,master,maven,,java11,,,,
 ,spotify/bigtable-autoscaler,master,maven,,java8,,,,
 ,spotify/cassandra-opstools,master,maven,,java8,,,,
 ,spotify/cassandra-reaper,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -34311,10 +34311,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spotify/futures-extra,master,maven,,java8,,,,
 ,spotify/futuristic-feline,main,maven,,java8,,,,
 ,spotify/gcs-tools,main,,,java8,,,,
-,spotify/github-java-client,master,maven,,java8,,,,
+,spotify/github-java-client,master,maven,,java11,,,,
 ,spotify/hadoop-openpgp-codec,master,maven,,java8,,,,
 ,spotify/hdfs2cass,master,maven,,java8,,,,
-,spotify/heroic-client-java,master,maven,,java8,,,,
+,spotify/heroic-client-java,master,maven,,java11,,,,
 ,spotify/java-hamcrest,master,,,java8,,,,
 ,spotify/logging-java,master,,,java8,,,,
 ,spotify/missinglink,master,maven,,java8,,,,
