@@ -2487,7 +2487,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,EricssonResearch/openwebrtc-android-sdk,master,,,java8,,,,
 ,Erik-ly/SprakProject,master,maven,,java8,,,,
 ,ErikHellman/RxJavaAndDiffUtil,master,,,java8,,,,
-,Ernstsen/CommandLineParser,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,Ernstsen/CommandLineParser,master,maven,,java11,,,,
 ,Ernstsen/EEVHE,master,maven,,java8,,,,
 ,Ernstsen/LEGO-The-language,master,,,java8,,,TRUE,Gradle wrapper 4.6 is not supported
 ,Ernstsen/LWE-Implementation,master,maven,,java8,,,,
@@ -12635,8 +12635,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,bastien612/journ-e,master,maven,,java8,,,,
 ,bastienjalbert/topguw,master,maven,,java8,,,,
 ,bastienpaulfr/gradle-git-extractor-plugin,master,,,java8,,,TRUE,Build uses Gradle 3.x
-,bastillion-io/Bastillion,master,maven,,java1,,,TRUE,Java version 1 is not supported
-,bastillion-io/Bastillion-EC2,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,bastillion-io/Bastillion,master,maven,,java11,,,,
+,bastillion-io/Bastillion-EC2,master,maven,,java11,,,,
 ,batect/batect,main,,,java8,,,,
 ,batfish/batfish,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,batman-that-laughs/basics_1_java,master,,,java8,,,,
@@ -21432,7 +21432,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,java-native-access/jna,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,java-operator-sdk/java-operator-sdk,main,,,java11,,,,
 ,java110/MicroCommunity,master,maven,,java8,,,,
-,java8/Java8InAction,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,java8/Java8InAction,master,maven,,java11,,,,
 ,java9-modularity/gradle-modules-plugin,master,,,java11,,,,
 ,javaBin/cake-redux,master,maven,,java11,,,,
 ,javaZeus/mrp-project,master,maven,,java8,,,,
@@ -23638,7 +23638,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jguoximalia/test.API,main,maven,,java8,,,,
 ,jh3nd3rs0n/argmatey,master,maven,,java8,,,,
 ,jh3nd3rs0n/httpshuttle,master,maven,,java8,,,,
-,jh3nd3rs0n/jargyle,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,jh3nd3rs0n/jargyle,master,maven,,java11,,,,
 ,jh3nd3rs0n/jbase64transformer,master,maven,,java8,,,,
 ,jhades/jhades,master,maven,,java8,,,,
 ,jhades/spring-mvc-angularjs-sample-app,master,maven,,java8,,,,
@@ -26611,7 +26611,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,mP1/walkingkooka-color,master,maven,,java8,,,,
 ,mP1/walkingkooka-convert,master,maven,,java11,,,,
 ,mP1/walkingkooka-datetime,master,maven,,java8,,,,
-,mP1/walkingkooka-emulator-c64,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,mP1/walkingkooka-emulator-c64,master,maven,,java11,,,,
 ,mP1/walkingkooka-java-shader,master,maven,,java8,,,,
 ,mP1/walkingkooka-math,master,maven,,java8,,,,
 ,mP1/walkingkooka-net,master,maven,,java11,,,,
@@ -26868,7 +26868,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,manorrock/calico,current,maven,,java17,,,,
 ,manosbatsis/gradle-reflections-plugin,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,mansikataria/Coolcook,master,maven,,java8,,,,
-,manuel-freire/ac2,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,manuel-freire/ac2,master,maven,,java11,,,,
 ,manuelbl/SwissQRBill,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,manuelbua/libgdx-contribs,master,maven,,java8,,,,
 ,manuelcorrales/Soldimet,master,maven,,java8,,,,
@@ -29555,7 +29555,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,obsidiandynamics/rekafka,master,,,java8,,,,
 ,obsidiandynamics/runway,master,,,java8,,,,
 ,obsidiandynamics/socketx,master,,,java8,,,,
-,obsidiandynamics/warthog,master,,,java1,,,TRUE,Java version 1 is not supported
+,obsidiandynamics/warthog,master,,,java11,,,,
 ,obsidiandynamics/yconf,master,,,java8,,,,
 ,obsidiandynamics/zbus,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
 ,obsidiandynamics/zerolog,master,,,java8,,,,
@@ -29681,10 +29681,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,olof-82/testing-jhipster,master,maven,,java8,,,,
 ,ololx/cranberry,main,maven,,java8,,,,
 ,ololx/cranberry-examples,main,maven,,java8,,,,
-,ololx/java-number-extension,develop,maven,,java1,,,TRUE,Java version 1 is not supported
+,ololx/java-number-extension,develop,maven,,java11,,,,
 ,ololx/phone-book,develop,maven,,java8,,,,
 ,ololx/plain-old-retro-shooter,main,maven,,java8,,,,
-,ololx/simple-binary-system,main,maven,,java1,,,TRUE,Java version 1 is not supported
+,ololx/simple-binary-system,main,maven,,java11,,,,
 ,ololx/simple-gis,main,maven,,java8,,,,
 ,ololx/simple-plc,develop,maven,,java11,,,,
 ,ololx/simple-task-board,main,,,java8,,,,
@@ -31407,7 +31407,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,qodfathr/sentimentmeasurer,master,maven,,java8,,,,
 ,qodfathr/trade-insights-service,master,maven,,java8,,,,
 ,qoomon/aws-sqs,master,maven,,java8,,,,
-,qoomon/banking-demo,master,maven,,java1,,,TRUE,Java version 1 is not supported
+,qoomon/banking-demo,master,maven,,java11,,,,
 ,qoomon/banking-swift-messages-java,master,maven,,java8,,,,
 ,qoomon/domain-value-java,master,maven,,java8,,,,
 ,qoomon/google-url-signature,master,maven,,java8,,,,
@@ -33263,7 +33263,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,serenity-bdd/serenity-cucumber,master,,,java8,,,,
 ,serenity-bdd/serenity-cucumber-starter,master,,,java8,,,,
 ,serenity-bdd/serenity-jbehave,master,,,java8,,,,
-,serezhka/java-airplay-lib,master,,gradle,java1,,,TRUE,Java version 1 is not supported
+,serezhka/java-airplay-lib,master,,gradle,java11,,,,
 ,serezhka/java-airplay-server,master,,gradle,java8,,,,
 ,serge-rider/dbeaver,devel,maven,,java11,,,,
 ,sergei-lapin/napt,main,,,java8,,,,
