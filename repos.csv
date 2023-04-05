@@ -31019,6 +31019,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-github-actions,main,,,java17,,,,
 ,openrewrite/rewrite-gradle-plugin,main,,,java17,,,,
 ,openrewrite/rewrite-gradle-tooling-model,main,,,java17,,,,
+,openrewrite/rewrite-houston-jug,main,,,java17,,,,
 ,openrewrite/rewrite-java-annotproc,main,,,java17,,,,
 ,openrewrite/rewrite-java-dependencies,main,,,java17,,,,
 ,openrewrite/rewrite-java-security,main,,,java17,,,,
