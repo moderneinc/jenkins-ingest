@@ -8524,7 +8524,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,WASdev/ci.maven.tools,master,,,java8,,,,
 ,WASdev/lib.batch.magicsauce,master,,,java8,,,,
 ,WASdev/sample.BYOJackson,master,,,java8,,,,
-,WASdev/sample.Spring,master,,,java8,,,,
+,WASdev/sample.Spring,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
 ,WASdev/sample.SpringBootWebsocket,master,,,java8,,,,
 ,WASdev/sample.abdera.jaxrs,master,,,java8,,,,
 ,WASdev/sample.arduino,master,,,java8,,,,
@@ -8540,24 +8540,24 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,WASdev/sample.daytrader3,master,,,java8,,,,
 ,WASdev/sample.daytrader7,master,maven,,java8,,,,
 ,WASdev/sample.docker.mq,master,,,java8,,,,
-,WASdev/sample.ejb,master,,,java8,,,,
+,WASdev/sample.ejb,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
 ,WASdev/sample.ejb.secure,master,,,java8,,,,
 ,WASdev/sample.ejb2,master,,,java8,,,,
 ,WASdev/sample.fasttransfer,master,,,java8,,,,
-,WASdev/sample.ferret,master,,,java8,,,,
+,WASdev/sample.ferret,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
 ,WASdev/sample.functionaltest,master,,,java8,,,,
-,WASdev/sample.javaee7.concurrency,master,,,java8,,,,
-,WASdev/sample.javaee7.el30,master,,,java8,,,,
-,WASdev/sample.javaee7.jms,master,,,java8,,,,
+,WASdev/sample.javaee7.concurrency,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
+,WASdev/sample.javaee7.el30,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
+,WASdev/sample.javaee7.jms,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
 ,WASdev/sample.javaee7.jpa_jaxrs,master,,,java8,,,,
-,WASdev/sample.javaee7.jsonp,master,,,java8,,,,
-,WASdev/sample.javaee7.jta,master,,,java8,,,,
-,WASdev/sample.javaee7.servlet.nonblocking,master,,,java8,,,,
+,WASdev/sample.javaee7.jsonp,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
+,WASdev/sample.javaee7.jta,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
+,WASdev/sample.javaee7.servlet.nonblocking,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
 ,WASdev/sample.javaee7.sleepybatchlet,master,,,java8,,,,
-,WASdev/sample.javaee7.websocket,master,,,java8,,,,
-,WASdev/sample.jaxws.web,master,,,java8,,,,
+,WASdev/sample.javaee7.websocket,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
+,WASdev/sample.jaxws.web,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
 ,WASdev/sample.jms.server,master,,,java8,,,,
-,WASdev/sample.jpa,master,,,java8,,,,
+,WASdev/sample.jpa,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
 ,WASdev/sample.metrics,master,,,java8,,,,
 ,WASdev/sample.microinvader,master,,,java8,,,,
 ,WASdev/sample.microprofile.meetingapp,master,,,java8,,,,
@@ -8569,7 +8569,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,WASdev/sample.microservices.vote,master,,,java8,,,,
 ,WASdev/sample.mono-to-ms.pbw-images,master,,,java8,,,,
 ,WASdev/sample.mono-to-ms.pbw-monolith,master,,,java8,,,,
-,WASdev/sample.netflixoss.wlp,master,,,java8,,,,
+,WASdev/sample.netflixoss.wlp,master,,,java8,,,TRUE,Gradle wrapper 1.11 is not supported
 ,WASdev/sample.oauth.store,master,,,java8,,,,
 ,WASdev/sample.opentracing.zipkintracer,main,,,java8,,,,
 ,WASdev/sample.osgi.blueprint-cm,master,,,java8,,,,
@@ -8578,17 +8578,17 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,WASdev/sample.pluginmergetool,master,,,java8,,,,
 ,WASdev/sample.rtcomm.sip.gateway,master,,,java8,,,,
 ,WASdev/sample.rxjava,master,,,java8,,,,
-,WASdev/sample.servlet.basicauth,master,,,java8,,,,
+,WASdev/sample.servlet.basicauth,master,,,java8,,,TRUE,Gradle wrapper 4.0.2 is not supported
 ,WASdev/sample.servlet.formauth,master,,,java8,,,,
-,WASdev/sample.servlet.jdbc,master,,,java8,,,,
-,WASdev/sample.swagger,master,,,java8,,,,
+,WASdev/sample.servlet.jdbc,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
+,WASdev/sample.swagger,master,,,java8,,,TRUE,Gradle wrapper 4.2 is not supported
 ,WASdev/sample.twas.opentelemetry.agent,main,,,java8,,,,
 ,WASdev/sample.wicket,master,,,java8,,,,
 ,WASdev/skunkworks.paintball,master,,,java8,,,,
 ,WASdev/standards.jsr352.jbatch,master,,,java8,,,,
 ,WASdev/standards.jsr352.tck,master,,,java8,,,,
 ,WASdev/tool.accelerate.codegen,master,,,java8,,,,
-,WASdev/tool.accelerate.core,master,,,java8,,,,
+,WASdev/tool.accelerate.core,master,,,java8,,,TRUE,Gradle wrapper 2.11 is not supported
 ,WASdev/tool.intellij.config.editor,master,,,java8,,,,
 ,WASdev/tool.lars,master,,,java8,,,,
 ,WASdev/tool.swagger.docgen,master,,,java8,,,,
