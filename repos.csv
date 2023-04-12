@@ -22126,6 +22126,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,ionos-enterprise/ionos-enterprise-sdk-java,develop,maven,,java8,,,,
 ,ioos/sos-injector,master,maven,,java8,,,,
 ,iorga-group/debattons,master,maven,,java8,,,,
+,ioridazo/fundanalyzer,main,maven,,java17,,,,
 ,iorixxx/lucene-solr-analysis-turkish,master,maven,,java8,,,,
 ,iorran/SAOI,master,maven,,java8,,,,
 ,ios-driver/ios-driver,dev,maven,,java8,,,,
