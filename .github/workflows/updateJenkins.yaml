@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: detect org
         run: |
-         echo "ADDED_ORG=$(echo "${{ github.event.head_commit.message }}" | sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/" >> $GITHUB_ENV
+         echo "ADDED_ORG=$(echo '${{ github.event.head_commit.message }}' | sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/" >> $GITHUB_ENV
       - name: update org
         if: ${{ env.ADDED_ORG != github.event.head_commit.message }}
         uses: benc-uk/workflow-dispatch@v1
