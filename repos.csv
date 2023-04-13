@@ -11329,6 +11329,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/flink-training,master,,,java8,,,,
 ,apache/flume,trunk,,,java17,,,,
 ,apache/flume,trunk,,,java8,,,,
+,apache/flume-hadoop,main,,,java17,,,,
 ,apache/flume-jdbc,main,,,java17,,,,
 ,apache/flume-kafka,main,,,java17,,,,
 ,apache/flume-legacy,main,,,java17,,,,
