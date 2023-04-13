@@ -21,6 +21,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
+          title: "[Auto] The ${{ inputs.org }} GitHub organization is added"
           commit-message: "[Auto] The ${{ inputs.org }} GitHub organization is added"
           reviewers: rpau,timtebeek
       - name: Check outputs
