@@ -18550,6 +18550,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,fabricioepa/lab-hexagon-java,master,maven,,java8,,,,
 ,fabriciomrkonell/ApplicationIA,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,fabyday/KUnivApp,master,,,java8,,,,
+,facebook/SoLoader,main,,,java17,,,,
 ,facebook/TextLayoutBuilder,main,,,java8,,,,
 ,facebook/buck,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,facebook/conceal,master,,,java8,,,TRUE,Build uses Gradle 3.x
