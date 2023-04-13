@@ -2,6 +2,16 @@
 https://public.moderne.io allows users to run recipes against thousands of Open Source Software projects.
 This repository contains a comma separated value (CSV) file of repositories to ingest into Moderne on a daily basis.
 
+## How to add all the OSS repositories of new GH org/user
+
+Open [this workflow](https://github.com/moderneinc/jenkins-ingest/actions/workflows/addGitHubOrganization.yaml) 
+and introduce the GitHub username or organization that you would like to add in our Moderne public tenant. This 
+will create a pull request with all the repositories entries. Feel free to change the entries you want to 
+remove or customize. See the next section to understand the columns. 
+
+![Workflow configuration](/assets/images/workflow.png "workflow configuration")
+
+
 ## repos.csv file format
 The CSV file can use an optional header row.
 ```csv
