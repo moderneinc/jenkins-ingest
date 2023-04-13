@@ -15,8 +15,10 @@ jobs:
     steps:
       - name: detect org
         run: |
-         ADDED_ORG=$(echo '${{ github.event.head_commit.message }}' | sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/')
+         echo '${{ github.event.head_commit.message }}' > commit.txt
+         ADDED_ORG=$(head -n 1 commit.txt | sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/')
          echo $ADDED_ORG
+         rm commit.txt
          echo "ADDED_ORG=$ADDED_ORG" >> $GITHUB_ENV
       - name: update org
         if: ${{ env.ADDED_ORG != github.event.head_commit.message }}
