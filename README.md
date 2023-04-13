@@ -42,7 +42,7 @@ Ingestion can optionally use a Maven settings file to configure authentication f
 An example of which is given in `maven/ingest-settings.xml`.
 This file should be configured in Jenkins master through `Manage Jenkins > Global Tool Configuration > Maven Configuration`.
 
-## Adding repositories
+## Adding repositories from your local machine
 To add a repository to the ingestion process, add a row to `repos.csv` with the repository name and branch.
 
 ```shell
