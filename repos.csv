@@ -19830,6 +19830,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/AndroidForegroundCompat,master,,,java11,,,,
 ,google/AppUpdateTrackerLib,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,google/ExoPlayer,release-v2,,,java11,,,,
+,google/JacquardSDKAndroid,main,,,java17,,,,
 ,google/MOE,master,maven,,java8,,,,
 ,google/TestParameterInjector,main,maven,,java8,,,,
 ,google/TouchTime,master,,,java8,,,TRUE,Build uses Gradle 3.x
@@ -19837,11 +19838,16 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/account-provisioning-for-google-apps,master,maven,,java8,,,,
 ,google/agera,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,google/allocation-instrumenter,master,maven,,java8,,,,
+,google/android-classyshark,master,,,java17,,,,
+,google/android-kerberos-authenticator,master,,,java17,,,,
 ,google/android-key-attestation,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/android-lint-performance-probe,master,,gradle,java8,,,,
 ,google/android-studio-check,master,,,java8,,,TRUE,Build uses Gradle 2.x
+,google/android-uiconductor,master,,,java17,,,,
 ,google/app-resource-bundle,master,,,java8,,,TRUE,Top-level build tool file is missing
+,google/appengine-java-migration-samples,main,,,java17,,,,
 ,google/archive-patcher,master,,,java8,,,TRUE,Build uses Gradle 2.x
+,google/auto,main,,,java17,,,,
 ,google/bamboo-soy,master,,,java11,,,,
 ,google/binnavi,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,google/blockly-android,develop,,,java8,,,,
@@ -19852,6 +19858,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/capillary,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,google/cbortree,master,maven,,java8,,,,
 ,google/cdep,master,,,java8,,,TRUE,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
+,google/cel-java,main,,,java17,,,,
 ,google/certificate-transparency-java,master,maven,,java8,,,,
 ,google/chromeosnavigationdemo,master,,,java8,,,,
 ,google/closure-compiler,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -19864,19 +19871,29 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/coapblaster,master,maven,,java8,,,,
 ,google/codeu-starter-project,master,maven,,java8,,,,
 ,google/codeu_project_2018,master,maven,,java8,,,,
+,google/compile-testing,main,,,java17,,,,
 ,google/compile-testing,master,maven,,java8,,,,
 ,google/connectedappssdk,main,,gradle,java8,,,,
 ,google/conscrypt,master,,,java11,,,,
+,google/copybara,master,,,java17,,,,
+,google/cordova-plugin-browsertab,master,,,java17,,,,
 ,google/creatine-ads-inspector,master,maven,,java8,,,,
+,google/cronet-transport-for-okhttp,master,,,java17,,,,
 ,google/csp-evaluator,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/data-transfer-project,master,,,java8,,,,
+,google/depan,master,,,java17,,,,
+,google/desugar_jdk_libs,master,,,java17,,,,
+,google/device-infra,main,,,java17,,,,
 ,google/devicehub,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,google/devtools-driver,master,maven,,java8,,,,
 ,google/dicomproxy,main,,,java8,,,,
 ,google/domaintest,master,maven,,java8,,,,
+,google/dwh-assessment-extraction-tool,main,,,java17,,,,
 ,google/dwh-migration-tools,main,,,java8,,,,
 ,google/easybundler,master,,,java8,,,TRUE,Build uses Gradle 2.x
+,google/elemental2,master,,,java17,,,,
 ,google/error-prone,master,maven,,java11,,,,
+,google/escapevelocity,main,,,java17,,,,
 ,google/escapevelocity,master,maven,,java8,,,,
 ,google/experience-accessibility,main,,,java8,,,,
 ,google/exposure-notifications-android,master,,,java8,,,,
@@ -19885,9 +19902,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/fastboot-mobile,master,,,java8,,,TRUE,Gradle wrapper 4.6 is not supported
 ,google/ferret,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/fhir-access-proxy,main,maven,,java11,,,,
+,google/fhir-data-pipes,master,,,java17,,,,
+,google/fhir-gateway,main,,,java17,,,,
 ,google/firing-range,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/flatbuffers,master,maven,,java8,,,,
 ,google/flexbox-layout,main,,,java8,,,,
+,google/flogger,master,,,java17,,,,
 ,google/framecount-colorbars-v1,master,,,java8,,,,
 ,google/framework-for-osdu,master,maven,,java8,,,,
 ,google/git-appraise-eclipse,master,maven,,java8,,,,
@@ -19896,9 +19916,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/google-authenticator-android,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/google-java-format,master,maven,,java11,,,,
 ,google/google-visualization-java,master,maven,,java8,,,,
+,google/gps-measurement-tools,master,,,java17,,,,
 ,google/grafika,master,,,java8,,,,
 ,google/graphicsfuzz,master,maven,,java8,,,,
 ,google/ground-android,master,,,java11,,,,
+,google/grpc-java-bazel-minimal,main,,,java17,,,,
 ,google/grpc-kapt,master,,,java8,,,,
 ,google/gson,master,maven,,java8,,,,
 ,google/guava,master,maven,,java8,org.openrewrite.java.GoogleJavaFormat,,,
@@ -19907,6 +19929,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/guice-aqueduct,master,maven,,java8,,,,
 ,google/gwteventbinder,master,maven,,java8,,,,
 ,google/gwtmockito,master,maven,,java8,,,,
+,google/hadoop-migration-assessment-tools,main,,,java17,,,,
 ,google/heartbleed-burp-extension,master,maven,,java8,,,,
 ,google/helloargdx,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,google/hover,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
@@ -19914,27 +19937,39 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/identity-credential,master,,,java11,,,,
 ,google/identity-toolkit-java-client,master,maven,,java8,,,,
 ,google/infra-structured-map,master,maven,,java8,,,,
+,google/inject-common,master,,,java17,,,,
 ,google/ios-device-control,master,maven,,java8,,,,
 ,google/iosched,main,,,java11,,,,
+,google/j2cl,master,,,java17,,,,
+,google/j2objc,master,,,java17,,,,
 ,google/jarjar,master,maven,,java8,,,,
 ,google/java-monitoring-client-library,master,maven,,java8,,,,
 ,google/java-photoslibrary,main,,,java8,,,,
 ,google/java-run,main,maven,,java8,,,,
+,google/java-time-client,main,,,java17,,,,
 ,google/jimfs,master,maven,,java8,,,,
+,google/jse4conf,master,,,java17,,,,
+,google/jsinterop-annotations,master,,,java17,,,,
+,google/jsinterop-base,master,,,java17,,,,
+,google/jsinterop-generator,master,,,java17,,,,
 ,google/jsontoken,master,maven,,java8,,,,
 ,google/keytransparency-java,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,google/ksp,main,,,java8,,,,
 ,google/live-transcribe-speech-engine,master,,,java8,,,,
 ,google/mail-importer,master,maven,,java8,,,,
 ,google/martian-java,master,maven,,java8,,,,
+,google/mobile-data-download,main,,,java17,,,,
 ,google/mobly-bundled-snippets,master,,,java8,,,,
 ,google/mobly-snippet-lib,master,,,java8,,,,
 ,google/modernstorage,main,,,java8,,,,
 ,google/mozart,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/mug,master,maven,,java8,,,,
+,google/myanmar-tools,master,,,java17,,,,
 ,google/nel-reporter-java,master,maven,,java8,,,,
 ,google/nomulus,master,,,java8,,,,
 ,google/oboe,main,,,java8,,,TRUE,Top-level build tool file is missing
+,google/open-location-code,main,,,java17,,,,
+,google/openjdk-kerberos,master,,,java17,,,,
 ,google/openrtb,master,maven,,java8,,,,
 ,google/openrtb-doubleclick,master,maven,,java8,,,,
 ,google/opensmartbutton,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -19943,9 +19978,14 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/pinotify,master,,,java8,,,TRUE,Gradle wrapper 4.1 is not supported
 ,google/pixelvisualcorecamera,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,google/play-licensing,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,google/play-services-plugins,master,,,java17,,,,
+,google/play-work,master,,,java17,,,,
 ,google/polymorphicDSL,main,maven,,java11,,,,
 ,google/postcss-rename,master,,,java8,,,TRUE,Top-level build tool file is missing
+,google/private-compute-services,master,,,java17,,,,
+,google/private-retrieval,main,,,java17,,,,
 ,google/protobuf-gradle-plugin,master,,,java8,,,,
+,google/quota-monitoring-solution,main,,,java17,,,,
 ,google/rally,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,google/re2j,master,,,java8,,,,
 ,google/rejoiner,master,maven,,java8,,,,
@@ -19955,6 +19995,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/robotstxt-spec-test,master,maven,,java8,,,,
 ,google/s2-geometry-library-java,master,maven,,java11,,,,
 ,google/sa360-webquery-bigquery,master,,,java11,,,,
+,google/safe-html-types,main,,,java17,,,,
 ,google/safe-html-types,master,maven,,java8,,,,
 ,google/safevarargs,master,maven,,java8,,,,
 ,google/sagetv,master,,,java11,,,,
@@ -19963,28 +20004,37 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/schemaorg-java,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,google/secrets-gradle-plugin,main,,,java11,,,,
 ,google/semantic-locators,main,,,java8,,,TRUE,Top-level build tool file is missing
+,google/setfilters,master,,,java17,,,,
 ,google/simplecfg,master,,gradle,java8,,,,
+,google/smali,main,,,java17,,,,
 ,google/software-product-sprint,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/spline,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,google/splot-java,master,maven,,java8,,,,
 ,google/step197-2020,Setup,maven,,java8,,,,
 ,google/step49-2020,master,maven,,java8,,,,
+,google/streetview-publish-client-libraries,master,,,java17,,,,
 ,google/supl-client,master,maven,,java8,,,,
 ,google/talkback,master,,gradle,java8,,,,
+,google/tink,master,,,java17,,,,
 ,google/tinkCryptoHelper,master,maven,,java17,,,,
 ,google/translation-cards,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,google/truth,master,maven,,java8,,,,
 ,google/tsunami-security-scanner,master,,,java11,,,,
 ,google/tsunami-security-scanner-callback-server,master,,,java11,,,,
+,google/tsunami-security-scanner-plugins,master,,,java17,,,,
 ,google/turbine,main,maven,,java11,,,,
 ,google/ukey2,master,,gradle,java8,,,,
+,google/vertex-ai-benchmarker,main,,,java17,,,,
 ,google/volley,master,,,java8,,,,
 ,google/vulkan-pre-rotation-demo,main,,,java8,,,,
+,google/watchpresenter,master,,,java17,,,,
 ,google/wear-displaylock,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,google/wear-screeninfo,master,,,java8,,,,
 ,google/wear-sensors,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,google/webauthndemo,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/where-am-i,master,,,java8,,,,
+,google/wycheproof,master,,,java17,,,,
+,google/xplat,main,,,java17,,,,
 ,google/zarathustra,master,,gradle,java8,,,,
 ,google/zero-touch-reseller-tool,main,,,java8,,,,
 ,google/zetasketch,master,,,java8,,,,
