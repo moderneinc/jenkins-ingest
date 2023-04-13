@@ -32609,7 +32609,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,qoomon/maven-git-versioning-extension,master,maven,,java11,,,,
 ,qoomon/mockitoX,master,maven,,java8,,,,
 ,qos-ch/cal10n,master,maven,,java8,,,,
-,qos-ch/logback,master,maven,,java8,,,,
+,qos-ch/logback,master,maven,,java11,,,,
 ,qos-ch/logback-contrib,master,maven,,java8,,,,
 ,qos-ch/reload4j,master,maven,,java8,,,,
 ,qos-ch/slf4j,master,maven,,java11,,,,
