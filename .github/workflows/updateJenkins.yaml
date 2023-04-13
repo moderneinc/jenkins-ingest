@@ -27,7 +27,8 @@ jobs:
           workflow: jenkins.yaml
           repo: moderneinc/moderne-cli
           token: ${{ env.GH_CLI_TOKEN }}
-          inputs: '{ "prefix": {{ env.ADDED_ORG }}, "csvUrl": "https://raw.githubusercontent.com/moderneinc/jenkins-ingest/main/repos.csv", "downloadCLI": false, "folder": "cli-ingest" }'
+          inputs: '{ "prefix": ${{ env.ADDED_ORG }}, "csvUrl": "https://raw.githubusercontent.com/moderneinc/jenkins-ingest/main/repos.csv", "downloadCLI": false, 
+"folder": "cli-ingest" }'
       - name: update the entire list
         if: ${{ env.ADDED_ORG == github.event.head_commit.message }}
         uses: benc-uk/workflow-dispatch@v1
