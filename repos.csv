@@ -15523,8 +15523,18 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,cloudant/java-cloudant,master,,,java8,,,,
 ,cloudant/sync-android,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,cloudbees-oss/zendesk-java-client,master,maven,,java8,,,,
+,cloudbees/LoveTest,main,,,java8,,,,
 ,cloudbees/cloudbees-devoptics-enabler-plugin,master,maven,,java8,,,,
+,cloudbees/cloudbees-examples,master,,,java8,,,,
+,cloudbees/devoptics-quickstart-app,master,,,java8,,,,
+,cloudbees/jenkins-docker-registry-builder,master,,,java8,,,,
+,cloudbees/jnr-unixsocket-nodep,master,,,java8,,,,
+,cloudbees/junit-standalone-runner,master,,,java8,,,,
 ,cloudbees/maven-license-plugin,master,maven,,java8,,,,
+,cloudbees/plugin-analyzer,master,,,java17,,,,
+,cloudbees/plugin-dependency-analyzer,develop,,,java17,,,,
+,cloudbees/scalability-info-plugin,master,,,java17,,,,
+,cloudbees/support-interview-app,master,,,java17,,,,
 ,cloudblue/connect-extension-boomi,master,maven,,java8,,,,
 ,cloudblue/connect-extension-mulesoft,master,maven,,java8,,,,
 ,cloudboxlabs/blog-code,master,,,java8,,,TRUE,Top-level build tool file is missing
