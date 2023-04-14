@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: detect org
         run: |
-         echo '${{ github.event.commit[0].message }}' > commit.txt
+         echo '${{ github.event.commits[0].message }}' > commit.txt
          COMMIT_TITLE=$(head -n 1 commit.txt)
          rm commit.txt
          ADDED_ORG=$(echo $COMMIT_TITLE| sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/')
