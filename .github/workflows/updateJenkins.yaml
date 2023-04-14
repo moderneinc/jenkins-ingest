@@ -15,13 +15,15 @@ jobs:
     steps:
       - name: detect org
         run: |
-         echo '${{ github.event.head_commit.message }}' > commit.txt
-         ADDED_ORG=$(head -n 1 commit.txt | sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/')
-         echo $ADDED_ORG
+         echo '${{ github.event.commit[0].message }}' > commit.txt
+         COMMIT_TITLE=$(head -n 1 commit.txt)
          rm commit.txt
+         ADDED_ORG=$(echo $COMMIT_TITLE| sed 's/\[Auto\] The \(.*\) GitHub organization is added\(.*\)$/\1/')
+         echo $ADDED_ORG
          echo "ADDED_ORG=$ADDED_ORG" >> $GITHUB_ENV
+         echo "COMMIT_TITLE=$COMMIT_TITLE" >> $GITHUB_ENV
       - name: update org
-        if: ${{ env.ADDED_ORG != github.event.head_commit.message }}
+        if: ${{ env.ADDED_ORG != env.COMMIT_TITLE }}
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: jenkins.yaml
@@ -29,7 +31,7 @@ jobs:
           token: ${{ env.GH_CLI_TOKEN }}
           inputs: '{ "prefix": ${{ env.ADDED_ORG }}, "csvUrl": "https://raw.githubusercontent.com/moderneinc/jenkins-ingest/main/repos.csv", "downloadCLI": false, "folder": "cli-ingest" }'
       - name: update the entire list
-        if: ${{ env.ADDED_ORG == github.event.head_commit.message }}
+        if: ${{ env.ADDED_ORG == env.COMMIT_TITLE }}
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: jenkins.yaml
