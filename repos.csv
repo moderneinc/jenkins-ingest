@@ -4218,13 +4218,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains-Research/kinference-primitives,master,,,java8,,,,
 ,JetBrains-Research/kotlinRMiner,master,,,java8,,,,
 ,JetBrains-Research/topias,master,,,java8,,,,
-,JetBrains/Android-Tuts-Samples,master,,,java17,,,,
+,JetBrains/Android-Tuts-Samples,master,,,java17,,,TRUE,There is no Gradle or Maven
 ,JetBrains/Arend,master,,,java17,,,,
-,JetBrains/CMake-runner-plugin,master,,,java17,,,,
+,JetBrains/CMake-runner-plugin,master,,,java17,,,TRUE,There is no Gradle or Maven
 ,JetBrains/Grammar-Kit,master,,,java17,,,,
-,JetBrains/JPS,master,,,java17,,,,
-,JetBrains/JetBrainsRuntime,main,,,java17,,,,
-,JetBrains/ReSharperKeymap4IntelliJ,master,,,java17,,,,
+,JetBrains/JPS,master,,,java17,,,TRUE,There is no Gradle or Maven
+,JetBrains/JetBrainsRuntime,main,,,java17,,,TRUE,There is no Gradle or Maven
+,JetBrains/ReSharperKeymap4IntelliJ,master,,,java17,,,TRUE,There is no Gradle or Maven
 ,JetBrains/TeamCity.SonarQubePlugin,master,maven,,java8,,,,
 ,JetBrains/TeamCity.WidgetsPlugin,master,,,java17,,,,
 ,JetBrains/adt-tools-base,master,,gradle,java8,,,,
