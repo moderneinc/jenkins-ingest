@@ -38550,20 +38550,26 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,vmware-tanzu/application-toolkit-sample-app,main,maven,,java11,,,,
 ,vmware-tanzu/tanzu-observability-slug-generator,main,maven,,java11,,,,
 ,vmware/alb-sdk,eng,,,java8,,,TRUE,Top-level build tool file is missing
+,vmware/build-tools-for-vmware-aria,main,,,java17,,,,
 ,vmware/burp-rest-api,master,,,java8,,,,
 ,vmware/cloud-director-java-clients,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,vmware/commit-validator-for-gerrit,master,maven,,java8,,,,
 ,vmware/declarative-cluster-management,master,,,java8,,,,
+,vmware/differential-datalog,master,,,java17,,,,
+,vmware/flowgate,master,,,java17,,,,
 ,vmware/mangle,master,maven,,java8,,,,
 ,vmware/o11n-plugin-crypto,master,maven,,java8,,,,
+,vmware/saas-functional-testing-framework,main,,,java17,,,,
 ,vmware/safekeeping,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,vmware/singleton,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,vmware/software-forensic-kit,master,maven,,java8,,,,
+,vmware/sql-to-dbsp-compiler,main,,,java17,,,,
 ,vmware/test-operations,master,maven,,java8,,,,
 ,vmware/transport-java,main,,,java8,,,,
 ,vmware/upgrade-framework,master,maven,,java11,,,,
 ,vmware/vcd-api-tools,master,maven,,java8,,,,
 ,vmware/vidm-saml-toolkit,master,maven,,java8,,,,
+,vmware/vrealize-orchestrator-plugin-for-alb,eng,,,java17,,,,
 ,vmware/vrealize-orchestrator-plugin-for-alb,master,maven,,java8,,,,
 ,vmware/vrops-export,master,maven,,java8,,,,
 ,vmware/vsphere-automation-sdk-java,master,maven,,java8,,,,
