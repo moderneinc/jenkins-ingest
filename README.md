@@ -3,15 +3,26 @@
 https://public.moderne.io allows users to run recipes against thousands of Open Source Software projects.
 This repository contains a comma separated value (CSV) file of repositories to ingest into Moderne on a daily basis.
 
-## How to add all the OSS repositories of new GH org/user
+## How to add/update the Java OSS repositories of new/existing GH org/user
 
 Open [this workflow](https://github.com/moderneinc/jenkins-ingest/actions/workflows/addGitHubOrganization.yaml) 
-and introduce the GitHub username or organization that you would like to add in our Moderne public tenant. This 
-will create a pull request with all the repositories entries. Feel free to change the entries you want to 
-remove or customize. See the next section to understand the columns. 
+and introduce the GitHub username or organization that you would like to add in our Moderne public tenant.  
 
 ![Workflow configuration](/assets/images/workflow.png "workflow configuration")
 
+This will create a pull request with all the Java repositories entries. Feel free to change 
+the entries you want to remove or customize. 
+
+![Pull request](/assets/images/auto-pull-request.png "Pull request")
+
+It is important to validate if those repositories are using a Maven or Gradle wrapper, because
+if they are not, it could be that: (1) they are not using a build tool and they need to be skipped, 
+or (2) it is necessary to select the specific Maven or Gradle versions tools installed 
+in our Jenkins instance.
+
+After the pull request is merged, a new process to update our Jenkins instance will be triggered.
+
+See the next section to understand the columns and accepted values.
 
 ## repos.csv file format
 The CSV file can use an optional header row.
@@ -25,8 +36,9 @@ The columns are defined as follows:
 |-----------------|----------|---------------------------------------------------------------------------------------------------|
 | scmHost         | Optional | Repository host such as `github.com`, `gitlab.com` or enterprise hosts. Defaults to `github.com`. |
 | repoName        | Required | Repository path with form `organization/name`, i.e. `google/guava`.                               |
-| repoBranch      | Optional | Git branch name to ingest. Defaults to `main`.                                                    |
-| mavenTool       | Optional | Name of the Maven Global Tool Configuration to use. Defaults to `maven`.                          |
+| repoBranch      | Optional | Git branch name to ingest. Defaults to `main`.                                                       |
+| mavenTool       | Optional | Name of the Maven Global Tool Configuration to use. Defaults to `maven`, which corresponds to 3.3.8. Other values are `maven3.x` (3.8.6) 
+and `maven3.3.9`|
 | gradleTool      | Optional | Name of the Gradle Global Tool Configuration to use. Defaults to `gradle`.                        |
 | jdkTool         | Optional | Name of the JDK Global Tool Configuration to use. Defaults to `java8`.                            |
 | repoStyle       | Optional | Name of the OpenRewrite style to apply during ingest. Defaults to empty.                          |
