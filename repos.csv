@@ -18068,12 +18068,19 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,elastest/elastest-platform-manager,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,elastest/elastest-toolbox,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,elastest/elastest-user-emulator-service,master,,,java8,,,TRUE,Top-level build tool file is missing
+,elastic/AndroidSDKMirror-26,master,,,java17,,,TRUE,Top-level build tool file is missing
+,elastic/AndroidSDKMirror-27,master,,,java17,,,TRUE,Top-level build tool file is missing
+,elastic/AndroidSDKMirror-28,master,,,java17,,,TRUE,Top-level build tool file is missing
+,elastic/apm-agent-android,main,,,java18,,,,
 ,elastic/apm-agent-java,main,maven,,java8,,,,
 ,elastic/apm-agent-java-plugin-example,main,maven,,java11,,,,
+,elastic/apm-contrib,main,,,java17,,,TRUE,Top-level build tool file is missing
 ,elastic/attached-artifact-enforcer,master,maven,,java8,,,,
+,elastic/code-examples_smoke,master,,,java17,maven,,,
+,elastic/code_examples_java-single-file,master,,,java17,,,TRUE,Top-level build tool is missing
 ,elastic/die-with-dignity-plugin,master,maven,,java8,,,,
 ,elastic/ecs-logging-java,main,maven,,java11,,,,
-,elastic/elasticsearch,master,,,java17,,,,
+,elastic/elasticsearch,main,,,java11,,,,
 ,elastic/elasticsearch-hadoop,main,,,java8,,,,
 ,elastic/elasticsearch-hdfs,master,maven,,java8,,,,
 ,elastic/elasticsearch-java,main,,,java11,,,,
@@ -18088,6 +18095,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,elastic/elasticsearch-transport-thrift,master,maven,,java8,,,,
 ,elastic/found-shield-example,master,maven,,java8,,,,
 ,elastic/gradle-code-manifest-plugin,master,,,java8,,,,
+,elastic/hunspell,master,,,java17,,,TRUE,Antlr project
 ,elastic/ingest-opa,master,,,java8,,,TRUE,Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain (gradlew present but wrapper jar missing)
 ,elastic/java-langserver,master,maven,,java8,,,,
 ,elastic/java-lumber,master,,,java8,,,TRUE,Build uses Gradle 2.x
@@ -18097,6 +18105,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,elastic/logstash,main,,,java11,,,,
 ,elastic/mocksocket,master,maven,,java8,,,,
 ,elastic/newspotter,main,maven,,java8,,,,
+,elastic/observability-contrib,main,,,java17,,,,
 ,elastic/opbeans-java,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,elastic/openjdkMirror,master,maven,,java8,,,,
 ,elastic/securemock,master,maven,,java8,,,,
