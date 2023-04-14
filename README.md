@@ -37,9 +37,8 @@ The columns are defined as follows:
 | scmHost         | Optional | Repository host such as `github.com`, `gitlab.com` or enterprise hosts. Defaults to `github.com`. |
 | repoName        | Required | Repository path with form `organization/name`, i.e. `google/guava`.                               |
 | repoBranch      | Optional | Git branch name to ingest. Defaults to `main`.                                                       |
-| mavenTool       | Optional | Name of the Maven Global Tool Configuration to use. Defaults to `maven`, which corresponds to 3.3.8. Other values are `maven3.x` (3.8.6) 
-and `maven3.3.9`|
-| gradleTool      | Optional | Name of the Gradle Global Tool Configuration to use. Defaults to `gradle`.                        |
+| mavenTool       | Optional | Name of the Maven Global Tool Configuration to use. Defaults to `maven`, which corresponds to 3.3.8. Other values are `maven3.x` (3.8.6) and `maven3.3.9`|
+| gradleTool      | Optional | Name of the Gradle Global Tool Configuration to use. Defaults to `gradle`, which corresponds to 7.6.1. Other values are `gradle 7.4.2`                        |
 | jdkTool         | Optional | Name of the JDK Global Tool Configuration to use. Defaults to `java8`.                            |
 | repoStyle       | Optional | Name of the OpenRewrite style to apply during ingest. Defaults to empty.                          |
 | repoBuildAction | Optional | Additional build tool tasks/targets to execute before ingestion goal. Defaults to empty.          |
