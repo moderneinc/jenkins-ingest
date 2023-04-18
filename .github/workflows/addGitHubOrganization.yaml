@@ -15,7 +15,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{secrets.PAT}}
-          repository: moderneinc/jenkins-ingest
       - name: Adds an org
         run: ./add-github-organization.sh ${{ inputs.org }}
       - name: Create Pull Request
