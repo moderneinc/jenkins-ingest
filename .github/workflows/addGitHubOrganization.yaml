@@ -15,6 +15,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          repository: moderneinc/jenkins-ingest
       - name: Adds an org
         run: ./add-github-organization.sh ${{ inputs.org }}
       - name: Create Pull Request
@@ -23,7 +26,6 @@ jobs:
         with:
           title: "[Auto] The ${{ inputs.org }} GitHub organization is added"
           commit-message: "[Auto] The ${{ inputs.org }} GitHub organization is added"
-          reviewers: rpau,timtebeek
       - name: Check outputs
         if: ${{ steps.cpr.outputs.pull-request-number }}
         run: |
