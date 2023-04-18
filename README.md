@@ -8,6 +8,9 @@ This repository contains a comma separated value (CSV) file of repositories to i
 Open [this workflow](https://github.com/moderneinc/jenkins-ingest/actions/workflows/addGitHubOrganization.yaml) 
 and introduce the GitHub username or organization that you would like to add in our Moderne public tenant.  
 
+If you are using a fork of this repository, you need to create a classic Personal Access Token (PAT) (fine-grained tokens 
+are invalid) with `repo` scope. The secret needs to be called `PAT`. 
+
 ![Workflow configuration](/assets/images/workflow.png "workflow configuration")
 
 This will create a pull request with all the Java repositories entries. Feel free to change 
