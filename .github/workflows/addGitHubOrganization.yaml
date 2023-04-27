@@ -24,6 +24,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v5
         with:
+          branch: add/${{ inputs.org }}
           token: ${{secrets.PAT}}
           title: "[Auto] The ${{ inputs.org }} GitHub organization is added"
           commit-message: "[Auto] The ${{ inputs.org }} GitHub organization is added"
