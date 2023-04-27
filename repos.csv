@@ -17079,7 +17079,19 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,diyhi/bbs,master,maven,,java8,,,,
 ,dj3500/hightail,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,djag-qld/documentproduction,main,,,java8,,,TRUE,Top-level build tool file is missing
+,django/asgiref,main,,,java17,,,,
+,django/channels,main,,,java17,,,,
+,django/channels_redis,main,,,java17,,,,
+,django/daphne,main,,,java17,,,,
 ,django/django,main,,,,,,,
+,django/django,main,,,java17,,,,
+,django/django-asv,main,,,java17,,,,
+,django/django-contrib-comments,master,,,java17,,,,
+,django/django-fuzzers,master,,,java17,,,,
+,django/django-localflavor,master,,,java17,,,,
+,django/djangobench,master,,,java17,,,,
+,django/djangosnippets.org,main,,,java17,,,,
+,django/ticketbot,main,,,java17,,,,
 ,django205/QRcodegenerator,master,,,java8,,,TRUE,Gradle wrapper 3.3 is not supported
 ,djangofan/chord-bars,master,maven,,java11,,,,
 ,djcass44/gradle-util-plugin,master,,,java8,,,,
