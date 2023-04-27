@@ -2,6 +2,7 @@
 set -ex
 
 gh repo list $1 --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java17,,,,{{"\n"}}{{end}}' | sort > new.csv
+gh repo list $1 --language python --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,,,,,{{"\n"}}{{end}}' | sort >> new.csv
 # Save the header
 head -n 1 repos.csv > header.csv
 # Copy the data without the header
