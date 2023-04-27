@@ -17079,6 +17079,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,diyhi/bbs,master,maven,,java8,,,,
 ,dj3500/hightail,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,djag-qld/documentproduction,main,,,java8,,,TRUE,Top-level build tool file is missing
+,django/django,main,,,,,,,
 ,django205/QRcodegenerator,master,,,java8,,,TRUE,Gradle wrapper 3.3 is not supported
 ,djangofan/chord-bars,master,maven,,java11,,,,
 ,djcass44/gradle-util-plugin,master,,,java8,,,,
@@ -32726,6 +32727,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,pryorda/exampleCveRestService,master,maven,,java8,,,,
 ,przemyslawkonik/epam-akademia-PK,master,maven,,java8,,,,
 ,psal/jstylo,master,maven,,java8,,,,
+,psf/black,main,,,,,,,
 ,pshail/hackerrank-submissions,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,psi-probe/psi-probe,master,maven,,java11,,,,
 ,psidnell/ofexport2,master,maven,,java8,,,,
