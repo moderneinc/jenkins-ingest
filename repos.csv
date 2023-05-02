@@ -37302,7 +37302,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,test-editor/test-editor-gradle-plugin,master,,,java8,,,,
 ,test2org/test5,master,maven,,java8,,,,
 ,testaxis/coverage-per-test-gradle-plugin,master,,,java8,,,,
-,testcontainers/testcontainers-java,master,,,java8,,,,
+,testcontainers/testcontainers-java,main,,,java8,,,,
 ,testnet0/demo,master,maven,,java8,,,,
 ,testpack-tests/testpack-spring-test,master,maven,,java8,,,,
 ,testproject-io/java-opensdk,master,,,java8,,,,
