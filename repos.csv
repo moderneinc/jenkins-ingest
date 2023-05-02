@@ -8158,6 +8158,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Tim-Demo/Java-Demo,main,maven,,java8,,,,
 ,TimWhiteSource/EasyBuggyPrioritize,main,maven,,java8,,,,
 ,TimeAndSpaceIO/SmoothieMap,2.x,,,java8,,,,
+,TimefoldAI/timefold-quickstarts,stable,,,java17,,,,
+,TimefoldAI/timefold-solver,main,,,java17,,,,
 ,TimotheeJeannin/ProviGen,master,,,java8,,,TRUE,Gradle wrapper 2.10 is not supported
 ,Tinder/GitQuery,main,,,java8,,,,
 ,Tinder/Scarlet,main,,,java8,,,,
@@ -17083,7 +17085,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,django/channels,main,,,,,,,
 ,django/channels_redis,main,,,,,,,
 ,django/daphne,main,,,,,,,
-,django/django,main,,,,,,,
 ,django/django,main,,,,,,,
 ,django/django-asv,main,,,,,,,
 ,django/django-contrib-comments,master,,,,,,,
