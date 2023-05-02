@@ -4020,7 +4020,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JZulRes/MasterLoanGateway,master,maven,,java8,,,,
 ,JaMusial/fsp,master,maven,,java8,,,,
 ,Jaay7/smart-city-backend,main,,,java8,,,,
-,JabRef/jabref,main,,,java8,,,,
+,JabRef/jabref,main,,,java20,,,,
 ,JacekOrlowski/jhipster-sample-application,master,maven,,java8,,,,
 ,JaceyRx/Examination_System,master,maven,,java8,,,,
 ,JacisNonsense/EmbeddedTools,master,,,java8,,,,
