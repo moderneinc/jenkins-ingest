@@ -30130,6 +30130,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,mybatis/mybatipse,master,,,java17,,,,
 ,mybatis/mybatis-3,master,,,java8,,,,
 ,mybatis/mybatis-dynamic-sql,master,maven,,java11,,,,
+,mybatis/parent,master,,,java11,,,,
 ,mybatis/oscache-cache,master,maven,,java8,,,,
 ,mybatis/redis-cache,master,maven,,java11,,,,
 ,mybatis/spring,master,,,java8,,,,
