@@ -29617,6 +29617,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,mockito/mockito,main,,,java11,,,,
 ,mockito/shipkit-example,master,,,java8,,,TRUE,Gradle wrapper 4.0 is not supported
 ,mocleiri/github-oauth-plugin,master,maven,,java8,,,,
+,moderneinc/spring-petclinic,2.0,maven,,java17,,,,
 ,modakanalytics/botworks,master,maven,,java8,,,,
 ,modcluster/mod_cluster,main,maven,,java8,,,,
 ,modeProbe/pkaf,master,maven,,java8,,,,
