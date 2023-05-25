@@ -13,11 +13,7 @@ jobs:
   ingest:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          token: ${{secrets.PAT}}
-          repository: moderneinc/jenkins-ingest
+      - uses: actions/checkout@v3
       - name: Adds an org
         run: ./add-github-organization.sh ${{ inputs.org }}
       - name: Create Pull Request
