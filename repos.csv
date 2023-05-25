@@ -3865,7 +3865,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Infosys/High-Availability-Hadoop,master,,,java,,,,
 ,Infosys/Infosys-OpenJDK-Migrator,main,,,java,,,,
 ,Infosys/Saralarchan,main,,,java,,,,
-,Infosys/Selenium-Testing-Automation-Framework,master,maven,,java8,,,,
+,Infosys/Selenium-Testing-Automation-Framework,master,maven,,java,,,,
 ,Infosys/Snowflake-Python-Development-Framework,master,,,java,,,,
 ,Infosys/camunda-connectors,main,,,java,,,,
 ,Infosys/eagle-authoring-kafka-consumers,master,,,java,,,,
