@@ -31509,7 +31509,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-gradle-tooling-model,main,,,java17,,,,
 ,openrewrite/rewrite-houston-jug,main,,,java17,,,,
 ,openrewrite/rewrite-java-8,main,,,java17,,,TRUE,archived
-,openrewrite/rewrite-java-annotproc,main,,,java17,,,,
 ,openrewrite/rewrite-java-annotproc,main,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-java-dependencies,main,,,java17,,,,
 ,openrewrite/rewrite-java-security,main,,,java17,,,,
@@ -31530,7 +31529,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-spring,main,,,java17,,,,
 ,openrewrite/rewrite-sql,main,,,java17,,,,
 ,openrewrite/rewrite-static-analysis,main,,,java17,,,,
-,openrewrite/rewrite-template-generator,main,,,java17,,,,
 ,openrewrite/rewrite-template-generator,main,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-templating,main,,,java17,,,,
 ,openrewrite/rewrite-terraform,main,,,java17,,,,
