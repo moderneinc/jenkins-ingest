@@ -31497,7 +31497,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/recipe-examples,main,,,java17,,,,
 ,openrewrite/rewrite,main,,,java17,,,,
 ,openrewrite/rewrite-all,main,,,java17,,,,
+,openrewrite/rewrite-analysis,main,,,java17,,,,
 ,openrewrite/rewrite-build-gradle-plugin,main,,,java17,,,,
+,openrewrite/rewrite-checkstyle,master,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-circleci,main,,,java17,,,,
 ,openrewrite/rewrite-cloud-suitability-analyzer,main,,,java17,,,,
 ,openrewrite/rewrite-concourse,main,,,java17,,,,
@@ -31506,7 +31508,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-gradle-plugin,main,,,java17,,,,
 ,openrewrite/rewrite-gradle-tooling-model,main,,,java17,,,,
 ,openrewrite/rewrite-houston-jug,main,,,java17,,,,
+,openrewrite/rewrite-java-8,main,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-java-annotproc,main,,,java17,,,,
+,openrewrite/rewrite-java-annotproc,main,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-java-dependencies,main,,,java17,,,,
 ,openrewrite/rewrite-java-security,main,,,java17,,,,
 ,openrewrite/rewrite-jhipster,main,,,java17,,,,
@@ -31525,7 +31529,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-sandbox,main,,,java17,,,,
 ,openrewrite/rewrite-spring,main,,,java17,,,,
 ,openrewrite/rewrite-sql,main,,,java17,,,,
+,openrewrite/rewrite-static-analysis,main,,,java17,,,,
 ,openrewrite/rewrite-template-generator,main,,,java17,,,,
+,openrewrite/rewrite-template-generator,main,,,java17,,,TRUE,archived
 ,openrewrite/rewrite-templating,main,,,java17,,,,
 ,openrewrite/rewrite-terraform,main,,,java17,,,,
 ,openrewrite/rewrite-testing-frameworks,main,,,java17,,,,
