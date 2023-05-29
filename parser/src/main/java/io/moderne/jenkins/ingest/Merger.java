@@ -22,8 +22,7 @@ public class Merger {
 
     private static Map<Key, CsvRow> parseNewCsv(Path reposFile) throws IOException {
         // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
-        List<String> reposLines = Files.readAllLines(reposFile);
-        return reposLines.stream()
+        return Files.lines(reposFile)
                 .map(line -> line.split(",", -1))
                 .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
                         split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
