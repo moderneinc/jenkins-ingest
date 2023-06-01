@@ -30,9 +30,17 @@ public class Merger {
         return Files.lines(reposFile)
                 .skip(skip)
                 .map(line -> line.split(",", -1))
+                .peek(split -> {
+                    if (split.length != 10) {
+                        throw new RuntimeException("Invalid CSV line: " + String.join(",", split));
+                    }
+                })
                 .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
                         split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
-                .collect(Collectors.toMap(row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()), Function.identity()));
+                .collect(Collectors.toMap(
+                        row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()),
+                        Function.identity(),
+                        (a, b) -> updateCsvRow(a, b)));
     }
 
     private static Collection<CsvRow> mergeRows(Map<Key, CsvRow> oldRowsByKey, Map<Key, CsvRow> newRowsByKey) throws IOException {
