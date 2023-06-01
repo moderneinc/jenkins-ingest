@@ -4,8 +4,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -16,32 +18,47 @@ public class Merger {
     }
 
     public static void mergeDatatables(Path original, Path newCsv) throws IOException {
-        Map<Key, CsvRow> newRows = parseNewCsv(newCsv);
-        updateReposCsv(original, newRows);
+        Map<Key, CsvRow> oldRows = parseCsv(original, 1);
+        Map<Key, CsvRow> newRows = parseCsv(newCsv, 0);
+        //TODO insert new rows into original, then sort by key and write back to original
+        Collection<CsvRow> mergedRows = mergeRows(oldRows, newRows);
+        writeCsv(original, mergedRows);
     }
 
-    private static Map<Key, CsvRow> parseNewCsv(Path reposFile) throws IOException {
+    private static Map<Key, CsvRow> parseCsv(Path reposFile, int skip) throws IOException {
         // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
         return Files.lines(reposFile)
+                .skip(skip)
                 .map(line -> line.split(",", -1))
                 .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
                         split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
                 .collect(Collectors.toMap(row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()), Function.identity()));
     }
 
-    private static void updateReposCsv(Path reposFile, Map<Key, CsvRow> newRowsByKey) throws IOException {
-        // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
-        List<String> reposLines = Files.readAllLines(reposFile);
+    private static Collection<CsvRow> mergeRows(Map<Key, CsvRow> oldRowsByKey, Map<Key, CsvRow> newRowsByKey) throws IOException {
+        // Loop over existing rows and update them based on new data table rows
+        Map<Key, CsvRow> mergedRows = new TreeMap<>();
+        for (Map.Entry<Key, CsvRow> entry : oldRowsByKey.entrySet()) {
+            CsvRow newRow = newRowsByKey.get(entry.getKey());
+            if (newRow != null) {
+                // Update existing row
+                mergedRows.put(entry.getKey(), updateCsvRow(entry.getValue(), newRow));
+                newRowsByKey.remove(entry.getKey());
+            } else {
+                // Retain existing row
+                mergedRows.put(entry.getKey(), entry.getValue());
+            }
+        }
+        // Add new rows
+        mergedRows.putAll(newRowsByKey);
+        return mergedRows.values();
+    }
+
+    private static void writeCsv(Path reposFile, Collection<CsvRow> rows) throws IOException {
         try (FileWriter writer = new FileWriter(reposFile.toFile())) {
-            // Loop over repoLines and update them based matching data table rows
-            for (String line : reposLines) {
-                String[] split = line.split(",", -1);
-                CsvRow csvRow = new CsvRow(split[0], split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]);
-                CsvRow newRow = newRowsByKey.get(new Key(csvRow.scmHost(), csvRow.repoName(), csvRow.repoBranch()));
-                if (newRow != null) {
-                    csvRow = updateCsvRow(csvRow, newRow);
-                }
-                writer.write(csvRow.toString() + "\n");
+            writer.write("scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason\n");
+            for (CsvRow row : rows) {
+                writer.write(row.toString() + "\n");
             }
         }
     }

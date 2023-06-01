@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -102,7 +103,14 @@ public class Parser {
     }
 }
 
-record Key(String origin, String path, String branch) {
+record Key(String origin, String path, String branch) implements Comparable<Key> {
+    @Override
+    public int compareTo(Key o) {
+        return Comparator.comparing(Key::origin)
+                .thenComparing(Key::path)
+                .thenComparing(Key::branch)
+                .compare(this, o);
+    }
 }
 
 record DataTableRow(String repositoryOrigin, String repositoryPath, String repositoryBranch, String type,
