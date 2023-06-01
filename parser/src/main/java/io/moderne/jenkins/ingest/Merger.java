@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Merger {
 
@@ -27,23 +27,25 @@ public class Merger {
 
     private static Map<Key, CsvRow> parseCsv(Path reposFile, int skip) throws IOException {
         // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
-        return Files.lines(reposFile)
-                .skip(skip)
-                .map(line -> line.split(",", -1))
-                .peek(split -> {
-                    if (split.length != 10) {
-                        throw new RuntimeException("Invalid CSV line: " + String.join(",", split));
-                    }
-                })
-                .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
-                        split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
-                .collect(Collectors.toMap(
-                        row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()),
-                        Function.identity(),
-                        (a, b) -> updateCsvRow(a, b)));
+        try (Stream<String> lines = Files.lines(reposFile)) {
+            return lines
+                    .skip(skip)
+                    .map(line -> line.split(",", -1))
+                    .peek(split -> {
+                        if (split.length != 10) {
+                            throw new RuntimeException("Invalid CSV line: " + String.join(",", split));
+                        }
+                    })
+                    .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
+                            split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
+                    .collect(Collectors.toMap(
+                            row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()),
+                            Function.identity(),
+                            Merger::updateCsvRow));
+        }
     }
 
-    private static Collection<CsvRow> mergeRows(Map<Key, CsvRow> oldRowsByKey, Map<Key, CsvRow> newRowsByKey) throws IOException {
+    private static Collection<CsvRow> mergeRows(Map<Key, CsvRow> oldRowsByKey, Map<Key, CsvRow> newRowsByKey) {
         // Loop over existing rows and update them based on new data table rows
         Map<Key, CsvRow> mergedRows = new TreeMap<>();
         for (Map.Entry<Key, CsvRow> entry : oldRowsByKey.entrySet()) {
