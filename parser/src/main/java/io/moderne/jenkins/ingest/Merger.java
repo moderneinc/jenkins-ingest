@@ -79,7 +79,7 @@ public class Merger {
         if (!newRow.gradleTool().isBlank()) {
             mergedRow = mergedRow.withGradleTool(newRow.gradleTool());
         }
-        if (!newRow.jdkTool().isBlank() && csvRow.jdkTool().isBlank()) {
+        if (!newRow.jdkTool().isBlank() && csvRow.jdkTool().isBlank() || "java".equals(newRow.jdkTool())) {
             mergedRow = mergedRow.withJdkTool(newRow.jdkTool());
         }
         if (!newRow.repoStyle().isBlank()) {
