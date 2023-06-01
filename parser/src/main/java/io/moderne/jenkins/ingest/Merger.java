@@ -18,15 +18,14 @@ public class Merger {
     }
 
     public static void mergeDatatables(Path original, Path newCsv) throws IOException {
+        // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
         Map<Key, CsvRow> oldRows = parseCsv(original, 1);
         Map<Key, CsvRow> newRows = parseCsv(newCsv, 0);
-        //TODO insert new rows into original, then sort by key and write back to original
         Collection<CsvRow> mergedRows = mergeRows(oldRows, newRows);
         writeCsv(original, mergedRows);
     }
 
     private static Map<Key, CsvRow> parseCsv(Path reposFile, int skip) throws IOException {
-        // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
         try (Stream<String> lines = Files.lines(reposFile)) {
             return lines
                     .skip(skip)
