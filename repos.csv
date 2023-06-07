@@ -23101,7 +23101,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/commons-httpclient3-api-plugin,master,,,java17,,,,
 ,jenkinsci/commons-lang-api-plugin,main,maven,,java8,,,,
 ,jenkinsci/commons-lang3-api-plugin,main,maven,,java11,,,,
-,jenkinsci/commons-text-api-plugin,main,maven,,java8,,,,
+,jenkinsci/commons-text-api-plugin,main,maven,,java11,,,,
 ,jenkinsci/compact-columns-plugin,main,,,java17,,,,
 ,jenkinsci/compact-columns-plugin,master,maven,,java8,,,,
 ,jenkinsci/composer-dependency-analysis-plugin,master,maven3.3.9,,java8,,,,
