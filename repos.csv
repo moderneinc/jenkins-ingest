@@ -31864,7 +31864,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,modcluster/mod_cluster,main,maven,,java8,,,,
 ,modeProbe/pkaf,master,maven,,java8,,,,
 ,modelmapper/modelmapper,master,maven,,java8,,,,
-,moderneinc/spring-petclinic,2.0,maven,,java8,,,,
 ,moderneinc/spring-petclinic,2.0.0,maven,,java8,,,,
 ,modeseven/kudoflash,master,maven,,java8,,,,
 ,moessid/devops,master,maven,,java8,,,,
