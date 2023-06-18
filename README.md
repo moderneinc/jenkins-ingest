@@ -1,6 +1,6 @@
 # Jenkins ingest
 
-https://public.moderne.io allows users to run recipes against thousands of Open Source Software projects.
+https://app.moderne.io allows users to run recipes against thousands of Open Source Software projects.
 This repository contains a comma separated value (CSV) file of repositories to ingest into Moderne on a daily basis.
 
 ## How to add/update the Java OSS repositories of new/existing GH org/user
