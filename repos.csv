@@ -3907,6 +3907,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,HenrySyan/jhipster-sample-application,master,maven,,java8,,,,
 ,HenrySyan/shopping-cart-application,master,maven,,java8,,,,
 ,HerbCSO/ticketing,master,maven,,java8,,,,
+,HermesGermany/galapagos,main,,,java,,,,
+,HermesGermany/jug-cdc,master,,,java,,,,
 ,Hero5280/LJ,master,maven,,java8,,,,
 ,HeseltineBTutu/reviews,master,maven,,java8,,,,
 ,HeshamOsman/SSO-POC,master,maven,,java8,,,,
