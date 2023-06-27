@@ -5734,6 +5734,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Kaliaskar/usci_2,master,,,java8,,,,
 ,Kamil-Radzyminski/Technologie-Java-Enterprise-Projekt,main,maven,,java8,,,,
 ,Kanarienvogels/Chatroom,master,,,java8,,,TRUE,Top-level build tool file is missing
+,Kanaries/Rath,master,,,java17,,,,
 ,KancerEzeroglu/to-do-app,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,Kanepan/practice,master,maven,,java8,,,,
 ,KangChou/coomatrix_models,main,,,java8,,,TRUE,Top-level build tool file is missing
@@ -14325,6 +14326,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,awuliu/jhipsterSampleApplication,master,maven,,java8,,,,
 ,axel3rd/mpg-coach-bot,master,maven,,java8,,,,
 ,axelor/axelor-open-platform,master,,,java8,,,,
+,axios/axios,v1.x,,,java17,,,,
 ,axkr/symja_android_library,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,axmetishe/gradle-qt-plugin,develop,,,java11,,,,
 ,axoloti/axoloti,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -14486,6 +14488,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,bartwell/ExFilePicker,master,,,java8,,,,
 ,baruchiro/Cars,master,,,java8,,,TRUE,Gradle wrapper 2.14.1 is not supported
 ,bas/WebGoat,master,maven,,java8,,,,
+,basarat/typescript-collections,release,,java17,,,,
 ,basare013/jhipster-blog,master,maven,,java8,,,,
 ,basavaraj-aiobee/insync,master,maven,,java8,,,,
 ,basavaraj-aiobee/warrantyapp,master,maven,,java8,,,,
@@ -14973,6 +14976,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,blueperf/acmeair-monolithic-java,main,maven,,java8,,,,
 ,blueset/MusicSortOrder,master,,,java8,,,,
 ,bluesky139/LTweaks,master,,,java8,,,,
+,bluesky-social,atproto,main,,,jav17,,,,
 ,bluesliverx/disable-github-multibranch-status-plugin,master,maven,,java8,,,,
 ,blundell/QuickSand,master,,,java8,,,,
 ,blundell/WoodyFaceDetection,master,,,java8,,,TRUE,Gradle wrapper 2.7 is not supported
@@ -28609,6 +28613,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,leogtzr/rimbomba,master,maven,,java8,,,,
 ,leolin310148/ShortcutBadger,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,leon0399/dadata,develop,maven,,java8,,,,
+,leon-ai/leon,develop,,,java17,,,,
 ,leonHua/LSettingView,master,,,java8,,,,
 ,leonardbos/ASV_final,master,,,java8,,,,
 ,leonardo-couto/s3-listener,master,maven,,java8,,,,
@@ -34613,6 +34618,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,piotr-szybicki/blog_posts,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,piotrmadry/firebase-test-lab-gradle-plugin,master,,,java11,,,,
 ,piotrpolak/android-http-server,master,,,java8,,,,
+,piotrwitek/utility-types,master,,,java17,,,,
 ,piper-magnetic/client-dependencies-gradle,master,,,java8,,,,
 ,pipimi110/java-sec-code-master,master,maven,,java8,,,,
 ,pipimi110/novel-plus-develop_xxy,master,maven,,java8,,,,
@@ -37167,6 +37173,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,sh3lan93/version-manager-android,main,,,java8,,,,
 ,shaangill025/SmartCPD-Event-Management-App,master,maven,,java8,,,,
 ,shack2/javaserializetools,master,,,java8,,,TRUE,Top-level build tool file is missing
+,shadcn/ui,main,,,java17,,,,
+,shadcn/taxonomy,main,,,java17,,,
 ,shadogray/pfad,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,shadowfacts/TutorialMod,1.12,,,java8,,,,
 ,shadowrider-pl/SlonieWEB,master,maven,,java8,,,,
@@ -40949,6 +40957,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,vaadin/wscdn-client,master,maven,,java8,,,,
 ,vaanstellar/jhipster-sample-application,master,maven,,java8,,,,
 ,vachudj/jhipster-sample-application,master,maven,,java8,,,,
+,vadimdemedes/ink,master,,,java17,,,,
 ,vadimsu/qpid,master,maven,,java8,,,,
 ,vadlamudinithin/timesheet,master,maven,,java8,,,,
 ,vaemendis/hccd,master,maven,,java8,,,,
@@ -41114,6 +41123,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,veracode-research/spring-view-manipulation,master,maven,,java8,,,,
 ,veracode/verademo,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,veracodedemolabsab/VeraInsecure,master,maven,,java8,,,,
+,vercel/commerce,main,,,java17,,,,
 ,verehu/SweetCamera,master,,,java8,,,TRUE,Gradle wrapper 2.8 is not supported
 ,verehu/SweetMusicPlayer,master,,,java8,,,TRUE,Gradle wrapper 4.2.1 is not supported
 ,verezragna/diploma,master,maven,,java8,,,,
