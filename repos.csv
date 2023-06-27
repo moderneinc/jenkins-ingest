@@ -14977,7 +14977,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,blueperf/acmeair-flightservice-java,main,maven,,java8,,,,
 ,blueperf/acmeair-monolithic-java,main,maven,,java8,,,,
 ,blueset/MusicSortOrder,master,,,java8,,,,
-,bluesky-social/atproto,main,,,jav17,,,,
+,bluesky-social/atproto,main,,,java17,,,,
 ,bluesky139/LTweaks,master,,,java8,,,,
 ,bluesliverx/disable-github-multibranch-status-plugin,master,maven,,java8,,,,
 ,blundell/QuickSand,master,,,java8,,,,
