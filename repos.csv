@@ -26686,7 +26686,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jiheneA/jwtGatewayProject,master,maven,,java8,,,,
 ,jikedefeng/lesson6,master,maven,,java8,,,,
 ,jimador/hr-portal,master,maven,,java8,,,,
-,jimbethancourt/RefactorFirst,main,maven,,java8,,,,
+,jimbethancourt/RefactorFirst,main,maven,,java,,,,
+,jimbethancourt/da4java-refactoring,master,,,java,,,,
+,jimbethancourt/hearthstone-master-crafter,master,,,java,,,,
+,jimbethancourt/hello-cucumber-i-want-ice-cream,master,,,java,,,,
+,jimbethancourt/topic-viewer,master,,,java,,,,
 ,jimman124/mancom,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,jimmoores/quandl4j,master,maven,,java8,,,,
 ,jimmyej/secureapp,master,,,java8,,,TRUE,Top-level build tool file is missing
