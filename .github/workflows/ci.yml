@@ -39,3 +39,5 @@ jobs:
         with:
           name: build-reports
           path: parser/build/reports/
+      - name: Validate repos.csv
+        run: ./validate-repos.csv.sh

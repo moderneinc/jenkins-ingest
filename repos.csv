@@ -14488,7 +14488,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,bartwell/ExFilePicker,master,,,java8,,,,
 ,baruchiro/Cars,master,,,java8,,,TRUE,Gradle wrapper 2.14.1 is not supported
 ,bas/WebGoat,master,maven,,java8,,,,
-,basarat/typescript-collections,release,,java17,,,,
+,basarat/typescript-collections,release,,,java17,,,,
 ,basare013/jhipster-blog,master,maven,,java8,,,,
 ,basavaraj-aiobee/insync,master,maven,,java8,,,,
 ,basavaraj-aiobee/warrantyapp,master,maven,,java8,,,,
@@ -14975,8 +14975,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,blueperf/acmeair-flightservice-java,main,maven,,java8,,,,
 ,blueperf/acmeair-monolithic-java,main,maven,,java8,,,,
 ,blueset/MusicSortOrder,master,,,java8,,,,
+,bluesky-social/atproto,main,,,jav17,,,,
 ,bluesky139/LTweaks,master,,,java8,,,,
-,bluesky-social,atproto,main,,,jav17,,,,
 ,bluesliverx/disable-github-multibranch-status-plugin,master,maven,,java8,,,,
 ,blundell/QuickSand,master,,,java8,,,,
 ,blundell/WoodyFaceDetection,master,,,java8,,,TRUE,Gradle wrapper 2.7 is not supported
@@ -28612,8 +28612,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,leogtzr/mybooks,master,maven,,java8,,,,
 ,leogtzr/rimbomba,master,maven,,java8,,,,
 ,leolin310148/ShortcutBadger,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-,leon0399/dadata,develop,maven,,java8,,,,
 ,leon-ai/leon,develop,,,java17,,,,
+,leon0399/dadata,develop,maven,,java8,,,,
 ,leonHua/LSettingView,master,,,java8,,,,
 ,leonardbos/ASV_final,master,,,java8,,,,
 ,leonardo-couto/s3-listener,master,maven,,java8,,,,
@@ -37173,8 +37173,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,sh3lan93/version-manager-android,main,,,java8,,,,
 ,shaangill025/SmartCPD-Event-Management-App,master,maven,,java8,,,,
 ,shack2/javaserializetools,master,,,java8,,,TRUE,Top-level build tool file is missing
+,shadcn/taxonomy,main,,,java17,,,,
 ,shadcn/ui,main,,,java17,,,,
-,shadcn/taxonomy,main,,,java17,,,
 ,shadogray/pfad,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,shadowfacts/TutorialMod,1.12,,,java8,,,,
 ,shadowrider-pl/SlonieWEB,master,maven,,java8,,,,
