@@ -34891,6 +34891,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,princeparadoxes/RecyclerBindableAdapter,master,,,java8,,,TRUE,Gradle wrapper 3.5 is not supported
 ,printco/sftpexample,master,maven,,java8,,,,
 ,prisma-capacity/cryptoshred,master,maven,,java8,,,,
+,prisma/docs-tools,main,,,,,,,
 ,privacybydesign/irma_big_issuer,master,,,java8,,,,
 ,privatejava/spring-boot-redis-jwt,master,maven,,java8,,,,
 ,priyajain66/currency,master,maven,,java8,,,,
