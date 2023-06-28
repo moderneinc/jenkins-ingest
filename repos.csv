@@ -33156,7 +33156,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,node-gradle/gradle-node-plugin,master,,,java8,,,,
 ,node-on-mobile/node-on-android,master,,,java8,,,,
 ,nodebox/nodebox,master,maven,,java11,,,,
-,nodejs/node-version-jenkins-plugin,main,maven,,java8,,,,
+,nodejs/gyp-next,main,,,,,,,
+,nodejs/node-gyp,main,,,,,,,
+,nodejs/node-version-jenkins-plugin,main,maven,,java,,,,
+,nodejs/nodejs-dependency-vuln-assessments,main,,,,,,,
+,nodejs/tap2junit,main,,,,,,,
+,nodejs/testing,master,,,,,,TRUE,archived
 ,nodyn/nodyn,master,maven,,java8,,,,
 ,noear/solon,master,maven,,java8,,,,
 ,noelob/jmeter-gradle-plugin,master,,,java8,,,,
