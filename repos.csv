@@ -35857,6 +35857,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,remicanillas/Planisphere,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,remind101/android-arch-sample,master,,,java8,,,,
 ,remkop/picocli,main,,,java8,,,,
+,remy/chrome-quiz,master,,,,,,,
+,remy/logs.remysharp.com,master,,,,,,,
+,remy/twitpic-json,master,,,,,,,
 ,ren93/RecyclerBanner,master,,,java8,,,,
 ,renato343/linkder,master,maven,,java8,,,,
 ,renatoathaydes/ceylon-gradle-plugin,master,,,java8,,,TRUE,Build uses Gradle 2.x
