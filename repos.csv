@@ -34213,10 +34213,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,parley-messaging/android-library,master,,,java8,,,,
 ,parmeshashwath/datasciencecoursera1,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,parry-li/AndroidToolsUtils,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-,parse-community/Parse-SDK-Android,master,,,java8,,,,
-,parse-community/ParseFacebookUtils-Android,master,,,java8,,,,
-,parse-community/ParseLiveQuery-Android,master,,,java8,,,,
-,parse-community/ParseUI-Android,master,,,java8,,,,
+,parse-community/Parse-SDK-Android,master,,,java,,,,
+,parse-community/ParseFacebookUtils-Android,master,,,java8,,,TRUE,archived
+,parse-community/ParseInterceptors-Android,main,,,,,,TRUE,archived
+,parse-community/ParseLiveQuery-Android,master,,,java,,,,
+,parse-community/ParseTwitterUtils-Android,master,,,,,,TRUE,archived
+,parse-community/ParseUI-Android,master,,,java,,,,
 ,parsingdata/metal,master,maven,,java8,,,,
 ,parth8891/BattleShip,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,parthkaria/LoginApp,master,maven,,java8,,,,
