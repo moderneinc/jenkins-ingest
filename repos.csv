@@ -33156,12 +33156,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,node-gradle/gradle-node-plugin,master,,,java8,,,,
 ,node-on-mobile/node-on-android,master,,,java8,,,,
 ,nodebox/nodebox,master,maven,,java11,,,,
-,nodejs/gyp-next,main,,,,,,,
-,nodejs/node-gyp,main,,,,,,,
-,nodejs/node-version-jenkins-plugin,main,maven,,java,,,,
-,nodejs/nodejs-dependency-vuln-assessments,main,,,,,,,
-,nodejs/tap2junit,main,,,,,,,
-,nodejs/testing,master,,,,,,TRUE,archived
+,nodejs/gyp-next,main,,,java17,,,,
+,nodejs/node-gyp,main,,,java17,,,,
+,nodejs/node-version-jenkins-plugin,main,maven,,java8,,,,
+,nodejs/nodejs-dependency-vuln-assessments,main,,,java17,,,,
+,nodejs/tap2junit,main,,,java17,,,,
+,nodejs/testing,master,,,java17,,,TRUE,archived
 ,nodyn/nodyn,master,maven,,java8,,,,
 ,noear/solon,master,maven,,java8,,,,
 ,noelob/jmeter-gradle-plugin,master,,,java8,,,,
@@ -33268,9 +33268,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,nsoft/uno-jar,master,,,java11,,,,
 ,nsporillo/GlobalWarming,master,maven,,java8,,,,
 ,nstdio/http-client-ext,main,,,java11,,,,
-,nswbmw/alfred-cnode,master,,,,,,,
-,nswbmw/sublime-NodeRequire,master,,,,,,,
-,nswbmw/sublime-open-require,master,,,,,,,
+,nswbmw/alfred-cnode,master,,,java17,,,,
+,nswbmw/sublime-NodeRequire,master,,,java17,,,,
+,nswbmw/sublime-open-require,master,,,java17,,,,
 ,ntha79/uaa,master,maven,,java8,,,,
 ,ntic-cefetmg/RISO-Web,master,maven,,java8,,,,
 ,ntquang22298/OfficerManagement,master,maven,,java8,,,,
@@ -34221,12 +34221,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,parley-messaging/android-library,master,,,java8,,,,
 ,parmeshashwath/datasciencecoursera1,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,parry-li/AndroidToolsUtils,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-,parse-community/Parse-SDK-Android,master,,,java,,,,
+,parse-community/Parse-SDK-Android,master,,,java8,,,,
 ,parse-community/ParseFacebookUtils-Android,master,,,java8,,,TRUE,archived
-,parse-community/ParseInterceptors-Android,main,,,,,,TRUE,archived
-,parse-community/ParseLiveQuery-Android,master,,,java,,,,
-,parse-community/ParseTwitterUtils-Android,master,,,,,,TRUE,archived
-,parse-community/ParseUI-Android,master,,,java,,,,
+,parse-community/ParseInterceptors-Android,main,,,java17,,,TRUE,archived
+,parse-community/ParseLiveQuery-Android,master,,,java8,,,,
+,parse-community/ParseTwitterUtils-Android,master,,,java17,,,TRUE,archived
+,parse-community/ParseUI-Android,master,,,java8,,,,
 ,parsingdata/metal,master,maven,,java8,,,,
 ,parth8891/BattleShip,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,parthkaria/LoginApp,master,maven,,java8,,,,
@@ -34901,7 +34901,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,princeparadoxes/RecyclerBindableAdapter,master,,,java8,,,TRUE,Gradle wrapper 3.5 is not supported
 ,printco/sftpexample,master,maven,,java8,,,,
 ,prisma-capacity/cryptoshred,master,maven,,java8,,,,
-,prisma/docs-tools,main,,,,,,,
+,prisma/docs-tools,main,,,java17,,,,
 ,privacybydesign/irma_big_issuer,master,,,java8,,,,
 ,privatejava/spring-boot-redis-jwt,master,maven,,java8,,,,
 ,priyajain66/currency,master,maven,,java8,,,,
@@ -35868,9 +35868,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,remicanillas/Planisphere,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,remind101/android-arch-sample,master,,,java8,,,,
 ,remkop/picocli,main,,,java8,,,,
-,remy/chrome-quiz,master,,,,,,,
-,remy/logs.remysharp.com,master,,,,,,,
-,remy/twitpic-json,master,,,,,,,
+,remy/chrome-quiz,master,,,java17,,,,
+,remy/logs.remysharp.com,master,,,java17,,,,
+,remy/twitpic-json,master,,,java17,,,,
 ,ren93/RecyclerBanner,master,,,java8,,,,
 ,renato343/linkder,master,maven,,java8,,,,
 ,renatoathaydes/ceylon-gradle-plugin,master,,,java8,,,TRUE,Build uses Gradle 2.x
@@ -38131,9 +38131,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,sockeqwe/mosby,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,sockeqwe/mosby-conductor,master,,,java8,,,TRUE,Gradle wrapper 4.2.1 is not supported
 ,sockeqwe/sqlbrite-dao,master,,,java8,,,,
-,socketio/engine.io-client-java,main,,,java,,,,
-,socketio/engine.io-server-java,master,,,java,,,,
-,socketio/socket.io-client-java,main,,,java,,,,
+,socketio/engine.io-client-java,main,,,java17,,,,
+,socketio/engine.io-server-java,master,,,java17,,,,
+,socketio/socket.io-client-java,main,,,java17,,,,
 ,socketio/socket.io-client-java,master,maven,,java8,,,,
 ,socrat2012/jhipster-sample-application,master,maven,,java8,,,,
 ,socrata/datasync,main,maven,,java8,,,,
