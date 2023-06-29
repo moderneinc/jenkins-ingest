@@ -38117,6 +38117,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,sockeqwe/mosby,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,sockeqwe/mosby-conductor,master,,,java8,,,TRUE,Gradle wrapper 4.2.1 is not supported
 ,sockeqwe/sqlbrite-dao,master,,,java8,,,,
+,socketio/engine.io-client-java,main,,,java,,,,
+,socketio/engine.io-server-java,master,,,java,,,,
+,socketio/socket.io-client-java,main,,,java,,,,
 ,socketio/socket.io-client-java,master,maven,,java8,,,,
 ,socrat2012/jhipster-sample-application,master,maven,,java8,,,,
 ,socrata/datasync,main,maven,,java8,,,,
