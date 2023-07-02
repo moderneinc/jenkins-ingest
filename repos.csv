@@ -30531,6 +30531,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-chatbots,master,,,java,,,,
 ,micronaut-projects/micronaut-coherence,master,,,java,,,,
 ,micronaut-projects/micronaut-comparisons,master,,,java,,,,
+,micronaut-projects/micronaut-control-panel,master,,,java,,,,
 ,micronaut-projects/micronaut-core,3.5.x,,,java8,,,,
 ,micronaut-projects/micronaut-core,4.0.x,,,java,,,,
 ,micronaut-projects/micronaut-crac,master,,,java,,,,
@@ -30568,7 +30569,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-netflix,master,,,,,,TRUE,archived
 ,micronaut-projects/micronaut-oauth2,master,,,,,,TRUE,archived
 ,micronaut-projects/micronaut-object-storage,master,,,java,,,,
-,micronaut-projects/micronaut-openapi,master,,,java8,,,,
+,micronaut-projects/micronaut-openapi,master,,,java,,,,
 ,micronaut-projects/micronaut-oracle-cloud,master,,,java,,,,
 ,micronaut-projects/micronaut-picocli,master,,,java,,,,
 ,micronaut-projects/micronaut-platform,master,,,java,,,,
