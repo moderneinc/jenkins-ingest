@@ -27322,10 +27322,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,juniorvvv/Ass6,master,,,java8,,,,
 ,junit-pioneer/junit-pioneer,main,,,java8,,,,
 ,junit-team/junit,main,,,java8,,,,
-,junit-team/junit4,main,,,java8,,,TRUE,Maven wrapper 3.1.1 is not supported
-,junit-team/junit5,main,,,java17,,,,
-,junit-team/junit5-workshop,main,,,java8,,,TRUE,Build uses Gradle 3.x
-,junit-team/testng-engine,main,,,java8,,,,
+,junit-team/junit-mailinglist-archive,main,,,java,,,,
+,junit-team/junit.contrib,main,,,,,,TRUE,archived
+,junit-team/junit4,main,,,java,,,TRUE,Maven wrapper 3.1.1 is not supported
+,junit-team/junit5,main,,,java,,,,
+,junit-team/junit5-samples,main,,,java,,,,
+,junit-team/junit5-workshop,main,,,java,,,TRUE,Build uses Gradle 3.x
+,junit-team/testng-engine,main,,,java,,,,
 ,juniversal/juniversal,master,,,java8,,,,
 ,junjunguo/PocketMaps,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,junkdog/artemis-odb,develop,maven,,java8,,,,
