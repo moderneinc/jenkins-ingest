@@ -18367,7 +18367,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,eclipse/eclipse.jdt.ls,master,maven,,java,,,,
 ,eclipse/eclipsefuro,main,,,,,,,
 ,eclipse/edje,develop,,,java,,,,
-,eclipse/efbt,master,,,,,,,
+,eclipse/efbt,master,,,java,,,,
 ,eclipse/elk,master,,,java,,,,
 ,eclipse/emf-query,master,,,java,,,,
 ,eclipse/emf-transaction,master,maven,,java,,,,
@@ -18437,6 +18437,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,eclipse/kitalpha,master,maven,,java,,,,
 ,eclipse/kitalpha-addons,master,maven,,java,,,,
 ,eclipse/kuksa.ide,master,,,,,,TRUE,archived
+,eclipse/kuksa.val.feeders,main,,,,,,,
+,eclipse/kuksa.val.services,main,,,,,,,
 ,eclipse/kura,develop,,,java,,,,
 ,eclipse/lemminx,main,maven,,java,,,,
 ,eclipse/lemminx-maven,master,,,java,,,TRUE,Top-level build tool file is missing
