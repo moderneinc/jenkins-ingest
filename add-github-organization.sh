@@ -1,7 +1,12 @@
 #!/bin/bash
 set -ex
 
-gh repo list $1 --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,java,,,,{{"\n"}}{{end}}' > new.csv
+java='java'
+if [ -n "$2" ]; then
+  java=$2
+fi
+
+gh repo list $1 --language java --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template "{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,${java},,,,{{\"\n\"}}{{end}}" > new.csv
 gh repo list $1 --language python --no-archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,,,,,{{"\n"}}{{end}}' >> new.csv
 gh repo list $1 --language java --archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,,,,TRUE,archived{{"\n"}}{{end}}' >> new.csv
 gh repo list $1 --language python --archived --source --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,,,,TRUE,archived{{"\n"}}{{end}}' >> new.csv
