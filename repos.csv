@@ -24723,6 +24723,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkins-zh/jenkins-client-java,master,maven,,java8,,,,
 ,jenkins-zh/mirror-adapter,master,maven,,java8,,,,
 ,jenkinsci/42crunch-security-audit-plugin,master,maven,,java,,,,
+,jenkinsci/Aristiun-Aribot-Plugin,master,,,java,,,,
 ,jenkinsci/BlameSubversion-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/CFLint-plugin,master,maven,,java,,,,
 ,jenkinsci/JDK_Parameter_Plugin-plugin,master,,,java,,,,
@@ -24735,12 +24736,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/URLSCM-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/VMWareLabManager-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/WebSVN2-plugin,master,maven,,java,,,,
-,jenkinsci/abap-ci-plugin,master,maven,,java8,,,,
+,jenkinsci/abap-ci-plugin,master,maven,,java,,,,
 ,jenkinsci/absint-a3-plugin,master,maven3.3.9,,java,,,,
 ,jenkinsci/absint-astree-plugin,master,maven,,java8,,,,
 ,jenkinsci/accelq-ci-connect-plugin,main,maven,,java,,,,
 ,jenkinsci/acceptance-test-harness,master,maven,,java,,,,
-,jenkinsci/accurev-plugin,master,maven,,java8,,,,
+,jenkinsci/accurev-plugin,master,maven,,java,,,,
 ,jenkinsci/active-directory-plugin,master,maven,,java,,,,
 ,jenkinsci/activiti-explorer-plugin,master,maven,,java,,,,
 ,jenkinsci/acunetix-360-scan-plugin,master,maven,,java,,,,
@@ -24809,7 +24810,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/aribot-plugin,master,,,java,,,,
 ,jenkinsci/artifact-diff-plugin,master,maven,,java,,,TRUE,Java version 5 is not supported
 ,jenkinsci/artifact-manager-s3-plugin,master,maven,,java,,,,
-,jenkinsci/artifact-promotion-plugin,master,maven,,java,,,,
+,jenkinsci/artifact-promotion-plugin,master,maven,,java,,,TRUE,archived
 ,jenkinsci/artifact-repository-parameter-plugin,master,maven,,java,,,,
 ,jenkinsci/artifactdeployer-plugin,master,maven,,java,,,,
 ,jenkinsci/artifactory-plugin,master,maven,,java,,,,
@@ -24884,7 +24885,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/basic-branch-build-strategies-plugin,master,maven,,java,,,,
 ,jenkinsci/batch-task-plugin,master,maven3.3.9,,java8,,,,
 ,jenkinsci/bazaar-plugin,master,maven,,java8,,,,
-,jenkinsci/beaker-builder-plugin,master,maven,,java8,,,,
+,jenkinsci/beaker-builder-plugin,master,maven,,java,,,,
 ,jenkinsci/beer-plugin,master,maven,,java,,,,
 ,jenkinsci/behave-testresults-publisher-plugin,master,maven,,java8,,,,
 ,jenkinsci/benchmark-evaluator-plugin,master,maven,,java,,,,
@@ -24956,12 +24957,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/buildresult-trigger-plugin,master,maven,,java,,,,
 ,jenkinsci/buildtriggerbadge-plugin,master,maven,,java,,,,
 ,jenkinsci/built-on-column-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
-,jenkinsci/bulk-builder-plugin,master,maven,,java11,,,,
+,jenkinsci/bulk-builder-plugin,master,maven,,java,,,,
 ,jenkinsci/bumblebee-plugin,master,maven,,java,,,,
 ,jenkinsci/bytecode-compatibility-transformer,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/byteguard-build-actions-plugin,master,maven,,java8,,,,
 ,jenkinsci/ca-apm-plugin,master,maven,,java8,,,,
-,jenkinsci/ca-mat-performance-benchmarking-by-broadcom-plugin,master,maven,,java8,,,,
+,jenkinsci/ca-mat-performance-benchmarking-by-broadcom-plugin,master,maven,,java,,,,
 ,jenkinsci/ca-service-virtualization-plugin,master,maven,,java,,,,
 ,jenkinsci/cachet-gating-plugin,master,maven,,java,,,,
 ,jenkinsci/caffeine-api-plugin,master,maven,,java8,,,,
@@ -24975,7 +24976,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/cas1-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/casdoor-auth-plugin,master,,,java,,,,
 ,jenkinsci/catalogic-ecx-plugin,master,maven,,java8,,,,
-,jenkinsci/categorized-view-plugin,master,maven,,java8,,,,
+,jenkinsci/categorized-view-plugin,master,maven,,java,,,,
 ,jenkinsci/catlight-plugin,main,,,java,,,,
 ,jenkinsci/cavirin-image-secure-plugin,master,maven,,java8,,,,
 ,jenkinsci/cccc-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -25003,7 +25004,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/chrome-frame-plugin,master,maven,,java,,,TRUE,Java version 5 is not supported
 ,jenkinsci/chromedriver-plugin,master,maven,,java,,,,
 ,jenkinsci/chucknorris-plugin,master,maven,,java,,,,
-,jenkinsci/ci-game-plugin,master,maven,,java,,,,
+,jenkinsci/ci-game-plugin,master,maven,,java,,,TRUE,archived
 ,jenkinsci/ci-with-toad-devops-toolkit-plugin,master,maven,,java8,,,,
 ,jenkinsci/ci-with-toad-edge-plugin,master,maven3.3.9,,java,,,,
 ,jenkinsci/ci.jenkins.io-runner,master,maven,,java8,,,,
@@ -25036,7 +25037,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/cloudify-plugin,master,maven,,java,,,,
 ,jenkinsci/cloudshell-sandbox-plugin,develop,maven3.3.9,,java,,,,
 ,jenkinsci/cloudtest-plugin,master,maven,,java,,,,
-,jenkinsci/clover-plugin,master,maven,,java8,,,,
+,jenkinsci/clover-plugin,master,maven,,java,,,,
 ,jenkinsci/cloverphp-plugin,master,maven,,java,,,,
 ,jenkinsci/cmakebuilder-plugin,master,maven,,java,,,,
 ,jenkinsci/cmvc-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -25104,7 +25105,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/content-replace-plugin,master,maven,,java,,,,
 ,jenkinsci/contrast-continuous-application-security-plugin,master,maven,,java,,,,
 ,jenkinsci/conventional-commits-plugin,main,maven,,java,,,,
-,jenkinsci/convert-to-pipeline-plugin,master,maven,,java8,,,,
+,jenkinsci/convert-to-pipeline-plugin,master,maven,,java,,,,
 ,jenkinsci/copy-data-to-workspace-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/copy-project-link-plugin,master,,,java,,,,
 ,jenkinsci/copy-to-slave-plugin,master,maven,,java,,,,
@@ -25113,7 +25114,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/core-annotation-processors,master,maven,,java,,,,
 ,jenkinsci/core-js,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/cortex-metrics-plugin,master,maven,,java,,,,
-,jenkinsci/couchdb-statistics-plugin,master,maven,,java8,,,,
+,jenkinsci/couchdb-statistics-plugin,master,maven,,java,,,,
 ,jenkinsci/countjobs-viewstabbar-plugin,master,maven,,java8,,,,
 ,jenkinsci/covcomplplot-plugin,master,maven,,java8,,,,
 ,jenkinsci/coverage-model,main,,,java,,,,
@@ -25131,7 +25132,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/credentials-plugin,master,maven,,java,,,,
 ,jenkinsci/cronProjectAction-plugin,master,maven,,java,,,,
 ,jenkinsci/cron_column-plugin,master,maven,,java,,,,
-,jenkinsci/crossbrowsertesting-plugin,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,jenkinsci/crossbrowsertesting-plugin,master,,,java,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,jenkinsci/crowd-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/crowd2-plugin,master,maven,,java,,,,
 ,jenkinsci/crowdstrike-security-plugin,main,,,java,,,,
@@ -25149,6 +25150,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/custom-distribution-service,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/custom-folder-icon-plugin,main,,,java,,,,
 ,jenkinsci/custom-folder-icon-plugin,master,maven,,java11,,,,
+,jenkinsci/custom-markup-formatter-plugin,master,,,java,,,,
 ,jenkinsci/custom-tools-plugin,master,maven,,java8,,,,
 ,jenkinsci/custom-view-tabs-plugin,master,maven,,java11,,,TRUE,archived
 ,jenkinsci/custom-war-packager,master,maven,,java,,,,
@@ -25197,7 +25199,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/deploygate-plugin,master,maven,,java,,,,
 ,jenkinsci/deployhub-plugin,master,maven,,java8,,,,
 ,jenkinsci/deployment-notification-plugin,master,maven,,java,,,,
-,jenkinsci/describe-with-params-plugin,master,maven,,java8,,,,
+,jenkinsci/describe-with-params-plugin,master,maven,,java,,,,
 ,jenkinsci/description-setter-plugin,master,maven,,java8,,,,
 ,jenkinsci/design-library-plugin,master,maven,,java,,,,
 ,jenkinsci/dev-mode-plugin,master,maven,,java8,,,,
@@ -25277,7 +25279,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/envinject-api-plugin,master,maven,,java,,,,
 ,jenkinsci/envinject-lib,master,maven,,java,,,,
 ,jenkinsci/envinject-plugin,master,maven,,java,,,,
-,jenkinsci/environment-dashboard-plugin,master,maven,,java8,,,,
+,jenkinsci/environment-dashboard-plugin,master,maven,,java,,,,
 ,jenkinsci/environment-filter-utils-plugin,master,maven,,java8,,,,
 ,jenkinsci/environment-manager-tools-plugin,master,maven,,java,,,,
 ,jenkinsci/environment-plugin,master,maven,,java11,,,,
@@ -25300,7 +25302,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/external-logging-elasticsearch-plugin,master,maven,,java8,,,,
 ,jenkinsci/external-monitor-job-plugin,master,maven,,java,,,,
 ,jenkinsci/external-resource-dispatcher-plugin,master,maven,,java,,,,
-,jenkinsci/external-scheduler-plugin,master,maven,,java,,,,
+,jenkinsci/external-scheduler-plugin,master,maven,,java,,,TRUE,archived
 ,jenkinsci/external-workspace-manager-plugin,master,maven,,java,,,,
 ,jenkinsci/extra-tool-installers-plugin,master,,,java,,,,
 ,jenkinsci/extras-client-demo,master,maven,,java8,,,,
@@ -25383,6 +25385,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/git-changelog-plugin,master,maven,,java,,,,
 ,jenkinsci/git-client-plugin,master,maven,,java,,,,
 ,jenkinsci/git-forensics-plugin,master,maven,,java,,,,
+,jenkinsci/git-parameter-plugin,master,,,java,,,,
 ,jenkinsci/git-plugin,master,,,java,,,,
 ,jenkinsci/git-prebuildmerge-trait-plugin,master,maven,,java,,,,
 ,jenkinsci/git-push-plugin,master,maven,,java,,,,
@@ -25414,6 +25417,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/gitorious-plugin,master,maven,,java,,,,
 ,jenkinsci/global-build-stats-plugin,master,maven,,java,,,,
 ,jenkinsci/global-post-script-plugin,master,maven,,java,,,,
+,jenkinsci/global-yaml-properties-plugin,master,,,java,,,,
 ,jenkinsci/gnat-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/gogs-webhook-plugin,master,maven,,java,,,,
 ,jenkinsci/golang-plugin,master,maven,,java,,,,
@@ -25451,10 +25455,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/harvest-plugin,master,maven,,java11,,,,
 ,jenkinsci/hashicorp-vault-pipeline-plugin,master,maven,,java,,,,
 ,jenkinsci/hashicorp-vault-plugin,master,maven,,java,,,,
-,jenkinsci/headspin-plugin,master,maven,,java,,,,
+,jenkinsci/headspin-plugin,master,maven,,java,,,TRUE,archived
 ,jenkinsci/heavy-job-plugin,master,maven,,java8,,,,
 ,jenkinsci/helix-alm-test-management-plugin,master,,,java,,,,
 ,jenkinsci/hello-world-groovy-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
+,jenkinsci/hello-world-maven-builder,master,,,java,,,,
 ,jenkinsci/hello-world-scala-plugin,master,,,java8,,,TRUE,Build uses Gradle 2.x
 ,jenkinsci/hetzner-cloud-plugin,main,maven,,java,,,,
 ,jenkinsci/hgca-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -25538,6 +25543,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/jdepend-plugin,master,maven,,java,,,,
 ,jenkinsci/jdk-tool-plugin,master,maven,,java,,,,
 ,jenkinsci/jelly,master,maven,,java,,,,
+,jenkinsci/jellydoc-maven-plugin,master,,,java,,,,
 ,jenkinsci/jenkins,master,maven,,java,,,,
 ,jenkinsci/jenkins-charm,master,,,,,,,
 ,jenkinsci/jenkins-clone-workspace-scm-plugin,master,,,java,,,,
@@ -25637,7 +25643,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/kundo-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/kwjlib,master,maven,,java8,,,,
 ,jenkinsci/label-linked-jobs-plugin,master,maven,,java,,,,
-,jenkinsci/label-verifier-plugin,master,maven,,java8,,,,
+,jenkinsci/label-verifier-plugin,master,maven,,java,,,,
 ,jenkinsci/labeled-test-groups-publisher-plugin,master,maven,,java,,,,
 ,jenkinsci/labelled-steps-plugin,master,maven,,java8,,,,
 ,jenkinsci/lacework-security-scanner-plugin,main,maven,,java,,,,
@@ -25683,6 +25689,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/libdtkit,master,maven,,java8,,,,
 ,jenkinsci/libvirt-slave-plugin,master,maven,,java,,,,
 ,jenkinsci/libxpublisher,master,maven,,java8,,,,
+,jenkinsci/license-maven-plugin,master,,,java,,,,
 ,jenkinsci/lighthouse-report-plugin,master,maven,,java,,,,
 ,jenkinsci/line-notify-plugin,master,maven,,java8,,,,
 ,jenkinsci/linenumbers-plugin,master,maven,,java8,,,,
@@ -25698,6 +25705,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/loadfocus-jmeter-load-testing-integration-plugin,master,maven,,java8,,,,
 ,jenkinsci/loadfocus-loadtest-plugin,master,maven,,java8,,,,
 ,jenkinsci/loadium-plugin,master,maven,,java,,,,
+,jenkinsci/loadmance-plugin,main,,,java,,,,
 ,jenkinsci/loadninja-plugin,master,maven,,java8,,,,
 ,jenkinsci/local-groovy-cli-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/locale-plugin,main,,,java,,,,
@@ -25733,6 +25741,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/material-theme-plugin,master,maven,,java,,,,
 ,jenkinsci/matomo-analytics-plugin,master,,,java,,,,
 ,jenkinsci/matrix-auth-plugin,master,maven,,java,,,,
+,jenkinsci/matrix-communication-plugin,master,,,java,,,,
 ,jenkinsci/matrix-groovy-execution-strategy-plugin,master,,,java8,,,TRUE,Build uses Gradle 3.x
 ,jenkinsci/matrix-project-plugin,master,maven,,java,,,,
 ,jenkinsci/matrixtieparent-plugin,master,maven,,java,,,,
@@ -25862,6 +25871,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/openshift-k8s-credentials-plugin,main,maven,,java,,,,
 ,jenkinsci/openshift-sync-plugin,master,maven,,java,,,,
 ,jenkinsci/openstack-cloud-plugin,master,maven,,java,,,,
+,jenkinsci/opentelemetry-agent-metrics-plugin,main,,,java,,,,
 ,jenkinsci/opentelemetry-plugin,master,maven,,java,,,,
 ,jenkinsci/opsramp-notifier-plugin,master,maven,,java,,,,
 ,jenkinsci/optional-plugin-helper-module,master,maven,,java11,,,,
@@ -25875,7 +25885,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/osf-builder-suite-xml-linter-plugin,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/ostorlab-plugin,master,maven,,java,,,,
 ,jenkinsci/outbound-webhook-plugin,master,,,java,,,,
-,jenkinsci/oversecured-plugin,master,maven,,java8,,,,
+,jenkinsci/oversecured-plugin,master,maven,,java,,,,
 ,jenkinsci/overthere-remoting,master,maven,,java8,,,,
 ,jenkinsci/owl-reporter-plugin,master,maven3.3.9,,java8,,,,
 ,jenkinsci/p4-plugin,master,maven,,java,,,,
@@ -25888,6 +25898,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/pangolin-testrail-connector-plugin,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/parallel-test-executor-plugin,master,maven,,java,,,,
 ,jenkinsci/parameter-defaults-options-plugin,master,,,,,,TRUE,archived
+,jenkinsci/parameter-separator-plugin,main,,,java,,,,
 ,jenkinsci/parameter-separator-plugin,master,maven,,java8,,,,
 ,jenkinsci/parameterized-trigger-plugin,master,maven,,java,,,,
 ,jenkinsci/parasoft-findings-plugin,master,maven,,java,,,,
@@ -25958,6 +25969,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/pmd-plugin,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/polarion-plugin,master,maven,,java8,,,,
 ,jenkinsci/policycenter-gate-validator-plugin,master,maven3.3.9,,java8,,,TRUE,archived
+,jenkinsci/pollscm-plugin,master,,,java,,,,
 ,jenkinsci/pom,master,maven,,java8,,,,
 ,jenkinsci/pom-importer-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/pom2config-plugin,master,maven,,java,,,TRUE,Java version 5 is not supported
@@ -25970,7 +25982,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/postgresql-fingerprint-storage-plugin,master,maven,,java,,,,
 ,jenkinsci/powershell-plugin,master,maven,,java,,,,
 ,jenkinsci/pre-scm-buildstep-plugin,master,,,java,,,,
-,jenkinsci/preflight-integration-plugin,master,maven,,java8,,,,
+,jenkinsci/preflight-integration-plugin,master,maven,,java,,,,
 ,jenkinsci/priority-sorter-plugin,master,,,java,,,,
 ,jenkinsci/prism-api-plugin,main,maven,,java,,,,
 ,jenkinsci/prisma-cloud-iac-scan-plugin,main,maven,,java8,,,,
@@ -26056,12 +26068,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/remoting-security-workaround-plugin,main,maven,,java8,,,TRUE,archived
 ,jenkinsci/report-diff-plugin,master,,,java,,,,
 ,jenkinsci/report-generic-chart-column-plugin,master,,,java,,,,
+,jenkinsci/report-jtreg-plugin,master,,,java,,,,
 ,jenkinsci/repository-connector-plugin,master,maven,,java,,,,
-,jenkinsci/reqtify-plugin,master,maven,,java8,,,,
+,jenkinsci/reqtify-plugin,master,maven,,java,,,,
 ,jenkinsci/requests-plugin,master,maven,,java,,,,
 ,jenkinsci/resource-disposer-plugin,master,maven,,java,,,,
 ,jenkinsci/rest-list-parameter-plugin,main,maven,,java,,,,
-,jenkinsci/rest-service-scheduler-plugin,master,maven,,java8,,,,
+,jenkinsci/rest-service-scheduler-plugin,master,maven,,java8,,,TRUE,archived
 ,jenkinsci/results-cache-plugin,master,maven,,java,,,,
 ,jenkinsci/reverse-proxy-auth-plugin,master,maven,,java,,,,
 ,jenkinsci/reviewboard-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -26190,7 +26203,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/sonargraph-integration-plugin,develop,maven,,java,,,,
 ,jenkinsci/sonic-ci-helper-plugin,main,,,java,,,,
 ,jenkinsci/soos-sca-plugin,main,maven,,java,,,,
-,jenkinsci/sounds-plugin,master,maven,,java8,,,,
+,jenkinsci/sounds-plugin,master,maven,,java,,,,
 ,jenkinsci/source-ip-realm-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/sourcemonitor-plugin,master,maven,,java8,,,,
 ,jenkinsci/speaks-plugin,master,maven,,java8,,,,
@@ -26215,6 +26228,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/staf-plugin,master,maven,,java8,,,,
 ,jenkinsci/staging-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/stapler,master,maven,,java,,,,
+,jenkinsci/stapler-maven-plugin,master,,,java,,,,
 ,jenkinsci/starteam-plugin,master,maven,,java8,,,,
 ,jenkinsci/startup-trigger-plugin,master,maven,,java8,,,,
 ,jenkinsci/stashnotifier-plugin,release/1.x,maven,,java,,,,
@@ -26236,7 +26250,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/svncompat13-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/svncompat14-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/svnimport-plugin,master,maven,,java,,,,
-,jenkinsci/svnkit,master,,,java8,,,,
+,jenkinsci/svnkit,master,,,java8,,,TRUE,archived
 ,jenkinsci/svnmerge-plugin,master,maven,,java,,,,
 ,jenkinsci/svnpublisher-plugin,master,maven,,java8,,,,
 ,jenkinsci/swarm-plugin,master,maven,,java,,,,
@@ -26283,9 +26297,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/thread-dump-action-plugin,master,maven,,java,,,,
 ,jenkinsci/threadfix-plugin,master,maven,,java8,,,,
 ,jenkinsci/throttle-concurrent-builds-plugin,master,maven,,java,,,,
-,jenkinsci/thundra-foresight-plugin,master,maven,,java8,,,,
+,jenkinsci/thundra-foresight-plugin,master,maven,,java,,,,
 ,jenkinsci/thycotic-devops-secrets-vault-plugin,master,,,java,,,,
 ,jenkinsci/thycotic-vault-plugin,master,maven,,java8,,,,
+,jenkinsci/tics-plugin,main,,,java,,,,
 ,jenkinsci/tics-plugin,master,maven,,java,,,,
 ,jenkinsci/tikal-multijob-plugin,master,,,java,,,,
 ,jenkinsci/timemachine-plugin,master,maven,,java8,,,,
@@ -26312,7 +26327,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/twitter-plugin,master,maven,,java11,,,,
 ,jenkinsci/ucm4svn-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/uipath-automation-package-plugin,develop,maven,,java,,,,
-,jenkinsci/uithemes-plugin,master,maven,,java11,,,,
+,jenkinsci/uithemes-plugin,master,maven,,java11,,,TRUE,archived
 ,jenkinsci/uleska-plugin,master,maven,,java8,,,,
 ,jenkinsci/unik-builder-plugin,master,maven,,java,,,,
 ,jenkinsci/unity-asset-server-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -26327,7 +26342,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/usemango-runner-plugin,master,maven,,java8,,,,
 ,jenkinsci/user1st-utester-plugin,master,maven,,java,,,,
 ,jenkinsci/utplsql-plugin,master,maven,,java5,,,TRUE,Java version 5 is not supported
-,jenkinsci/uuid-parameter-plugin,main,maven,,java8,,,,
+,jenkinsci/uuid-parameter-plugin,main,maven,,java,,,,
 ,jenkinsci/valid-network-plugin,master,maven,,java8,,,,
 ,jenkinsci/validating-string-parameter-plugin,master,maven,,java,,,,
 ,jenkinsci/validating-yaml-parameter-plugin,master,maven,,java,,,,
@@ -26393,6 +26408,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/workflow-durable-task-step-plugin,master,maven,,java,,,,
 ,jenkinsci/workflow-job-plugin,master,maven,,java,,,,
 ,jenkinsci/workflow-multibranch-plugin,master,maven,,java,,,,
+,jenkinsci/workflow-remote-loader-plugin,master,,,java,,,,
 ,jenkinsci/workflow-scm-step-plugin,master,maven,,java,,,,
 ,jenkinsci/workflow-step-api-plugin,master,maven,,java,,,,
 ,jenkinsci/workflow-support-plugin,master,maven,,java,,,,
@@ -26406,7 +26422,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/ws-execution-manager-plugin,master,,,java8,,,,
 ,jenkinsci/ws-ws-replacement-plugin,master,maven3.3.9,,java,,,,
 ,jenkinsci/ws7-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
-,jenkinsci/wsap-plugin,master,maven,,java8,,,,
+,jenkinsci/wsap-plugin,master,maven,,java,,,,
 ,jenkinsci/wsclean-plugin,master,maven,,java8,,,,
 ,jenkinsci/wso2id-oauth-plugin,master,maven3.3.9,,java,,,,
 ,jenkinsci/wxwork-notification-plugin,master,,,java,,,,
@@ -26439,7 +26455,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/zephyr-for-jira-test-management-plugin,master,maven3.3.9,,java8,,,,
 ,jenkinsci/zerobug-plugin,master,maven,,java,,,,
 ,jenkinsci/zfs-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
-,jenkinsci/zohosprints-plugin,master,maven,,java8,,,,
+,jenkinsci/zohosprints-plugin,master,maven,,java,,,,
 ,jenkinsci/zoom-plugin,master,maven,,java,,,,
 ,jenkinsci/zos-connector-plugin,master,maven,,java,,,,
 ,jenkinsci/zscaler-iac-scan-plugin,main,maven,,java,,,,
