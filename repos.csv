@@ -30553,7 +30553,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-coherence,master,,,java,,,,
 ,micronaut-projects/micronaut-comparisons,master,,,java,,,,
 ,micronaut-projects/micronaut-control-panel,master,,,java,,,,
-,micronaut-projects/micronaut-core,3.5.x,,,java,,,,
+,micronaut-projects/micronaut-core,3.9.x,,,java,,,,
 ,micronaut-projects/micronaut-core,4.0.x,,,java,,,,
 ,micronaut-projects/micronaut-crac,master,,,java,,,,
 ,micronaut-projects/micronaut-data,master,,,java,,,,
