@@ -25989,7 +25989,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/proc-cleaner-plugin,master,maven,,java,,,,
 ,jenkinsci/proc-plugin,master,maven,,java,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/progress-bar-column-plugin,master,maven,,java,,,,
-,jenkinsci/project-stats-plugin,master,maven,,java,,,,
+,jenkinsci/project-stats-plugin,master,maven,,java,,-DupdatePomFile=false,,
 ,jenkinsci/promoted-builds-plugin,master,maven,,java,,,,
 ,jenkinsci/promoted-builds-simple-plugin,master,maven,,java8,,,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/propelo-job-reporter-plugin,main,maven,,java,,,,
