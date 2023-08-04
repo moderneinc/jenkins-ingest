@@ -13860,6 +13860,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,arrow-kt/arrow,main,,,java11,,,,
 ,arrow-kt/arrow-gradle-config,main,,,java11,,,,
 ,arrow-kt/arrow-meta,main,,,java8,,,,
+,arrow-kt/rewrite-arrow,main,,,java,,,,
 ,arroyc/azure-acs-plugin,master,maven,,java8,,,,
 ,arroyopablo/Sokoban-IA,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,arsframework/ars-core,master,maven,,java8,,,,
