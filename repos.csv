@@ -5367,13 +5367,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/clazz-loaderz,master,,,java17,,,TRUE,archived
 ,JetBrains/clearcase,master,,,java,,,,
 ,JetBrains/clion-debugger-plugin-stub,master,,,java,,,,
-,JetBrains/codereview4intellij,master,,,java,,,,
+,JetBrains/codereview4intellij,master,,,java,,,TRUE,archived
 ,JetBrains/colorSchemeTool,master,,,,,,,
 ,JetBrains/commit-status-publisher,master,,,java,,,,
 ,JetBrains/coverage-report,master,,,java,,,,
 ,JetBrains/debugger-agent,main,,,java,,,,
 ,JetBrains/dekaf,master,,gradle,java,,,,
-,JetBrains/doclava-mirror,master,,,java,,,,
+,JetBrains/doclava-mirror,master,,,java,,,TRUE,archived
 ,JetBrains/emacs4ij,master,,,,,,TRUE,archived
 ,JetBrains/gradle-changelog-plugin,main,,,java8,,,,
 ,JetBrains/gradle-grammar-kit-plugin,master,,,java8,,,,
@@ -5449,6 +5449,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/pty4j,master,,,java,,,,
 ,JetBrains/python-skeletons,master,,,,,,TRUE,archived
 ,JetBrains/qodana-clone-finder-action,main,,,,,,TRUE,archived
+,JetBrains/qodana-sarif,main,,,java,,,,
 ,JetBrains/rider-theme-pack,master,,,,,,,
 ,JetBrains/skia-build,master,,,,,,,
 ,JetBrains/skia-pack,main,,,,,,,
