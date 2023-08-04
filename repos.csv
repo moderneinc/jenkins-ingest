@@ -5890,6 +5890,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Kotlin/dataframe,master,,,java11,,,,
 ,Kotlin/kotlin-benchmarks,master,maven,,java17,,,,
 ,Kotlin/kotlin-examples,master,,,java8,,,TRUE,Top-level build tool file is missing
+,Kotlin/kotlin-interactive-shell,main,,,java,,,,
 ,Kotlin/kotlin-jupyter,master,,,java8,,,,
 ,Kotlin/kotlin-libs-publisher,master,,,java8,,,,
 ,Kotlin/kotlindl,master,,,java8,,,,
