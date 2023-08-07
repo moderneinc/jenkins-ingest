@@ -39060,54 +39060,70 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,sqrlserverjava/sqrl-server-base,master,maven,,java8,,,,
 ,sqshq/piggymetrics,master,maven,,java8,,,,
 ,square/MimicAndRephrase,master,,,java8,,,TRUE,Top-level build tool file is missing
-,square/RxIdler,master,,,java8,,,,
-,square/android-times-square,master,,,java11,,,,
+,square/RxIdler,master,,,java,,,,
+,square/android-times-square,master,,,java,,,,
 ,square/anvil,main,,,java11,,,,
-,square/assertj-android,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-,square/auto-value-redacted,master,,,java8,,,,
-,square/burst,master,maven,,java8,,,,
-,square/cascading-helpers,master,maven,,java8,,,,
-,square/cascading2-protobufs,master,maven,,java8,,,,
-,square/catalog-api-demo,master,maven,,java8,,,,
-,square/connect-java-sdk,master,,,java8,,,TRUE,Build uses Gradle 2.x
-,square/coordinators,master,,,java8,,,,
+,square/assertj-android,master,,,java8,,,TRUE,archived
+,square/auto-value-redacted,master,,,java,,,,
+,square/bionic,master,,,,,,,
+,square/blocks,master,,,,,,,
+,square/burst,master,maven,,java8,,,TRUE,archived
+,square/cascading-helpers,master,maven,,java,,,,
+,square/cascading2-protobufs,master,maven,,java,,,,
+,square/catalog-api-demo,master,maven,,java8,,,TRUE,archived
+,square/connect-java-sdk,master,,,java8,,,TRUE,archived
+,square/connect-python-sdk,master,,,,,,TRUE,archived
+,square/coordinators,master,,,java,,,,
 ,square/cycler,main,,,java8,,,,
-,square/dagger,master,maven,,java8,,,,
+,square/dagger,master,maven,,java8,,,TRUE,archived
+,square/dagger-intellij-plugin,master,,,,,,TRUE,archived
 ,square/droidcon-nyc-2019-workflow-game,master,,,java8,,,,
-,square/flow,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
-,square/gifencoder,master,maven,,java8,,,,
-,square/haha,master,maven,,java8,,,,
+,square/fde-rekey,master,,,,,,,
+,square/flow,master,,,java,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,square/fundraiser,master,,,,,,TRUE,archived
+,square/gifencoder,master,maven,,java,,,,
+,square/haha,master,maven,,java8,,,TRUE,archived
 ,square/hephaestus,main,,,java11,,,,
-,square/in-app-payments-android-quickstart,master,,,java8,,,,
-,square/javapoet,master,maven,,java8,,,,
-,square/jna-gmp,master,maven,,java8,,,,
-,square/keywhiz,master,maven,,java11,,,,
+,square/in-app-payments-android-quickstart,master,,,java,,,,
+,square/javapoet,master,maven,,java,,,,
+,square/jna-gmp,master,maven,,java,,,,
+,square/keywhiz,master,maven,,java,,,,
 ,square/kotlinpoet,master,,,java8,,,,
 ,square/leakcanary,main,,,java8,,,,
-,square/mimecraft,master,maven,,java8,,,,
+,square/mimecraft,master,maven,,java8,,,TRUE,archived
 ,square/misk-web,master,,,java8,,,,
-,square/mortar,master,,,java8,,,TRUE,Build uses Gradle 2.x
+,square/mortar,master,,,java,,,TRUE,Build uses Gradle 2.x
 ,square/moshi,master,,,java8,,,,
 ,square/okhttp,master,,,java11,,,,
 ,square/okio,master,,,java11,,,,
-,square/osstrich,master,maven,,java8,,,,
-,square/otto,master,maven,,java8,,,,
-,square/pagerduty-incidents,master,maven,,java8,,,,
-,square/phrase,master,,,java11,,,,
+,square/osstrich,master,maven,,java,,,,
+,square/otto,master,maven,,java8,,,TRUE,archived
+,square/otto-intellij-plugin,master,,,,,,TRUE,archived
+,square/pagerduty-incidents,master,maven,,java8,,,TRUE,archived
+,square/phrase,master,,,java,,,,
 ,square/picasso,master,,,java11,,,,
-,square/point-of-sale-android-sdk,master,,,java8,,,,
-,square/pollexor,trunk,,,java8,,,,
-,square/protoparser,master,maven,,java8,,,,
-,square/rack-servlet,master,maven,,java8,,,,
-,square/reader-sdk-android-quickstart,master,,,java11,,,,
-,square/retrofit,master,,,java8,,,,
-,square/seismic,master,maven,,java8,,,,
-,square/sqlbrite,trunk,,,java11,,,TRUE,Gradle wrapper 4.4 is not supported
-,square/square-java-sdk,master,maven,,java8,,,,
-,square/squickpic,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,square/point-of-sale-android-sdk,master,,,java,,,,
+,square/pollexor,trunk,,,java,,,,
+,square/protoparser,master,maven,,java8,,,TRUE,archived
+,square/pydocker,master,,,,,,,
+,square/pyfu-usb,master,,,,,,,
+,square/pylink,master,,,,,,,
+,square/rack-servlet,master,maven,,java,,,,
+,square/react-native-square-reader-sdk,master,,,java,,,,
+,square/reader-sdk-android-quickstart,master,,,java,,,,
+,square/repotoddy,master,,,,,,,
+,square/reqpi,master,,,,,,,
+,square/retrofit,master,,,java,,,,
+,square/seismic,master,maven,,java,,,,
+,square/sqlbrite,trunk,,,java11,,,TRUE,archived
+,square/square-java-sdk,master,maven,,java,,,,
+,square/square-python-sdk,master,,,,,,,
+,square/square-test-sdk,master,,,,,,,
+,square/squickpic,master,,,java,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,square/subzero,master,,,java8,,,TRUE,Top-level build tool file is missing
-,square/tape,master,,,java8,,,,
-,square/whorlwind,master,,,java8,,,,
+,square/t-rex,main,,,java,,,,
+,square/tape,master,,,java,,,,
+,square/whorlwind,master,,,java8,,,TRUE,archived
 ,square/wire,master,,,java11,,,,
 ,square/workflow,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,square/workflow-android-template,master,,,java8,,,,
