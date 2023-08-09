@@ -30583,6 +30583,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-kubernetes,master,,,java,,,,
 ,micronaut-projects/micronaut-lambda-todo,master,,,java,,,,
 ,micronaut-projects/micronaut-liquibase,master,,,java,,,,
+,micronaut-projects/micronaut-logging,master,,,java,,,,
 ,micronaut-projects/micronaut-maven-plugin,master,maven,,java,,,,
 ,micronaut-projects/micronaut-micrometer,master,,,java,,,,
 ,micronaut-projects/micronaut-microstream,master,,,java,,,,
