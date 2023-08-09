@@ -30573,6 +30573,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-groovy,master,,,java,,,,
 ,micronaut-projects/micronaut-grpc,master,,,java,,,,
 ,micronaut-projects/micronaut-guides,master,,,java,,,,
+,micronaut-projects/micronaut-guides-mn3,master,,,java11,,,,
 ,micronaut-projects/micronaut-hibernate-validator,master,,,java,,,,
 ,micronaut-projects/micronaut-ignite,master,,,java,,,TRUE,archived
 ,micronaut-projects/micronaut-jackson-xml,master,,,java,,,,
@@ -30583,6 +30584,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-kubernetes,master,,,java,,,,
 ,micronaut-projects/micronaut-lambda-todo,master,,,java,,,,
 ,micronaut-projects/micronaut-liquibase,master,,,java,,,,
+,micronaut-projects/micronaut-logging,master,,,java,,,,
 ,micronaut-projects/micronaut-maven-plugin,master,maven,,java,,,,
 ,micronaut-projects/micronaut-micrometer,master,,,java,,,,
 ,micronaut-projects/micronaut-microstream,master,,,java,,,,
