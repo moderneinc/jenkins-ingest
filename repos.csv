@@ -20000,6 +20000,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,freenet-mobile/app,master,,,java8,,,,
 ,freenet/fred,next,,,java8,,,,
 ,freeotp/freeotp-android,master,,,java8,,,,
+,freeplane/freeplane,1.11.x,,,java,,,,
+,freeplane/freeplane-events,master,,,java,,,,
+,freeplane/freeplane-server,master,,,java,,,,
+,freeplane/shtml,master,,,java,,,,
 ,freerouting/freerouting,master,,,java11,,,,
 ,freesiads/testProject,master,,,java8,,,TRUE,Gradle wrapper 3.4 is not supported
 ,freestylewill/mybatis-plus-generator,main,maven,,java8,,,,
