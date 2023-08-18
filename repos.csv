@@ -21892,6 +21892,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/apachecon2021,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/api-evolution-demo,main,,,java,,,,
 ,gradle/bazel-comparison,master,,,java8,,,TRUE,Top-level build tool file is missing
+,gradle/blog-gradle-enterprise-api-to-prometheus-example,main,,,java,,,,
 ,gradle/bt-dev-prod-data-collector,main,,,java8,,,,
 ,gradle/build-analysis-demo,master,,,java8,,,,
 ,gradle/build-tool-issue-automation-actions,main,,,java8,,,TRUE,Top-level build tool file is missing
@@ -21940,7 +21941,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/gradle-site-plugin,master,,,java8,,,,
 ,gradle/gradle-smart-snapshotting,master,,,java8,,,TRUE,archived
 ,gradle/greeting-plugin-example,master,,,java8,,,TRUE,archived
-,gradle/guides,master,,,java8,,,TRUE,Top-level build tool file is missing
+,gradle/guides,master,,,java,,,TRUE,Top-level build tool file is missing
 ,gradle/jfr-polyfill,main,,,java,,,,
 ,gradle/kotlin-dsl,master,,,java8,,,,
 ,gradle/kotlin-dsl-conventions,master,,,java8,,,,
