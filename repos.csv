@@ -21888,7 +21888,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle-webtools/gradle-minify-plugin,master,,,java8,,,,
 ,gradle/.github,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/android-cache-fix-gradle-plugin,main,,,java8,,,,
-,gradle/android-relocation-test,master,,,java8,,,,
+,gradle/android-relocation-test,master,,,java8,,,TRUE,archived
 ,gradle/apachecon2021,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/api-evolution-demo,main,,,java,,,,
 ,gradle/bazel-comparison,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -21910,8 +21910,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/ge-export,master,,,java8,,,TRUE,archived
 ,gradle/github-dependency-extractor,main,,,java8,,,,
 ,gradle/gradle,master,,,java11,,,,
-,gradle/gradle-20388-multiple-toml,master,,,java8,,,TRUE,Top-level build tool file is missing
-,gradle/gradle-all,master,,,java8,,,,
+,gradle/gradle-20388-multiple-toml,master,,,java8,,,TRUE,archived
+,gradle/gradle-all,master,,,java8,,,TRUE,archived
 ,gradle/gradle-benchmark-base,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/gradle-build-action,main,,,java11,,,TRUE,Top-level build tool file is missing
 ,gradle/gradle-build-scan-quickstart,main,,,java,,,,
@@ -21928,10 +21928,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/gradle-enterprise-moderne-integration,main,,,java8,,,,
 ,gradle/gradle-enterprise-oss-projects,main,,,java11,,,TRUE,Top-level build tool file is missing
 ,gradle/gradle-enterprise-testing-annotations,main,,,java,,,,
-,gradle/gradle-hazelcast-plugin,master,,,java8,,,TRUE,Gradle wrapper 4.7 is not supported
-,gradle/gradle-hello-world-plugin,master,,,java8,,,TRUE,Build uses Gradle 1.x
+,gradle/gradle-groovy-all,master,,,,,,TRUE,archived
+,gradle/gradle-hazelcast-plugin,master,,,java8,,,TRUE,archived
+,gradle/gradle-hello-world-plugin,master,,,java8,,,TRUE,archived
 ,gradle/gradle-issue-reproducer,groovy-dsl,,,java8,,,,
 ,gradle/gradle-java-modules,master,,,java8,,,TRUE,archived
+,gradle/gradle-jdocbook,master,,,,,,TRUE,archived
 ,gradle/gradle-modularity,master,,,,,,TRUE,archived
 ,gradle/gradle-native,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/gradle-org-conventions-plugin,master,,,java,,,,
@@ -21941,17 +21943,19 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/gradle-project-templates,main,,,java8,,,TRUE,archived
 ,gradle/gradle-site-plugin,master,,,java8,,,,
 ,gradle/gradle-smart-snapshotting,master,,,java8,,,TRUE,archived
+,gradle/gradle2kts,master,,,,,,TRUE,archived
 ,gradle/greeting-plugin-example,master,,,java8,,,TRUE,archived
 ,gradle/guides,master,,,java,,,TRUE,Top-level build tool file is missing
 ,gradle/jfr-polyfill,main,,,java,,,,
 ,gradle/kotlin-dsl,master,,,java8,,,,
 ,gradle/kotlin-dsl-conventions,master,,,java8,,,,
 ,gradle/kotlin-dsl-docs,master,,,java8,,,TRUE,Gradle wrapper 4.9 is not supported
-,gradle/kotlin-relocation-test,master,,,java8,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,gradle/kotlin-dsl-samples,master,,,,,,TRUE,archived
+,gradle/kotlin-relocation-test,master,,,java8,,,TRUE,archived
 ,gradle/maven-build-cache-unstable-inputs-samples,main,maven,,java,,,,
 ,gradle/maven-build-scan-quickstart,main,maven,,java,,,,
 ,gradle/model-app,master,,,,,,TRUE,archived
-,gradle/multi-project-composite-gradle-plugins-builds,master,,,java8,,,TRUE,Top-level build tool file is missing
+,gradle/multi-project-composite-gradle-plugins-builds,master,,,java8,,,TRUE,archived
 ,gradle/native-platform,master,,,java,,,,
 ,gradle/native-samples,master,,,java,,,,
 ,gradle/native-samples-cpp-library,master,,gradle,java8,,,,
@@ -21961,7 +21965,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/perf-android-local-repo,master,,,java8,,,TRUE,archived
 ,gradle/perf-android-mono-large,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/perf-android-multi-large,master,,,java8,,,TRUE,Top-level build tool file is missing
-,gradle/perf-enterprise-large,master,,,java8,,,TRUE,Top-level build tool file is missing
+,gradle/perf-enterprise-large,master,,,java8,,,TRUE,archived
 ,gradle/perf-native-headers-large,HEAD,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradle/perf-native-large,master,,gradle,java8,,,,
 ,gradle/performance-comparisons,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -21975,10 +21979,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/test-retry-gradle-plugin,main,,,java8,,,,
 ,gradle/tooling-commons,master,,,java8,,,TRUE,archived
 ,gradle/troubleshooting-with-scans,master,,,,,,TRUE,archived
-,gradle/webinar-dep-mgmt-part-1,master,,,java8,,,,
-,gradle/webinar-dep-mgmt-part-3,master,,,java8,,,,
-,gradle/webinar-getting-started-with-the-gradle-kotlin-dsl,master,,,java8,,,,
-,gradle/webinar-gradle-6,master,,,java8,,,,
+,gradle/webinar-dep-mgmt-part-1,master,,,java8,,,TRUE,archived
+,gradle/webinar-dep-mgmt-part-3,master,,,java8,,,TRUE,archived
+,gradle/webinar-getting-started-with-the-gradle-kotlin-dsl,master,,,java8,,,TRUE,archived
+,gradle/webinar-gradle-6,master,,,java8,,,TRUE,archived
 ,gradle/wrapper-upgrade-gradle-plugin,main,,,java,,,,
 ,gradle/wrapper-validation-action,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,gradleutil/gradle-aws-plugin,master,,,java8,,,,
