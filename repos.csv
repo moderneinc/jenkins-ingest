@@ -21925,6 +21925,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/gradle-enterprise-build-validation-scripts,main,,,java8,,,,
 ,gradle/gradle-enterprise-conventions-plugin,master,,,java8,,,,
 ,gradle/gradle-enterprise-export-api-samples,main,,,java11,,,TRUE,Top-level build tool file is missing
+,gradle/gradle-enterprise-moderne-integration,main,,,java8,,,,
 ,gradle/gradle-enterprise-oss-projects,main,,,java11,,,TRUE,Top-level build tool file is missing
 ,gradle/gradle-enterprise-testing-annotations,main,,,java,,,,
 ,gradle/gradle-hazelcast-plugin,master,,,java8,,,TRUE,Gradle wrapper 4.7 is not supported
