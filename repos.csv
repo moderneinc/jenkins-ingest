@@ -3340,10 +3340,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,GoogleCloudPlatform/MiniCat,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/PerfKitBenchmarker,master,,,,,,,
 ,GoogleCloudPlatform/SourceXCloud,master,,,,,,TRUE,archived
+,GoogleCloudPlatform/air-draw-demo,main,,,,,,TRUE,archived
 ,GoogleCloudPlatform/alloydb-python-connector,main,,,,,,,
 ,GoogleCloudPlatform/android-docs-samples,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/anthos-ai,master,,,,,,TRUE,archived
-,GoogleCloudPlatform/anthos-developer-sandbox,master,,,,,,,
+,GoogleCloudPlatform/anthos-developer-sandbox,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/app-gradle-plugin,master,,,java,,,,
 ,GoogleCloudPlatform/app-maven-plugin,master,maven,,java,,,,
 ,GoogleCloudPlatform/app2run,main,,,,,,,
@@ -3462,7 +3463,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,GoogleCloudPlatform/cnrm-blueprints,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/codelabs,main,,,,,,,
 ,GoogleCloudPlatform/cogbeam,main,,,,,,TRUE,archived
-,GoogleCloudPlatform/community,master,,,java,,,,
+,GoogleCloudPlatform/community,master,,,java,,,TRUE,archived
 ,GoogleCloudPlatform/composer-infra-python,master,,,,,,,
 ,GoogleCloudPlatform/composer-local-dev,main,,,,,,,
 ,GoogleCloudPlatform/composer-utilities,main,,,,,,,
@@ -3564,7 +3565,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,GoogleCloudPlatform/google-cloud-eclipse,master,maven,,java,,,,
 ,GoogleCloudPlatform/google-cloud-python-expenses-demo,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/google-cloud-spanner-hibernate,master,maven,,java,,,,
-,GoogleCloudPlatform/gradle-appengine-plugin,master,,,java8,,,TRUE,Gradle wrapper 4.0 is not supported
+,GoogleCloudPlatform/gradle-appengine-plugin,master,,,java8,,,TRUE,archived
 ,GoogleCloudPlatform/grpc-gcp-java,master,,,java,,,,
 ,GoogleCloudPlatform/grpc-gcp-python,master,,,,,,,
 ,GoogleCloudPlatform/gsutil,master,,,,,,,
@@ -3580,7 +3581,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,GoogleCloudPlatform/iap-active-directory-api,main,,,,,,TRUE,archived
 ,GoogleCloudPlatform/ide-java-analytics-common,master,,,java8,,,TRUE,archived
 ,GoogleCloudPlatform/ide-login,master,maven,,java8,,,TRUE,archived
-,GoogleCloudPlatform/iot-core-load-test-python,master,,,,,,,
+,GoogleCloudPlatform/iot-core-load-test-python,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/iot-core-micropython,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/java-docs-samples,main,,gradle,java,,,,
 ,GoogleCloudPlatform/java-recaptcha-password-check-helpers,main,maven,,java,,,,
@@ -3611,6 +3612,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,GoogleCloudPlatform/monitoring-dashboard-samples,master,,,,,,,
 ,GoogleCloudPlatform/monolith-to-microservices-example,main,,,java,,,,
 ,GoogleCloudPlatform/mqtt-cloud-pubsub-connector,main,,,java,,,,
+,GoogleCloudPlatform/multiregion-app-location-demo,master,,,,,,TRUE,archived
 ,GoogleCloudPlatform/native-image-support-java,master,maven,,java11,,,TRUE,archived
 ,GoogleCloudPlatform/networking-tools-python,main,,,,,,,
 ,GoogleCloudPlatform/next18-ai-in-motion,master,,,java,,,,
@@ -4328,7 +4330,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,IBM/cis-integration,master,,,,,,,
 ,IBM/cis-python-sdk,master,,,,,,,
 ,IBM/cisco-asa-network-access,master,,,,,,,
-,IBM/clai,master,,,,,,,
+,IBM/clai,master,,,,,,TRUE,archived
 ,IBM/classfinder,main,,,java,,,,
 ,IBM/cloud-databases-python-sdk,main,,,,,,,
 ,IBM/cloud-native-patterns,master,maven,,java,,,,
@@ -4376,7 +4378,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,IBM/cos-spring,master,maven,,java,,,,
 ,IBM/cos-spring-boot-example,master,maven,,java,,,,
 ,IBM/count-mvs,main,,,,,,,
-,IBM/covid19-india-data,main,,,,,,,
+,IBM/covid19-india-data,main,,,,,,TRUE,archived
 ,IBM/cp4d-connector-sdk,main,,,java,,,,
 ,IBM/cp4d-monitors,main,,,,,,,
 ,IBM/cp4i-samples,master,,,java,,,,
@@ -4811,8 +4813,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,IBM/translucent-answer-prediction,master,,,,,,,
 ,IBM/transparent-supply-toolbox,main,,,,,,,
 ,IBM/tree-sitter-codeviews,main,,,java,,,,
-,IBM/trino-db2,main,,,java,,,,
-,IBM/trino-event-stream,main,,,java,,,,
+,IBM/trino-db2,main,,,java,,,TRUE,archived
+,IBM/trino-event-stream,main,,,java,,,TRUE,archived
 ,IBM/tririga-assistant-slackbot,master,,,,,,,
 ,IBM/ulm,master,,,java,,,,
 ,IBM/uncertainty_late_fusion,main,,,,,,,
@@ -5354,6 +5356,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/JPS,master,,,java,,,TRUE,There is no Gradle or Maven
 ,JetBrains/JetBrainsApiTest,main,,,java,,,,
 ,JetBrains/JetBrainsRuntime,main,,,java,,,TRUE,There is no Gradle or Maven
+,JetBrains/KotlinFinder,master,,,,,,TRUE,archived
 ,JetBrains/ReSharperKeymap4IntelliJ,master,,,java,,,TRUE,There is no Gradle or Maven
 ,JetBrains/TeamCity.SonarQubePlugin,master,maven,,java,,,,
 ,JetBrains/TeamCity.VsOnline.WorkItems,master,,,,,,TRUE,archived
@@ -5378,6 +5381,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/dekaf,master,,gradle,java,,,,
 ,JetBrains/doclava-mirror,master,,,java,,,TRUE,archived
 ,JetBrains/emacs4ij,master,,,,,,TRUE,archived
+,JetBrains/embeddedProjectJdk,master,,,,,,TRUE,archived
 ,JetBrains/gradle-changelog-plugin,main,,,java8,,,,
 ,JetBrains/gradle-grammar-kit-plugin,master,,,java8,,,,
 ,JetBrains/gradle-intellij-plugin,master,,,java8,,,,
@@ -5403,6 +5407,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/intellij-deps-proxy-vole,master,maven,,java,,,,
 ,JetBrains/intellij-deps-trove4j,master,,,java,,,TRUE,Build uses Gradle 3.x
 ,JetBrains/intellij-ipnb,master,,,java,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
+,JetBrains/intellij-kotlin,kt-211-master,,,,,,TRUE,archived
 ,JetBrains/intellij-micropython,master,,,,,,,
 ,JetBrains/intellij-obsolete-plugins,master,,,java,,,,
 ,JetBrains/intellij-plugins,master,,,java,,,,
@@ -5430,10 +5435,14 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/js-graphql-intellij-plugin,master,,,java,,,,
 ,JetBrains/jsitter,master,maven,,java8,,,,
 ,JetBrains/jvm-native-trusted-roots,trunk,maven,,java,,,,
+,JetBrains/kannotator,master,,,,,,TRUE,archived
 ,JetBrains/karma-gwt,master,,,,,,TRUE,archived
 ,JetBrains/kotless,master,,,java8,,,,
 ,JetBrains/kotlin,master,,,java8,,,,
 ,JetBrains/kotlin-kythe-plugin,master,,,,,,TRUE,archived
+,JetBrains/kotlin-native,archive,,,,,,TRUE,archived
+,JetBrains/kotlin-native-shared,master,,,,,,TRUE,archived
+,JetBrains/kotlin-web-demo,master,,,,,,TRUE,archived
 ,JetBrains/la-clojure,master,,,java,,,,
 ,JetBrains/lm-astronomy,master,,,,,,,
 ,JetBrains/mapper,master,maven,,java,,,,
@@ -5443,7 +5452,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/merge-pull-request-trigger,master,maven,,java,,,,
 ,JetBrains/mps-maven-plugin,master,maven,,java,,,,
 ,JetBrains/nlc2cmd,master,,,,,,,
+,JetBrains/noria-kt,master,,,,,,TRUE,archived
 ,JetBrains/p2p-games,master,,,java8,,,,
+,JetBrains/package-search-version-utils,master,,,,,,TRUE,archived
 ,JetBrains/phpstorm-phpstan-plugin,master,,,java,,,,
 ,JetBrains/phpstorm-psalm-plugin,master,,,java,,,,
 ,JetBrains/projector-installer,master,,,,,,TRUE,archived
@@ -5492,6 +5503,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/teamcity-maven-archetypes,master,maven,,java,,,,
 ,JetBrains/teamcity-messages,master,,,,,,,
 ,JetBrains/teamcity-nuget-support,master,,,java,,,,
+,JetBrains/teamcity-pipelines-dsl,master,,,,,,TRUE,archived
 ,JetBrains/teamcity-powershell,master,,,java,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,JetBrains/teamcity-priority-queue,master,,,java,,,,
 ,JetBrains/teamcity-process-output-parsers,master,,,java,,,TRUE,Build uses Gradle 3.x
@@ -5521,7 +5533,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,JetBrains/vss,master,,,java,,,,
 ,JetBrains/xodus,master,,,java,,,,
 ,JetBrains/youtrack-confluence-plugin,master,maven,,java8,,,,
-,JetBrains/youtrack-idea-plugin,master,,,java8,,,,
+,JetBrains/youtrack-idea-plugin,master,,,java8,,,TRUE,archived
 ,JetBrains/youtrack-python-scripts,master,,,,,,TRUE,archived
 ,JetBrains/youtrack-rest-python-library,master,,,,,,,
 ,Jetpack-Missionary/Jetpack-From-Java-To-Kotlin,master,,,java8,,,,
@@ -11345,7 +11357,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,alibaba/jarslink,master,maven,,java8,,,,
 ,alibaba/java-dns-cache-manipulator,main,maven,,java,,,,
 ,alibaba/jetcache,master,maven,,java,,,,
-,alibaba/jstorm,master,maven,,java,,,,
+,alibaba/jstorm,master,maven,,java,,,TRUE,archived
 ,alibaba/jvm-sandbox,master,maven,,java,,,,
 ,alibaba/jvm-sandbox-repeater,master,maven,,java,,,,
 ,alibaba/libgrape-lite,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -12328,8 +12340,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/ant-easyant-tasks,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,apache/ant-ivy,master,,,java,,,,
 ,apache/any23,master,maven,,java11,,,,
-,apache/any23-plugins,master,maven,,java,,,,
-,apache/any23-server,master,maven,,java8,,,,
+,apache/any23-plugins,master,maven,,java,,,TRUE,archived
+,apache/any23-server,master,maven,,java8,,,TRUE,archived
 ,apache/apex-core,master,maven,,java8,,,TRUE,archived
 ,apache/apex-malhar,master,,,,,,TRUE,archived
 ,apache/apisix-java-plugin-runner,main,maven,,java,,,,
@@ -12739,6 +12751,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-pekko-quickstart-java.g8,main,,,java,,,,
 ,apache/incubator-ponymail-foal,master,,,,,,,
 ,apache/incubator-ponymail-unit-tests,master,,,,,,,
+,apache/incubator-retired-amaterasu,master,,,,,,TRUE,archived
 ,apache/incubator-retired-blur,master,,,,,,TRUE,archived
 ,apache/incubator-retired-cotton,master,,,,,,TRUE,archived
 ,apache/incubator-retired-edgent,develop,maven,,java8,,,TRUE,archived
@@ -12791,7 +12804,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-taverna-workbench-common-activities,master,maven,,java8,,,,
 ,apache/incubator-teaclave-java-tee-sdk,master,,,java,,,,
 ,apache/incubator-tez,master,maven,,java,,,,
-,apache/incubator-tuweni,main,,,java,,,,
+,apache/incubator-tuweni,main,,,java,,,TRUE,archived
 ,apache/incubator-twill,master,maven,,java,,,,
 ,apache/incubator-uniffle,master,,,java,,,,
 ,apache/incubator-warble-node,master,,,,,,,
@@ -13073,7 +13086,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/olingo-odata4,master,maven,,java,,,,
 ,apache/oltu,trunk,maven,,java,,,,
 ,apache/onami,master,maven,,java8,,,TRUE,archived
-,apache/oodt,master,maven,,java,,,,
+,apache/oodt,master,maven,,java,,,TRUE,archived
 ,apache/oozie,master,maven,,java,,,,
 ,apache/openejb,trunk,,,java,,,,
 ,apache/openjpa,master,maven,,java,,,,
@@ -13631,7 +13644,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/webservices-commons-xmlschema,trunk,maven,,java,,,,
 ,apache/whirr,trunk,,,,,,TRUE,archived
 ,apache/wicket,master,maven,,java,,,,
-,apache/wink,trunk,maven,,java,,,,
+,apache/wink,trunk,maven,,java,,,TRUE,archived
 ,apache/wookie,trunk,maven,,java,,,,
 ,apache/ws-axiom,master,maven,,java,,,,
 ,apache/ws-neethi,master,maven,,java,,,,
@@ -20600,6 +20613,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/GiftStick,main,,,,,,,
 ,google/HyperCompressBench,main,,,,,,,
 ,google/JacquardSDKAndroid,main,,,java,,,,
+,google/Kotlin-FirViewer,main,,,,,,TRUE,archived
 ,google/Legilimency,master,,,,,,TRUE,archived
 ,google/LiquidFunPaint,develop,,,,,,TRUE,archived
 ,google/MOE,master,maven,,java,,,,
@@ -20724,7 +20738,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/checkers_classic,master,,,,,,TRUE,archived
 ,google/chiplets-cost-model,main,,,,,,,
 ,google/chkstream,master,,,,,,TRUE,archived
-,google/chromeosnavigationdemo,master,,,java8,,,,
+,google/chromeosnavigationdemo,master,,,java8,,,TRUE,archived
 ,google/ci_edit,master,,,,,,,
 ,google/citest,master,,,,,,TRUE,archived
 ,google/civics_cdf_validator,master,,,,,,,
@@ -20747,7 +20761,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/cluster-insight,master,,,,,,TRUE,archived
 ,google/clusterfuzz,master,,,,,,,
 ,google/coapblaster,master,maven,,java,,,,
-,google/cocoapods-size,master,,,,,,,
+,google/cocoapods-size,master,,,,,,TRUE,archived
 ,google/codeu-starter-project,master,maven,,java,,,,
 ,google/codeu_coding_assessment_2017,master,,,,,,TRUE,archived
 ,google/codeu_coding_assessment_b_2017,master,,,,,,TRUE,archived
@@ -20784,7 +20798,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/crystalvalue,main,,,,,,,
 ,google/csp-evaluator,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,google/csv-to-firestore,main,,,,,,,
-,google/ctfscoreboard,main,,,,,,,
+,google/ctfscoreboard,main,,,,,,TRUE,archived
 ,google/customer-match-upload-script,master,,,,,,,
 ,google/cyanobyte,master,,,,,,,
 ,google/dart2java,master,,,,,,TRUE,archived
@@ -20845,7 +20859,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/exposure-notifications-internals,main,,,java8,,,TRUE,archived
 ,google/exposure-notifications-private-analytics-ingestion,main,maven,,java,,,,
 ,google/expt-analysis,master,,,,,,TRUE,archived
-,google/fastboot-mobile,master,,,java8,,,TRUE,Gradle wrapper 4.6 is not supported
+,google/fastboot-mobile,master,,,java8,,,TRUE,archived
 ,google/favcolor-android,master,,,,,,TRUE,archived
 ,google/fedjax,main,,,,,,,
 ,google/feedloader,main,,,,,,,
@@ -20926,7 +20940,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/grizzly,main,,,,,,,
 ,google/ground-android,master,,,java11,,,,
 ,google/grpc-java-bazel-minimal,main,,,java,,,,
-,google/grpc-kapt,master,,,java8,,,,
+,google/grpc-kapt,master,,,java8,,,TRUE,archived
 ,google/grr,master,,,,,,,
 ,google/grr-doc,master,,,,,,,
 ,google/gson,master,maven,,java,,,,
@@ -20951,7 +20965,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/hyou,master,,,,,,TRUE,archived
 ,google/hypebot,master,,,,,,TRUE,archived
 ,google/hypernerf,main,,,,,,,
-,google/i18n_sanitycheck,master,maven,,java,,,,
+,google/i18n_sanitycheck,master,maven,,java,,,TRUE,archived
 ,google/identity-credential,master,,,java,,,,
 ,google/identity-toolkit-java-client,master,maven,,java8,,,TRUE,archived
 ,google/identity-toolkit-python-client,master,,,,,,TRUE,archived
@@ -20960,14 +20974,14 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/import-mailbox-to-gmail,master,,,,,,,
 ,google/importlab,main,,,,,,,
 ,google/in-silico-labeling,master,,,,,,TRUE,archived
-,google/infra-structured-map,master,maven,,java,,,,
+,google/infra-structured-map,master,maven,,java,,,TRUE,archived
 ,google/init2winit,master,,,,,,,
 ,google/inject-common,master,,,java,,,,
 ,google/intellij-cmdline-vcs-plugin,master,,,,,,TRUE,archived
 ,google/intellij-protocol-buffer-editor,master,,,,,,TRUE,archived
 ,google/io-captions-gadget,master,,,,,,TRUE,archived
 ,google/ios-device-control,master,maven,,java,,,,
-,google/iosched,main,,,java11,,,,
+,google/iosched,main,,,java11,,,TRUE,archived
 ,google/ipaddr-py,master,,,,,,,
 ,google/it-cert-automation,master,,,,,,TRUE,archived
 ,google/it-cert-automation-practice,master,,,,,,,
@@ -21026,7 +21040,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/mail-importer,master,maven,,java,,,,
 ,google/makerfaire-booth,master,,,,,,TRUE,archived
 ,google/makerspace-auth,master,,,,,,,
-,google/makerspace-partsbin,master,,,,,,,
+,google/makerspace-partsbin,master,,,,,,TRUE,archived
 ,google/mannequinchallenge,master,,,,,,TRUE,archived
 ,google/martian-java,master,maven,,java8,,,TRUE,archived
 ,google/matched_markets,master,,,,,,,
@@ -21062,7 +21076,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/mysql-tools,master,,,,,,TRUE,archived
 ,google/mystyle,main,,,,,,,
 ,google/n-digit-mnist,master,,,,,,TRUE,archived
-,google/nel-reporter-java,master,maven,,java,,,,
+,google/nel-reporter-java,master,maven,,java,,,TRUE,archived
 ,google/nerfactor,main,,,,,,,
 ,google/nerfies,main,,,,,,,
 ,google/neural-light-transport,master,,,,,,TRUE,archived
@@ -21165,7 +21179,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/pytypedecl,master,,,,,,TRUE,archived
 ,google/pyu2f,master,,,,,,,
 ,google/pyvisionproductsearch,master,,,,,,TRUE,archived
-,google/qhbm-library,main,,,,,,,
+,google/qhbm-library,main,,,,,,TRUE,archived
 ,google/qkeras,master,,,,,,,
 ,google/quota-monitoring-solution,main,,,java,,,,
 ,google/rally,master,,,java8,,,TRUE,archived
@@ -21277,14 +21291,14 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/teknowledge,master,,,,,,TRUE,archived
 ,google/telluride_decoding,master,,,,,,,
 ,google/temporian,main,,,,,,,
-,google/tensorflow-recorder,main,,,,,,,
+,google/tensorflow-recorder,main,,,,,,TRUE,archived
 ,google/terminal-app-function-keys,master,,,,,,TRUE,archived
 ,google/terminal-py,master,,,,,,TRUE,archived
 ,google/testrunner-rosemary,master,,,,,,TRUE,archived
 ,google/text2text,master,,,,,,TRUE,archived
 ,google/textfsm,master,,,,,,,
 ,google/tf-quant-finance,master,,,,,,,
-,google/tf_mesh_renderer,master,,,,,,,
+,google/tf_mesh_renderer,master,,,,,,TRUE,archived
 ,google/tfp-causalimpact,main,,,,,,,
 ,google/thread-weaver,master,,,,,,TRUE,archived
 ,google/tim-gan,main,,,,,,TRUE,archived
@@ -24640,7 +24654,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenetics/prngine,master,,,java11,,,,
 ,jenkins-docs/simple-java-maven-app,master,maven,,java8,,,,
 ,jenkins-infra/.github,master,,,java8,,,TRUE,Top-level build tool file is missing
-,jenkins-infra/INFRA-896,master,,,java8,,,TRUE,Top-level build tool file is missing
+,jenkins-infra/INFRA-896,master,,,java8,,,TRUE,archived
 ,jenkins-infra/acceptance-tests,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,jenkins-infra/account-app,main,,,java,,,,
 ,jenkins-infra/admin,main,,,java8,,,TRUE,Top-level build tool file is missing
@@ -24654,7 +24668,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkins-infra/backend-extension-indexer,master,maven,,java,,,,
 ,jenkins-infra/backend-jenkins-ci.org-theme,master,maven,,java8,,,,
 ,jenkins-infra/backend-jenkins-plugin-info-plugin,master,maven,,java8,,,TRUE,archived
-,jenkins-infra/backend-release.rss,master,,,java8,,,TRUE,Top-level build tool file is missing
+,jenkins-infra/backend-release.rss,master,,,java8,,,TRUE,archived
 ,jenkins-infra/captain-hook,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,jenkins-infra/cn.jenkins.io,master,,,java8,,,TRUE,Top-level build tool file is missing
 ,jenkins-infra/community-functions,master,,,java8,,,TRUE,Top-level build tool file is missing
@@ -24735,7 +24749,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkins-infra/usage-log-decrypter,master,maven,,java,,,,
 ,jenkins-infra/utility-scripts,main,,,java8,,,TRUE,Top-level build tool file is missing
 ,jenkins-infra/verify-ci-status-action,master,,,java8,,,TRUE,Top-level build tool file is missing
-,jenkins-infra/wiki-maintainers-updater,master,maven,,java8,,,,
+,jenkins-infra/wechat,master,,,,,,TRUE,archived
+,jenkins-infra/wiki-maintainers-updater,master,maven,,java8,,,TRUE,archived
 ,jenkins-zh/jenkins-client-java,master,maven,,java8,,,,
 ,jenkins-zh/mirror-adapter,master,maven,,java8,,,,
 ,jenkinsci/42crunch-security-audit-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -24864,7 +24879,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/azure-cosmosdb-plugin,main,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/azure-credentials-ext-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/azure-credentials-plugin,master,maven,,java,,-P-might-produce-incrementals,,
-,jenkinsci/azure-dev-spaces-plugin,dev,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/azure-dev-spaces-plugin,dev,maven,,java,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/azure-event-grid-notifier-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/azure-function-plugin,dev,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/azure-keyvault-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -24878,6 +24893,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/backend-deprecation-checker,master,,,,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/backend-donation-thankyou,master,maven,,java8,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/backend-git-pushf-finder,master,,,,,-P-might-produce-incrementals,TRUE,archived
+,jenkinsci/backend-github-event-collector,master,,,,,,TRUE,archived
 ,jenkinsci/backend-github-repository-list,master,maven,,java8,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/backend-goto-app,master,maven,,java8,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/backend-jenkins-ci-cloudbees-com-filler,master,maven,,java8,,-P-might-produce-incrementals,TRUE,archived
@@ -31046,7 +31062,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,microsoft/YADA,main,,,,,,,
 ,microsoft/YOLaT-VectorGraphicsRecognition,main,,,,,,,
 ,microsoft/aaai21-copy-that,main,,,,,,,
-,microsoft/accessibility-insights-for-android-service,main,,,java,,,TRUE,Top-level build tool file is missing
+,microsoft/accessibility-insights-for-android-service,main,,,java,,,TRUE,archived
 ,microsoft/act,main,,,,,,,
 ,microsoft/admin-torch,main,,,,,,,
 ,microsoft/advNLG,main,,,,,,,
@@ -31541,6 +31557,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,microsoft/vision-longformer,main,,,,,,,
 ,microsoft/vivainsights-odatadl,main,,,,,,,
 ,microsoft/voxelpose-pytorch,main,,,,,,,
+,microsoft/vscjenkins-ci-scripts,master,,,,,,TRUE,archived
 ,microsoft/vscode-autopep8,main,,,,,,,
 ,microsoft/vscode-azurecli,main,,,,,,,
 ,microsoft/vscode-black-formatter,main,,,,,,,
@@ -38608,10 +38625,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/aws-s3,main,,,,,,TRUE,archived
 ,spring-attic/bomr,master,,,,,,TRUE,archived
 ,spring-attic/bridge,main,,,,,,TRUE,archived
+,spring-attic/build-scripts,main,,,,,,TRUE,archived
 ,spring-attic/cassandra,main,,,,,,TRUE,archived
 ,spring-attic/cdc-debezium,main,,,,,,TRUE,archived
+,spring-attic/cloudfoundry-sandbox,master,,,,,,TRUE,archived
 ,spring-attic/cloudfoundry-service-broker,main,,,,,,TRUE,archived
 ,spring-attic/cloudfoundry-stub-runner-boot,main,,,,,,TRUE,archived
+,spring-attic/cloudpipelines-jenkins,master,,,,,,TRUE,archived
 ,spring-attic/cloudpipelines-project-crawler,master,maven,,java,,,TRUE,archived
 ,spring-attic/core,main,,,,,,TRUE,archived
 ,spring-attic/counter,main,,,,,,TRUE,archived
@@ -38634,6 +38654,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/github-analytics-stub-runner-boot-no-eureka,main,,,,,,TRUE,archived
 ,spring-attic/github-analytics-stub-runner-boot-no-eureka-classpath-stubs,main,,,,,,TRUE,archived
 ,spring-attic/github-eureka,main,,,,,,TRUE,archived
+,spring-attic/github-webhook,main,,,,,,TRUE,archived
+,spring-attic/github-webhook-kubernetes,main,,,,,,TRUE,archived
 ,spring-attic/gpfdist,main,,,,,,TRUE,archived
 ,spring-attic/grails-ide,master,,,,,,TRUE,archived
 ,spring-attic/greenhouse,master,,,,,,TRUE,archived
@@ -38652,6 +38674,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/initializr,main,,,,,,TRUE,archived
 ,spring-attic/jdbc,main,,,,,,TRUE,archived
 ,spring-attic/jdbchdfs-local,main,,,,,,TRUE,archived
+,spring-attic/jenkins-common,main,,,,,,TRUE,archived
+,spring-attic/jenkins-jobs,main,,,,,,TRUE,archived
 ,spring-attic/jms,main,,,,,,TRUE,archived
 ,spring-attic/load-generator,main,,,,,,TRUE,archived
 ,spring-attic/locks,main,,,,,,TRUE,archived
@@ -38663,8 +38687,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/mongodb,main,,,,,,TRUE,archived
 ,spring-attic/mqtt,main,,,,,,TRUE,archived
 ,spring-attic/nio-sandbox,master,,,,,,TRUE,archived
+,spring-attic/platform,master,,,,,,TRUE,archived
 ,spring-attic/pmml,main,,,,,,TRUE,archived
 ,spring-attic/processor,master,,,,,,TRUE,archived
+,spring-attic/propdeps-plugin,master,,,,,,TRUE,archived
 ,spring-attic/python,main,,,,,,TRUE,archived
 ,spring-attic/rabbit,main,,,,,,TRUE,archived
 ,spring-attic/reactive-streams-commons,master,,,java,,,TRUE,archived
@@ -38673,7 +38699,9 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/reactor-spring,master,,,,,,TRUE,archived
 ,spring-attic/reactor-tools,master,,,,,,TRUE,archived
 ,spring-attic/redis-pubsub,main,,,,,,TRUE,archived
+,spring-attic/replay,master,,,,,,TRUE,archived
 ,spring-attic/rest-shell,master,,,,,,TRUE,archived
+,spring-attic/rewrite-gradle,master,,,,,,TRUE,archived
 ,spring-attic/router,main,,,,,,TRUE,archived
 ,spring-attic/sample-zuul-filters,main,,,,,,TRUE,archived
 ,spring-attic/scdf-app-tool,main,,,,,,TRUE,archived
@@ -38689,6 +38717,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-android,master,,,,,,TRUE,archived
 ,spring-attic/spring-android-samples,master,,,,,,TRUE,archived
 ,spring-attic/spring-batch-admin,master,maven,,java,,,TRUE,archived
+,spring-attic/spring-bintray-plugin,master,,,,,,TRUE,archived
+,spring-attic/spring-build-gradle,master,,,,,,TRUE,archived
 ,spring-attic/spring-bus,master,,,,,,TRUE,archived
 ,spring-attic/spring-cfenv,master,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-app-starters-maven-plugins,main,,,,,,TRUE,archived
@@ -38696,6 +38726,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-cloud-aws,main,maven,,java,,,TRUE,archived
 ,spring-attic/spring-cloud-cluster,main,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-config-server-mongodb,main,,,,,,TRUE,archived
+,spring-attic/spring-cloud-contract-raml,main,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-dashboard,master,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-dataflow-admin-lattice,master,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-dataflow-ambari-rpm,master,,,,,,TRUE,archived
@@ -38729,6 +38760,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-cloud-stream-modules,master,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-task-app-starters,main,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-task-app-starters-composed-task-runner,main,,,,,,TRUE,archived
+,spring-attic/spring-cloud-task-app-starters-jenkins-jobs,main,,,,,,TRUE,archived
 ,spring-attic/spring-cloud-task-modules,master,,,,,,TRUE,archived
 ,spring-attic/spring-context-bootstrap,main,,,,,,TRUE,archived
 ,spring-attic/spring-data-couchdb,master,,,,,,TRUE,archived
@@ -38757,6 +38789,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-ide,main,,,,,,TRUE,archived
 ,spring-attic/spring-init,main,,,,,,TRUE,archived
 ,spring-attic/spring-insight-plugins,master,,,,,,TRUE,archived
+,spring-attic/spring-integration-dsl-groovy,master,,,,,,TRUE,archived
 ,spring-attic/spring-integration-java-dsl,master,,,,,,TRUE,archived
 ,spring-attic/spring-integration-kafka,master,,,,,,TRUE,archived
 ,spring-attic/spring-integration-templates,master,,,,,,TRUE,archived
@@ -38770,10 +38803,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-net-threading,master,,,,,,TRUE,archived
 ,spring-attic/spring-observability,main,maven,,java,,,TRUE,archived
 ,spring-attic/spring-python,master,,,,,,TRUE,archived
+,spring-attic/spring-release-plugin,master,,,,,,TRUE,archived
 ,spring-attic/spring-roo,master,,,,,,TRUE,archived
 ,spring-attic/spring-roo-community-addons,master,,,,,,TRUE,archived
 ,spring-attic/spring-roo-wrapping,master,,,,,,TRUE,archived
 ,spring-attic/spring-security-javaconfig,master,,,,,,TRUE,archived
+,spring-attic/spring-security-kotlin-dsl,master,,,,,,TRUE,archived
 ,spring-attic/spring-security-migrate-3-to-4,master,,,,,,TRUE,archived
 ,spring-attic/spring-security-oauth,main,maven,,java,,,TRUE,archived
 ,spring-attic/spring-security-oauth-javaconfig,master,,,,,,TRUE,archived
@@ -38803,10 +38838,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,spring-attic/spring-xd-modules,master,,,,,,TRUE,archived
 ,spring-attic/spring-xd-samples,master,maven,,java,,,TRUE,archived
 ,spring-attic/springbox-cloud,main,,,,,,TRUE,archived
+,spring-attic/springone-springdata-groovy,master,,,,,,TRUE,archived
 ,spring-attic/sqoop-job,main,,,,,,TRUE,archived
 ,spring-attic/sqoop-tool,main,,,,,,TRUE,archived
 ,spring-attic/sso,main,maven,,java,,,TRUE,archived
 ,spring-attic/stream-applications-archived,main,,,,,,TRUE,archived
+,spring-attic/stream-applications-jenkins-jobs,main,,,,,,TRUE,archived
 ,spring-attic/stub-runner-boot,main,,,,,,TRUE,archived
 ,spring-attic/syslog,main,,,,,,TRUE,archived
 ,spring-attic/tasklauncher-cloudfoundry,main,,,,,,TRUE,archived
