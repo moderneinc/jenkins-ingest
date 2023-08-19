@@ -12927,7 +12927,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/manifoldcf-integration-solr-7.x,trunk,maven,,java8,,,,
 ,apache/marmotta,master,maven,,java8,,,TRUE,archived
 ,apache/maven,master,maven,,java,,,,
-,apache/maven-2,maven-2.2.x,maven,,java,,,,
+,apache/maven-2,maven-2.2.x,maven,,java,,,TRUE,inactive
 ,apache/maven-acr-plugin,master,maven,,java,,,,
 ,apache/maven-ant-plugin,master,,,,,,TRUE,archived
 ,apache/maven-ant-tasks,trunk,,,java,,,,
