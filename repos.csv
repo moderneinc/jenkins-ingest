@@ -25503,7 +25503,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/html5-notifier-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/htmlpublisher-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/htmlresource-plugin,master,maven,,java,,-P-might-produce-incrementals,,
-,jenkinsci/htmlunit,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/htmlunit,master,maven,,java,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/http-request-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/huaweicloud-ecs-plugin,main,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/huaweicloud-mastermonitor-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -30587,7 +30587,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,micronaut-projects/micronaut-comparisons,master,,,java,,,,
 ,micronaut-projects/micronaut-control-panel,master,,,java,,,,
 ,micronaut-projects/micronaut-core,3.9.x,,,java,,,,
-,micronaut-projects/micronaut-core,4.0.x,,,java,,,,
+,micronaut-projects/micronaut-core,4.1.x,,,java,,,,
+,micronaut-projects/micronaut-core,4.2.x,,,java,,,,
 ,micronaut-projects/micronaut-crac,master,,,java,,,,
 ,micronaut-projects/micronaut-data,master,,,java,,,,
 ,micronaut-projects/micronaut-discovery-client,master,,,java,,,,
