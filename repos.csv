@@ -7480,6 +7480,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,OpenLiberty/liberty-language-server,main,,,java,,,,
 ,OpenLiberty/liberty-tools-eclipse,main,,,java,,,,
 ,OpenLiberty/liberty-tools-intellij,main,,,java,,,,
+,OpenLiberty/open-liberty,integration,,,java11,,,,
 ,OpenLiberty/open-liberty-deep-dive,prod,,,,,,TRUE,archived
 ,OpenLiberty/open-liberty-misc,main,,,java,,,,
 ,OpenLiberty/open-liberty-tools,integration,,,java,,,,
