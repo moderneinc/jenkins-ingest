@@ -25082,7 +25082,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/codebuild-cloud-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/codedx-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/codehealth-plugin,master,maven,,java,,-P-might-produce-incrementals,,
-,jenkinsci/codeplex-plugin,master,maven,,java8,,-P-might-produce-incrementals,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
+,jenkinsci/codeplex-plugin,master,maven,,java,,-P-might-produce-incrementals,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
 ,jenkinsci/codeql-plugin,main,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/codescan-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/codescanner-plugin,master,maven,,java8,,-P-might-produce-incrementals,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -25125,6 +25125,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/configurationslicing-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/configure-job-column-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/conflict-aware-ondemand-strategy-plugin,main,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/confluence-publisher-plugin,master,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/conjur-simple-integration-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/console-badge-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/console-column-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -25265,6 +25266,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/docker-workflow-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/dockerhub-notification-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/doclinks-plugin,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/dogu-integration-plugin,main,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/dom4j,patched,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/domain-discovery-module,master,maven,,java8,,-P-might-produce-incrementals,TRUE,archived
 ,jenkinsci/dos-trigger-plugin,master,maven,,java8,,-P-might-produce-incrementals,TRUE,java.lang.NoClassDefFoundError: com/sun/mirror/apt/AnnotationProcessorFactory
@@ -25663,6 +25665,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/klaros-testmanagement-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/klocwork-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/kmap-plugin,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/kobiton-integration-plugin,master,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/kotlin-plugin-pom,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/kotlin-v1-stdlib-jdk8-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/kpp-management-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -25689,6 +25692,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/lavalamp-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/ldap-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/ldapemail-plugin,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/leanix-microservice-intelligence-plugin,main,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/leiningen-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/lenient-shutdown-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/leo-auth-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -25774,6 +25778,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/material-theme-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/matomo-analytics-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/matrix-auth-plugin,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/matrix-combinations-plugin,master,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/matrix-communication-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/matrix-groovy-execution-strategy-plugin,master,,,java8,,-P-might-produce-incrementals,TRUE,Build uses Gradle 3.x
 ,jenkinsci/matrix-project-plugin,master,maven,,java,,-P-might-produce-incrementals,,
@@ -25970,6 +25975,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jenkinsci/pipeline-githubnotify-step-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/pipeline-gitstatuswrapper-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/pipeline-global-lib-nexus-plugin,master,maven,,java,,-P-might-produce-incrementals,,
+,jenkinsci/pipeline-graph-analysis-plugin,master,,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/pipeline-graph-view-plugin,main,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/pipeline-groovy-lib-plugin,master,maven,,java,,-P-might-produce-incrementals,,
 ,jenkinsci/pipeline-input-notification-plugin,main,maven,,java,,-P-might-produce-incrementals,,
