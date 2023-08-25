@@ -22675,6 +22675,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,hekailiang/squirrel,master,,,java,,,,
 ,helenofn/hfn-invest-be,main,maven,,java8,,,,
 ,helgew/emporia-downloader,master,maven,,java8,,,,
+,helidon-io/helidon,helidon-3.x,,,java17,,,,
+,helidon-io/helidon-build-tools,master,,,java17,,,,
 ,heliofvj/dagger-sandbox,master,,,java8,,,,
 ,hellgate75/mongorest,master,maven,,java8,,,,
 ,helloJp/WheelView,master,,,java8,,,,
