@@ -39,7 +39,7 @@ public class Merger {
                         }
                     })
                     .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
-                            split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
+                            split[1], split[2], split[3], split[4], split[5], split[6]))
                     .collect(Collectors.toMap(
                             row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()),
                             Function.identity(),
@@ -68,7 +68,7 @@ public class Merger {
 
     private static void writeCsv(Path reposFile, Collection<CsvRow> rows) throws IOException {
         try (FileWriter writer = new FileWriter(reposFile.toFile())) {
-            writer.write("scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason\n");
+            writer.write("scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason\n");
             for (CsvRow row : rows) {
                 writer.write(row.toString() + "\n");
             }
@@ -77,15 +77,6 @@ public class Merger {
 
     private static CsvRow updateCsvRow(CsvRow csvRow, CsvRow newRow) {
         CsvRow mergedRow = csvRow;
-        if (!newRow.mavenTool().isBlank()) {
-            mergedRow = mergedRow.withMavenTool(newRow.mavenTool());
-        }
-        if (!newRow.gradleTool().isBlank()) {
-            mergedRow = mergedRow.withGradleTool(newRow.gradleTool());
-        }
-        if (!newRow.jdkTool().isBlank() && csvRow.jdkTool().isBlank() || "java".equals(newRow.jdkTool())) {
-            mergedRow = mergedRow.withJdkTool(newRow.jdkTool());
-        }
         if (!newRow.repoStyle().isBlank()) {
             mergedRow = mergedRow.withRepoStyle(newRow.repoStyle());
         }
