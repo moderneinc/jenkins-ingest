@@ -22,6 +22,9 @@ public class Merger {
         Map<Key, CsvRow> oldRows = parseCsv(original, 1);
         Map<Key, CsvRow> newRows = parseCsv(newCsv, 0);
         Collection<CsvRow> mergedRows = mergeRows(oldRows, newRows);
+        // Remove master branch rows if main branch rows exist
+        mergedRows.removeIf(row -> "master".equals(row.repoBranch())
+                && oldRows.containsKey(new Key(row.scmHost(), row.repoName(), "main")));
         writeCsv(original, mergedRows);
     }
 
