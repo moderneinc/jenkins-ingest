@@ -41,7 +41,7 @@ public class Parser {
     }
 
     private static void updateReposCsv(Path reposFile, Map<Key, DataTableRow> datatableRowsByKey) throws IOException {
-        // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
+        // header: scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
         List<String> reposLines = Files.readAllLines(reposFile);
         try (FileWriter writer = new FileWriter(reposFile.toFile())) {
             // Loop over repoLines and update them based matching data table rows

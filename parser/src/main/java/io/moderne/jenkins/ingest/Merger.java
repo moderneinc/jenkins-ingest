@@ -18,7 +18,7 @@ public class Merger {
     }
 
     public static void mergeDatatables(Path original, Path newCsv) throws IOException {
-        // header: scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
+        // header: scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
         Map<Key, CsvRow> oldRows = parseCsv(original, 1);
         Map<Key, CsvRow> newRows = parseCsv(newCsv, 0);
         Collection<CsvRow> mergedRows = mergeRows(oldRows, newRows);
@@ -34,7 +34,7 @@ public class Merger {
                     .skip(skip)
                     .map(line -> line.split(",", -1))
                     .peek(split -> {
-                        if (split.length != 10) {
+                        if (split.length != 7) {
                             throw new RuntimeException("Invalid CSV line: " + String.join(",", split));
                         }
                     })

@@ -25,26 +25,26 @@ class ParserTest {
                 """);
         Path reposFile = tempDir.resolve("repos.csv");
         Files.writeString(reposFile, """
-                scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
-                ,apache/cassandra-accord,trunk,,,java11,,,,
-                ,apache/helix,master,maven,,java8,,,,
-                ,apache/ofbiz-framework,trunk,,,java11,,,,
-                ,apache/poi,trunk,,,java8,,,,
-                ,apache/servicemix5,trunk,maven,,java8,,,,
-                ,apache/shenyu,master,maven,,java8,,,,
-                ,apache/maven,master,maven,,java8,,,,
+                scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
+                ,apache/cassandra-accord,trunk,,,,
+                ,apache/helix,master,,,,
+                ,apache/ofbiz-framework,trunk,,,,
+                ,apache/poi,trunk,,,,
+                ,apache/servicemix5,trunk,,,,
+                ,apache/shenyu,master,,,,
+                ,apache/maven,master,,,,
                 """);
         Parser.updateReposBasedOnDatatable(reposFile, datatableFile);
         String updatedCsv = Files.readString(reposFile);
         assertEquals("""
-                scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
-                ,apache/cassandra-accord,trunk,,,java11,,,,
-                ,apache/helix,master,maven,,java11,,,,
-                ,apache/ofbiz-framework,trunk,,,java17,,,,
-                ,apache/poi,trunk,,,java8,,,TRUE,Gradle wrapper 4.9 is not supported
-                ,apache/servicemix5,trunk,maven,,java8,,,,
-                ,apache/shenyu,master,maven,,java8,,,TRUE,Maven wrapper 3.2.0 is not supported
-                ,apache/maven,master,maven,,java8,,,,
+                scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
+                ,apache/cassandra-accord,trunk,,,,
+                ,apache/helix,master,,,,
+                ,apache/ofbiz-framework,trunk,,,,
+                ,apache/poi,trunk,,,TRUE,Gradle wrapper 4.9 is not supported
+                ,apache/servicemix5,trunk,,,,
+                ,apache/shenyu,master,,,TRUE,Maven wrapper 3.2.0 is not supported
+                ,apache/maven,master,,,,
                 """, updatedCsv);
     }
 
