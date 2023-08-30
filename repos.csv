@@ -35023,7 +35023,6 @@ scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
 ,paulonteri/Android-AndelaLearningCommunity4.0-project1,master,,,,
 ,paulonteri/Android-MiwokApp-UdacityProject,master,,,,
 ,paultuckey/urlrewritefilter,master,,,,
-,paulusyansen/mono,,
 ,paulzfm/gradle-plugin-ll1pg,master,,,TRUE,Build uses Gradle 3.x
 ,pavel-koltun/RealtPages,jdl-test,,,,
 ,pavel163/AttributesDispatcher,master,,,,
@@ -43654,10 +43653,6 @@ scmHost,repoName,repoBranch,repoStyle,repoBuildAction,repoSkip,skipReason
 ,yanzhenjie/NoHttp,master,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,yanzhenjie/SwipeRecyclerView,master,,,,
 ,yanzhongli/ymddApplication,master,,,,
-,yanziyang2016/cms_wanzi_6.5.2,master,,,,
-,yanziyang2016/jspxcms,,
-,yanziyang2016/jspxcms-8.0.3,master,,,,
-,yanziyang2016/jspxcms_6.5.2_ep,master,,,,
 ,yanzm/LoopViewPager,master,,,TRUE,Gradle wrapper 2.14.1 is not supported
 ,yao00jun/jhipster-springfox-application,master,,,,
 ,yaoandw/davidDemo,master,,,,
