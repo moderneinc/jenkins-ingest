@@ -7,10 +7,6 @@ on:
       org:
         description: 'The GH org'
         required: true
-      java:
-        description: 'The Java column label'
-        required: false
-        default: 'java'
 
 env:
   GITHUB_TOKEN: ${{secrets.PAT}}
@@ -28,7 +24,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Adds an org
-        run: ./add-github-organization.sh ${{ inputs.org }} ${{ inputs.java }}
+        run: ./add-github-organization.sh ${{ inputs.org }}
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
