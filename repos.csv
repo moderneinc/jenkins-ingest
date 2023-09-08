@@ -22004,10 +22004,21 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,graphql-java-generator/graphql-gradle-plugin-project,master,,,,,,,
 ,graphql-java-kickstart/graphql-java-servlet,master,,,,,,,
 ,graphql-java-kickstart/graphql-java-tools,master,maven,,,,,,
+,graphql-java/batched-graphql-execution,master,,,,,,TRUE,archived
+,graphql-java/graphql-anonymizer,main,,,,,,,
 ,graphql-java/graphql-java,master,,,,,,,
+,graphql-java/graphql-java-db-example,master,,,,,,,
+,graphql-java/graphql-java-examples,master,,,,,,,
+,graphql-java/graphql-java-extended-scalars,master,,,,,,,
+,graphql-java/graphql-java-extended-validation,master,,,,,,,
 ,graphql-java/graphql-java-http-example,master,,,,,,TRUE,Gradle wrapper 4.2.1 is not supported
-,graphql-java/graphql-java-spring,master,,,,,,,
+,graphql-java/graphql-java-spring,master,,,,,,TRUE,archived
+,graphql-java/graphql-java-subscription-example,master,,,,,,,
+,graphql-java/graphql-java-type-generator,master,,,,,,TRUE,archived
+,graphql-java/graphql-linalyzer,master,,,,,,,
 ,graphql-java/java-dataloader,master,,,,,,,
+,graphql-java/todomvc-relay-java,master,,,,,,,
+,graphql-java/tutorials,master,,,,,,,
 ,graphstream/gs-core,dev,maven,,,,,,
 ,grappe96/Eurekka,main,,,,,,,
 ,grasi310/JhipsterTest,master,maven,,,,,,
