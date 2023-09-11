@@ -28330,6 +28330,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,kbriggs/jenkins-git-chooser-alternative-plugin,master,maven,,,,,,
 ,kbrownnn/wmss,master,,,,,,,
 ,kbss-cvut/termit,master,maven,,,,,,
+,kcctl/kcctl,main,,,,,,,
 ,kchojhu/jhipster-app,master,maven,,,,,,
 ,kckane/dynamic-axis-plugin,master,maven,,,,,,
 ,kcloss/gradle-bluej-jar,main,,,,,,,
