@@ -12428,7 +12428,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/cayenne,master,maven,,,,,,
 ,apache/cayenne-examples,master,,,,,,,
 ,apache/cayenne-modeler,master,maven,,,,,,
-,apache/chainsaw,trunk,maven,,,,,,
+,apache/chainsaw,trunk,maven,,,,,TRUE,archived
 ,apache/chemistry,trunk,,,,,,TRUE,archived
 ,apache/chemistry-cmislib,trunk,,,,,,TRUE,archived
 ,apache/chemistry-opencmis,trunk,,,,,,TRUE,archived
@@ -12898,20 +12898,21 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/lenya,trunk,maven,,,,,,
 ,apache/libcloud,trunk,,,,,,,
 ,apache/linkis,master,,,,,,,
-,apache/log4j-extras,trunk,maven,,,,,,
-,apache/log4j-zeroconf,trunk,maven,,,,,,
+,apache/log4j-extras,trunk,maven,,,,,TRUE,archived
+,apache/log4j-zeroconf,trunk,maven,,,,,TRUE,archived
 ,apache/logging-chainsaw,master,maven,,,,,,
 ,apache/logging-log4j-audit,master,maven,,,,,,
 ,apache/logging-log4j-audit-sample,master,maven,,,,,,
-,apache/logging-log4j-boot,master,maven,,,,,,
+,apache/logging-log4j-boot,master,maven,,,,,TRUE,archived
 ,apache/logging-log4j-kotlin,master,maven,,,,,,
 ,apache/logging-log4j-samples,main,,,,,,,
 ,apache/logging-log4j-server,master,,,,,,,
 ,apache/logging-log4j-tools,master,maven,,,,,,
 ,apache/logging-log4j-transform,main,,,,,,,
-,apache/logging-log4j1,main,maven,,,,,TRUE,Java version 3 is not supported
+,apache/logging-log4j1,main,maven,,,,,TRUE,archived
 ,apache/logging-log4j2,2.x,,,,,,,
 ,apache/logging-log4j2,release-2.x,maven,,,,,,
+,apache/logging-pipelines,master,,,,,,TRUE,archived
 ,apache/lucene,main,,,,,,,
 ,apache/lucene-jira-archive,main,,,,,,,
 ,apache/mahout,trunk,maven,,,,,,
@@ -12932,6 +12933,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-ant-plugin,master,,,,,,TRUE,archived
 ,apache/maven-ant-tasks,trunk,,,,,,,
 ,apache/maven-antrun-plugin,master,maven,,,,,,
+,apache/maven-apache-parent,master,,,,,,,
 ,apache/maven-apache-resources,master,,,,,,,
 ,apache/maven-app-engine,trunk,,,,,,TRUE,archived
 ,apache/maven-archetype,master,maven,,,,,,
@@ -12970,6 +12972,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-enforcer,master,maven,,,,,,
 ,apache/maven-file-management,master,maven,,,,,,
 ,apache/maven-filtering,master,maven,,,,,,
+,apache/maven-fluido-skin,master,,,,,,,
 ,apache/maven-gpg-plugin,master,maven,,,,,,
 ,apache/maven-help-plugin,master,maven,,,,,,
 ,apache/maven-indexer,master,maven,,,,,,
@@ -12991,6 +12994,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-mercury,trunk,,,,,,TRUE,archived
 ,apache/maven-mvnd,master,maven,,,,,,
 ,apache/maven-osgi,master,maven,,,,,TRUE,archived
+,apache/maven-parent,master,,,,,,,
 ,apache/maven-patch-plugin,master,maven,,,,,,
 ,apache/maven-pdf-plugin,master,maven,,,,,,
 ,apache/maven-plugin-testing,master,maven,,,,,,
@@ -13023,6 +13027,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-shared-io,master,maven,,,,,,
 ,apache/maven-shared-jar,master,maven,,,,,,
 ,apache/maven-shared-utils,master,maven,,,,,,
+,apache/maven-site,master,,,,,,,
 ,apache/maven-site-plugin,master,maven,,,,,,
 ,apache/maven-source-plugin,master,maven,,,,,,
 ,apache/maven-stage-plugin,master,maven,,,,,,
@@ -13060,6 +13065,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/netbeans-html4j,master,maven,,,,,,
 ,apache/netbeans-jackpot30,master,,,,,,,
 ,apache/netbeans-mavenutils-archetype-netbeans-platform-app-archetype,master,maven,,,,,,
+,apache/netbeans-mavenutils-archetypes,master,,,,,,,
 ,apache/netbeans-mavenutils-nb-repository-plugin,master,,,,,,,
 ,apache/netbeans-mavenutils-nbm-maven-harness,master,,,,,,,
 ,apache/netbeans-mavenutils-nbm-maven-plugin,master,maven,,,,,,
