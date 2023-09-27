@@ -12932,6 +12932,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-ant-plugin,master,,,,,,TRUE,archived
 ,apache/maven-ant-tasks,trunk,,,,,,,
 ,apache/maven-antrun-plugin,master,maven,,,,,,
+,apache/maven-apache-parent,master,,,,,,,
 ,apache/maven-apache-resources,master,,,,,,,
 ,apache/maven-app-engine,trunk,,,,,,TRUE,archived
 ,apache/maven-archetype,master,maven,,,,,,
