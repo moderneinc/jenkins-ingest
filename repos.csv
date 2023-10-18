@@ -7522,7 +7522,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,OpenNTF/SocialSDK,master,maven,,,,,,
 ,OpenOLAT/OpenOLAT,master,maven,,,,,,
 ,OpenPIK/OpenPIK,master,maven,,,,,,
-,OpenRefine/OpenRefine,master,maven,,,,-Dmaven.antrun.skip=true -pl !packaging/pom.xml,,
+,OpenRefine/OpenRefine,master,,,,,-Dmaven.antrun.skip=true -pl !packaging/pom.xml,,
 ,OpenRefine/simile-butterfly,openrefine,maven,,,,,,
 ,OpenRefine/simile-vicino,master,maven,,,,,,
 ,OpenRock/OpenDJ,master,maven,,,,,,
