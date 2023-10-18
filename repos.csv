@@ -12399,7 +12399,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/bval,master,maven,,,,,,
 ,apache/calcite,main,,,,,,,
 ,apache/calcite-avatica,main,,,,,,,
-,apache/camel,main,,,,,,,
+,apache/camel,main,,,,,-Dquickly,,
 ,apache/camel-k-examples,main,,,,,,,
 ,apache/camel-k-runtime,main,maven,,,,,,
 ,apache/camel-kafka-connector,main,maven,,,,,,
