@@ -12399,7 +12399,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/bval,master,maven,,,,,,
 ,apache/calcite,main,,,,,,,
 ,apache/calcite-avatica,main,,,,,,,
-,apache/camel,main,,,,,-Dquickly,,
+,apache/camel,main,,,,,package -Dquickly -Dmaven.plugin.skip=false -Dmdep.skip=false -DskipSource=false -pl !components/camel-jooq/pom.xml,,
 ,apache/camel-k-examples,main,,,,,,,
 ,apache/camel-k-runtime,main,maven,,,,,,
 ,apache/camel-kafka-connector,main,maven,,,,,,
@@ -12684,7 +12684,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/groovy-examples,master,,,,,,TRUE,Gradle wrapper 4.9 is not supported
 ,apache/guacamole-client,master,maven,,,,,,
 ,apache/guacamole-manual,master,,,,,,,
-,apache/hadoop,trunk,maven,,,,,,
+,apache/hadoop,trunk,maven,,,,-Dmaven.plugin.skip=false,,
 ,apache/hadoop-common,trunk,maven,,,,,TRUE,archived
 ,apache/hadoop-hdfs,trunk,,,,,,TRUE,archived
 ,apache/hadoop-mapreduce,trunk,,,,,,TRUE,archived
