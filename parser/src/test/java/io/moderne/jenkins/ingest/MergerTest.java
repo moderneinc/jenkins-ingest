@@ -43,6 +43,29 @@ class MergerTest {
     }
 
     @Test
+    void deduplicateNewMasterBranch(@TempDir Path tempdir) throws Exception {
+        String original = """
+                scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
+                ,jakartaee/validation,master,maven,,,,,,
+                """;
+        String newCsv = """
+                ,jakartaee/validation,main,,,,,,,
+                """;
+        Path repos = tempdir.resolve("repos.csv");
+        Path new_ = tempdir.resolve("new.csv");
+        Files.writeString(repos, original);
+        Files.writeString(new_, newCsv);
+
+        Merger.mergeDatatables(repos, new_);
+
+        String actual = Files.readString(repos);
+        assertEquals("""
+                scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
+                ,jakartaee/validation,main,,,,,,,
+                """, actual);
+    }
+
+    @Test
     void mergeBgjug(@TempDir Path tempdir) throws Exception {
         String original = """
                 scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
