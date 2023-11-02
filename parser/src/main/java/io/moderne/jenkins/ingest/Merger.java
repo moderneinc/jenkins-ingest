@@ -24,7 +24,8 @@ public class Merger {
         Collection<CsvRow> mergedRows = mergeRows(oldRows, newRows);
         // Remove master branch rows if main branch rows exist
         mergedRows.removeIf(row -> "master".equals(row.repoBranch())
-                && oldRows.containsKey(new Key(row.scmHost(), row.repoName(), "main")));
+                && (oldRows.containsKey(new Key(row.scmHost(), row.repoName(), "main"))
+                || newRows.containsKey(new Key(row.scmHost(), row.repoName(), "main"))));
         writeCsv(original, mergedRows);
     }
 
