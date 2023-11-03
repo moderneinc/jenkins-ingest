@@ -21895,10 +21895,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle-plugins/toolbox,main,,,,,,,
 ,gradle-webtools/gradle-minify-plugin,master,,,,,,,
 ,gradle/.github,master,,,,,,,
+,gradle/Compilation-Avoidance-Experiment,main,,,,,,,
 ,gradle/android-cache-fix-gradle-plugin,main,,,,,,,
 ,gradle/android-relocation-test,master,,,,,,TRUE,archived
 ,gradle/apachecon2021,main,,,,,,,
 ,gradle/api-evolution-demo,main,,,,,,,
+,gradle/backend-code-project,main,,,,,,,
 ,gradle/bazel-comparison,master,,,,,,,
 ,gradle/blog-gradle-enterprise-api-to-prometheus-example,main,,,,,,,
 ,gradle/bt-dev-prod-data-collector,main,,,,,,,
@@ -21954,6 +21956,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/gradle2kts,master,,,,,,TRUE,archived
 ,gradle/greeting-plugin-example,master,,,,,,TRUE,archived
 ,gradle/guides,master,,,,,,,
+,gradle/ide-smoke-tests,main,,,,,,,
 ,gradle/jfr-polyfill,main,,,,,,,
 ,gradle/kotlin-dsl,master,,,,,,,
 ,gradle/kotlin-dsl-conventions,master,,,,,,,
