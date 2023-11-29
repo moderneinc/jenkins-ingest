@@ -10,8 +10,8 @@ mkdir -p out
 
 # generate `gh.json` which includes repo fullName and branch name,
 # Manually customize the language and adjust the count below according to your specific requirements.
-# option to add filter: --updated="> 2023-11-21"
-gh search repos --language javascript --visibility public --limit 1000 --json fullName,defaultBranch > out/gh.json
+# option to add filter: --updated="> yyyy-mm-dd"
+gh search repos --language $1 --visibility public --limit 1000 --json fullName,defaultBranch > out/gh.json
 
 # generate `new.csv`, which will be merged to `repos.csv`
 cat out/gh.json | jq -r '.[] | ",\(.fullName),\(.defaultBranch),,,,,,,"' > out/new.csv
