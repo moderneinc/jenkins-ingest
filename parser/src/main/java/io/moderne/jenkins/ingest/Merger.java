@@ -36,7 +36,7 @@ public class Merger {
                     .map(line -> line.split(",", -1))
                     .peek(split -> {
                         if (split.length != 10) {
-                            throw new RuntimeException("Invalid CSV line: " + String.join(",", split));
+                            throw new RuntimeException("Invalid CSV line with " + split.length + " columns: " + String.join(",", split));
                         }
                     })
                     .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
