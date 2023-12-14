@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'io.moderne'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:latest.release'
+    annotationProcessor 'org.projectlombok:lombok:latest.release'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:latest.release'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'io.moderne.jenkins.ingest.Parser'
+        )
+    }
+}
