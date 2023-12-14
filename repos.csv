@@ -12948,6 +12948,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,aosp-mirror/platform_external_tagsoup,master,,gradle,,,,,
 ,apache/abdera,trunk,maven,,,,,TRUE,archived
 ,apache/accumulo,main,maven,,,,,,
+,apache/accumulo-access,main,,,,,,,
 ,apache/accumulo-bsp,main,maven,,,,,,
 ,apache/accumulo-classloaders,main,maven,,,,,,
 ,apache/accumulo-examples,main,maven,,,,,,
@@ -12968,6 +12969,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/activemq-openwire,main,maven,,,,,,
 ,apache/activemq-protobuf,trunk,maven,,,,,,
 ,apache/airavata,master,maven,,,,,,
+,apache/airavata-cookiecutter-django-app,main,,,,,,,
+,apache/airavata-cookiecutter-django-output-view,main,,,,,,,
 ,apache/airavata-custos,master,,,,,,,
 ,apache/airavata-data-catalog,main,,,,,,,
 ,apache/airavata-data-lake,master,maven,,,,,,
@@ -12995,6 +12998,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/ant-antlibs-vss,master,,,,,,,
 ,apache/ant-easyant-tasks,master,,,,,,,
 ,apache/ant-ivy,master,,,,,,,
+,apache/ant-ivyde,master,,,,,,TRUE,archived
 ,apache/any23,master,maven,,,,,,
 ,apache/any23-plugins,master,maven,,,,,TRUE,archived
 ,apache/any23-server,master,maven,,,,,TRUE,archived
@@ -13027,7 +13031,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/atlas,master,maven,,,,,,
 ,apache/attic-site,trunk,,,,,,,
 ,apache/aurora,master,,,,,,TRUE,archived
-,apache/avro,master,maven,,,,,,
+,apache/avro,main,,,,,,,
 ,apache/axis-axis1-java,master,maven,,,,,,
 ,apache/axis-axis2-java-core,master,maven,,,,,,
 ,apache/axis-axis2-java-rampart,master,maven,,,,,,
@@ -13051,6 +13055,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/calcite,main,,,,,,,
 ,apache/calcite-avatica,main,,,,,,,
 ,apache/camel,main,,,,,package -Dquickly -Dmaven.plugin.skip=false -Dmdep.skip=false -DskipSource=false -pl !components/camel-jooq/pom.xml,,
+,apache/camel-examples,main,,,,,,,
 ,apache/camel-k-examples,main,,,,,,,
 ,apache/camel-k-runtime,main,maven,,,,,,
 ,apache/camel-kafka-connector,main,maven,,,,,,
@@ -13071,10 +13076,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/cassandra-dtest,trunk,,,,,,,
 ,apache/cassandra-harry,trunk,maven,,,,,,
 ,apache/cassandra-in-jvm-dtest-api,trunk,maven,,,,,,
+,apache/cassandra-java-driver,4.x,,,,,,,
 ,apache/cassandra-sidecar,trunk,,,,,,,
 ,apache/causeway,master,,,,,,,
 ,apache/causeway-app-demo,main,,,,,,,
 ,apache/causeway-app-helloworld,jpa,,,,,,,
+,apache/causeway-app-referenceapp,master,,,,,,,
 ,apache/causeway-app-simpleapp,jpa,,,,,,,
 ,apache/cayenne,master,maven,,,,,,
 ,apache/cayenne-examples,master,,,,,,,
@@ -13093,6 +13100,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/cloudstack-ec2stack,main,,,,,,,
 ,apache/cloudstack-gcestack,main,,,,,,,
 ,apache/cocoon,trunk,maven,,,,,,
+,apache/comdev-projects,trunk,,,,,,,
 ,apache/comdev-reporter,deployed,,,,,,,
 ,apache/comdev-wwwsite,master,,,,,,TRUE,archived
 ,apache/commons-bcel,master,maven,,,,,,
@@ -13145,6 +13153,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/continuum,trunk,maven,,,,,,
 ,apache/cordova-amazon-fireos,master,,,,,,TRUE,archived
 ,apache/cordova-plugin-compat,master,,,,,,TRUE,archived
+,apache/cordova-plugin-inappbrowser,master,,,,,,,
 ,apache/couchdb-infra-cm,main,,,,,,,
 ,apache/creadur-rat,master,maven,,,,,,
 ,apache/creadur-tentacles,master,maven,,,,,,
@@ -13164,6 +13173,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/datasketches-characterization,master,maven,,,,,,
 ,apache/datasketches-hive,master,maven,,,,,,
 ,apache/datasketches-java,master,maven,,,,,,
+,apache/datasketches-java-common,main,,,,,,,
 ,apache/datasketches-memory,master,maven,,,,,,
 ,apache/datasketches-memory16,master,maven,,,,,,
 ,apache/datasketches-memory17,main,maven,,,,,,
@@ -13272,6 +13282,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/flink-connector-elasticsearch,main,maven,,,,,,
 ,apache/flink-connector-gcp-pubsub,main,,,,,,,
 ,apache/flink-connector-hbase,main,,,,,,,
+,apache/flink-connector-hive,main,,,,,,,
 ,apache/flink-connector-jdbc,main,,,,,,,
 ,apache/flink-connector-kafka,main,,,,,,,
 ,apache/flink-connector-mongodb,main,,,,,,,
@@ -13329,7 +13340,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/geronimo-txmanager,trunk,maven,,,,,,
 ,apache/geronimo-xbean,trunk,maven,,,,,,
 ,apache/geronimo-yoko,master,maven,,,,,,
-,apache/giraph,trunk,maven,,,,-Phadoop_2,,
+,apache/giraph,trunk,maven,,,,-Phadoop_2,TRUE,archived
 ,apache/gobblin,master,,,,,,,
 ,apache/gora,master,maven,,,,,,
 ,apache/groovy,master,,,,,,,
@@ -13337,6 +13348,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/guacamole-client,master,maven,,,,,,
 ,apache/guacamole-manual,master,,,,,,,
 ,apache/hadoop,trunk,maven,,,,-Dmaven.plugin.skip=false,,
+,apache/hadoop-api-shim,main,,,,,,,
 ,apache/hadoop-common,trunk,maven,,,,,TRUE,archived
 ,apache/hadoop-hdfs,trunk,,,,,,TRUE,archived
 ,apache/hadoop-mapreduce,trunk,,,,,,TRUE,archived
@@ -13353,7 +13365,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/httpcomponents-core,master,maven,,,,,,
 ,apache/httpcomponents-website,master,maven,,,,,,
 ,apache/hudi,master,maven,,,,,,
-,apache/iceberg,master,,,,,,,
+,apache/iceberg,main,,,,,,,
+,apache/iceberg-python,main,,,,,,,
 ,apache/ignite,master,,,,,,,
 ,apache/ignite-3,main,maven,,,,,,
 ,apache/ignite-extensions,master,maven,,,,,,
@@ -13368,7 +13381,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-brooklyn,master,maven,,,,,,
 ,apache/incubator-celeborn,main,,,,,,,
 ,apache/incubator-crail,master,maven,,,,,TRUE,archived
-,apache/incubator-datalab,master,maven,,,,,,
+,apache/incubator-datalab,master,maven,,,,,TRUE,archived
 ,apache/incubator-dubbo,3,,,,,,,
 ,apache/incubator-dubbo-spring-boot-project,master,,,,,,,
 ,apache/incubator-eventmesh,master,,,,,,,
@@ -13376,11 +13389,22 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-heron,master,,,,,,TRUE,archived
 ,apache/incubator-hivemall,master,maven,,,,,TRUE,archived
 ,apache/incubator-hugegraph,master,maven,,,,,,
+,apache/incubator-hugegraph-ai,main,,,,,,,
 ,apache/incubator-hugegraph-commons,master,maven,,,,,,
 ,apache/incubator-hugegraph-computer,master,maven,,,,,,
 ,apache/incubator-hugegraph-toolchain,master,maven,,,,,,
 ,apache/incubator-hugegraph-tools,master,maven,,,,,TRUE,archived
 ,apache/incubator-inlong,master,maven,,,,,,
+,apache/incubator-kie-benchmarks,main,,,,,,,
+,apache/incubator-kie-drools,main,,,,,,,
+,apache/incubator-kie-kogito-apps,main,,,,,,,
+,apache/incubator-kie-kogito-benchmarks,main,,,,,,,
+,apache/incubator-kie-kogito-examples,stable,,,,,,,
+,apache/incubator-kie-kogito-runtimes,main,,,,,,,
+,apache/incubator-kie-optaplanner,main,,,,,,,
+,apache/incubator-kie-optaplanner-quickstarts,stable,,,,,,,
+,apache/incubator-kie-tools,main,,,,,,,
+,apache/incubator-kie-tools-temporary-rnd-do-not-use,main,,,,,,,
 ,apache/incubator-knox,trunk,maven,,,,,,
 ,apache/incubator-kyuubi,master,maven,,,,,,
 ,apache/incubator-liminal,master,,,,,,,
@@ -13397,8 +13421,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-paimon-presto,main,,,,,,,
 ,apache/incubator-paimon-shade,main,,,,,,,
 ,apache/incubator-paimon-trino,main,,,,,,,
+,apache/incubator-paimon-webui,main,,,,,,,
 ,apache/incubator-pegasus,master,,,,,,,
 ,apache/incubator-pekko-connectors-samples,main,,,,,,,
+,apache/incubator-pekko-grpc-quickstart-java.g8,main,,,,,,,
+,apache/incubator-pekko-http-quickstart-java.g8,main,,,,,,,
 ,apache/incubator-pekko-platform-guide,main,,,,,,,
 ,apache/incubator-pekko-quickstart-java.g8,main,,,,,,,
 ,apache/incubator-ponymail-foal,master,,,,,,,
@@ -13464,6 +13491,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-weex-playground,master,,,,,,TRUE,archived
 ,apache/infrastructure-aardvark-proxy,main,,,,,,,
 ,apache/infrastructure-asfpy,main,,,,,,,
+,apache/infrastructure-asfquart,main,,,,,,,
 ,apache/infrastructure-blocky-client,master,,,,,,,
 ,apache/infrastructure-blocky4,main,,,,,,,
 ,apache/infrastructure-boxer,master,,,,,,,
@@ -13483,8 +13511,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/infrastructure-otp,master,,,,,,,
 ,apache/infrastructure-pelican,master,,,,,,,
 ,apache/infrastructure-pypubsub-ldap,main,,,,,,,
+,apache/infrastructure-reporting-dashboard,main,,,,,,,
 ,apache/infrastructure-roundtrip,main,,,,,,,
 ,apache/infrastructure-selfserve-portal,main,,,,,,,
+,apache/infrastructure-shorten,main,,,,,,,
 ,apache/infrastructure-svnauthz,master,,,,,,,
 ,apache/infrastructure-testapp,master,,,,,,,
 ,apache/infrastructure-uninstaller,master,,,,,,,
@@ -13544,6 +13574,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/kibble-scanners,master,,,,,,,
 ,apache/knox,master,maven,,,,,,
 ,apache/kudu,master,,,,,,,
+,apache/kylin,kylin5,,,,,,,
 ,apache/kylin,main,maven,,,,,,
 ,apache/kyuubi-service-rpc,main,,,,,,,
 ,apache/lens,master,,,,,,TRUE,archived
@@ -13556,10 +13587,12 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/logging-log4j-audit,master,maven,,,,,,
 ,apache/logging-log4j-audit-sample,master,maven,,,,,,
 ,apache/logging-log4j-boot,master,maven,,,,,TRUE,archived
+,apache/logging-log4j-jakarta,main,,,,,,,
+,apache/logging-log4j-jmx-gui,main,,,,,,,
 ,apache/logging-log4j-kotlin,master,maven,,,,,,
 ,apache/logging-log4j-samples,main,,,,,,,
-,apache/logging-log4j-server,master,,,,,,,
-,apache/logging-log4j-tools,master,maven,,,,,,
+,apache/logging-log4j-server,master,,,,,,TRUE,archived
+,apache/logging-log4j-tools,main,,,,,,,
 ,apache/logging-log4j-transform,main,,,,,,,
 ,apache/logging-log4j1,main,maven,,,,,TRUE,archived
 ,apache/logging-log4j2,2.x,,,,,,,
@@ -13609,7 +13642,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/maven-deploy-plugin,master,,,,,,,
 ,apache/maven-dist-tool,master,,,,,,,
 ,apache/maven-doap-plugin,master,,,,,,,
-,apache/maven-docck-plugin,master,,,,,,,
+,apache/maven-docck-plugin,master,,,,,,TRUE,archived
 ,apache/maven-downloader,master,,,,,,TRUE,archived
 ,apache/maven-doxia,master,,,,,,,
 ,apache/maven-doxia-book-maven-plugin,master,,,,,,,
@@ -13701,7 +13734,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/mina-vysper,master,maven,,,,,,
 ,apache/mnemonic,master,,,,,,,
 ,apache/mrunit,trunk,maven,,,,,TRUE,archived
-,apache/mxnet-ci,master,,,,,,,
+,apache/mxnet-ci,master,,,,,,TRUE,archived
 ,apache/myfaces,main,,,,,,,
 ,apache/myfaces-build-tools,main,,,,,,,
 ,apache/myfaces-extcdi,main,maven,,,,,,
@@ -13715,6 +13748,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/myfaces-trinidad-maven,main,,,,,,,
 ,apache/nano,master,,,,,,,
 ,apache/netbeans,master,,,,,,,
+,apache/netbeans-antora-tutorials,main,,,,,,,
 ,apache/netbeans-html4j,master,maven,,,,,,
 ,apache/netbeans-jackpot30,master,,,,,,,
 ,apache/netbeans-mavenutils-archetype-netbeans-platform-app-archetype,master,maven,,,,,,
@@ -13847,6 +13881,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/savan,trunk,maven,,,,,,
 ,apache/seatunnel,dev,,,,,,,
 ,apache/seatunnel-datasource-sdk,main,,,,,,,
+,apache/seatunnel-shade,main,,,,,,,
 ,apache/seatunnel-web,main,,,,,,,
 ,apache/sedona,master,,,,,,,
 ,apache/sentry,master,maven,,,,,TRUE,archived
@@ -13879,17 +13914,20 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/shardingsphere-elasticjob-example,master,maven,,,,,TRUE,archived
 ,apache/shardingsphere-elasticjob-ui,master,maven,,,,,,
 ,apache/shardingsphere-example,dev,,,,,,TRUE,archived
+,apache/shardingsphere-plugin,main,,,,,,,
 ,apache/shardingsphere-ui,master,maven,,,,,,
 ,apache/shenyu,master,maven,,,,,,
 ,apache/shenyu-client-python,main,,,,,,,
+,apache/shenyu-wasm,master,,,,,,,
 ,apache/shenyu-watcher,main,,,,,,,
 ,apache/shindig,trunk,maven,,,,,,
 ,apache/shiro,main,maven,,,,,,
 ,apache/sirona,trunk,maven,,,,,,
-,apache/sis,master,maven,,,,,,
+,apache/sis,main,,,,,,,
 ,apache/skywalking,master,,,,,,,
 ,apache/skywalking-agent-test-tool,master,maven,,,,,,
 ,apache/skywalking-banyandb-java-client,main,maven,,,,,,
+,apache/skywalking-graalvm-distro,main,,,,,,,
 ,apache/skywalking-java,main,maven,,,,,,
 ,apache/skywalking-kong,master,,,,,,,
 ,apache/skywalking-oal-tool,master,maven,,,,,TRUE,archived
@@ -13954,6 +13992,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/sling-org-apache-sling-commons-messaging,master,maven,,,,,,
 ,apache/sling-org-apache-sling-commons-messaging-mail,master,maven,,,,,,
 ,apache/sling-org-apache-sling-commons-metrics,master,maven,,,,,,
+,apache/sling-org-apache-sling-commons-metrics-prometheus,master,,,,,,,
 ,apache/sling-org-apache-sling-commons-metrics-rrd4j,master,maven,,,,,,
 ,apache/sling-org-apache-sling-commons-mime,master,maven,,,,,,
 ,apache/sling-org-apache-sling-commons-osgi,master,maven,,,,,,
@@ -13998,6 +14037,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/sling-org-apache-sling-extensions-webconsolesecurityprovider,master,maven,,,,,,
 ,apache/sling-org-apache-sling-feature,master,maven,,,,,,
 ,apache/sling-org-apache-sling-feature-analyser,master,maven,,,,,,
+,apache/sling-org-apache-sling-feature-analyser-classes,master,,,,,,,
 ,apache/sling-org-apache-sling-feature-apiregions,master,maven,,,,,,
 ,apache/sling-org-apache-sling-feature-apiregions-model,master,maven,,,,,,
 ,apache/sling-org-apache-sling-feature-applicationbuilder,master,maven,,,,,TRUE,archived
@@ -14105,6 +14145,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/sling-org-apache-sling-paxexam-util,master,maven,,,,,,
 ,apache/sling-org-apache-sling-performance,master,maven,,,,,,
 ,apache/sling-org-apache-sling-pipes,master,maven,,,,,,
+,apache/sling-org-apache-sling-providertype-bnd-plugin,master,,,,,,,
 ,apache/sling-org-apache-sling-provisioning-model,master,maven,,,,,,
 ,apache/sling-org-apache-sling-query,master,maven,,,,,,
 ,apache/sling-org-apache-sling-repoinit-filevault-validator,master,,,,,,,
