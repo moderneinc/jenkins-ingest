@@ -36454,7 +36454,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-java-dependencies,main,,,,,,,
 ,openrewrite/rewrite-java-security,main,,,,,,,
 ,openrewrite/rewrite-jenkins,main,,,,,,,
-,openrewrite/rewrite-jhipster,main,,,,,,,
+,openrewrite/rewrite-jhipster,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-kotlin,main,,,,,,,
 ,openrewrite/rewrite-kubernetes,main,,,,,,,
 ,openrewrite/rewrite-launchdarkly,main,,,,,,,
@@ -36479,6 +36479,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-template-generator,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-templating,main,,,,,,,
 ,openrewrite/rewrite-terraform,main,,,,,,,
+,openrewrite/rewrite-testcontainers,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-testing-frameworks,main,,,,,,,
 ,openrewrite/sample-maven-dependencies,master,maven,,,,,,
 ,openrndr/openrndr,master,,,,,,,
