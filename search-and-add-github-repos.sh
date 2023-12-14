@@ -24,8 +24,7 @@ cat out/gh.json | jq -r '.[] | "      {
       },"' | sed '$s/,$//' > out/repos-content.json
 
 # Merge `new.csv` to `repos.csv`
-cd parser/
-./gradlew build && java -cp build/libs/parser-1.0-SNAPSHOT.jar io.moderne.jenkins.ingest.Merger ../repos.csv  ../out/new.csv
+./gradlew build && java -cp build/libs/jenkins-ingest-1.0-SNAPSHOT.jar io.moderne.jenkins.ingest.Merger repos.csv  out/new.csv
 
 # Quick analysis of largest organizations
 cut --delimiter='/' --fields=1 repos.csv | sort | uniq -c | sort -h | tail -n 20

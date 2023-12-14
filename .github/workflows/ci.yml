@@ -38,6 +38,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-reports
-          path: parser/build/reports/
+          path: build/reports/
       - name: Validate repos.csv
         run: ./validate-repos.csv.sh

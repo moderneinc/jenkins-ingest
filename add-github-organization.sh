@@ -11,7 +11,7 @@ gh repo list $1 --language kotlin --archived --source --visibility public --limi
 gh repo list $1 --language python --archived --source --visibility public --limit 1000 --json nameWithOwner,defaultBranchRef --template '{{range .}},{{.nameWithOwner}},{{.defaultBranchRef.name}},,,,,,TRUE,archived{{"\n"}}{{end}}' >> new.csv
 
 # Merge new repos into existing repos
-(cd parser/; ./gradlew build && java -cp build/libs/parser-1.0-SNAPSHOT.jar io.moderne.jenkins.ingest.Merger ../repos.csv  ../new.csv)
+./gradlew build && java -cp build/libs/jenkins-ingest-1.0-SNAPSHOT.jar io.moderne.jenkins.ingest.Merger repos.csv  new.csv
 rm new.csv
 
 # Quick analysis of largest organizations
