@@ -90,7 +90,7 @@ class MergerTest {
         Path new_ = tempdir.resolve("new.csv");
         Files.writeString(repos, original);
         Files.writeString(new_, newCsv);
-        
+
         Merger.mergeDatatables(repos, new_);
         String actual = Files.readString(repos);
         assertEquals("""
