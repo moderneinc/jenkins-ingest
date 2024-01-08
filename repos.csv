@@ -17452,6 +17452,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,concordion/cubano-demo,master,,,,,,,
 ,concordion/cubano-template,master,,,,,,,
 ,conditionizr/conditionizr,master,,,,,,,
+,conductor-oss/conductor,main,,,,,,,
+,conductor-oss/conductor-community,main,,,,,,,
 ,conduktor/kafka-beginners-course,main,,,,,,,
 ,confluentinc/camus,confluent-master,maven,,,,,,
 ,confluentinc/castle,master,maven,,,,,,
