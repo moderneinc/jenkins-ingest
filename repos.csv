@@ -13670,7 +13670,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/jclouds-labs-aws,master,maven,,,,,,
 ,apache/jclouds-labs-openstack,master,maven,,,,,,
 ,apache/jena,main,maven,,,,,,
-,apache/jmeter,master,,,,,,TRUE,settings.gradle.kts has code that disallows buildscript classpath entries other than those expected which our gradle enterprise integration violates
+,apache/jmeter,master,,,,,,,
 ,apache/jmeter-bugzilla-attachments,main,,,,,,,
 ,apache/johnzon,master,maven,,,,,,
 ,apache/joshua,master,maven,,,,,TRUE,archived
