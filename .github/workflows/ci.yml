@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
       - name: build
         timeout-minutes: 20
         uses: gradle/gradle-build-action@v2
