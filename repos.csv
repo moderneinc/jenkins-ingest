@@ -7412,7 +7412,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Netflix/PigPen,master,,,,,,,
 ,Netflix/Prana,master,,,,,,,
 ,Netflix/Priam,3.x,,,,,,,
-,Netflix/Raigad,master,,,,,,,
+,Netflix/Raigad,master,,,,,,TRUE,Toplevel build.gradle contains subprojects
 ,Netflix/SimianArmy,master,,,,,,TRUE,Build uses Gradle 2.x
 ,Netflix/Surus,master,maven,,,,,,
 ,Netflix/aegisthus,master,,,,,,,
@@ -7429,7 +7429,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Netflix/dgs-examples-java,main,,,,,,,
 ,Netflix/dgs-examples-webflux,main,,,,,,,
 ,Netflix/dgs-framework,master,,,,,,,
-,Netflix/dyno,master,,,,,,,
+,Netflix/dyno,master,,,,,,TRUE,Toplevel build.gradle contains subprojects
 ,Netflix/dyno-queues,dev,,,,,,,
 ,Netflix/dynomite-manager,dev,,,,,,,
 ,Netflix/eureka,master,,,,com.netflix.eureka.Style,,,
