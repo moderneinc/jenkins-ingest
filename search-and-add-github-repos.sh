@@ -11,20 +11,12 @@ mkdir -p out
 # generate `gh.json` which includes repo fullName and branch name,
 # Manually customize the language and adjust the count below according to your specific requirements.
 # option to add filter: --updated="> yyyy-mm-dd"
-gh search repos --language $1 --visibility public --limit 1000 --json fullName,defaultBranch > out/gh.json
+gh search repos --visibility public --limit 500 --topic $1 --sort stars --json fullName,defaultBranch > out/$1-raw.json
 
-# generate `new.csv`, which will be merged to `repos.csv`
-cat out/gh.json | jq -r '.[] | ",\(.fullName),\(.defaultBranch),,,,,,,"' > out/new.csv
-
-# generate `repos.json`, which will be used to update `ownership.json`
-cat out/gh.json | jq -r '.[] | "      {
-        \"origin\": \"github.com\",
-        \"path\": \"" + .fullName + "\",
-        \"branch\": \"" + .defaultBranch + "\"
-      },"' | sed '$s/,$//' > out/repos-content.json
+# generate `new.csv`, which will be merged to `{query}-orgs.csv`
+jq -r '.[] | ",\(.fullName),\(.defaultBranch),,,,,,,"' out/$1-raw.json > out/new.csv
+jq '[.[] | {origin: "github.com", path: .fullName, branch: .defaultBranch}]' out/$1-raw.json > out/$1-orgs.json
 
 # Merge `new.csv` to `repos.csv`
 ./gradlew build && java -cp build/libs/jenkins-ingest-1.0-SNAPSHOT.jar io.moderne.jenkins.ingest.Merger repos.csv  out/new.csv
 
-# Quick analysis of largest organizations
-cut --delimiter='/' --fields=1 repos.csv | sort | uniq -c | sort -h | tail -n 20
