@@ -21,6 +21,8 @@ jobs:
           java-version: '17'
       - name: Adds an org
         run: ./add-github-organization.sh ${{ inputs.org }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
