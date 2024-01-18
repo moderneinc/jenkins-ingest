@@ -8,8 +8,6 @@ on:
         description: 'The GH org'
         required: true
 
-env:
-  GITHUB_TOKEN: ${{secrets.PAT}}
 jobs:
   ingest:
     runs-on: ubuntu-latest
@@ -28,7 +26,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch: add/${{ inputs.org }}
-          token: ${{secrets.PAT}}
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: "[Auto] The ${{ inputs.org }} GitHub organization is added"
           body: |
             [Auto] The ${{ inputs.org }} GitHub organization is added.
