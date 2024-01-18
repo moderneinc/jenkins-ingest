@@ -24112,6 +24112,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,gradle/wrapper-validation-action,master,,,,,,,
 ,gradleutil/gradle-aws-plugin,master,,,,,,,
 ,gradleutil/gradle-jte,master,,,,,,,
+,gradlex-org/java-ecosystem-capabilities,main,,,,,,,
+,gradlex-org/java-module-dependencies,main,,,,,,,
+,gradlex-org/java-module-testing,main,,,,,,,
+,gradlex-org/plugin-publish-conventions,main,,,,,,,
 ,gradusnikov/jmatio,master,maven,,,,,,
 ,graemerocher/groovydoc-gradle-plugin,master,,,,,,TRUE,Build uses Gradle 2.x
 ,graetz23/JWave,master,,,,,,,
