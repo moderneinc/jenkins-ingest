@@ -37027,7 +37027,6 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,nisrineRH/testApplication,master,maven,,,,,,
 ,nisrineRH/testSuivi,master,maven,,,,,,
 ,nisrineRH/testo,master,maven,,,,,,
-,nisrulz/Sensey,master,,,,,,,
 ,nisrulz/packagehunter,master,,,,,,TRUE,Gradle wrapper 4.3.1 is not supported
 ,nisrulz/qreader,master,,,,,,,
 ,nisrulz/screenshott,master,,,,,,,
