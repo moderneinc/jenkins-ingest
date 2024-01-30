@@ -22686,6 +22686,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/hypebot,master,,,,,,TRUE,archived
 ,google/hypernerf,main,,,,,,,
 ,google/i18n_sanitycheck,master,maven,,,,,TRUE,archived
+,google/ic-modeling-python,main,,,,,,,
 ,google/identity-credential,master,,,,,,,
 ,google/identity-toolkit-java-client,master,maven,,,,,TRUE,archived
 ,google/identity-toolkit-python-client,master,,,,,,TRUE,archived
@@ -22718,6 +22719,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/java-thread-sanitizer,master,,,,,,TRUE,archived
 ,google/java-time-client,main,,,,,,,
 ,google/jax,main,,,,,,,
+,google/jaxcam,main,,,,,,,
 ,google/jaxite,main,,,,,,,
 ,google/jaxonnxruntime,main,,,,,,,
 ,google/jaxopt,main,,,,,,,
@@ -22774,9 +22776,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/mcafp,master,,,,,,TRUE,archived
 ,google/megalista,main,,,,,,,
 ,google/memcache-collections,master,,,,,,TRUE,archived
+,google/memutil,main,,,,,,,
 ,google/mentornet,master,,,,,,,
 ,google/merchant_center_repor_builder,main,,,,,,,
 ,google/merge_pyi,master,,,,,,TRUE,archived
+,google/mesop,main,,,,,,,
 ,google/meta_tagger,master,,,,,,,
 ,google/microscopeimagequality,main,,,,,,,
 ,google/mipnerf,main,,,,,,TRUE,archived
@@ -22844,6 +22848,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/paxml,main,,,,,,,
 ,google/pbvi,master,,,,,,TRUE,archived
 ,google/pcbdl,master,,,,,,TRUE,archived
+,google/peg-typed,master,,,,,,TRUE,archived
 ,google/permhash,main,,,,,,,
 ,google/personfinder,master,,,,,,,
 ,google/physical-web,master,,,,,,TRUE,archived
@@ -22921,7 +22926,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/re2j,master,,,,,,,
 ,google/reagera,master,,,,,,TRUE,archived
 ,google/realtime-help,master,,,,,,TRUE,archived
-,google/referring-manipulation,main,,,,,,,
+,google/referring-manipulation,main,,,,,,TRUE,archived
 ,google/rejoiner,master,maven,,,,,,
 ,google/rekall,master,,,,,,TRUE,archived
 ,google/report2bq,master,,,,,,,
@@ -22986,6 +22991,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/smilesparser,master,,,,,,TRUE,archived
 ,google/snippet-uiautomator,main,,,,,,,
 ,google/software-product-sprint,main,,,,,,,
+,google/space,main,,,,,,,
 ,google/spatial-media,master,,,,,,,
 ,google/speaker-id,master,,,,,,,
 ,google/spectral-density,master,,,,,,TRUE,archived
@@ -23011,7 +23017,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/structured_labels,master,,,,,,TRUE,archived
 ,google/stumblybot,master,,,,,,TRUE,archived
 ,google/style-aligned,main,,,,,,,
-,google/subpar,master,,,,,,,
+,google/subpar,master,,,,,,TRUE,archived
 ,google/supl-client,master,maven,,,,,,
 ,google/support-tools,master,,,,,,TRUE,archived
 ,google/swift-jupyter,main,,,,,,,
@@ -23062,6 +23068,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,google/tsunami-security-scanner-plugins,master,,,,,,,
 ,google/turbine,main,maven,,,,,,
 ,google/turbinia,master,,,,,,,
+,google/uafcs,main,,,,,,,
 ,google/uis-rnn,master,,,,,,,
 ,google/ukey2,master,,gradle,,,,,
 ,google/ukip,master,,,,,,,
