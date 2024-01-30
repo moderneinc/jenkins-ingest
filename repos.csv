@@ -13176,6 +13176,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/activemq-activeio,trunk,maven,,,,,TRUE,Java version 5 is not supported
 ,apache/activemq-apollo,trunk,,,,,,TRUE,archived
 ,apache/activemq-artemis,main,maven,,,,,,
+,apache/activemq-artemis-examples,main,,,,,,,
 ,apache/activemq-artemis-native,main,,,,,,,
 ,apache/activemq-cli-tools,main,maven,,,,,,
 ,apache/activemq-nms-openwire-generator,main,maven,,,,,,
@@ -13196,6 +13197,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/airflow-ci-infra,main,,,,,,,
 ,apache/airflow-client-python,main,,,,,,,
 ,apache/airflow-flask-openid-fork,master,,,,,,TRUE,archived
+,apache/airflow-mssql-migration,main,,,,,,,
 ,apache/allura,master,,,,,,,
 ,apache/ambari,trunk,maven,,,,,,
 ,apache/ambari-infra,master,,,,,,,
@@ -13434,6 +13436,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/dubbo-feature-test,master,maven,,,,,,
 ,apache/dubbo-hessian-lite,master,maven,,,,,,
 ,apache/dubbo-initializer,main,,,,,,,
+,apache/dubbo-integration-cases,main,,,,,,,
 ,apache/dubbo-kubernetes,master,maven,,,,,,
 ,apache/dubbo-proxy,master,maven,,,,,,
 ,apache/dubbo-python,master,,,,,,,
@@ -13453,39 +13456,39 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/felix-atomos,master,maven,,,,,,
 ,apache/felix-dev,master,,,,,,,
 ,apache/fineract,develop,,,,,,,
-,apache/fineract-cn-accounting,develop,,,,,,,
-,apache/fineract-cn-anubis,develop,,,,,,,
-,apache/fineract-cn-api,develop,,,,,,,
-,apache/fineract-cn-async,develop,,,,,,,
-,apache/fineract-cn-cassandra,develop,,,,,,,
-,apache/fineract-cn-cheques,develop,,,,,,,
-,apache/fineract-cn-command,develop,,,,,,,
-,apache/fineract-cn-crypto,develop,,,,,,,
-,apache/fineract-cn-customer,develop,,,,,,,
-,apache/fineract-cn-data-jpa,develop,,,,,,,
-,apache/fineract-cn-default-setup,develop,,,,,,TRUE,Build uses Gradle 3.x
-,apache/fineract-cn-demo-server,develop,,,,,,,
-,apache/fineract-cn-deposit-account-management,develop,,,,,,,
-,apache/fineract-cn-group,develop,,,,,,,
-,apache/fineract-cn-identity,develop,,,,,,,
-,apache/fineract-cn-interoperation,develop,,,,,,,
-,apache/fineract-cn-lang,develop,,,,,,,
-,apache/fineract-cn-mariadb,develop,,,,,,TRUE,Build uses Gradle 3.x
-,apache/fineract-cn-mobile,development,,,,,,,
-,apache/fineract-cn-notifications,develop,,,,,,,
-,apache/fineract-cn-office,develop,,,,,,,
-,apache/fineract-cn-payroll,develop,,,,,,,
-,apache/fineract-cn-permitted-feign-client,develop,,,,,,,
-,apache/fineract-cn-portfolio,develop,,,,,,,
-,apache/fineract-cn-postgresql,develop,,,,,,,
-,apache/fineract-cn-provisioner,develop,,,,,,,
-,apache/fineract-cn-reporting,develop,,,,,,TRUE,Build uses Gradle 3.x
-,apache/fineract-cn-rhythm,develop,,,,,,,
-,apache/fineract-cn-service-starter,develop,,,,,,TRUE,Build uses Gradle 3.x
-,apache/fineract-cn-stellar-bridge,master,,,,,,TRUE,Build uses Gradle 3.x
-,apache/fineract-cn-teller,develop,,,,,,,
-,apache/fineract-cn-template,develop,,,,,,,
-,apache/fineract-cn-test,develop,,,,,,,
+,apache/fineract-cn-accounting,develop,,,,,,TRUE,archived
+,apache/fineract-cn-anubis,develop,,,,,,TRUE,archived
+,apache/fineract-cn-api,develop,,,,,,TRUE,archived
+,apache/fineract-cn-async,develop,,,,,,TRUE,archived
+,apache/fineract-cn-cassandra,develop,,,,,,TRUE,archived
+,apache/fineract-cn-cheques,develop,,,,,,TRUE,archived
+,apache/fineract-cn-command,develop,,,,,,TRUE,archived
+,apache/fineract-cn-crypto,develop,,,,,,TRUE,archived
+,apache/fineract-cn-customer,develop,,,,,,TRUE,archived
+,apache/fineract-cn-data-jpa,develop,,,,,,TRUE,archived
+,apache/fineract-cn-default-setup,develop,,,,,,TRUE,archived
+,apache/fineract-cn-demo-server,develop,,,,,,TRUE,archived
+,apache/fineract-cn-deposit-account-management,develop,,,,,,TRUE,archived
+,apache/fineract-cn-group,develop,,,,,,TRUE,archived
+,apache/fineract-cn-identity,develop,,,,,,TRUE,archived
+,apache/fineract-cn-interoperation,develop,,,,,,TRUE,archived
+,apache/fineract-cn-lang,develop,,,,,,TRUE,archived
+,apache/fineract-cn-mariadb,develop,,,,,,TRUE,archived
+,apache/fineract-cn-mobile,development,,,,,,TRUE,archived
+,apache/fineract-cn-notifications,develop,,,,,,TRUE,archived
+,apache/fineract-cn-office,develop,,,,,,TRUE,archived
+,apache/fineract-cn-payroll,develop,,,,,,TRUE,archived
+,apache/fineract-cn-permitted-feign-client,develop,,,,,,TRUE,archived
+,apache/fineract-cn-portfolio,develop,,,,,,TRUE,archived
+,apache/fineract-cn-postgresql,develop,,,,,,TRUE,archived
+,apache/fineract-cn-provisioner,develop,,,,,,TRUE,archived
+,apache/fineract-cn-reporting,develop,,,,,,TRUE,archived
+,apache/fineract-cn-rhythm,develop,,,,,,TRUE,archived
+,apache/fineract-cn-service-starter,develop,,,,,,TRUE,archived
+,apache/fineract-cn-stellar-bridge,master,,,,,,TRUE,archived
+,apache/fineract-cn-teller,develop,,,,,,TRUE,archived
+,apache/fineract-cn-template,develop,,,,,,TRUE,archived
+,apache/fineract-cn-test,develop,,,,,,TRUE,archived
 ,apache/fineract-credit-scorecard,develop,,,,,,,
 ,apache/flagon-distill,master,,,,,,,
 ,apache/flex-blazeds,develop,,,,,,,
@@ -13602,8 +13605,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-dubbo-spring-boot-project,master,,,,,,,
 ,apache/incubator-eventmesh,master,,,,,,,
 ,apache/incubator-flagon-userale-pyqt5,master,,,,,,TRUE,archived
+,apache/incubator-fury,main,,,,,,,
 ,apache/incubator-heron,master,,,,,,TRUE,archived
 ,apache/incubator-hivemall,master,maven,,,,,TRUE,archived
+,apache/incubator-horaedb-client-java,main,,,,,,,
 ,apache/incubator-hugegraph,master,maven,,,,,,
 ,apache/incubator-hugegraph-ai,main,,,,,,,
 ,apache/incubator-hugegraph-commons,master,maven,,,,,,
@@ -13620,7 +13625,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-kie-optaplanner,main,,,,,,,
 ,apache/incubator-kie-optaplanner-quickstarts,stable,,,,,,,
 ,apache/incubator-kie-tools,main,,,,,,,
-,apache/incubator-kie-tools-temporary-rnd-do-not-use,main,,,,,,,
+,apache/incubator-kie-tools-temporary-rnd-do-not-use,main,,,,,,TRUE,archived
 ,apache/incubator-knox,trunk,maven,,,,,,
 ,apache/incubator-kyuubi,master,maven,,,,,,
 ,apache/incubator-liminal,master,,,,,,,
@@ -13646,6 +13651,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-pekko-quickstart-java.g8,main,,,,,,,
 ,apache/incubator-ponymail-foal,master,,,,,,,
 ,apache/incubator-ponymail-unit-tests,master,,,,,,,
+,apache/incubator-resilientdb-graphql,main,,,,,,,
+,apache/incubator-resilientdb-python-sdk,main,,,,,,,
 ,apache/incubator-retired-amaterasu,master,,,,,,TRUE,archived
 ,apache/incubator-retired-blur,master,,,,,,TRUE,archived
 ,apache/incubator-retired-cotton,master,,,,,,TRUE,archived
@@ -13676,6 +13683,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/incubator-sdap-nexusproto,master,,,,,,,
 ,apache/incubator-sdap-ningester,master,,,,,,TRUE,Build uses Gradle 4.x prior to 4.10 and the artifactory plugin does not support these builds.
 ,apache/incubator-sdap-ningesterpy,master,,,,,,,
+,apache/incubator-seata,2.x,,,,,,,
+,apache/incubator-seata-samples,master,,,,,,,
 ,apache/incubator-seatunnel,dev,maven,,,,,,
 ,apache/incubator-seatunnel-datasource-sdk,main,,,,,,,
 ,apache/incubator-seatunnel-web,main,,,,,,,
@@ -13793,6 +13802,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/kylin,kylin5,,,,,,,
 ,apache/kylin,main,maven,,,,,,
 ,apache/kyuubi-service-rpc,main,,,,,,,
+,apache/kyuubi-shaded,master,,,,,,,
 ,apache/lens,master,,,,,,TRUE,archived
 ,apache/lenya,trunk,maven,,,,,,
 ,apache/libcloud,trunk,,,,,,,
@@ -14492,6 +14502,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/tomcat-native,main,,,,,,,
 ,apache/tomcat-taglibs-rdc,main,maven,,,,,,
 ,apache/tomcat-taglibs-standard,main,maven,,,,,,
+,apache/tomcat-tck,main,,,,,,,
 ,apache/tomcat55,trunk,,,,,,TRUE,archived
 ,apache/tomcat80,trunk,,,,,,TRUE,archived
 ,apache/tomee,main,,,,,,,
@@ -14504,6 +14515,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,apache/tomee-site-ng,trunk,maven,,,,,,
 ,apache/tomee-tck,main,,,,,,,
 ,apache/trafficserver-qa,master,,,,,,,
+,apache/tsfile,develop,,,,,,,
 ,apache/turbine-archetypes,master,maven,,,,,,
 ,apache/turbine-core,trunk,maven,,,,,,
 ,apache/turbine-fulcrum-crypto,master,maven,,,,,,
