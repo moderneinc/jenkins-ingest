@@ -4,10 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Comparator;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Parser {
@@ -110,6 +107,21 @@ record Key(String origin, String path, String branch) implements Comparable<Key>
                 .thenComparing(Key::path)
                 .thenComparing(Key::branch)
                 .compare(this, o);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Key key = (Key) o;
+        return Objects.equals(origin, key.origin) &&
+               Objects.equals(path.toLowerCase(), key.path.toLowerCase()) &&
+               Objects.equals(branch, key.branch);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(origin, path.toLowerCase(), branch);
     }
 }
 
