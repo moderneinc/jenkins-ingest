@@ -26295,7 +26295,11 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,javagl/JglTF,master,maven,,,,,,
 ,javahongxi/whatsmars,master,maven,,,,,,
 ,javakam/FileOperator,master,,,,,,,
+,javalin/folder-ac-poc,main,,,,,,,
 ,javalin/javalin,master,maven,,,,,,
+,javalin/javalin-bucket4j,main,,,,,,TRUE,archived
+,javalin/javalin-in-minecraft-example,main,,,,,,,
+,javalin/javalin-mithril,develop,,,,,,,
 ,javamelody/javamelody,master,maven,,,,,,
 ,javamonkey/beetl2.0,master,maven,,,,,,
 ,javamuc/gradle-semantic-build-versioning,master,,,,,,TRUE,Build uses Gradle 3.x
