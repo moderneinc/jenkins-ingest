@@ -8274,6 +8274,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,PlaytikaOSS/testcontainers-spring-boot,develop,maven,,,,,,
 ,PleaseCallMeCoder/PrettyGirls,dev,,,,,,,
 ,PleaseCallMeKing/jhipsterSampleApplication,master,maven,,,,,,
+,plouc/nivo,master,,,,,,,
 ,PluginSystem-StudyManager/PluginCreator,master,,gradle,,,,,
 ,PluginsCDTribe/MesmerizeNk,master,maven,,,,,,
 ,PlusHaze/TrayNotification,master,maven,,,,,,
