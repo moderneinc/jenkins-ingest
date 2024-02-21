@@ -8890,6 +8890,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,SUPERCILEX/version-orchestrator,master,,,,,,,
 ,SUSE/salt-netapi-client,master,maven,,,,,,
 ,SValence/SafeKeyboard,master,,,,,,,
+,sveltejs/realworld,master,,,,,,,
+,sveltejs/svelte,main,,,,,,,
 ,SW-Capstone-C1L3/YOBO-BACKEND,dddfff22,,,,,,,
 ,SZUE/xpp3,master,,,,,,,
 ,SaWLeaDeR/JPAMetaModel,master,maven,,,,,,
