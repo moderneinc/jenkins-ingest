@@ -111,8 +111,12 @@ record Key(String origin, String path, String branch) implements Comparable<Key>
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Key key = (Key) o;
         return Objects.equals(origin, key.origin) &&
                Objects.equals(path.toLowerCase(), key.path.toLowerCase()) &&
