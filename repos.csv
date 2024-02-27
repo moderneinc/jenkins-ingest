@@ -21343,6 +21343,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,finos/symphony-bdk-python,main,,,,,,,
 ,finos/symphony-wdk,master,,,,,,,
 ,finos/tracdap,main,,,,,,,
+,finos/traderX,main,,,,,,,
 ,finos/waltz,master,maven,,,,,,
 ,finos/waltz-integration-juju,main,,,,,,,
 ,finrod2002/jaxrs-analyzer-gradle-plugin,master,,,,,,,
