@@ -31237,7 +31237,10 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,kuangye098/rocketmq,master,maven,,,,,,
 ,kubeflow/kubeflow,master,,,,,,,
 ,kuberb/shivaniCorrugation,master,maven,,,,,,
+,kubernetes-client/csharp,master,,,,,,,
 ,kubernetes-client/java,master,,,,,,,
+,kubernetes-client/python,master,,,,,,,
+,kubernetes-client/python-base,master,,,,,,TRUE,archived
 ,kubode/Wiggle,master,,,,,,,
 ,kuguake/jhipsterObj,master,maven,,,,,,
 ,kukukoko11/PI-DAY,master,maven,,,,,,
