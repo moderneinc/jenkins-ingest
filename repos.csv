@@ -35391,6 +35391,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,modelmapper/modelmapper,master,maven,,,,,,
 ,moderneinc/code-data-science,main,,,,,,,
 ,moderneinc/github-list-repos,main,,,,,,,
+,moderneinc/gh-automation,main,,,,,,,
 ,moderneinc/jenkins-ingest,main,,,,,,,
 ,moderneinc/mod-connect,main,,,,,,,
 ,moderneinc/moderne-eclipse-plugin,main,,,,,,,
