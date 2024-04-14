@@ -37539,6 +37539,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-java-annotproc,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-java-dependencies,main,,,,,,,
 ,openrewrite/rewrite-java-security,main,,,,,,,
+,openrewrite/rewrite-javascript,main,,,,,,,
 ,openrewrite/rewrite-jenkins,main,,,,,,,
 ,openrewrite/rewrite-jhipster,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-kotlin,main,,,,,,,
