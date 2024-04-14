@@ -35390,8 +35390,8 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,modeProbe/pkaf,master,maven,,,,,,
 ,modelmapper/modelmapper,master,maven,,,,,,
 ,moderneinc/code-data-science,main,,,,,,,
-,moderneinc/github-list-repos,main,,,,,,,
 ,moderneinc/gh-automation,main,,,,,,,
+,moderneinc/github-list-repos,main,,,,,,,
 ,moderneinc/jenkins-ingest,main,,,,,,,
 ,moderneinc/mod-connect,main,,,,,,,
 ,moderneinc/moderne-eclipse-plugin,main,,,,,,,
@@ -37515,11 +37515,13 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openpreserve/pagelyzer,master,maven,,,,,,
 ,openreplay/openreplay,main,,,,,,,
 ,openrewrite/gradle-openrewrite-project-plugin,master,,,,,,TRUE,archived
+,openrewrite/jgit,main,,,,,,,
 ,openrewrite/recipe-examples,main,,,,,,TRUE,archived
 ,openrewrite/rewrite,main,,,,,,,
 ,openrewrite/rewrite-ai-search,main,,,,,,,
 ,openrewrite/rewrite-all,main,,,,,,,
 ,openrewrite/rewrite-analysis,main,,,,,,,
+,openrewrite/rewrite-apache,main,,,,,,,
 ,openrewrite/rewrite-build-gradle-plugin,main,,,,,,,
 ,openrewrite/rewrite-checkstyle,master,,,,,,TRUE,archived
 ,openrewrite/rewrite-circleci,main,,,,,,,
@@ -37537,6 +37539,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-java-annotproc,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-java-dependencies,main,,,,,,,
 ,openrewrite/rewrite-java-security,main,,,,,,,
+,openrewrite/rewrite-javascript,main,,,,,,,
 ,openrewrite/rewrite-jenkins,main,,,,,,,
 ,openrewrite/rewrite-jhipster,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-kotlin,main,,,,,,,
@@ -37549,6 +37552,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-micronaut,main,,,,,,,
 ,openrewrite/rewrite-migrate-java,main,,,,,,,
 ,openrewrite/rewrite-migrate-python,main,,,,,,,
+,openrewrite/rewrite-nodejs,main,,,,,,,
 ,openrewrite/rewrite-okhttp,main,,,,,,,
 ,openrewrite/rewrite-openapi,main,,,,,,,
 ,openrewrite/rewrite-polyglot,main,,,,,,,
@@ -37562,6 +37566,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,openrewrite/rewrite-spring,main,,,,,,,
 ,openrewrite/rewrite-sql,main,,,,,,,
 ,openrewrite/rewrite-static-analysis,main,,,,,,,
+,openrewrite/rewrite-struts,main,,,,,,,
 ,openrewrite/rewrite-template-generator,main,,,,,,TRUE,archived
 ,openrewrite/rewrite-templating,main,,,,,,,
 ,openrewrite/rewrite-terraform,main,,,,,,,
