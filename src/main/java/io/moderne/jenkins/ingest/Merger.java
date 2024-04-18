@@ -39,7 +39,7 @@ public class Merger {
                             throw new RuntimeException("Invalid CSV line with " + split.length + " columns: " + String.join(",", split));
                         }
                     })
-                    .map(split -> new CsvRow(split[0].equals("github.com") ? "" : split[0],
+                    .map(split -> new CsvRow("github.com".equals(split[0]) ? "" : split[0],
                             split[1], split[2], split[3], split[4], split[5], split[6], split[7], split[8], split[9]))
                     .collect(Collectors.toMap(
                             row -> new Key(row.scmHost(), row.repoName(), row.repoBranch()),
