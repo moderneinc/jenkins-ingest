@@ -28,7 +28,7 @@ public class Parser {
                 .skip(1)
                 .map(line -> line.replace("\"", ""))
                 .map(line -> line.split(",", -1))
-                .map(row -> new DataTableRow(row[0].equals("github.com") ? "" : row[0],
+                .map(row -> new DataTableRow("github.com".equals(row[0]) ? "" : row[0],
                         row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8]))
                 .collect(Collectors.toMap(
                         row -> new Key(row.repositoryOrigin(), row.repositoryPath(), row.repositoryBranch()),
@@ -70,11 +70,11 @@ public class Parser {
         String wrapper = datatableRow.type();
         String wrapperVersion = datatableRow.version();
         if (wrapper != null && !wrapper.isBlank() && wrapperVersion != null && !wrapperVersion.isBlank()) {
-            if (wrapper.equalsIgnoreCase("Mvnw") && 0 < MINIMUM_MAVEN_VERSION.compareTo(wrapperVersion)) {
+            if ("Mvnw".equalsIgnoreCase(wrapper) && 0 < MINIMUM_MAVEN_VERSION.compareTo(wrapperVersion)) {
                 csvRow = csvRow
                         .withRepoSkip("TRUE")
                         .withSkipReason("Maven wrapper " + wrapperVersion + " is not supported");
-            } else if (wrapper.equalsIgnoreCase("Gradlew") && 0 < "5".compareTo(wrapperVersion) && !wrapperVersion.startsWith(MINIMUM_GRADLE_VERSION)) {
+            } else if ("Gradlew".equalsIgnoreCase(wrapper) && 0 < "5".compareTo(wrapperVersion) && !wrapperVersion.startsWith(MINIMUM_GRADLE_VERSION)) {
                 csvRow = csvRow
                         .withRepoSkip("TRUE")
                         .withSkipReason("Gradle wrapper " + wrapperVersion + " is not supported");
@@ -111,8 +111,12 @@ record Key(String origin, String path, String branch) implements Comparable<Key>
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Key key = (Key) o;
         return Objects.equals(origin, key.origin) &&
                Objects.equals(path.toLowerCase(), key.path.toLowerCase()) &&
