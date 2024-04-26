@@ -26807,6 +26807,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,jakartaee/pages,master,,,,,,,
 ,jakartaee/persistence,master,,,,,,,
 ,jakartaee/platform-tck,master,,,,,,,
+,jakartaee/platform-tck,tckrefactor,,,,,,,
 ,jakartaee/rest,main,,,,,,,
 ,jakartaee/rpc,main,,,,,,,
 ,jakartaee/saaj-api,master,,,,,,,
