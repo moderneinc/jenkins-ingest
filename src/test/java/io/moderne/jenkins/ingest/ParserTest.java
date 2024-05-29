@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class ParserTest {
 
@@ -36,7 +36,7 @@ class ParserTest {
                 """);
         Parser.updateReposBasedOnDatatable(reposFile, datatableFile);
         String updatedCsv = Files.readString(reposFile);
-        assertEquals("""
+        assertThat(updatedCsv).isEqualTo("""
                 scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
                 ,apache/cassandra-accord,trunk,,,java11,,,,
                 ,apache/helix,master,maven,,java11,,,,
@@ -45,7 +45,7 @@ class ParserTest {
                 ,apache/servicemix5,trunk,maven,,java8,,,,
                 ,apache/shenyu,master,maven,,java8,,,TRUE,Maven wrapper 3.2.0 is not supported
                 ,apache/maven,master,maven,,java8,,,,
-                """, updatedCsv);
+                """);
     }
 
 }

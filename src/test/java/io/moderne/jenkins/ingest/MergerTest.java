@@ -6,7 +6,7 @@ import org.junit.jupiter.api.io.TempDir;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class MergerTest {
 
@@ -33,13 +33,13 @@ class MergerTest {
         Merger.mergeDatatables(repos, new_);
 
         String actual = Files.readString(repos);
-        assertEquals("""
+        assertThat(actual).isEqualTo("""
                 scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
                 ,foo,keep-java-when-not-empty,maven,gradle,java8,style,build,,
                 ,foo,set-java-when-empty,maven,gradle,java17,style,build,,
                 ,foo,skip-when-archived,maven,gradle,java17,style,build,TRUE,archived
                 ,foo,trim-leading-origin,maven,gradle,java17,style,build,,
-                """, actual);
+                """);
     }
 
     @Test
@@ -59,10 +59,10 @@ class MergerTest {
         Merger.mergeDatatables(repos, new_);
 
         String actual = Files.readString(repos);
-        assertEquals("""
+        assertThat(actual).isEqualTo("""
                 scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
                 ,jakartaee/validation,main,,,,,,,
-                """, actual);
+                """);
     }
 
     @Test
@@ -93,7 +93,7 @@ class MergerTest {
         
         Merger.mergeDatatables(repos, new_);
         String actual = Files.readString(repos);
-        assertEquals("""
+        assertThat(actual).isEqualTo("""
                 scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildAction,repoSkip,skipReason
                 ,bgiegel/Starpoints-app,master,maven,,java8,,,,
                 ,bgjug/common-cdi-extension,master,,,java17,,,,
@@ -108,6 +108,6 @@ class MergerTest {
                 ,bgjug/repo-maven-plugin,master,,,java17,,,,
                 ,bgjug/spring-boot-forge-addon,master,,,java17,,,,
                 ,bgogetap/StickyHeaders,master,,,java8,,,,
-                """, actual);
+                """);
     }
 }
