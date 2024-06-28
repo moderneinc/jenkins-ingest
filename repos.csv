@@ -6847,7 +6847,7 @@ scmHost,repoName,repoBranch,mavenTool,gradleTool,jdkTool,repoStyle,repoBuildActi
 ,Netflix/awsobjectmapper,main,,,,,,,
 ,Netflix/bettertls,master,,,,,,,
 ,Netflix/blitz4j,master,,,,,,,
-,Netflix/concurrency-limits,master,,,,,,,
+,Netflix/concurrency-limits,main,,,,,,,
 ,Netflix/curator,master,maven,,,,,,
 ,Netflix/denominator,master,,,,,,TRUE,Gradle wrapper 2.2.1 is not supported
 ,Netflix/dgs-codegen,master,,,,,,,
